@@ -1,4 +1,107 @@
+@import "./vars";
+
+:root {
+  --g0: #{$g0};
+  --g1: #{$g1};
+  --g2: #{$g2};
+  --g3: #{$g3};
+  --g4: #{$g4};
+  --g5: #{$g5};
+  --g6: #{$g6};
+  --g7: #{$g7};
+  --g8: #{$g8};
+  --primary: #{$primary};
+  --accent: #{$accent};
+  --fontWeightRegular: #{$fontWeightRegular};
+  --fontWeightMedium: #{$fontWeightMedium};
+  --fontWeightHeavy: #{$fontWeightHeavy};
+  --shadowColor: rgba(0, 0, 0, 0.3);
+  --shadow: 0 0.1rem 0.63rem -0.1rem var(--shadowColor);
+  --largeShadow: 0.3rem 2rem 3rem -0.6rem var(--shadowColor);
+  --blockShadow: 0.4rem 0.4rem 0 var(--g6), 0.8rem 0.8rem 0 var(--g7);
+  --animationSize: 24rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: var(--g6) transparent;
+}
+
+*:focus {
+  outline: $borderWidth $borderStyle var(--g6);
+  outline-offset: $borderWidth;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+
+  &-thumb {
+    background: var(--g6);
+  }
+}
+
 body {
-  background: black;
-  color: white;
+  font-family: $fontFamily;
+  font-feature-settings: off;
+  font-variant-ligatures: normal;
+  background: $g0;
+  color: $g8;
+}
+
+h1 {
+  font-size: calc(8vmin + 20px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+p {
+  margin-bottom: $flow1;
+}
+
+em {
+  font-family: $altFontFamily;
+  font-style: normal;
+  font-variation-settings: "slnt" -13, "CRSV" 1, "CASL" 1;
+}
+
+strong {
+  font-weight: 700;
+  color: $primary;
+}
+
+nav,
+footer {
+  padding: $flow1;
+}
+
+nav {
+  display: flex;
+  gap: $flow1;
+}
+
+main {
+  padding: $flow4 0;
+  max-width: 1280px;
+
+  & > p,
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    padding-left: $flow1;
+    padding-right: $flow1;
+  }
 }
