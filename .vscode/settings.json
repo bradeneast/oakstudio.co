@@ -5,5 +5,14 @@
       "extensionName": ".css",
       "savePath": "/dist/_assets/css"
     }
-  ]
+  ],
+  "saveAndRun": {
+    "commands": [
+      {
+        "cmd": "esbuild src/_js/main.js --outfile=dist/_assets/js/main.js --target=es6 --bundle --minify",
+        "match": ".*src.*js",
+        "silent": true,
+      }
+    ]
+  }
 }
