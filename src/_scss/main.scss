@@ -53,50 +53,7 @@
 }
 
 body {
-  font-family: $textFont;
-  font-feature-settings: off;
-  font-variant-ligatures: normal;
   background: $g0;
-  color: $g8;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1;
-  font-family: $textFont;
-  font-weight: 400;
-  margin-bottom: 0.4em;
-}
-
-h1 {
-  font-size: calc(9vmin + 2px);
-  letter-spacing: -0.05em;
-}
-
-a {
-  text-decoration-color: var(--primary);
-}
-
-p {
-  margin-bottom: $flow1;
-}
-
-blockquote {
-  background: var(--g1);
-  padding: $flow1;
-}
-
-strong {
-  font-weight: 700;
-  color: var(--primary);
-}
-
-del {
-  color: var(--g3);
 }
 
 svg,
@@ -107,7 +64,7 @@ img {
 }
 
 #logo {
-  max-width: 10em;
+  max-width: 8em;
 }
 
 ::selection {
@@ -115,14 +72,9 @@ img {
   color: var(--g8);
 }
 
-nav,
+header,
 footer {
-  padding: $flow1;
-}
-
-nav {
-  display: flex;
-  gap: $flow1;
+  padding: $flow2;
 }
 
 main {
@@ -130,8 +82,8 @@ main {
   max-width: calc(1080px + 12vmin);
 
   & > * {
-    padding-left: $flow1;
-    padding-right: $flow1;
+    padding-left: $flow2;
+    padding-right: $flow2;
   }
 
   img {
@@ -140,11 +92,4 @@ main {
   }
 }
 
-[data-intersecting] {
-  transition: $motionTransition;
-}
-
-[data-intersecting="false"] {
-  opacity: 0;
-  filter: blur(1px);
-}
+@import "./typography";

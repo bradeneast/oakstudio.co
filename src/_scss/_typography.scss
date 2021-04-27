@@ -1,0 +1,49 @@
+body {
+  font-family: $textFont;
+  font-feature-settings: off;
+  font-variant-ligatures: normal;
+  color: $g8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  font-family: $textFont;
+  font-weight: 400;
+  margin-bottom: 0.4em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: calc(9vmin + 2px);
+  letter-spacing: -0.05em;
+}
+
+a {
+  text-decoration-color: var(--primary);
+}
+
+p {
+  margin-bottom: $flow1;
+}
+
+blockquote {
+  background: var(--g1);
+  padding: $flow1;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+del {
+  color: var(--g3);
+}
