@@ -1,1 +1,1 @@
-# Oak Studio is the only **creative agency** for family-owned (and family-minded) businesses who want to do something permanent in an era of ~temporary~ quick-fix patch jobs.<br><br>hello@oakstudio.co
+# The only creative agency for family-owned (and family-minded) businesses, who want to **do something permanent** in an era of ~temporary~ quick-fix patch jobs.<br><br>hello@oakstudio.co

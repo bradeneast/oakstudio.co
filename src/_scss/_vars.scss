@@ -7,8 +7,10 @@ $g5: #97a2b6;
 $g6: #c5cacf;
 $g7: #eaebee;
 $g8: white;
-$primary: red;
-$accent: #35a085;
+$primary: #fe3b1f;
+$yellow: #ffcd00;
+$green: #3bd4ae;
+$pink: #ff40b4;
 $flow1: 1rem;
 $flow2: 1.63rem;
 $flow3: 3rem;
@@ -31,6 +33,13 @@ $fallback: showFallback 5s forwards;
   src: url("/_assets/fonts/SpaceGrotesk.woff2") format("woff2-variations");
   font-feature-settings: "ss02" 1, "ss03" 1, "ss04" 1, "case" 1, "zero" 1;
   font-weight: 300 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/_assets/fonts/Metropolis-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-display: block;
 }
 

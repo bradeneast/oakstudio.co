@@ -15,6 +15,6 @@ addEventListener('mousemove', event =>
     let x = event.clientX / innerWidth;
     let y = event.clientY / innerHeight;
     let sat = round(Math.max(x, y) * 50 - 10);
-    document.documentElement.style.setProperty('--primary', `hsl(${sat}, 100%, 50%)`);
+    document.documentElement.style.setProperty('--primary', `hsl(${sat}, 100%, 55%)`);
   })
 )

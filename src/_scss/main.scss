@@ -11,7 +11,9 @@
   --g7: #{$g7};
   --g8: #{$g8};
   --primary: #{$primary};
-  --accent: #{$accent};
+  --yellow: #{$yellow};
+  --green: #{$green};
+  --pink: #{$pink};
   --fontWeightRegular: #{$fontWeightRegular};
   --fontWeightMedium: #{$fontWeightMedium};
   --fontWeightHeavy: #{$fontWeightHeavy};
@@ -64,6 +66,7 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: 1;
   font-family: $textFont;
   font-weight: 400;
   margin-bottom: 0.4em;
@@ -71,7 +74,6 @@ h6 {
 
 h1 {
   font-size: calc(9vmin + 2px);
-  line-height: 0.95;
   letter-spacing: -0.05em;
 }
 
@@ -97,6 +99,17 @@ del {
   color: var(--g3);
 }
 
+svg,
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+#logo {
+  max-width: 10em;
+}
+
 ::selection {
   background: var(--primary);
   color: var(--g8);
@@ -114,7 +127,7 @@ nav {
 
 main {
   padding: $flow4 0;
-  max-width: 1150px;
+  max-width: calc(1080px + 12vmin);
 
   & > * {
     padding-left: $flow1;
