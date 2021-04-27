@@ -80,6 +80,15 @@ strong {
   color: $primary;
 }
 
+del {
+  color: var(--g3);
+}
+
+::selection {
+  background: $primary;
+  color: var(--g8);
+}
+
 nav,
 footer {
   padding: $flow1;
@@ -88,10 +97,6 @@ footer {
 nav {
   display: flex;
   gap: $flow1;
-}
-
-del {
-  color: var(--g3);
 }
 
 main {
