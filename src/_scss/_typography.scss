@@ -47,3 +47,13 @@ strong {
 del {
   color: var(--g3);
 }
+
+hr {
+  height: $borderWidth;
+  max-width: 50%;
+  border: none;
+  display: block;
+  margin-bottom: $flow4;
+  margin-top: $flow4;
+  background: linear-gradient(to right, var(--primary), transparent);
+}

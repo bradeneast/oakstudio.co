@@ -82,13 +82,13 @@ main {
   max-width: calc(1080px + 12vmin);
 
   & > * {
-    padding-left: $flow2;
-    padding-right: $flow2;
+    margin-left: $flow2;
+    margin-right: $flow2;
   }
 
   img {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
