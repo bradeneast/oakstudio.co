@@ -11,8 +11,26 @@ form {
     margin-bottom: 0;
   }
 
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: $flow1 / 2;
+  }
+
   :last-child {
     margin-bottom: 0 !important;
+  }
+
+  .half {
+    flex: 1;
+  }
+
+  .full {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   label {
@@ -21,10 +39,6 @@ form {
     gap: $flow1 / 2;
     width: 100%;
     font-family: $altFont;
-
-    &.half {
-      flex: 1;
-    }
   }
 
   input,
@@ -45,13 +59,44 @@ form {
     }
   }
 
+  label.mark_input {
+    display: flex;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    padding: 0;
+    appearance: none;
+    background: none;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    transform: translate3d(0, 0.2em, 1px);
+
+    &:checked {
+      background: var(--secondary);
+      box-shadow: inset 0 0 0 $borderWidth var(--g8);
+    }
+  }
+
   input[type="submit"] {
     margin-top: $flow1;
+    align-self: end;
   }
 
   textarea {
     resize: vertical;
     min-height: 8em;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  form {
+    display: block;
+
+    & > * {
+      margin-top: $flow2;
+    }
   }
 }

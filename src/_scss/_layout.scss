@@ -10,6 +10,7 @@ body {
 
 main {
   grid-column-end: -1;
+  padding-bottom: $flow4;
 
   :first-child {
     margin-top: 0;
@@ -35,9 +36,9 @@ article {
   padding-bottom: $flow4;
   display: grid;
   align-items: center;
+  height: auto;
   min-height: 75vh;
   overflow: hidden;
-  height: auto;
   background: $g0;
   border-radius: 0 0 0 $borderRadius;
 
@@ -78,4 +79,35 @@ footer {
   bottom: 0;
   right: 0;
   padding: $flow1;
+}
+
+@media screen and (max-width: $mobile) {
+  body {
+    font-size: 14px;
+    grid-template-columns: 1fr;
+    place-items: start;
+    place-content: start;
+  }
+
+  main {
+    padding: 0;
+
+    article {
+      padding: $flow4 $flow2;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .hero {
+    min-height: 32em;
+    align-items: end;
+    padding-top: 5rem;
+  }
+
+  header {
+    margin: 0;
+  }
 }

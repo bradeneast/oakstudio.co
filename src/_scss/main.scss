@@ -12,7 +12,24 @@
   --g8: #{$g8};
   --primary: #{$primary};
   --secondary: #{$secondary};
-  --shadowColor: #0004;
+  --shadowColor: #0003;
+}
+
+html.light {
+  body {
+    --g0: #{$g0};
+    --g1: #{$g1};
+    --g2: #{$g2};
+    --g3: #{$g3};
+    --g4: #{$g4};
+    --g5: #{$g5};
+    --g6: #{$g6};
+    --g7: #{$g7};
+    --g8: #{$g8};
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --shadowColor: #0003;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,10 +43,24 @@
     --g6: #{$g2};
     --g7: #{$g1};
     --g8: #{$g0};
-    // --primary: #{$secondary};
-    // --secondary: #{$primary};
     --fontWeightRegular: 300;
-    --shadowColor: #000a;
+    --shadowColor: #0009;
+  }
+}
+
+html.dark {
+  body {
+    --g0: #{$g8};
+    --g1: #{$g7};
+    --g2: #{$g6};
+    --g3: #{$g5};
+    --g4: #{$g4};
+    --g5: #{$g3};
+    --g6: #{$g2};
+    --g7: #{$g1};
+    --g8: #{$g0};
+    --fontWeightRegular: 300;
+    --shadowColor: #0009;
   }
 }
 
@@ -70,6 +101,10 @@ img {
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 @import "./layout";
 @import "./typography";
 @import "./buttons";
@@ -77,26 +112,3 @@ img {
 @import "./forms";
 @import "./blurbs";
 @import "./schwifty";
-
-@media screen and (max-width: $mobile) {
-  body {
-    font-size: 14px;
-    display: block;
-  }
-
-  main {
-    padding: 0;
-
-    article {
-      padding: $flow2;
-
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-  }
-
-  header {
-    margin: 0;
-  }
-}

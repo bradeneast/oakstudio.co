@@ -1,10 +1,13 @@
 .blurb {
   --image-size: 5rem;
-  margin-top: $flow3;
   display: grid;
   align-items: start;
   gap: $flow1;
   grid-template-columns: auto 1fr;
+
+  & + .blurb {
+    margin-top: $flow3;
+  }
 
   * {
     margin: 0;

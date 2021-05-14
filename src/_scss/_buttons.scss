@@ -33,3 +33,14 @@ input[type="submit"] {
     background-position-x: 99%;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  button,
+  a.button,
+  input[type="submit"] {
+    &.center {
+      width: 100%;
+      display: block;
+    }
+  }
+}

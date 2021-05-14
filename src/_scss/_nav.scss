@@ -6,8 +6,9 @@ nav {
   align-items: start;
   justify-items: center;
   justify-content: center;
+  text-align: center;
   gap: $flow3;
-  padding: $flow2;
+  padding: $flow1;
   height: 100vh;
   top: 0;
 
@@ -58,13 +59,18 @@ nav {
   nav {
     position: fixed;
     display: flex;
+    align-self: start;
     align-items: center;
-    align-content: center;
+    align-content: start;
     justify-content: stretch;
     gap: $flow1;
     padding: $flow1;
     background: var(--g8);
-    height: auto;
+    height: 5rem;
+
+    #logo {
+      height: 100%;
+    }
 
     [role="menu"] {
       display: flex;
