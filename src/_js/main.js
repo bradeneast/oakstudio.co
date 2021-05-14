@@ -1,24 +1,26 @@
 import Schwifty from './schwifty';
-import { round } from './utils';
+import { $, $$, attr, round } from './utils';
 
 function init() {
 
-  // let lastFrame = 0;
-  // let debounce = (event, callback) => requestAnimationFrame(thisFrame => {
-  //   if (thisFrame - lastFrame > 10) {
-  //     lastFrame = thisFrame;
-  //     callback(event);
-  //   }
-  // })
+  $$('form').forEach(form => {
 
-  // addEventListener('mousemove', event =>
-  //   debounce(event, () => {
-  //     let x = event.clientX / innerWidth;
-  //     let y = event.clientY / innerHeight;
-  //     let sat = round(Math.max(x, y) * 50 - 10);
-  //     document.documentElement.style.setProperty('--primary', `hsl(${sat}, 100%, 55%)`);
-  //   })
-  // )
+    function handleInput(event) {
+
+      let target = event.target;
+      let id = target.id;
+
+      if (!target.hasAttribute('data-has-conditional')) return;
+
+      $$('[data-condition]', form).forEach(conditional => {
+        let ref = attr(conditional, 'data-condition');
+        conditional.classList.toggle('hidden', ref != id);
+        conditional.setAttribute('required', ref == id);
+      })
+    }
+
+    form.addEventListener('input', handleInput)
+  })
 }
 
 init();
