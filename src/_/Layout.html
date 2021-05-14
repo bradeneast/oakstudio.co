@@ -5,13 +5,31 @@
   <Title>
     <Slot name="Title"></Slot>
   </Title>
+  <Image>
+    <Slot name="Image"></Slot>
+  </Image>
 </Import>
 
 <body>
-  <Import from="/_/Header.html"></Import>
+  <Import from="/_/Nav.html"></Import>
   <main>
-    <Slot name="Content"></Slot>
+    <div class="hero">
+      <div class="hero__text">
+        <h1 class="hero__text--heading">
+          <Slot name="Heading">{*Title*}</Slot>
+        </h1>
+        <div class="hero__text--subheading">
+          <Slot name="SubHeading"></Slot>
+        </div>
+      </div>
+      <img src="/_assets/images/{*Image*}" alt="" class="hero__image">
+    </div>
+    <article>
+      <Slot name="Content"></Slot>
+    </article>
   </main>
+
+  <footer>&copy; {% new Date().getFullYear() %} {*SiteName*}</footer>
 </body>
 
 </html>

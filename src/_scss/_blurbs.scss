@@ -1,0 +1,39 @@
+.blurb {
+  --image-size: 5rem;
+  margin-top: $flow3;
+  display: grid;
+  align-items: start;
+  gap: $flow1;
+  grid-template-columns: auto 1fr;
+
+  * {
+    margin: 0;
+  }
+
+  &__image {
+    justify-self: start;
+    background: var(--primary);
+    height: var(--image-size);
+    width: var(--image-size);
+    box-shadow: 0 0 0.4em -0.1em $primary;
+    border-radius: 50%;
+
+    svg {
+      filter: drop-shadow(0 0.2em 0.5em var(--shadowColor));
+    }
+
+    svg path {
+      fill: $g8;
+    }
+  }
+
+  &__desc {
+    margin: $flow1 / 2 0;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .blurb {
+    grid-template-columns: 1fr;
+  }
+}

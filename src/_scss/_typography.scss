@@ -1,8 +1,11 @@
 body {
+  font-size: 17px;
   font-family: $textFont;
   font-feature-settings: off;
   font-variant-ligatures: normal;
-  color: $g8;
+  color: var(--g2);
+  font-weight: $fontWeightRegular;
+  line-height: 1.5;
 }
 
 h1,
@@ -11,10 +14,17 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--g0);
   line-height: 1;
-  font-family: $textFont;
-  font-weight: 400;
+  font-weight: 500;
+  margin-top: 2em;
+  font-weight: $fontWeightHeavy;
+  letter-spacing: -0.02em;
   margin-bottom: 0.4em;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -22,38 +32,102 @@ h6 {
 }
 
 h1 {
-  font-size: calc(9vmin + 2px);
-  letter-spacing: -0.05em;
+  color: $g0;
+  font-family: $altFont;
+  text-transform: lowercase;
+  text-shadow: text-outline($g8);
+  font-size: calc(11vmin + 5px);
+  mix-blend-mode: lighten;
+  line-height: 0.9;
+  margin-bottom: 0.2em;
+  margin-left: -0.07em;
+
+  em {
+    font-family: $textFont;
+    color: $g8;
+    letter-spacing: -0.07em;
+    text-shadow: none;
+  }
+}
+
+h2 {
+  font-size: calc(5vmin + 2px);
+}
+
+h3,
+blockquote {
+  font-size: calc(2vmin + 10px);
+}
+
+h4 {
+  font-size: calc(2vmin + 7px);
 }
 
 a {
+  color: var(--g2);
+  text-underline-offset: $borderWidth * 2;
+  text-decoration-thickness: $borderWidth / 2;
   text-decoration-color: var(--primary);
+
+  &:hover,
+  &:focus {
+    color: var(--g0);
+    text-decoration-thickness: $borderWidth;
+  }
 }
 
 p {
-  margin-bottom: $flow1;
+  margin: $flow1 0;
 }
 
 blockquote {
-  background: var(--g1);
+  font-family: $altFont;
+  border-radius: 0 $borderRadius $borderRadius 0;
+  border-left: $borderWidth * 2 $borderStyle var(--secondary);
+  background: var(--g7);
   padding: $flow1;
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+em {
+  font-style: normal;
+  font-family: $altFont;
 }
 
 strong {
-  font-weight: 700;
-  color: var(--primary);
+  font-weight: $fontWeightHeavy;
 }
 
 del {
-  color: var(--g3);
+  color: var(--g5);
+}
+
+ul,
+ol {
+  padding-left: $flow1;
+}
+
+li + li {
+  margin-top: $flow1;
 }
 
 hr {
   height: $borderWidth;
-  max-width: 50%;
   border: none;
   display: block;
   margin-bottom: $flow4;
   margin-top: $flow4;
-  background: linear-gradient(to right, var(--primary), transparent);
+  background: var(--g5);
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--g8);
 }

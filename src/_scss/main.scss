@@ -11,17 +11,26 @@
   --g7: #{$g7};
   --g8: #{$g8};
   --primary: #{$primary};
-  --yellow: #{$yellow};
-  --green: #{$green};
-  --pink: #{$pink};
-  --fontWeightRegular: #{$fontWeightRegular};
-  --fontWeightMedium: #{$fontWeightMedium};
-  --fontWeightHeavy: #{$fontWeightHeavy};
-  --shadowColor: rgba(0, 0, 0, 0.3);
-  --shadow: 0 0.1rem 0.63rem -0.1rem var(--shadowColor);
-  --largeShadow: 0.3rem 2rem 3rem -0.6rem var(--shadowColor);
-  --blockShadow: 0.4rem 0.4rem 0 var(--g6), 0.8rem 0.8rem 0 var(--g7);
-  --animationSize: 24rem;
+  --secondary: #{$secondary};
+  --shadowColor: #0004;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --g0: #{$g8};
+    --g1: #{$g7};
+    --g2: #{$g6};
+    --g3: #{$g5};
+    --g4: #{$g4};
+    --g5: #{$g3};
+    --g6: #{$g2};
+    --g7: #{$g1};
+    --g8: #{$g0};
+    // --primary: #{$secondary};
+    // --secondary: #{$primary};
+    --fontWeightRegular: 300;
+    --shadowColor: #000a;
+  }
 }
 
 *,
@@ -36,15 +45,12 @@
   color: inherit;
   position: relative;
   scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: var(--g6) transparent;
 }
 
-*:focus {
-  outline: $borderWidth $borderStyle var(--g6);
-  outline-offset: $borderWidth;
-}
-
 ::-webkit-scrollbar {
+  display: none;
   background: transparent;
 
   &-thumb {
@@ -52,8 +58,9 @@
   }
 }
 
-body {
-  background: $g0;
+*:focus {
+  outline: $borderWidth $borderStyle var(--g2);
+  outline-offset: $borderWidth;
 }
 
 svg,
@@ -63,33 +70,33 @@ img {
   height: auto;
 }
 
-#logo {
-  max-width: 8em;
-}
-
-::selection {
-  background: var(--primary);
-  color: var(--g8);
-}
-
-header,
-footer {
-  padding: $flow2;
-}
-
-main {
-  padding: $flow4 0;
-  max-width: calc(1080px + 12vmin);
-
-  & > * {
-    margin-left: $flow2;
-    margin-right: $flow2;
-  }
-
-  img {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
+@import "./layout";
 @import "./typography";
+@import "./buttons";
+@import "./nav";
+@import "./forms";
+@import "./blurbs";
+@import "./schwifty";
+
+@media screen and (max-width: $mobile) {
+  body {
+    font-size: 14px;
+    display: block;
+  }
+
+  main {
+    padding: 0;
+
+    article {
+      padding: $flow2;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  header {
+    margin: 0;
+  }
+}

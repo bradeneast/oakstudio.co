@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  place-items: start;
+  flex-flow: row wrap;
+  gap: $flow1;
+  padding: $flow2;
+  border: $borderWidth $borderStyle var(--secondary);
+  border-radius: $borderRadius;
+
+  * {
+    margin-bottom: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0 !important;
+  }
+
+  label {
+    width: 100%;
+    display: grid;
+    gap: $flow1 / 2;
+    width: 100%;
+    font-family: $altFont;
+
+    &.half {
+      flex: 1;
+    }
+  }
+
+  input,
+  textarea {
+    display: inline-block;
+    font-family: $textFont;
+    padding: 0.37em 0.63em;
+    background: none;
+    border: $borderWidth $borderStyle var(--g4);
+    border-radius: $borderRadius;
+
+    &:hover {
+      border-color: var(--g3);
+    }
+
+    &:focus {
+      border-color: var(--g5);
+    }
+  }
+
+  input[type="submit"] {
+    margin-top: $flow1;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 8em;
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+html {
+  main {
+    transition: opacity $smoothTransition;
+  }
+
+  .hero__image,
+  article {
+    transition: transform $smoothTransition;
+  }
+
+  &[data-schwifty] {
+    transition-duration: 0.4s;
+
+    main {
+      opacity: 0;
+    }
+
+    .hero__image {
+      transform: translate3d(0, 0, 0) scale(0.98);
+    }
+
+    article {
+      transform: translate3d(0, 0.4rem, 0);
+    }
+  }
+
+  &[data-schwifty="out"] {
+    .hero__image {
+      transform: translate3d(0, 0, 0) scale(1.02);
+    }
+  }
+
+  &[data-schwifty="in"] {
+    article {
+      transition-delay: 0.2s;
+    }
+  }
+}

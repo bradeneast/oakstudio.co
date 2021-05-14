@@ -1,32 +1,36 @@
 $g0: black;
-$g1: #121518;
-$g2: #1a1f24;
-$g3: #363c47;
-$g4: #667483;
-$g5: #97a2b6;
-$g6: #c5cacf;
-$g7: #eaebee;
+$g1: #080a0f;
+$g2: #151920;
+$g3: #272d38;
+$g4: #45505c;
+$g5: #8590a3;
+$g6: #cacdd3;
+$g7: #e7e9ee;
 $g8: white;
 $primary: #fe3b1f;
-$yellow: #ffcd00;
-$green: #3bd4ae;
-$pink: #ff40b4;
+$secondary: #00c7c7;
+$green: #0ea57f;
+$pink: #d81b8c;
 $flow1: 1rem;
 $flow2: 1.63rem;
 $flow3: 3rem;
-$flow4: 4rem;
-$flow6: 6rem;
+$flow4: 5rem;
+$flow6: 8rem;
 $fontWeightRegular: 400;
-$fontWeightMedium: 550;
-$fontWeightHeavy: 720;
+$fontWeightHeavy: 700;
 $borderWidth: 2px;
 $borderStyle: solid;
-$borderRadius: 0;
+$borderRadius: 0.4rem;
 $motionTransition: 0.45s cubic-bezier(0.3, 0.5, 0.1, 1.2);
 $colorTransition: 0.28s cubic-bezier(0.3, 0.3, 0.1, 1);
 $smoothTransition: 0.63s cubic-bezier(0.4, 0.3, 0.1, 1);
 $mobile: 54em;
 $fallback: showFallback 5s forwards;
+
+@function text-outline($color, $thickness: 1px) {
+  @return $thickness $thickness $color, -$thickness -#{$thickness} $color, $thickness #{-$thickness} $color,
+    -$thickness $thickness $color;
+}
 
 @font-face {
   font-family: "Space Grotesk";
@@ -37,12 +41,13 @@ $fallback: showFallback 5s forwards;
 }
 
 @font-face {
-  font-family: "Metropolis";
-  src: url("/_assets/fonts/Metropolis-Medium.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Fraunces Italic";
+  src: url("/_assets/fonts/Fraunces-Italic.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: italic;
   font-display: block;
 }
 
 $fallbackFonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", "Roboto", sans-serif;
-$displayFont: "Metropolis", $fallbackFonts;
 $textFont: "Space Grotesk", $fallbackFonts;
+$altFont: "Fraunces Italic", $fallbackFonts;
