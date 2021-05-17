@@ -1,18 +1,29 @@
 html {
-  main {
-    transition: opacity $smoothTransition;
+  main::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+    background: var(--g7);
+    transition: opacity $colorTransition;
   }
 
   .hero__image,
   article {
-    transition: transform $smoothTransition;
+    transition: transform $colorTransition;
   }
 
   &[data-schwifty] {
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
 
-    main {
-      opacity: 0;
+    main::after {
+      opacity: 1;
     }
 
     .hero__image {

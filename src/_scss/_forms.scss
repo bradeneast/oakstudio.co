@@ -36,9 +36,11 @@ form {
   label {
     width: 100%;
     display: grid;
+    grid-gap: $flow1 / 2;
     gap: $flow1 / 2;
     width: 100%;
     font-family: $altFont;
+    font-style: italic;
   }
 
   input,
@@ -66,6 +68,7 @@ form {
   input[type="radio"],
   input[type="checkbox"] {
     padding: 0;
+    margin-right: $flow1 / 2;
     appearance: none;
     background: none;
     border-radius: 50%;

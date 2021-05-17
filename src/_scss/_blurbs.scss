@@ -4,10 +4,7 @@
   align-items: start;
   gap: $flow1;
   grid-template-columns: auto 1fr;
-
-  & + .blurb {
-    margin-top: $flow3;
-  }
+  margin-top: $flow3;
 
   * {
     margin: 0;
@@ -15,10 +12,9 @@
 
   &__image {
     justify-self: start;
-    background: var(--primary);
+    background: var(--g6);
     height: var(--image-size);
     width: var(--image-size);
-    box-shadow: 0 0 0.4em -0.1em $primary;
     border-radius: 50%;
 
     svg {
@@ -26,7 +22,7 @@
     }
 
     svg path {
-      fill: $g8;
+      fill: var(--g2);
     }
   }
 

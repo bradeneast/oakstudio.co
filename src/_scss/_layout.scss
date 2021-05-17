@@ -1,5 +1,9 @@
-body {
+body,
+article {
   background: var(--g8);
+}
+
+body {
   display: grid;
   gap: 0;
   grid-template-columns: calc(7em + #{$flow2}) 1fr;
@@ -28,7 +32,6 @@ article {
   max-width: $mobile;
   margin: 0 auto;
   margin-top: -$flow6;
-  background: var(--g8);
 }
 
 .hero {
@@ -40,6 +43,7 @@ article {
   min-height: 75vh;
   overflow: hidden;
   background: $g0;
+  mix-blend-mode: difference;
   border-radius: 0 0 0 $borderRadius;
 
   &__text {
@@ -105,6 +109,7 @@ footer {
     min-height: 32em;
     align-items: end;
     padding-top: 5rem;
+    padding-bottom: $flow6;
   }
 
   header {

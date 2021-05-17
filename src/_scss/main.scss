@@ -15,55 +15,6 @@
   --shadowColor: #0003;
 }
 
-html.light {
-  body {
-    --g0: #{$g0};
-    --g1: #{$g1};
-    --g2: #{$g2};
-    --g3: #{$g3};
-    --g4: #{$g4};
-    --g5: #{$g5};
-    --g6: #{$g6};
-    --g7: #{$g7};
-    --g8: #{$g8};
-    --primary: #{$primary};
-    --secondary: #{$secondary};
-    --shadowColor: #0003;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    --g0: #{$g8};
-    --g1: #{$g7};
-    --g2: #{$g6};
-    --g3: #{$g5};
-    --g4: #{$g4};
-    --g5: #{$g3};
-    --g6: #{$g2};
-    --g7: #{$g1};
-    --g8: #{$g0};
-    --fontWeightRegular: 300;
-    --shadowColor: #0009;
-  }
-}
-
-html.dark {
-  body {
-    --g0: #{$g8};
-    --g1: #{$g7};
-    --g2: #{$g6};
-    --g3: #{$g5};
-    --g4: #{$g4};
-    --g5: #{$g3};
-    --g6: #{$g2};
-    --g7: #{$g1};
-    --g8: #{$g0};
-    --fontWeightRegular: 300;
-    --shadowColor: #0009;
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -112,3 +63,28 @@ img {
 @import "./forms";
 @import "./blurbs";
 @import "./schwifty";
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --g0: #{$g8};
+    --g1: #{$g7};
+    --g2: #{$g6};
+    --g3: #{$g5};
+    --g4: #{$g4};
+    --g5: #{$g3};
+    --g6: #{$g2};
+    --g7: #{$g1};
+    --g8: #{$g0};
+    --fontWeightRegular: 300;
+    --shadowColor: #0009;
+  }
+
+  .hero {
+    mix-blend-mode: lighten;
+  }
+
+  body,
+  article {
+    background: var(--g7);
+  }
+}

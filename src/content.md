@@ -1,3 +1,5 @@
+## What's our forte?
+
 <Import from="/Services.html"></Import>
 
 ## Why work with us?
@@ -9,4 +11,4 @@ From 5 years of working with individuals, small businesses, and large nonprofits
 
 <br />
 
-<a class="button center" href="/contact">Schedule a Call</a>
+<a class="button primary" href="/contact">Schedule a Call</a>

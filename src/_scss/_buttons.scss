@@ -1,13 +1,15 @@
 button,
 a.button,
 input[type="submit"] {
-  --initial-color: var(--g0);
-  --hover-color: var(--primary);
+  --initial-bg: var(--g0);
+  --hover-bg: var(--primary);
+  --initial-color: var(--g8);
+  --hover-color: var(--g0);
+  color: var(--initial-color);
   display: inline;
   cursor: pointer;
   font-family: $textFont;
   font-weight: $fontWeightHeavy;
-  color: var(--g8);
   padding: 0.8em 1em;
   text-decoration: none;
   text-transform: uppercase;
@@ -15,7 +17,7 @@ input[type="submit"] {
   border: none;
   border-radius: $borderRadius;
   transition: background-position $smoothTransition, color $smoothTransition;
-  background-image: linear-gradient(72deg, var(--initial-color) 50%, var(--hover-color) 50%, var(--hover-color));
+  background-image: linear-gradient(72deg, var(--initial-bg) 50%, var(--hover-bg) 50%, var(--hover-bg));
   background-size: 250%;
   background-position-x: left;
   background-repeat: no-repeat;
@@ -27,9 +29,16 @@ input[type="submit"] {
     text-align: center;
   }
 
+  &.primary {
+    --initial-bg: var(--primary);
+    --hover-bg: var(--g0);
+    --initial-color: var(--g0);
+    --hover-color: var(--g8);
+  }
+
   &:hover,
   &:focus {
-    color: var(--g0);
+    color: var(--hover-color);
     background-position-x: 99%;
   }
 }
