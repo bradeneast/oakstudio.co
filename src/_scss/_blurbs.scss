@@ -12,17 +12,17 @@
 
   &__image {
     justify-self: start;
-    background: var(--g6);
+    background: var(--g7);
     height: var(--image-size);
     width: var(--image-size);
     border-radius: 50%;
 
     svg {
-      filter: drop-shadow(0 0.2em 0.5em var(--shadowColor));
+      filter: drop-shadow(var(--shadow));
     }
 
     svg path {
-      fill: var(--g2);
+      fill: $g8;
     }
   }
 

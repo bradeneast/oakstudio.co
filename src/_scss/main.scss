@@ -13,6 +13,27 @@
   --primary: #{$primary};
   --secondary: #{$secondary};
   --shadowColor: #0003;
+  --shadow: 0 0.2rem 0.2rem var(--shadowColor);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --g0: #{$g8};
+    --g1: #{$g8};
+    --g2: #{$g7};
+    --g3: #{$g6};
+    --g4: #{$g5};
+    --g5: #{$g4};
+    --g6: #{$g3};
+    --g7: #{$g2};
+    --g8: #{$g1};
+    --fontWeightRegular: 300;
+    --shadowColor: #0009;
+  }
+
+  .hero {
+    mix-blend-mode: lighten;
+  }
 }
 
 *,
@@ -63,28 +84,3 @@ img {
 @import "./forms";
 @import "./blurbs";
 @import "./schwifty";
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --g0: #{$g8};
-    --g1: #{$g7};
-    --g2: #{$g6};
-    --g3: #{$g5};
-    --g4: #{$g4};
-    --g5: #{$g3};
-    --g6: #{$g2};
-    --g7: #{$g1};
-    --g8: #{$g0};
-    --fontWeightRegular: 300;
-    --shadowColor: #0009;
-  }
-
-  .hero {
-    mix-blend-mode: lighten;
-  }
-
-  body,
-  article {
-    background: var(--g7);
-  }
-}

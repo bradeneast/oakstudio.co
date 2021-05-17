@@ -1,8 +1,3 @@
-body,
-article {
-  background: var(--g8);
-}
-
 body {
   display: grid;
   gap: 0;
@@ -10,6 +5,7 @@ body {
   place-items: start;
   place-content: start;
   justify-items: stretch;
+  background: var(--g8);
 }
 
 main {
@@ -26,12 +22,13 @@ main {
 }
 
 article {
-  box-shadow: 0 0 1rem var(--shadowColor);
+  box-shadow: var(--shadow);
   padding: $flow4;
   border-radius: $borderRadius;
   max-width: $mobile;
   margin: 0 auto;
   margin-top: -$flow6;
+  background: var(--g8);
 }
 
 .hero {

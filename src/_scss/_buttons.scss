@@ -21,6 +21,7 @@ input[type="submit"] {
   background-size: 250%;
   background-position-x: left;
   background-repeat: no-repeat;
+  box-shadow: var(--shadow);
 
   &.center {
     justify-self: center;
@@ -32,7 +33,7 @@ input[type="submit"] {
   &.primary {
     --initial-bg: var(--primary);
     --hover-bg: var(--g0);
-    --initial-color: var(--g0);
+    --initial-color: #{$g8};
     --hover-color: var(--g8);
   }
 
