@@ -25,7 +25,7 @@ function init() {
 
 init();
 
-new Schwifty({
-  preserveScroll: false,
-  onload: init
-})
+// new Schwifty({
+//   preserveScroll: false,
+//   onload: init
+// })
