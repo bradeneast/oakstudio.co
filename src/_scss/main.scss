@@ -19,20 +19,16 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --g0: #{$g8};
-    --g1: #{$g8};
-    --g2: #{$g7};
-    --g3: #{$g6};
-    --g4: #{$g5};
-    --g5: #{$g4};
-    --g6: #{$g3};
-    --g7: #{$g2};
-    --g8: #{$g1};
+    --g1: #{$g7};
+    --g2: #{$g6};
+    --g3: #{$g5};
+    --g4: #{$g4};
+    --g5: #{$g3};
+    --g6: #{$g2};
+    --g7: #{$g1};
+    --g8: #{$g0};
     --fontWeightRegular: 300;
     --shadowColor: #0009;
-  }
-
-  .hero {
-    mix-blend-mode: lighten;
   }
 }
 
@@ -75,6 +71,10 @@ img {
 
 .hidden {
   display: none;
+}
+
+.parallax {
+  transform: translate3d(0, calc(var(--offset) * 0.3px), 0);
 }
 
 @import "./layout";

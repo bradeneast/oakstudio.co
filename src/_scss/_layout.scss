@@ -29,6 +29,11 @@ article {
   margin: 0 auto;
   margin-top: -$flow6;
   background: var(--g8);
+  z-index: 10;
+
+  &.parallax {
+    transform: translateY(calc(var(--offset) * -0.5px));
+  }
 }
 
 .hero {
@@ -40,14 +45,25 @@ article {
   min-height: 75vh;
   overflow: hidden;
   background: $g0;
-  mix-blend-mode: difference;
   border-radius: 0 0 0 $borderRadius;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $g0;
+    opacity: 0.37;
+  }
 
   &__text {
     z-index: 3;
     width: 50%;
     min-width: 18rem;
     max-width: $mobile;
+    mix-blend-mode: lighten;
 
     &--subheading {
       color: $g8;
@@ -59,7 +75,7 @@ article {
   &__image {
     object-fit: cover;
     height: 100%;
-    filter: grayscale(1) contrast(10) brightness(0.63);
+    filter: grayscale(1) contrast(10);
     position: absolute;
     top: 0;
     left: 0;
@@ -74,6 +90,7 @@ footer {
 }
 
 footer {
+  z-index: 11;
   position: fixed;
   display: flex;
   text-align: right;
@@ -90,10 +107,16 @@ footer {
     place-content: start;
   }
 
+  footer {
+    position: relative;
+  }
+
   main {
     padding: 0;
+    padding-top: 5rem;
 
     article {
+      box-shadow: none;
       padding: $flow4 $flow2;
 
       &:first-child {
@@ -103,7 +126,7 @@ footer {
   }
 
   .hero {
-    min-height: 32em;
+    min-height: 28em;
     align-items: end;
     padding-top: 5rem;
     padding-bottom: $flow6;

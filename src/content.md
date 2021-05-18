@@ -1,5 +1,3 @@
-## What's our forte?
-
 <Import from="/Services.html"></Import>
 
 ## Why work with us?
