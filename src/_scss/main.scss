@@ -80,7 +80,7 @@ img {
 
 [data-parallax] {
   --offset: 0;
-  --perspective: 1;
+  --perspective: 0;
   transform: translate3d(0, calc(var(--offset) * var(--perspective) * 1px), 0);
 }
 

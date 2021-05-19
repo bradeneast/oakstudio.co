@@ -35,10 +35,9 @@ h1 {
   color: $g0;
   font-family: $altFont;
   font-style: italic;
-  font-variation-settings: "WONK" 1;
   text-transform: lowercase;
-  text-shadow: text-outline($g8);
   font-size: calc(11vmin + 5px);
+  text-shadow: text-outline($g8);
   mix-blend-mode: lighten;
   line-height: 0.9;
   margin-bottom: 0.2em;

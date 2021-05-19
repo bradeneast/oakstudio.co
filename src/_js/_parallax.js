@@ -1,9 +1,11 @@
-import { round, debounce, setProp } from './_utils';
+import { debounce, round, setProp } from './_utils';
 
+export function initParallax(parallaxItems) {
 
-export function watchParallax(parallaxItems) {
-  let updateItem = item => setProp(item, 'offset', round(scrollY - item.offsetTop));
-  let updateAll = () => parallaxItems.forEach(updateItem);
+  let updateParallaxItem = item =>
+    setProp(item, 'offset', round(scrollY - item.offsetTop, 2));
+  let updateAll = () => parallaxItems.forEach(updateParallaxItem);
+
   addEventListener('scroll', () => debounce(updateAll));
   updateAll();
 }

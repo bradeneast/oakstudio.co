@@ -1,5 +1,8 @@
 /**@returns {Number} */
-export let round = x => Math.round(x);
+export let round = (x, places = 0) =>
+  places
+    ? Math.round(x * 10 * places) / (10 * places)
+    : Math.round(x);
 
 /**@returns {HTMLElement} */
 export let $ = (selector, context = document) => context.querySelector(selector);

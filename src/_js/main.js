@@ -1,10 +1,10 @@
 import Schwifty from './schwifty';
 import { watchForms } from './_forms';
-import { watchParallax } from './_parallax';
-import { $$, debounce, round } from './_utils';
+import { initParallax } from './_parallax';
+import { $$ } from './_utils';
 
 function init() {
-  watchParallax($$('[data-parallax]'));
+  initParallax($$('[data-parallax]'));
   watchForms();
 }
 
