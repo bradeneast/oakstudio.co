@@ -4,7 +4,7 @@ import { watchParallax } from './_parallax';
 import { $$, debounce, round } from './_utils';
 
 function init() {
-  watchParallax($$('.parallax'));
+  watchParallax($$('[data-parallax]'));
   watchForms();
 }
 

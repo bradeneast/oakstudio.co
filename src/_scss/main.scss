@@ -12,6 +12,7 @@
   --g8: #{$g8};
   --primary: #{$primary};
   --secondary: #{$secondary};
+  --tertiary: #{$tertiary};
   --shadowColor: #0003;
   --shadow: 0 0.2rem 0.2rem var(--shadowColor);
 }
@@ -73,8 +74,20 @@ img {
   display: none;
 }
 
-.parallax {
-  transform: translate3d(0, calc(var(--offset) * 0.3px), 0);
+.flex {
+  display: flex;
+}
+
+[data-parallax] {
+  --offset: 0;
+  --perspective: 1;
+  transform: translate3d(0, calc(var(--offset) * var(--perspective) * 1px), 0);
+}
+
+@for $i from 1 to 10 {
+  [data-parallax="#{$i}"] {
+    --perspective: #{$i * 0.1};
+  }
 }
 
 @import "./layout";

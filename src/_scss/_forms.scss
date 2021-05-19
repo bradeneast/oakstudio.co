@@ -41,6 +41,13 @@ form {
     width: 100%;
     font-family: $altFont;
     font-style: italic;
+    color: var(--g2);
+    transition: color $colorTransition;
+
+    &:hover,
+    &:focus-within {
+      color: var(--g0);
+    }
   }
 
   input,
@@ -51,6 +58,8 @@ form {
     background: none;
     border: $borderWidth $borderStyle var(--g4);
     border-radius: $borderRadius;
+    color: var(--g0);
+    transition: border-color $colorTransition;
 
     &:hover {
       border-color: var(--g3);

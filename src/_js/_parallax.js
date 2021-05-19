@@ -1,23 +1,9 @@
-import { round, debounce } from './_utils';
+import { round, debounce, setProp } from './_utils';
 
 
 export function watchParallax(parallaxItems) {
-  let intersectingParallaxEntries = [];
-  let observer = new IntersectionObserver(entries =>
-    intersectingParallaxEntries = entries.filter(entry => entry.isIntersecting),
-    {
-      threshold: .1,
-      rootMargin: "50%"
-    }
-  )
-
-  parallaxItems.forEach(item => observer.observe(item));
-
-  addEventListener('scroll', () =>
-    debounce(() =>
-      intersectingParallaxEntries.forEach(entry =>
-        entry.target.style.setProperty('--offset', round(scrollY - entry.target.scrollTop))
-      )
-    )
-  )
+  let updateItem = item => setProp(item, 'offset', round(scrollY - item.offsetTop));
+  let updateAll = () => parallaxItems.forEach(updateItem);
+  addEventListener('scroll', () => debounce(updateAll));
+  updateAll();
 }

@@ -17,3 +17,5 @@ export let debounce = (callback) => requestAnimationFrame(thisFrame => {
     callback();
   }
 })
+
+export let setProp = (elem, propName, propValue) => elem.style.setProperty(`--${propName}`, propValue);

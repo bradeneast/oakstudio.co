@@ -9,6 +9,7 @@ $g7: #e7e9ee;
 $g8: white;
 $primary: #fe3b1f;
 $secondary: #00c7c7;
+$tertiary: #225dff;
 $flow1: 1rem;
 $flow2: 1.63rem;
 $flow3: 3rem;
@@ -41,7 +42,7 @@ $fallback: showFallback 5s forwards;
 @font-face {
   font-family: "Fraunces Italic";
   src: url("/_assets/fonts/Fraunces-Italic--latin_basic.woff2") format("woff2-variations");
-  font-variation-settings: "opsz" "72pt", "wght", 700, "SOFT", 0, "WONK", 1;
+  font-variation-settings: "opsz" "72pt", "wght" 700, "SOFT" 0, "WONK" 0;
   font-weight: 100 900;
   font-style: italic;
   font-display: block;

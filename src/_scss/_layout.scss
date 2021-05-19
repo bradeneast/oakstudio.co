@@ -1,7 +1,7 @@
 body {
   display: grid;
   gap: 0;
-  grid-template-columns: calc(7em + #{$flow2}) 1fr;
+  grid-template-columns: 8em 1fr;
   place-items: start;
   place-content: start;
   justify-items: stretch;
@@ -22,14 +22,9 @@ main {
 }
 
 article {
-  box-shadow: var(--shadow);
   padding: $flow4;
-  border-radius: $borderRadius;
+  padding-top: $flow6;
   max-width: $mobile;
-  margin: 0 auto;
-  margin-top: -$flow6;
-  background: var(--g8);
-  z-index: 10;
 
   &.parallax {
     transform: translateY(calc(var(--offset) * -0.5px));
@@ -37,48 +32,54 @@ article {
 }
 
 .hero {
-  padding: 5%;
-  padding-bottom: $flow4;
-  display: grid;
+  display: flex;
   align-items: center;
   height: auto;
-  min-height: 75vh;
-  overflow: hidden;
+  min-height: 63vh;
+  padding: 5%;
+  padding-bottom: $flow4;
   background: $g0;
-  border-radius: 0 0 0 $borderRadius;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: $g0;
-    opacity: 0.37;
-  }
-
-  &__text {
+  &__heading,
+  &__subheading {
     z-index: 3;
-    width: 50%;
+    width: 80vmin;
     min-width: 18rem;
     max-width: $mobile;
-    mix-blend-mode: lighten;
+  }
 
-    &--subheading {
-      color: $g8;
-      line-height: 1.1;
-      font-size: 150%;
-    }
+  &__heading {
+    mix-blend-mode: lighten;
+  }
+
+  &__subheading {
+    z-index: 10;
+    position: absolute;
+    top: calc(100% - #{$flow4});
+    right: 0;
+    text-align: center;
+    font-family: $altFont;
+    font-style: italic;
+    border-radius: $borderRadius 0 0 $borderRadius;
+    box-shadow: var(--shadow);
+    padding: $flow3;
+    line-height: 1.1;
+    font-size: 1.5em;
+    background-color: var(--g0);
+    color: var(--g8);
   }
 
   &__image {
-    object-fit: cover;
-    height: 100%;
-    filter: grayscale(1) contrast(10);
     position: absolute;
+    overflow: hidden;
+    border-radius: 0 0 0 $borderRadius;
     top: 0;
     left: 0;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -112,12 +113,11 @@ footer {
   }
 
   main {
-    padding: 0;
-    padding-top: 5rem;
+    padding: $flow4 0;
 
     article {
       box-shadow: none;
-      padding: $flow4 $flow2;
+      padding: $flow2 $flow2;
 
       &:first-child {
         margin-top: 0;
@@ -126,10 +126,24 @@ footer {
   }
 
   .hero {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: $flow3;
     min-height: 28em;
-    align-items: end;
-    padding-top: 5rem;
-    padding-bottom: $flow6;
+    padding-top: $flow6;
+
+    &__subheading {
+      border-radius: $borderRadius;
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+    }
+
+    &__image {
+      border-radius: 0 0 $borderRadius $borderRadius;
+    }
   }
 
   header {

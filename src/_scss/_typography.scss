@@ -35,6 +35,7 @@ h1 {
   color: $g0;
   font-family: $altFont;
   font-style: italic;
+  font-variation-settings: "WONK" 1;
   text-transform: lowercase;
   text-shadow: text-outline($g8);
   font-size: calc(11vmin + 5px);
@@ -53,6 +54,8 @@ h1 {
 }
 
 h2 {
+  font-family: $altFont;
+  font-style: italic;
   font-size: calc(5vmin + 2px);
 }
 

@@ -13,17 +13,9 @@
 <body>
   <Import from="/_/Nav.html"></Import>
   <main>
-    <div class="hero">
-      <div class="hero__text">
-        <h1 class="hero__text--heading">
-          <Slot name="Heading">{*Title*}</Slot>
-        </h1>
-        <div class="hero__text--subheading">
-          <Slot name="SubHeading"></Slot>
-        </div>
-      </div>
-      <img src="/_assets/images/{*Image*}" alt="" class="hero__image parallax">
-    </div>
+    <header>
+      <Slot name="Header"></Slot>
+    </header>
     <article>
       <Slot name="Content"></Slot>
     </article>
