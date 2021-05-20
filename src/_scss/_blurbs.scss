@@ -1,17 +1,18 @@
 .blurb {
   --image-size: 5rem;
-  display: grid;
-  align-items: start;
-  gap: $flow1;
-  grid-template-columns: auto 1fr;
-  margin-top: $flow3;
+  text-align: center;
+  padding: $flow2;
+  background: var(--g7);
+  max-width: 32rem;
+  border-radius: $borderRadius;
 
   * {
     margin: 0;
   }
 
   &__image {
-    justify-self: start;
+    margin: 0 auto;
+    margin-bottom: $flow2;
     background: var(--g6);
     height: var(--image-size);
     width: var(--image-size);

@@ -5,7 +5,7 @@ input[type="submit"] {
   --hover-bg: var(--primary);
   --initial-color: var(--g8);
   --hover-color: var(--g0);
-  font-size: 1.37rem;
+  font-size: 1.2rem;
   color: var(--initial-color);
   display: inline-block;
   cursor: pointer;
@@ -49,8 +49,6 @@ input[type="submit"] {
   button,
   a.button,
   input[type="submit"] {
-    font-size: 1.2rem;
-
     &.center {
       width: 100%;
     }

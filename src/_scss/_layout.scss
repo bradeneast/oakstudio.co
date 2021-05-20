@@ -27,62 +27,15 @@ main {
 
 article {
   padding: $flow4;
-  max-width: $mobile;
+
+  & > *:not(.bleed) {
+    max-width: $mobile;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &.parallax {
     transform: translateY(calc(var(--offset) * -0.5px));
-  }
-}
-
-.hero {
-  height: auto;
-  padding: $flow4 0 $flow4 5%;
-
-  &__heading,
-  &__subheading {
-    z-index: 3;
-    width: 80vmin;
-    min-width: 18rem;
-    max-width: $mobile;
-    margin-left: auto;
-  }
-
-  &__heading {
-    padding-top: $flow4;
-    justify-self: end;
-    mix-blend-mode: lighten;
-  }
-
-  &__subheading {
-    font-family: $altFont;
-    font-style: italic;
-    padding: $flow3;
-    line-height: 1.1;
-    font-size: 1.5em;
-    margin-top: $flow4;
-    color: $g8;
-    border: $borderWidth $borderStyle currentColor;
-    border-radius: $borderRadius 0 0 $borderRadius;
-    border-right: none;
-
-    & > :last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border: $flow1 solid var(--g8);
-    overflow: hidden;
-
-    img {
-      height: 100%;
-      filter: brightness(60%) url(#noise);
-      transform: scale(1.2);
-    }
   }
 }
 
@@ -125,19 +78,6 @@ footer {
       &:first-child {
         margin-top: 0;
       }
-    }
-  }
-
-  .hero {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 0;
-    justify-content: center;
-    min-height: 28em;
-
-    &__subheading {
-      padding: $flow2;
-      margin: $flow3 0 0 0;
     }
   }
 

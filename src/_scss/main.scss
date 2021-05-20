@@ -70,30 +70,11 @@ img {
   height: auto;
 }
 
-.hidden {
-  display: none;
-}
-
-.flex {
-  display: flex;
-}
-
-[data-parallax] {
-  --offset: 0;
-  --perspective: 0;
-  transform: translate3d(0, calc(var(--offset) * var(--perspective) * 1px), 0);
-}
-
-@for $i from 1 to 10 {
-  [data-parallax="#{$i}"] {
-    --perspective: #{$i * 0.1};
-  }
-}
-
 @import "./layout";
 @import "./typography";
 @import "./buttons";
+@import "./util";
 @import "./nav";
 @import "./forms";
 @import "./blurbs";
-// @import "./schwifty";
+@import "./hero";

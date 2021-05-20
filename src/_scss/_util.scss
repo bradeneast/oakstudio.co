@@ -1,0 +1,40 @@
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-4 {
+  grid-gap: $flow4;
+  gap: $flow4;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ji-space-around {
+  justify-items: space-around;
+}
+
+.ji-space-between {
+  justify-items: space-between;
+}
+
+[data-parallax] {
+  --offset: 0;
+  --perspective: 0;
+  transform: translate3d(0, calc(var(--offset) * var(--perspective) * 1px), 0);
+}
+
+@for $i from 1 to 10 {
+  [data-parallax="#{$i}"] {
+    --perspective: #{$i * 0.1};
+  }
+}
