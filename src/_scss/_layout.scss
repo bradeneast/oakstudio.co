@@ -18,12 +18,15 @@ main {
 
   * + * {
     margin-bottom: $flow2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 article {
   padding: $flow4;
-  padding-top: $flow6;
   max-width: $mobile;
 
   &.parallax {
@@ -32,13 +35,8 @@ article {
 }
 
 .hero {
-  display: flex;
-  align-items: center;
   height: auto;
-  min-height: 63vh;
-  padding: 5%;
-  padding-bottom: $flow4;
-  background: $g0;
+  padding: $flow4 0 $flow4 5%;
 
   &__heading,
   &__subheading {
@@ -46,39 +44,44 @@ article {
     width: 80vmin;
     min-width: 18rem;
     max-width: $mobile;
+    margin-left: auto;
   }
 
   &__heading {
+    padding-top: $flow4;
+    justify-self: end;
     mix-blend-mode: lighten;
   }
 
   &__subheading {
-    z-index: 10;
-    position: absolute;
-    top: calc(100% - #{$flow4});
-    right: 0;
-    text-align: center;
     font-family: $altFont;
     font-style: italic;
-    border-radius: $borderRadius 0 0 $borderRadius;
-    box-shadow: var(--shadow);
     padding: $flow3;
     line-height: 1.1;
     font-size: 1.5em;
-    background-color: var(--g0);
-    color: var(--g8);
+    margin-top: $flow4;
+    color: $g8;
+    border: $borderWidth $borderStyle currentColor;
+    border-radius: $borderRadius 0 0 $borderRadius;
+    border-right: none;
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__image {
     position: absolute;
-    overflow: hidden;
-    border-radius: 0 0 0 $borderRadius;
     top: 0;
     left: 0;
     height: 100%;
+    border: $flow1 solid var(--g8);
+    overflow: hidden;
 
     img {
       height: 100%;
+      filter: brightness(60%) url(#noise);
+      transform: scale(1.2);
     }
   }
 }
@@ -131,23 +134,10 @@ footer {
     gap: 0;
     justify-content: center;
     min-height: 28em;
-    padding: $flow4 $flow2 0 $flow2;
 
     &__subheading {
+      padding: $flow2;
       margin: $flow3 0 0 0;
-      border-radius: $borderRadius;
-      position: relative;
-      left: auto;
-      right: auto;
-      top: auto;
-
-      [data-parallax] {
-        overflow: visible;
-      }
-    }
-
-    &__image {
-      border-radius: 0 0 $borderRadius $borderRadius;
     }
   }
 

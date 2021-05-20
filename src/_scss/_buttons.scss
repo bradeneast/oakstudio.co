@@ -5,23 +5,24 @@ input[type="submit"] {
   --hover-bg: var(--primary);
   --initial-color: var(--g8);
   --hover-color: var(--g0);
+  font-size: 1.37rem;
   color: var(--initial-color);
-  display: inline;
+  display: inline-block;
   cursor: pointer;
   font-family: $textFont;
   font-weight: $fontWeightHeavy;
+  font-style: normal;
   padding: 0.8em 1em;
   text-decoration: none;
   text-transform: uppercase;
   margin-bottom: $flow2;
   border: none;
   border-radius: $borderRadius;
-  transition: background-position $smoothTransition, color $smoothTransition;
+  transition: background-position $smoothTransition, color $smoothTransition, box-shadow $colorTransition;
   background-image: linear-gradient(72deg, var(--initial-bg) 50%, var(--hover-bg) 50%, var(--hover-bg));
   background-size: 250%;
   background-position-x: left;
   background-repeat: no-repeat;
-  box-shadow: var(--shadow);
 
   &.center {
     justify-self: center;
@@ -48,9 +49,10 @@ input[type="submit"] {
   button,
   a.button,
   input[type="submit"] {
+    font-size: 1.2rem;
+
     &.center {
       width: 100%;
-      display: block;
     }
   }
 }

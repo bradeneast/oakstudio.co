@@ -1,16 +1,21 @@
 <Import from="/_/Layout.html">
+
   <Title>
     <Slot name="Title"></Slot>
   </Title>
+
   <Image>
     <Slot name="Image"></Slot>
   </Image>
+
   <Heading>
     <Slot name="Heading"></Slot>
   </Heading>
+
   <SubHeading>
     <Slot name="SubHeading"></Slot>
   </SubHeading>
+
   <Header>
     <div class="hero">
       <h1 class="hero__heading">
@@ -19,12 +24,14 @@
       <div class="hero__subheading" data-parallax="1">
         <Slot name="SubHeading"></Slot>
       </div>
-      <div class="hero__image">
-        <img data-parallax="4" src="/_assets/images/{*Image*}" alt="">
+      <div class="hero__image" data-parallax="2">
+        <img src="/_assets/images/{*Image*}" alt="">
       </div>
     </div>
   </Header>
+
   <Content>
     <Slot name="Content"></Slot>
   </Content>
+
 </Import>
