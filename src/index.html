@@ -1,14 +1,20 @@
 <Import from="/_/$/Hero.html">
+
   <Title>Home</Title>
   <Image>leaves_raw.jpg</Image>
+
   <Heading>
     <style>
+      .split-headline {
+        display: flex;
+      }
+
       .split-headline div {
         padding: 0 0.2em;
         margin: 0 -0.2em;
       }
     </style>
-    <div class="split-headline flex" style="line-height: 0;">
+    <div class="split-headline" style="line-height: 0;">
       <div data-parallax="1">D</div>
       <div data-parallax="5">o</div>
       &nbsp;
@@ -24,9 +30,33 @@
     </div>
     <strong><em>permanent.</em></strong>
   </Heading>
+
   <SubHeading>
-    <p>We've helped dozens family-owned (and family-minded) businesses establish brands that endure.</p>
+    <p>We've helped dozens family-owned (and family-minded) businesses establish <em>brands that endure</em>.</p>
     <a href="/contact" class="button primary">Talk to Us</a>
   </SubHeading>
+
+  <Feature>
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <div class="carousel__item selected">
+          <img src="/_assets/images/ete/sack.jpg" alt="">
+        </div>
+        <div class="carousel__item">
+          <img src="/_assets/images/harmony-health/clothing.jpg" alt="">
+        </div>
+        <div class="carousel__item">
+          <img src="/_assets/images/judes/coffee-cup.jpg" alt="">
+        </div>
+        <div class="carousel__item">
+          <img src="/_assets/images/elderberry-wine-company/menu.jpg" alt="">
+        </div>
+        <div class="carousel__item">
+          <img src="/_assets/images/360-farms/360-office.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </Feature>
+
   <Content from="./content.md"></Content>
 </Import>

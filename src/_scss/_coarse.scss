@@ -1,0 +1,66 @@
+.carousel-wrapper {
+  align-self: center;
+  overflow: hidden;
+  height: 63vh;
+  max-width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 0;
+  height: 100%;
+  transition: $smoothTransition;
+
+  .selected {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.63;
+    transform: translate3d(0, 0, 0) scale(0.8);
+    transition: $smoothTransition;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.coarse-dot-navigation {
+  display: flex;
+  gap: $flow1;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coarse-dot-navigation button {
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  border-radius: 50%;
+  opacity: 0.63;
+  transform: scale(0.63);
+  background: var(--g8);
+
+  &.selected {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .carousel-wrapper {
+    height: 37vh;
+  }
+}

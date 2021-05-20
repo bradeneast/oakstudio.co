@@ -17,16 +17,19 @@
   </SubHeading>
 
   <Header>
-    <div class="hero">
-      <h1 class="hero__heading">
-        <Slot name="Heading">{*Title*}</Slot>
-      </h1>
-      <div class="hero__subheading" data-parallax="1">
-        <Slot name="SubHeading"></Slot>
+    <div class="hero grid gap-4 col-2 ac-end">
+      <div class="hero__image" data-parallax="1">
+        <img aria-hidden="true" src="/_assets/images/{*Image*}">
       </div>
-      <div class="hero__image" data-parallax="2">
-        <img src="/_assets/images/{*Image*}" alt="">
+      <div>
+        <h1 class="hero__heading">
+          <Slot name="Heading">{*Title*}</Slot>
+        </h1>
+        <div class="hero__subheading">
+          <Slot name="SubHeading"></Slot>
+        </div>
       </div>
+      <Slot name="Feature"></Slot>
     </div>
   </Header>
 

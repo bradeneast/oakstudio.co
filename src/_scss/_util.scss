@@ -2,6 +2,12 @@
   display: none;
 }
 
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -10,9 +16,44 @@
   display: grid;
 }
 
+.col-2 {
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+}
+
 .gap-4 {
   grid-gap: $flow4;
   gap: $flow4;
+}
+
+.gap-3 {
+  grid-gap: $flow3;
+  gap: $flow3;
+}
+
+.gap-2 {
+  grid-gap: $flow2;
+  gap: $flow2;
+}
+
+.gap-1 {
+  grid-gap: $flow1;
+  gap: $flow1;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+ai-end {
+  align-items: end;
+}
+
+.ac-center {
+  align-content: center;
+}
+
+ac-end {
+  align-content: end;
 }
 
 .jc-center {
@@ -36,5 +77,16 @@
 @for $i from 1 to 10 {
   [data-parallax="#{$i}"] {
     --perspective: #{$i * 0.1};
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .flex {
+    flex-flow: row wrap;
+  }
+
+  .col-2,
+  .col-3 {
+    grid-template-columns: 1fr;
   }
 }

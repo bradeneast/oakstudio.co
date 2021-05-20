@@ -1,20 +1,10 @@
 body {
-  display: grid;
-  gap: 0;
-  grid-template-columns: 8em 1fr;
-  place-items: start;
-  place-content: start;
-  justify-items: stretch;
   background: var(--g8);
 }
 
 main {
   grid-column-end: -1;
   padding-bottom: $flow4;
-
-  :first-child {
-    margin-top: 0;
-  }
 
   * + * {
     margin-bottom: $flow2;
@@ -53,7 +43,7 @@ footer {
   text-align: right;
   bottom: 0;
   right: 0;
-  padding: $flow1;
+  padding: $flow2;
 }
 
 @media screen and (max-width: $mobile) {
@@ -69,8 +59,6 @@ footer {
   }
 
   main {
-    padding: $flow4 0;
-
     article {
       box-shadow: none;
       padding: $flow2 $flow2;

@@ -2,7 +2,7 @@
   --image-size: 5rem;
   text-align: center;
   padding: $flow2;
-  background: var(--g7);
+  border: $borderWidth $borderStyle var(--g6);
   max-width: 32rem;
   border-radius: $borderRadius;
 
@@ -11,8 +11,7 @@
   }
 
   &__image {
-    margin: 0 auto;
-    margin-bottom: $flow2;
+    margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
     background: var(--g6);
     height: var(--image-size);
     width: var(--image-size);

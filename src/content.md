@@ -9,4 +9,4 @@ From 5 years of working with individuals, small businesses, and large nonprofits
 
 <br />
 
-<a class="button" href="/contact">Schedule a Call</a>
+<div class="center"><a class="button" href="/contact">Schedule a Call</a></div>
