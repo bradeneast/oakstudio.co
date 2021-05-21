@@ -47,4 +47,11 @@ nav {
 }
 
 @media screen and (max-width: $mobile) {
+  nav {
+    padding: $flow1;
+
+    #logo {
+      width: 4.5em;
+    }
+  }
 }
