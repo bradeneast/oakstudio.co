@@ -1,7 +1,5 @@
 ## Let's talk.
 
-Fill out the form below and we'll get back to you in no time.
-
-_Fields marked with an asterisk (*) are required._
+Let us know who you are and how we might be able to help. We'll get back to you in no time.
 
 <Import from="/_/ContactForm.html"></Import>

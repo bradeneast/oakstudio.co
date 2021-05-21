@@ -1,9 +1,11 @@
 .blurb {
   --image-size: 5rem;
+  display: inline-block;
   text-align: center;
   padding: $flow2;
   border: $borderWidth $borderStyle var(--g6);
   max-width: 32rem;
+  margin: 0 auto;
   border-radius: $borderRadius;
 
   * {
@@ -28,11 +30,5 @@
 
   &__desc {
     margin: $flow1 / 2 0;
-  }
-}
-
-@media screen and (max-width: $mobile) {
-  .blurb {
-    grid-template-columns: 1fr;
   }
 }

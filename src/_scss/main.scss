@@ -31,6 +31,10 @@
     --fontWeightRegular: 300;
     --shadowColor: #0009;
   }
+
+  html body {
+    color: var(--g2);
+  }
 }
 
 *,
@@ -74,8 +78,8 @@ img {
 @import "./typography";
 @import "./buttons";
 @import "./util";
-@import "./nav";
 @import "./forms";
 @import "./blurbs";
 @import "./hero";
 @import "./coarse";
+@import "./nav";

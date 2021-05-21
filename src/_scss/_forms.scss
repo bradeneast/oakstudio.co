@@ -3,9 +3,22 @@ form {
   place-items: start;
   flex-flow: row wrap;
   gap: $flow1;
-  padding: $flow2;
+  padding: $flow3;
+  margin: $flow4 0;
   border: $borderWidth $borderStyle var(--secondary);
   border-radius: $borderRadius;
+
+  &::before {
+    position: absolute;
+    top: $flow1;
+    right: $flow1;
+    left: $flow1;
+    text-align: right;
+    content: "Fields marked with an asterisk (*) are required.";
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--g3);
+  }
 
   * {
     margin-bottom: 0;
@@ -105,6 +118,7 @@ form {
 
 @media screen and (max-width: $mobile) {
   form {
+    padding: $flow2;
     display: block;
 
     & > * {

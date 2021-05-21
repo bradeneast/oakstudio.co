@@ -11,26 +11,18 @@
 </Import>
 
 <body>
-  <Import from="/_/Nav.html"></Import>
+
+  <header>
+    <Import from="/_/Nav.html"></Import>
+    <Slot name="Header"></Slot>
+  </header>
+
   <main>
-    <header>
-      <Slot name="Header"></Slot>
-    </header>
-    <article>
-      <Slot name="Content"></Slot>
-    </article>
+    <Slot name="Content"></Slot>
   </main>
 
   <footer>&copy; {% new Date().getFullYear() %} {*SiteName*}</footer>
 
-  <svg aria-hidden="true" width="0" height="0">
-    <defs>
-      <filter id="noise" style="transform: translate3d(0,0,0)" x="-10%" y="-10%" width="120%" height="120%">
-        <feTurbulence stitchTiles="stitch" baseFrequency="0.01 0.01" numOctaves="4" result="NOISE" />
-        <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="100" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>
-      </filter>
-    </defs>
-  </svg>
 </body>
 
 </html>

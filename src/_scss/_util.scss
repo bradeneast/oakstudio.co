@@ -2,6 +2,12 @@
   display: none;
 }
 
+.right {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
 .center {
   text-align: center;
   margin-left: auto;
@@ -20,44 +26,72 @@
   grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
 }
 
-.gap-4 {
-  grid-gap: $flow4;
-  gap: $flow4;
+.col-3 {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 }
 
-.gap-3 {
-  grid-gap: $flow3;
-  gap: $flow3;
-}
-
-.gap-2 {
-  grid-gap: $flow2;
-  gap: $flow2;
+.col-4 {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .gap-1 {
-  grid-gap: $flow1;
   gap: $flow1;
+}
+
+.gap-2 {
+  gap: $flow2;
+}
+
+.gap-3 {
+  gap: $flow3;
+}
+
+.gap-4 {
+  gap: $flow4;
+}
+
+.ai-start {
+  align-items: start;
 }
 
 .ai-center {
   align-items: center;
 }
 
-ai-end {
+.ai-end {
   align-items: end;
+}
+
+.ac-start {
+  align-content: start;
 }
 
 .ac-center {
   align-content: center;
 }
 
-ac-end {
+.ac-end {
   align-content: end;
+}
+
+.jc-start {
+  justify-content: start;
 }
 
 .jc-center {
   justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.ai-space-around {
+  align-items: space-around;
+}
+
+.ai-space-between {
+  align-items: space-between;
 }
 
 .ji-space-around {
@@ -81,12 +115,12 @@ ac-end {
 }
 
 @media screen and (max-width: $mobile) {
-  .flex {
-    flex-flow: row wrap;
-  }
-
   .col-2,
   .col-3 {
     grid-template-columns: 1fr;
+  }
+
+  .flex {
+    flex-flow: row wrap;
   }
 }

@@ -30,6 +30,10 @@ export default class Coarse {
     let slidesLength = slides.length;
     let selectedSlide = carouselElement.querySelector(`.${selectedClass}`);
     let wrapper = carouselElement.parentElement;
+    let advancer;
+
+    if (autoScroll)
+      advancer = setInterval(() => goTo(currentIndex + 1), autoScroll);
 
 
 
@@ -57,7 +61,7 @@ export default class Coarse {
       let client = event.changedTouches ? event.changedTouches[0] : event;
       let change = client.clientX - swipeStartPosition;
       if (change < swipeSensitivity * 100 - 100) goTo(currentIndex + 1);
-      if (change > 100 - swipeSensitivity * 100) goTo(currentIndex - 1);
+      if (change > 100 - swipeSensitivity * 100) goTo(currentIndex - 1); clearInterval(advancer)
     }
 
     let goTo = index => {
@@ -160,20 +164,18 @@ export default class Coarse {
     );
 
     listen('focusin', event => {
+      clearInterval(advancer)
       let closestCoarse = getClosestCoarse(event);
       if (slides.indexOf(closestCoarse) > -1)
         goTo(closestCoarse.getAttribute(hookAttribute));
     }, wrapper);
 
     listen('click', event => {
+      clearInterval(advancer)
       let closestCoarse = getClosestCoarse(event);
       if (closestCoarse)
         goTo(closestCoarse.getAttribute(hookAttribute));
     }, wrapper);
-
-    if (autoScroll) {
-      setInterval(() => goTo(currentIndex + 1), autoScroll);
-    }
 
     if (swipeSensitivity > 0) {
       listen('mousedown', startSwipe, wrapper);

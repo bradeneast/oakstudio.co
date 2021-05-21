@@ -3,9 +3,9 @@ body {
   font-family: $textFont;
   font-feature-settings: off;
   font-variant-ligatures: normal;
-  color: var(--g2);
+  color: var(--g3);
   font-weight: $fontWeightRegular;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 h1,
@@ -32,21 +32,27 @@ h6 {
 }
 
 h1 {
-  color: $g0;
   font-family: $altFont;
   font-style: italic;
   text-transform: lowercase;
   font-size: calc(11vmin + 5px);
-  text-shadow: text-outline($g8);
-  mix-blend-mode: lighten;
   line-height: 0.9;
   margin-bottom: 0.2em;
   margin-left: -0.07em;
 
+  @supports (mix-blend-mode: difference) {
+    color: $g0;
+    text-shadow: text-outline($g8);
+    mix-blend-mode: difference;
+
+    em {
+      color: $g8;
+    }
+  }
+
   em {
     font-style: normal;
     font-family: $textFont;
-    color: $g8;
     letter-spacing: -0.07em;
     text-shadow: none;
   }
@@ -116,7 +122,7 @@ del {
 
 ul,
 ol {
-  padding-left: $flow1;
+  padding-left: $flow2;
 }
 
 li + li {

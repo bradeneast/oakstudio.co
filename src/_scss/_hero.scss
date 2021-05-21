@@ -1,6 +1,5 @@
 .hero {
-  height: auto;
-  padding: $flow6 0;
+  margin-bottom: $flow4;
 
   &__heading,
   &__subheading {
@@ -12,18 +11,11 @@
   }
 
   &__heading {
-    padding-top: $flow4;
+    padding-top: $flow6;
     padding-bottom: 0;
-    mix-blend-mode: lighten;
   }
 
   &__subheading {
-    font-family: $altFont;
-    font-style: italic;
-    line-height: 1.1;
-    font-size: 1.5em;
-    margin-top: $flow4;
-    color: $g8;
     border: $borderWidth $borderStyle currentColor;
     border-radius: 0 $borderRadius $borderRadius 0;
     border-left: none;
@@ -36,20 +28,16 @@
       margin-bottom: 0;
     }
   }
+}
 
-  &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border: $flow1 solid var(--g8);
-    background: var(--g8);
-    overflow: hidden;
+@media screen and (max-width: $mobile) {
+  .hero {
+    padding-top: $flow4;
 
-    img {
-      height: 100%;
-      filter: brightness(60%) url(#noise);
-      transform: scale(1.2);
+    &__subheading {
+      padding-top: $flow2;
+      padding-bottom: $flow2;
+      padding-right: $flow2;
     }
   }
 }
