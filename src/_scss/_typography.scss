@@ -32,7 +32,7 @@ h6 {
 }
 
 h1 {
-  font-family: $altFont;
+  font-family: $displayFont;
   font-style: italic;
   text-transform: lowercase;
   font-size: calc(11vmin + 5px);
@@ -59,7 +59,7 @@ h1 {
 }
 
 h2 {
-  font-family: $altFont;
+  font-family: $displayFont;
   font-style: italic;
   font-size: calc(5vmin + 2px);
 }
