@@ -5,17 +5,18 @@ import { initParallax } from './_parallax';
 import { $$ } from './_utils';
 
 function init() {
-  initParallax($$('[data-parallax]'));
+
   watchForms();
+
+  initParallax($$('[data-parallax]'));
+
   $$('.carousel').forEach(carousel =>
-    new Coarse(
-      carousel,
+    new Coarse(carousel,
       {
         renderControls: false,
         autoScroll: 5000
       }
-    )
-  );
+    ));
 }
 
 init();
