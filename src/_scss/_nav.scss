@@ -23,11 +23,12 @@ nav {
   }
 
   [role="menu"] {
+    display: flex;
     margin-left: auto;
-    gap: $flow1;
 
     a {
-      display: inline;
+      margin-left: $flow1;
+      display: inline-block;
       padding-left: 0.2em;
       transform: translateX(-0.2em);
       text-decoration: none;
