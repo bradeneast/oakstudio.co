@@ -35,7 +35,7 @@ h1 {
   font-family: $displayFont;
   font-style: italic;
   text-transform: lowercase;
-  font-size: calc(11vmin + 5px);
+  font-size: calc(11vmin + 10px);
   line-height: 0.9;
   margin-bottom: 0.2em;
   margin-left: -0.07em;
@@ -61,12 +61,12 @@ h1 {
 h2 {
   font-family: $displayFont;
   font-style: italic;
-  font-size: calc(5vmin + 2px);
+  font-size: calc(4vmin + 15px);
 }
 
 h3,
 blockquote {
-  font-size: calc(2vmin + 10px);
+  font-size: calc(2.5vmin + 12px);
 }
 
 h4 {

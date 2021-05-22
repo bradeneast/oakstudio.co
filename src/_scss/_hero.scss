@@ -14,30 +14,16 @@
     padding-top: $flow6;
     padding-bottom: 0;
   }
-
-  &__subheading {
-    border: $borderWidth $borderStyle currentColor;
-    border-radius: 0 $borderRadius $borderRadius 0;
-    border-left: none;
-
-    & > :first-child {
-      margin-top: 0;
-    }
-
-    & > :last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media screen and (max-width: $mobile) {
   .hero {
     padding-top: $flow4;
 
+    &__heading,
     &__subheading {
-      padding-top: $flow2;
-      padding-bottom: $flow2;
-      padding-right: $flow2;
+      padding-left: $flow2;
+      padding-right: 0;
     }
   }
 }

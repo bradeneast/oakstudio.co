@@ -5,7 +5,7 @@ input[type="submit"] {
   --hover-bg: var(--g7);
   --initial-color: var(--g8);
   --hover-color: var(--g0);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--initial-color);
   display: inline-block;
   cursor: pointer;
@@ -36,6 +36,13 @@ input[type="submit"] {
     --hover-bg: var(--g0);
     --initial-color: #{$g8};
     --hover-color: var(--g8);
+  }
+
+  &.hollow {
+    --initial-bg: transparent;
+    --hover-bg: var(--g6);
+    --initial-color: var(--g0);
+    border: $borderWidth $borderStyle var(--g6);
   }
 
   &:hover,

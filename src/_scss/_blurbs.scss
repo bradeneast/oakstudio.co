@@ -7,9 +7,26 @@
   max-width: 32rem;
   margin: 0 auto;
   border-radius: $borderRadius;
+  transition: $smoothTransition;
+
+  &:hover,
+  &:focus-within {
+    .blurb__image {
+      border-color: transparent;
+      background: var(--primary);
+    }
+  }
 
   * {
     margin: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    margin-top: $flow1;
   }
 
   &__image {
@@ -18,6 +35,9 @@
     height: var(--image-size);
     width: var(--image-size);
     border-radius: 50%;
+    border: inherit;
+    border-color: var(--g8);
+    transition: $colorTransition;
 
     svg {
       filter: drop-shadow(var(--shadow));
