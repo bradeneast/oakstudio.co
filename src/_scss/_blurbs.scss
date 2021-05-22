@@ -1,5 +1,5 @@
 .blurb {
-  --image-size: 5rem;
+  --image-size: 7rem;
   display: inline-block;
   text-align: center;
   padding: $flow2;
@@ -7,17 +7,11 @@
   max-width: 32rem;
   margin: 0 auto;
   border-radius: $borderRadius;
-  transition: $smoothTransition;
+  transition: border-color $smoothTransition;
 
   &:hover,
   &:focus-within {
-    background: var(--g7);
     border-color: var(--primary);
-
-    .blurb__image {
-      border-color: transparent;
-      background: var(--primary);
-    }
   }
 
   * {
@@ -34,20 +28,14 @@
 
   &__image {
     margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
-    background: var(--g6);
+    background: var(--g8);
     height: var(--image-size);
     width: var(--image-size);
     border-radius: 50%;
-    border: inherit;
-    border-color: var(--g8);
     transition: $colorTransition;
 
-    svg {
-      filter: drop-shadow(var(--shadow));
-    }
-
     svg path {
-      fill: $g8;
+      fill: var(--g0);
     }
   }
 
