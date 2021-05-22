@@ -4,6 +4,9 @@ nav {
   width: 100%;
   padding: $flow2;
   z-index: 99;
+  background: linear-gradient(var(--g8), transparent);
+  background-size: 100% 12em;
+  background-position: bottom;
 
   #logo {
     display: flex;

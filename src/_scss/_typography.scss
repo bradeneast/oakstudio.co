@@ -64,8 +64,7 @@ h2 {
   font-size: calc(4vmin + 15px);
 }
 
-h3,
-blockquote {
+h3 {
   font-size: calc(2.5vmin + 12px);
 }
 
@@ -91,6 +90,7 @@ p {
 }
 
 blockquote {
+  font-size: 1.2rem;
   font-family: $altFont;
   font-style: italic;
   border-radius: 0 $borderRadius $borderRadius 0;
