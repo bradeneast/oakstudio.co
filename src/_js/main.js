@@ -14,7 +14,8 @@ function init() {
     new Coarse(carousel,
       {
         renderControls: false,
-        autoScroll: 5000
+        autoScroll: 5000,
+        swipeSensitivity: .9
       }
     ));
 }
