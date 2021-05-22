@@ -11,6 +11,9 @@
 
   &:hover,
   &:focus-within {
+    background: var(--g7);
+    border-color: var(--primary);
+
     .blurb__image {
       border-color: transparent;
       background: var(--primary);
