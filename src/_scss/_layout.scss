@@ -4,7 +4,7 @@ body {
 
 main {
   grid-column-end: -1;
-  padding-bottom: $flow4;
+  padding: $flow2 0;
 
   & > *:not(.bleed) {
     max-width: $mobile;
@@ -27,6 +27,7 @@ article {
 
 section {
   margin: 0;
+  margin-bottom: $flow2;
   padding: $flow6 0;
 
   &.bleed {
@@ -35,7 +36,7 @@ section {
   }
 
   &.soft {
-    margin-top: $flow4;
+    margin-top: $flow6;
     background: var(--g7);
   }
 }
