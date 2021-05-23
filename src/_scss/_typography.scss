@@ -19,7 +19,7 @@ h6 {
   font-weight: 500;
   font-weight: $fontWeightHeavy;
   letter-spacing: -0.02em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.63em;
 
   &:first-child {
     margin-top: 0;
@@ -110,8 +110,8 @@ blockquote {
   font-size: 1.2rem;
   font-family: $altFont;
   font-style: italic;
-  border-radius: 0 $borderRadius 0 0;
-  border-left: $borderWidth * 2 $borderStyle var(--secondary);
+  border-radius: 0 $borderRadius $borderRadius 0;
+  border-left: $borderWidth * 2 $borderStyle var(--primary);
   background: var(--g7);
   padding: $flow2;
 
@@ -144,6 +144,7 @@ ol {
 
 li + li {
   margin-top: $flow1;
+  margin-bottom: 0;
 }
 
 hr {

@@ -27,14 +27,12 @@
 
 ## Oak Studio is a small creative agency based in Bartlesville, Oklahoma, founded in 2021.
 
-We design brand identities that look familiar and permanent, and we aim to remove the uncertainty in branding. We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community.
-
-That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
+We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community. That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
 > They will be called oaks of righteousness, a planting of the Lord, that He may be glorified.
-> **Isaiah 61:3**
+> **Isaiah 61:3b**
 
-<section class="soft bleed center grid ai-center col-4 gap-1">
+<section class="soft bleed center grid ai-center jc-center ac-center col-4 gap-1">
   <Import from="/_/Review.html">
     <Review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</Review>
     <Client>Brenda Jones</Client>
@@ -74,6 +72,7 @@ That's why we get to know each one of our clients: the ambitious self-starters, 
 
 - We hate time crunches, which is why we work faster and more efficiently than most design agencies.
 - We're trusted by over 25 businesses in Oklahoma and in the Midwest.
+- We aim to remove the uncertainty in branding.
 
 <section class="soft bleed">
   <Import from="/_/Person.html">

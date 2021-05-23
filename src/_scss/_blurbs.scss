@@ -58,10 +58,23 @@
 }
 
 .review {
+  padding: $flow2;
+
+  .quote {
+    color: var(--g6);
+    font-size: 4em;
+    line-height: 0;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: $mobile) {
   .person {
     padding: 0 $flow1;
+
+    &__info {
+      padding: 0;
+      padding-top: $flow2;
+    }
   }
 }

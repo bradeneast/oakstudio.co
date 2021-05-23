@@ -4,8 +4,7 @@ body {
 
 main {
   grid-column-end: -1;
-  padding: $flow4;
-  padding-top: 0;
+  padding-bottom: $flow4;
 
   & > *:not(.bleed) {
     max-width: $mobile;
@@ -22,9 +21,18 @@ main {
   }
 }
 
+article {
+  padding-top: $flow6;
+}
+
 section {
   margin: 0;
-  padding: $flow4 0;
+  padding: $flow6 0;
+
+  &.bleed {
+    padding-left: $flow2;
+    padding-right: $flow2;
+  }
 
   &.soft {
     margin-top: $flow4;
@@ -67,11 +75,15 @@ footer {
   }
 
   main {
-    padding: $flow6 $flow1;
+    padding: 0 $flow1 $flow6 $flow1;
 
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  section {
+    padding: $flow4 0;
   }
 
   header {

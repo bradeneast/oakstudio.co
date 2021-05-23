@@ -5,7 +5,7 @@ form {
   gap: $flow1;
   padding: $flow3;
   margin: $flow4 0;
-  border: $borderWidth $borderStyle var(--secondary);
+  border: $borderWidth $borderStyle var(--g6);
   border-radius: $borderRadius;
 
   &::before {
@@ -69,17 +69,13 @@ form {
     font-family: $textFont;
     padding: 0.37em 0.63em;
     background: none;
-    border: $borderWidth $borderStyle var(--g4);
+    border: $borderWidth $borderStyle var(--g6);
     border-radius: $borderRadius;
     color: var(--g0);
     transition: border-color $colorTransition;
 
     &:hover {
       border-color: var(--g3);
-    }
-
-    &:focus {
-      border-color: var(--g5);
     }
   }
 
