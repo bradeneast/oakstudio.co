@@ -72,7 +72,7 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
 
 - We hate time crunches, which is why we work faster and more efficiently than most design agencies.
 - We're trusted by over 25 businesses in Oklahoma and in the Midwest.
-- We aim to remove the uncertainty in branding.
+- Our communication will be frequent and transparent. We aim to remove the uncertainty in branding, so we do everything up front and out in the open.
 
 <section class="soft bleed">
   <Import from="/_/Person.html">
