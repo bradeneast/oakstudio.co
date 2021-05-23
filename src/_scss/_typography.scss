@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
   color: var(--g0);
-  line-height: 1;
+  line-height: 1.2;
   font-weight: 500;
   font-weight: $fontWeightHeavy;
   letter-spacing: -0.02em;
@@ -48,12 +48,18 @@ h5 {
   }
 }
 
-h1 {
-  font-family: $displayFont;
+h1,
+h2,
+h3 {
+  font-family: $altFont;
   font-style: italic;
+}
+
+h1 {
   text-transform: lowercase;
   font-size: calc(11vmin + 10px);
   line-height: 0.9;
+  letter-spacing: -0.05em;
   margin-bottom: 0.2em;
   margin-left: -0.07em;
 
@@ -76,8 +82,7 @@ h1 {
 }
 
 h2 {
-  font-family: $displayFont;
-  font-style: italic;
+  line-height: 1;
   font-size: calc(4vmin + 15px);
 }
 

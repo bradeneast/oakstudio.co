@@ -60,6 +60,11 @@
 .review {
   padding: $flow2;
 
+  &__text {
+    font-family: $altFont;
+    font-style: italic;
+  }
+
   .quote {
     color: var(--g6);
     font-size: 4em;
