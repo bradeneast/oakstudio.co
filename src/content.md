@@ -7,9 +7,6 @@
     <BlurbDesc>
       You have a story that needs to be told, and you're looking to show off your roots (or put down some new ones).
     </BlurbDesc>
-    <BlurbLink>
-      <a class="button" href="//bradeneast.com/design">See Work</a>
-    </BlurbLink>
   </Import>
   <Import from="/_/Blurb.html">
     <BlurbImage>
@@ -19,20 +16,38 @@
     <BlurbDesc>
       You have a logo that doesn't quite fit your company. You might feel the need to adjust course but don't want to lose your loyal customers.
     </BlurbDesc>
-    <BlurbLink>
-      <a class="button hollow" href="/contact">Schedule A Call</a>
-    </BlurbLink>
   </Import>
 </section>
 
+<div class="center">
+  <a class="button" href="/contact">Schedule A Call</a>
+</div>
+
+<br>
+
 ## Oak Studio is a small creative agency based in Bartlesville, Oklahoma, founded in 2021.
 
-We design brand identities that look familiar and permanent, and we aim to remove the uncertainty in branding. We see business as a way to nurture one's legacy, pass on one's trade, and strengthen one's community.
+We design brand identities that look familiar and permanent, and we aim to remove the uncertainty in branding. We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community.
 
 That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
 > They will be called oaks of righteousness, a planting of the Lord, that He may be glorified.
 > **Isaiah 61:3**
+
+<section class="soft bleed center grid ai-center col-4 gap-1">
+  <Import from="/_/Review.html">
+    <Review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</Review>
+    <Client>Brenda Jones</Client>
+  </Import>
+  <Import from="/_/Review.html">
+    <Review>I would absolutely recommend.</Review>
+    <Client>William Fecteau</Client>
+  </Import>
+  <Import from="/_/Review.html">
+    <Review>Working with Braden has been awesome, and he's consistently given me quality design work. Highly recommended!</Review>
+    <Client>Alex Moya</Client>
+  </Import>
+</section>
 
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3">
   <Import from="/_/Blurb.html">
@@ -60,9 +75,7 @@ That's why we get to know each one of our clients: the ambitious self-starters, 
 - We hate time crunches, which is why we work faster and more efficiently than most design agencies.
 - We're trusted by over 25 businesses in Oklahoma and in the Midwest.
 
-<br>
-
-<section class="bleed" style="background: var(--g7);">
+<section class="soft bleed">
   <Import from="/_/Person.html">
     <Headshot>
       <img src="/_assets/images/braden.jpg" alt="Braden East, founder of Oak Studio">

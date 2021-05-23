@@ -53,6 +53,11 @@
   scrollbar-color: var(--g6) transparent;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   display: none;
   background: transparent;
@@ -80,7 +85,6 @@ img {
 @import "./util";
 @import "./forms";
 @import "./blurbs";
-@import "./person";
 @import "./hero";
 @import "./coarse";
 @import "./nav";

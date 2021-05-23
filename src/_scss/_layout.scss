@@ -25,6 +25,11 @@ main {
 section {
   margin: 0;
   padding: $flow4 0;
+
+  &.soft {
+    margin-top: $flow4;
+    background: var(--g7);
+  }
 }
 
 nav [role="menu"],
