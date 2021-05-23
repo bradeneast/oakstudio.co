@@ -6,13 +6,8 @@
   border: $borderWidth $borderStyle var(--g6);
   max-width: 32rem;
   margin: 0 auto;
+  margin-top: calc(var(--image-size) / 3);
   border-radius: $borderRadius;
-  transition: border-color $smoothTransition;
-
-  &:hover,
-  &:focus-within {
-    border-color: var(--primary);
-  }
 
   * {
     margin: 0;
@@ -31,7 +26,7 @@
     background: var(--g8);
     height: var(--image-size);
     width: var(--image-size);
-    border-radius: 50%;
+    box-shadow: 0 0 0 $borderWidth var(--g8);
     transition: $colorTransition;
 
     svg path {

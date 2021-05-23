@@ -53,6 +53,7 @@ nav {
 @media screen and (max-width: $mobile) {
   nav {
     padding: $flow1;
+    background: none;
 
     #logo {
       width: 4.5em;

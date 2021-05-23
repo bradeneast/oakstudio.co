@@ -19,9 +19,12 @@
 
   <main>
     <Slot name="Content"></Slot>
+    <Import from="/_/ContactInfo.html"></Import>
   </main>
 
-  <footer>&copy; {% new Date().getFullYear() %} {*SiteName*}</footer>
+  <footer>
+    &copy; {% new Date().getFullYear() %} {*SiteName*}
+  </footer>
 
   <Import from="/_/Loader.html"></Import>
 

@@ -2,6 +2,14 @@
   display: none;
 }
 
+.squeeze > * {
+  margin: 0;
+}
+
+.round {
+  border-radius: 50%;
+}
+
 .right {
   margin-left: auto;
   margin-right: 0;

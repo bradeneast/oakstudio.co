@@ -5,6 +5,7 @@ body {
 main {
   grid-column-end: -1;
   padding: $flow4;
+  padding-top: 0;
 
   & > *:not(.bleed) {
     max-width: $mobile;
@@ -22,7 +23,8 @@ main {
 }
 
 section {
-  margin-bottom: $flow6;
+  margin: 0;
+  padding: $flow4 0;
 }
 
 nav [role="menu"],

@@ -1,0 +1,23 @@
+.person {
+  margin: 0 auto;
+  padding: 0 $flow4;
+  max-width: $mobile;
+
+  &__headshot {
+    flex-shrink: 0;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__info {
+    padding: $flow2;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .person {
+    padding: 0 $flow1;
+  }
+}
