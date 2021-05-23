@@ -1,4 +1,4 @@
-<section class="center grid ji-space-around ai-start jc-center gap-4 col-3">
+<section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
   <Import from="/_/Blurb.html">
     <BlurbImage>
       <Import from="/_/icons/starting-over.svg"></Import>
@@ -63,7 +63,7 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
     </BlurbImage>
     <BlurbTitle>Our Vision</BlurbTitle>
     <BlurbDesc>
-      We want to see people in Oklahoma and the midwest make sturdy legacies with lasting effects. If you've seen what we have, you probably think that a memorable, familiar look is paramount in acheiving that goal. We agree!
+      We want to see people in Oklahoma and the midwest establish wholesome legacies with lasting effects. We think that memorable, familiar design is paramount to acheive that goal. We hope you agree.
     </BlurbDesc>
   </Import>
 </section>
@@ -71,7 +71,7 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
 ## A few more things:
 
 - We hate time crunches, which is why we work faster and more efficiently than most design agencies.
-- We're trusted by over 25 businesses in Oklahoma and in the Midwest.
+- We're trusted by over 25 businesses in Oklahoma and in the Midwest, but we'd be happy to consider an extra-regional project.
 - Our communication will be frequent and transparent. We aim to remove the uncertainty in branding, so we do everything up front and out in the open.
 
 <section class="soft bleed">
