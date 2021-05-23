@@ -42,7 +42,7 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
     <Client>William Fecteau</Client>
   </Import>
   <Import from="/_/Review.html">
-    <Review>Working with Braden has been awesome, and he's consistently given me quality design work. Highly recommended!</Review>
+    <Review>Working with them has been awesome, and they've consistently given me quality design work. Highly recommended!</Review>
     <Client>Alex Moya</Client>
   </Import>
 </section>
