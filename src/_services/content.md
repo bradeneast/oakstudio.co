@@ -1,3 +1,0 @@
-## We usually help our clients with one of these two design solutions...
-
-<Import from="/Services.html"></Import>

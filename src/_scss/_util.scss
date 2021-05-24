@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+[style*="background-image"] {
+  background-position: center;
+}
+
 .round {
   border-radius: 50%;
 }
@@ -74,6 +78,14 @@
   align-items: end;
 }
 
+.ai-stretch {
+  align-items: stretch;
+
+  & > * {
+    height: 100%;
+  }
+}
+
 .ac-start {
   align-content: start;
 }
@@ -104,6 +116,10 @@
 
 .ai-space-between {
   align-items: space-between;
+}
+
+.ji-center {
+  justify-items: center;
 }
 
 .ji-space-around {

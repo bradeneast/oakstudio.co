@@ -1,0 +1,23 @@
+<Import from="/_/Layout.html">
+
+  <Title>
+    <Slot name="Title"></Slot>
+  </Title>
+
+  <Image>
+    <Slot name="Image"></Slot>
+  </Image>
+
+  <Header>
+    <img class="center bleed" alt="" src="{*Image*}" />
+  </Header>
+
+  <Content>
+    <br><br>
+    <h1 class="center">
+      <Slot name="Heading">{*Title*}</Slot>
+    </h1>
+    <Slot name="Content"></Slot>
+  </Content>
+
+</Import>
