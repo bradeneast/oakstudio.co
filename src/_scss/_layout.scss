@@ -44,11 +44,22 @@ section {
     padding-right: $flow2;
   }
 
+  &.primary {
+    background: var(--primary);
+    color: var(--g0);
+
+    svg path {
+      fill: var(--g6);
+    }
+  }
+
+  &.soft {
+    background: var(--g7);
+  }
+
+  &.primary,
   &.soft {
     margin-top: $flow6;
-    border-top: $borderWidth $borderStyle var(--primary);
-    border-bottom: $borderWidth $borderStyle var(--primary);
-    background: var(--g7);
 
     & + h2,
     & + h3,
@@ -59,6 +70,7 @@ section {
     }
   }
 
+  & + .primary,
   & + .soft,
   & + h2,
   & + h3,
@@ -121,8 +133,8 @@ footer {
     padding: $flow4 0;
 
     &.bleed {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: $flow1;
+      padding-right: $flow1;
     }
   }
 

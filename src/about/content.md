@@ -1,8 +1,8 @@
 ## Oak Studio is a small creative agency based in Bartlesville, Oklahoma, founded in 2021.
 
-We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community. That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
+We have opinions, but we're not like other creative agencies. That's because we see our work as a means of **creating permanence** in an age of transience. We think family-minded businesses are an effective way to strengthen communities, pass on trades, and grow legacies. We're defined by our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
-<section class="center grid ji-space-around ai-start jc-center gap-4 col-3">
+<section class="center grid jc-center gap-4 col-3">
   <Import from="/_/Blurb.html">
     <BlurbTitle>Our Background</BlurbTitle>
     <BlurbImage from="/_/icons/scrapbook.svg"></BlurbImage>
@@ -17,6 +17,17 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
 
 ## How we operate
 <Import from="/_/copy/MO.md"></Import>
+
+<section class="soft bleed">
+  <Import from="/_/Person.html">
+    <Headshot>
+      <img src="/_assets/images/braden.jpg" alt="Braden East, founder of Oak Studio">
+    </Headshot>
+    <Name>Braden East</Name>
+    <Position>Founder</Position>
+    <Bio from="/_/copy/BradenEastBio.md"></Bio>
+  </Import>
+</section>
 
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
 <h2 class="center span-all">Our Services</h2>
@@ -35,15 +46,4 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
     </BlurbDesc>
   </Import>
   <a class="center button span-all" href="/contact">Schedule A Call</a>
-</section>
-
-<section class="soft bleed">
-  <Import from="/_/Person.html">
-    <Headshot>
-      <img src="/_assets/images/braden.jpg" alt="Braden East, founder of Oak Studio">
-    </Headshot>
-    <Name>Braden East</Name>
-    <Position>Founder</Position>
-    <Bio from="/_/copy/BradenEastBio.md"></Bio>
-  </Import>
 </section>
