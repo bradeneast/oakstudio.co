@@ -4,6 +4,8 @@ module.exports = {
 	ignorePattern: /^_/, // By default, files and directories whose names begin with an underscore "_" are ignored
 	global: {
 		SiteName: "Oak Studio",
-		SiteRoot: "https://oakstudio.co"
+		SiteRoot: "https://oakstudio.co",
+		Twitter: "@oakstudioco",
+		PrimaryColor: "#FE3B1F"
 	}, // Key/Value pairs that can be interpolated anywhere in your site using starburns syntax: {* ExampleValue *} or used in an expression with nunjucks syntax: {% condition ? ExampleValue : OtherValue %}
 }

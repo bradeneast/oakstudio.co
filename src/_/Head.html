@@ -10,9 +10,27 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{* SiteName *}" />
   <meta property="og:image" content="{* SiteRoot *}{* Image *}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{*Twitter*}" />
+  <meta name="twitter:creator" content="{*Twitter*}" />
+  <meta name="msapplication-TileColor" content="{*PrimaryColor*}" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <meta name="msapplication-TileImage" content="{* SiteRoot *}/_assets/favicon_padded.png" />
+
+  <base href="/" />
+  <link rel="canonical" href="{* SiteRoot *}{* sys.href *}">
+  <link rel="shortcut icon" href="/_assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon-precomposed" href="/_assets/circle_light_padded_simple.png" type="image/png" />
 
   <link rel="shortcut icon" href="/_assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="//d33wubrfki0l68.cloudfront.net" />
+  <link rel="dns-prefetch" href="//d33wubrfki0l68.cloudfront.net" />
+  <link rel="preload" href="/_assets/css/main.css" as="style" />
+  <link rel="preload" href="/_assets/js/main.js" as="script" />
+  <link rel="preload" href="//polyfill.io/v3/polyfill.min.js?features=default" as="script">
+
   <link rel="stylesheet" href="/_assets/css/main.css">
+  <script defer src="//polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script defer src="/_assets/js/main.js"></script>
   <script>
     document.documentElement.classList.add('loading');
