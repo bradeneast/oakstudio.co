@@ -29,9 +29,6 @@
 
 We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community. That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
-> They will be called oaks of righteousness, a planting of the Lord, that He may be glorified.
-> **Isaiah 61:3b**
-
 <section class="soft bleed center grid ai-center jc-center ac-center col-4 gap-1">
   <Import from="/_/Review.html">
     <Review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</Review>
@@ -70,9 +67,10 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
 
 ## A few more things:
 
-- We hate time crunches, which is why we work faster and more efficiently than most design agencies.
+- We don't do hourly billing, and [we never will](//jonathanstark.com/the-moral-dilemma-of-hourly-billing).
 - We're trusted by over 25 businesses in Oklahoma and in the Midwest, but we'd be happy to consider an extra-regional project.
-- Our communication will be frequent and transparent. We aim to remove the uncertainty in branding, so we do everything up front and out in the open.
+- There's no black box or jargon in our vocabulary. We aim to remove the uncertainty in branding, so we do everything up front and out in the open.
+- Time crunches are no fun, which is why we work faster and more efficiently than most design agencies.
 
 <section class="soft bleed">
   <Import from="/_/Person.html">
