@@ -1,4 +1,4 @@
-## We're the creative agency that thinks small businesses should stick around.
+## We're the creative agency that thinks small business brands should stick around.
 [More about us](/about)
 
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
