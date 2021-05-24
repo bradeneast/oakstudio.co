@@ -45,5 +45,5 @@ We have opinions, but we're not like other creative agencies. That's because we 
       You have a logo that doesn't quite fit your company. You might feel the need to adjust course but don't want to lose your loyal customers.
     </BlurbDesc>
   </Import>
-  <a class="center button span-all" href="/contact">Schedule A Call</a>
+  <a class="center button span-all" href="/contact">Contact Us</a>
 </section>
