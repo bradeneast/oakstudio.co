@@ -36,8 +36,8 @@ article {
 
 section {
   margin: 0;
-  margin-bottom: $flow2;
   padding: $flow6 0;
+  background: var(--g8);
 
   &.bleed {
     padding-left: $flow2;
@@ -46,6 +46,8 @@ section {
 
   &.soft {
     margin-top: $flow6;
+    border-top: $borderWidth $borderStyle var(--primary);
+    border-bottom: $borderWidth $borderStyle var(--primary);
     background: var(--g7);
   }
 }
@@ -85,7 +87,13 @@ footer {
   }
 
   main {
-    padding: 0 $flow1 $flow6 $flow1;
+    padding: 0 0 $flow6 0;
+
+    & > *:not(.bleed) {
+      max-width: $mobile;
+      margin-left: $flow1;
+      margin-right: $flow1;
+    }
 
     &:first-child {
       margin-top: 0;
