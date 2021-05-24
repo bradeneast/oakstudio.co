@@ -14,6 +14,10 @@
   border-radius: 50%;
 }
 
+.flow > * {
+  margin-bottom: $flow1;
+}
+
 .right {
   margin-left: auto;
   margin-right: 0;
@@ -50,16 +54,20 @@
   display: grid;
 }
 
+.span-all {
+  grid-column: 1 / -1;
+}
+
 .col-2 {
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
 }
 
 .col-3 {
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
 
 .col-4 {
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
 
 .gap-1 {

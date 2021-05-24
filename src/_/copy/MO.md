@@ -1,0 +1,4 @@
+- We don't do hourly billing, and [we never will](//jonathanstark.com/the-moral-dilemma-of-hourly-billing).
+- We're trusted by over 25 businesses in Oklahoma and in the Midwest, but we'd be happy to consider an extra-regional project.
+- There's no black box or jargon in our vocabulary. We aim to remove the uncertainty in branding, so we do everything up front and out in the open.
+- Time crunches are no fun, which is why we work faster and more efficiently than most design agencies.

@@ -1,33 +1,13 @@
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
-  <Import from="/_/Blurb.html">
-    <BlurbImage>
-      <Import from="/_/icons/starting-over.svg"></Import>
-    </BlurbImage>
-    <BlurbTitle>Identity design for a new business</BlurbTitle>
-    <BlurbDesc>
-      You have a story that needs to be told, and you're looking to show off your roots (or put down some new ones).
-    </BlurbDesc>
-  </Import>
-  <Import from="/_/Blurb.html">
-    <BlurbImage>
-      <Import from="/_/icons/turning-a-corner.svg"></Import>
-    </BlurbImage>
-    <BlurbTitle>Re-branding for a current business</BlurbTitle>
-    <BlurbDesc>
-      You have a logo that doesn't quite fit your company. You might feel the need to adjust course but don't want to lose your loyal customers.
-    </BlurbDesc>
-  </Import>
+  <Import from="/_/static/Services.html"></Import>
+  <!-- <a class="button center span-all" href="/projects">See our Work</a> -->
 </section>
 
-<div class="center">
-  <a class="button" href="/contact">Schedule A Call</a>
-</div>
+## We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community.
 
-<br>
+That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
-## Oak Studio is a small creative agency based in Bartlesville, Oklahoma, founded in 2021.
-
-We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community. That's why we get to know each one of our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
+[More about us](/about)
 
 <section class="soft bleed center grid ai-center jc-center ac-center col-4 gap-1">
   <Import from="/_/Review.html">
@@ -44,41 +24,21 @@ We see business as a way to grow one's legacy, pass on one's trade, and strength
   </Import>
 </section>
 
-<section class="center grid ji-space-around ai-start jc-center gap-4 col-3">
-  <Import from="/_/Blurb.html">
-    <BlurbImage>
-      <Import from="/_/icons/scrapbook.svg"></Import>
-    </BlurbImage>
-    <BlurbTitle>Our Background</BlurbTitle>
-    <BlurbDesc>
-      2021 marks 5 years of our individual design work with local businesses and nonprofit organizations. In that time we've learned a thing or two about building brands that endure.
-    </BlurbDesc>
-  </Import>
-  <Import from="/_/Blurb.html">
-    <BlurbImage>
-      <Import from="/_/icons/telescope.svg"></Import>
-    </BlurbImage>
-    <BlurbTitle>Our Vision</BlurbTitle>
-    <BlurbDesc>
-      We want to see people in Oklahoma and the midwest establish wholesome legacies with lasting effects. We think that memorable, familiar design is paramount to acheive that goal. We hope you agree.
-    </BlurbDesc>
-  </Import>
+<section class="grid jc-center ai-center ji-center col-3 gap-2">
+  <div class="blurb__image" style="--image-size: 15rem; margin: 0;">
+    <Import from="/_/icons/telescope.svg"></Import>
+  </div>
+  <div>
+    <h3>Our Vision</h3>
+    <Import from="/_/copy/Vision.md"></Import>
+  </div>
 </section>
 
 ## A few more things:
+<Import from="/_/copy/MO.md"></Import>
 
-- We don't do hourly billing, and [we never will](//jonathanstark.com/the-moral-dilemma-of-hourly-billing).
-- We're trusted by over 25 businesses in Oklahoma and in the Midwest, but we'd be happy to consider an extra-regional project.
-- There's no black box or jargon in our vocabulary. We aim to remove the uncertainty in branding, so we do everything up front and out in the open.
-- Time crunches are no fun, which is why we work faster and more efficiently than most design agencies.
+<br>
 
-<section class="soft bleed">
-  <Import from="/_/Person.html">
-    <Headshot>
-      <img src="/_assets/images/braden.jpg" alt="Braden East, founder of Oak Studio">
-    </Headshot>
-    <Name>Braden East</Name>
-    <Position>Founder</Position>
-    <Bio from="./bio.md"></Bio>
-  </Import>
-</section>
+<div class="center">
+  <a class="button" href="/contact">Schedule A Call</a>
+</div>

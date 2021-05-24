@@ -49,6 +49,23 @@ section {
     border-top: $borderWidth $borderStyle var(--primary);
     border-bottom: $borderWidth $borderStyle var(--primary);
     background: var(--g7);
+
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6 {
+      margin-top: $flow6;
+    }
+  }
+
+  & + .soft,
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5,
+  & + h6 {
+    margin-top: $flow2;
   }
 }
 

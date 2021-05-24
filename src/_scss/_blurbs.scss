@@ -10,7 +10,7 @@
   border-radius: $borderRadius;
   background: inherit;
 
-  * {
+  & > * {
     margin: 0;
 
     &:last-child {
