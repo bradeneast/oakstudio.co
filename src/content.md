@@ -1,10 +1,10 @@
+## We're the creative agency that thinks small businesses should stick around.
+[More about us](/about)
+
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
   <Import from="/_/static/Services.html"></Import>
   <!-- <a class="button center span-all" href="/projects">See our Work</a> -->
 </section>
-
-## We see business as a way to pass on trades, strengthen a communities, and preserve legacies.
-[More about us](/about)
 
 <section class="primary bleed center grid ai-center jc-center ac-center col-4 gap-1">
   <Import from="/_/Review.html">

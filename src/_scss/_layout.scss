@@ -10,6 +10,10 @@ main {
   grid-column-end: -1;
   padding: $flow2 0;
 
+  & > :first-child:not(section) {
+    margin-top: $flow4;
+  }
+
   p > img,
   p > video {
     margin: $flow4 0;
