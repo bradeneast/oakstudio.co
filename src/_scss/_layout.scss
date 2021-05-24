@@ -2,9 +2,18 @@ body {
   background: var(--g8);
 }
 
+header {
+  margin-bottom: $flow2;
+}
+
 main {
   grid-column-end: -1;
   padding: $flow2 0;
+
+  p > img,
+  p > video {
+    margin: $flow4 0;
+  }
 
   & > *:not(.bleed) {
     max-width: $mobile;

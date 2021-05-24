@@ -8,6 +8,7 @@
   margin: 0 auto;
   margin-top: calc(var(--image-size) / 3);
   border-radius: $borderRadius;
+  background: inherit;
 
   * {
     margin: 0;
@@ -23,11 +24,21 @@
 
   &__image {
     margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
-    background: var(--g8);
     height: var(--image-size);
     width: var(--image-size);
-    box-shadow: 0 0 0 $borderWidth var(--g8);
+    background: inherit;
     transition: $colorTransition;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: inherit;
+      background: inherit;
+      width: calc(100% + #{$borderWidth * 2});
+      height: calc(100% + #{$borderWidth * 2});
+      top: -$borderWidth;
+      left: -$borderWidth;
+    }
 
     svg path {
       fill: var(--g0);
