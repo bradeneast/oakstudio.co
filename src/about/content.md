@@ -1,6 +1,6 @@
 ## Oak Studio is a small creative agency based in Bartlesville, Oklahoma, founded in 2021.
 
-We have opinions, but we're not like other creative agencies. That's because we see our work as a means of **creating permanence** in an age of transience. We think family-minded businesses are an effective way to strengthen communities, pass on trades, and grow legacies. We're defined by our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
+We see our work as a means of **creating permanence** in an age of transience. We think family-minded businesses are an effective way to strengthen communities, pass on trades, and grow legacies. Most importantly, we're defined by our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
 <section class="center grid jc-center gap-4 col-3">
   <Import from="/_/Blurb.html">
