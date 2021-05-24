@@ -3,7 +3,7 @@
   <!-- <a class="button center span-all" href="/projects">See our Work</a> -->
 </section>
 
-## We see business as a way to grow one's legacy, pass on one's trade, and strengthen one's community.
+## We see business as a way to pass on trades, strengthen a communities, and preserve legacies.
 [More about us](/about)
 
 <section class="primary bleed center grid ai-center jc-center ac-center col-4 gap-1">
