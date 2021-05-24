@@ -10,6 +10,7 @@
   --g6: #{$g6};
   --g7: #{$g7};
   --g8: #{$g8};
+  --dark: 0;
   --primary: #{$primary};
   --secondary: #{$secondary};
   --tertiary: #{$tertiary};
@@ -28,6 +29,7 @@
     --g6: #{$g2};
     --g7: #{$g1};
     --g8: #{$g0};
+    --dark: 1;
     --fontWeightRegular: 300;
     --shadowColor: #0009;
   }

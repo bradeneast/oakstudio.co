@@ -9,14 +9,19 @@
   </Image>
 
   <Header>
-    <img class="center bleed" alt="" src="{*Image*}" />
+    <img style="height: 50vh" class="center bleed" alt="" src="{*Image*}" />
   </Header>
 
   <Content>
     <br><br>
-    <h1 class="center">
-      <Slot name="Heading">{*Title*}</Slot>
-    </h1>
+    <div class="grid squeeze ai-baseline col-3 gap-2">
+      <h1>{*Title*}</h1>
+      <div>
+        <h3>{*Tags*}</h3>
+        {*Type*}
+      </div>
+    </div>
+    <hr>
     <Slot name="Content"></Slot>
   </Content>
 
