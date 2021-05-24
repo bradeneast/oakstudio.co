@@ -1,5 +1,5 @@
 - We don't do hourly billing, and [we never will](//jonathanstark.com/how-i-realized-that-hourly-billing-is-nuts).
 - There's no jargon in our vocabulary.
 - We do everything up front and out in the open. Branding shouldn't be uncertain.
-- We're trusted by over 25 businesses in Oklahoma and in the Midwest, but we'd be happy to consider an extra-regional project.
-- Time crunches are no fun, which is why we work faster and more efficiently than most design agencies.
+- Time crunches are no fun. We work at a faster pace than most design agencies.
+- While we're trusted by over 25 businesses in Oklahoma and in the Midwest, we'd be happy to consider an extra-regional project.
