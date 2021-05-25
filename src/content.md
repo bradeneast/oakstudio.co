@@ -6,7 +6,7 @@
   <!-- <a class="button center span-all" href="/projects">See our Work</a> -->
 </section>
 
-<section class="primary bleed center grid ai-center jc-center ac-center col-4 gap-1">
+<section class="primary bleed center grid ai-center jc-center ac-center col-3 gap-1">
   <Import from="/_/Review.html">
     <Review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</Review>
     <Client>Brenda Jones</Client>
