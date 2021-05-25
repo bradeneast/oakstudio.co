@@ -1,3 +1,3 @@
-We want to see people in Oklahoma and the midwest establish wholesome legacies with lasting effects.
+We want to see people and organizations in the midwest become more localized, familiar, and familial.
 
-It's ambitious, but let's start by crafting things that will endure the test of time. While others come and go, there are some brands that will outlast and outperform the rest. We think that memorable, durable design is paramount to acheiving that goal, and we're here to help you make it happen.
+While others come and go, some brands will outlast the rest because their roots go deep. Our approach is to strengthen those roots instead of tossing them out. To that end, we think memorable, durable design is paramount.

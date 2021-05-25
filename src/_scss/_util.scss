@@ -18,6 +18,12 @@
   margin-bottom: $flow1;
 }
 
+.left {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
 .right {
   margin-left: auto;
   margin-right: 0;
@@ -67,7 +73,7 @@
 }
 
 .col-4 {
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .gap-1 {
