@@ -1,28 +1,48 @@
-import { debounce, setProp } from "./_utils";
+import { $, $$, debounce, round, setProp } from "./_utils";
 
-export function watchBeforeAfter(module) {
+export function watchBeforeAfterModules() {
 
-  let isGrabbed = false;
-
-  let moveSlider = (x) => {
-    debounce(() => {
-      if (!isGrabbed) return;
-      let rect = module.getBoundingClientRect();
-      let position = (x - rect.left) / rect.width;
-      let clamped = position.clamp(0, 1);
-      setProp(module, 'val', Math.round(clamped * 100));
+  let grabbing = false;
+  let grabbedAttr = 'data-grabbed';
+  let getModule = elem => elem.closest('.beforeafter');
+  let clearGrabbed = () => {
+    $$('.beforeafter').forEach(module => {
+      module.removeAttribute(grabbedAttr);
+      grabbing = false;
     });
   }
 
-  module.addEventListener('touchstart', () => isGrabbed = true);
-  module.addEventListener("mousedown", () => isGrabbed = true);
-  addEventListener('touchend', () => isGrabbed = false);
-  addEventListener("mouseup", () => isGrabbed = false);
+  let setGrabbed = event => {
+    clearGrabbed();
+    let module = getModule(event.target)
+    if (module) {
+      module.setAttribute(grabbedAttr, "");
+      grabbing = true;
+    }
+  }
+
+  let moveCurrentSlider = (x) => debounce(() => {
+
+    let module = $('[data-grabbed]');
+    if (!module) return;
+
+    let rect = module.getBoundingClientRect();
+    let position = ((x - rect.left) / rect.width) * 100;
+    let clamped = position.clamp(0, 100);
+    setProp(module, 'val', round(clamped, 2));
+  });
+
+  addEventListener('touchstart', setGrabbed);
+  addEventListener("mousedown", setGrabbed);
+  addEventListener('touchend', clearGrabbed);
+  addEventListener("mouseup", clearGrabbed);
 
   addEventListener("mousemove", event => {
-    moveSlider(event.clientX);
+    if (!grabbing) return;
+    moveCurrentSlider(event.clientX)
   });
   addEventListener('touchmove', event => {
-    moveSlider(event.changedTouches[0].clientX);
+    if (!grabbing) return;
+    moveCurrentSlider(event.changedTouches[0].clientX);
   });
 }

@@ -5,6 +5,7 @@
   height: 75vmin;
   user-select: none;
   cursor: pointer;
+  border-radius: $borderRadius;
 
   img {
     object-position: center;
