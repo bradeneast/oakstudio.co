@@ -1,9 +1,14 @@
-<div class="beforeafter">
-  <div class="beforeafter__before">
-    <Slot name="Before"></Slot>
+<div>
+  <div class="beforeafter">
+    <div class="beforeafter__before">
+      <Slot name="Before"></Slot>
+    </div>
+    <div class="beforeafter__after">
+      <Slot name="After"></Slot>
+    </div>
+    <div class="beforeafter__slider"></div>
   </div>
-  <div class="beforeafter__after">
-    <Slot name="After"></Slot>
-  </div>
-  <div class="beforeafter__slider"></div>
+  <p class="subtext left">
+    <Slot name="SubText"></Slot>
+  </p>
 </div>

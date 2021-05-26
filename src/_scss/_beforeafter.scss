@@ -2,14 +2,14 @@
   --val: 50;
   --pos: calc(var(--val) * 1%);
   overflow: hidden;
-  height: 60vmin;
+  height: 75vmin;
   user-select: none;
   cursor: pointer;
 
   img {
     object-position: center;
     object-fit: cover;
-    height: 100%;
+    height: calc(100% + 1px);
   }
 
   &__before,
@@ -34,8 +34,9 @@
     position: absolute;
     left: var(--pos);
     height: 100%;
-    width: 3px;
-    background: var(--g0);
+    width: 0;
+    border-left: $borderWidth solid $g8;
+    border-right: $borderWidth solid $g8;
     transform: translate3d(-50%, 0, 0);
 
     &::before,
@@ -44,7 +45,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      border: 3px solid var(--g0);
+      border: 3px solid $g8;
       border-top: none;
       border-right: none;
       border-radius: 2px;

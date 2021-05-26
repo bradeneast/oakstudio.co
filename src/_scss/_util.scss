@@ -2,6 +2,13 @@
   display: none;
 }
 
+.subtext {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--g3);
+  letter-spacing: 0.1em;
+}
+
 .squeeze > * {
   margin: 0;
 }

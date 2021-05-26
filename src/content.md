@@ -29,11 +29,12 @@
   </Import>
   <Import from="/_/BeforeAfter.html">
     <Before>
-      <img src="/_assets/images/360-farms/old.png" alt="The old logo of 360 Farms">
+      <img src="/_assets/images/360-farms/old.jpg" alt="The old logo of 360 Farms">
     </Before>
     <After>
       <img src="/_assets/images/360-farms/new.png" alt="The new logo of 360 Farms">
     </After>
+    <SubText>360 Farms Rebrand, 2019</SubText>
   </Import>
 </section>
 
