@@ -4,6 +4,16 @@ Because Jude’s was an established local business that stood on consistency, fa
 
 ![Images of inspriation in designing the logo icon](/_assets/images/judes/judes-icon-process.jpg)
 
+<Import from="/_/BeforeAfter.html">
+  <Before>
+    <img src="/_assets/images/judes/old.png" alt="The current logo of Jude's Health and Java House">
+  </Before>
+  <After>
+    <img src="/_assets/images/judes/new.png" alt="Our concept for a Jude's rebrand">
+  </After>
+  <SubText>Conceptual rebrand of <a href="//judesjava.com">Jude's Health and Java House</a></SubText>
+</Import>
+
 ![Jude's logo in a stacked layout](/_assets/images/judes/judes-stacked.svg)
 
 ![Jude's logo in an inline layout](/_assets/images/judes/judes-inline.svg)
