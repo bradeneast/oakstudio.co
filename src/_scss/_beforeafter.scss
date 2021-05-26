@@ -1,0 +1,64 @@
+.beforeafter {
+  --val: 50;
+  --pos: calc(var(--val) * 1%);
+  overflow: hidden;
+  height: 60vmin;
+  user-select: none;
+  cursor: pointer;
+
+  img {
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  &__before,
+  &__after {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__after {
+    clip-path: polygon(var(--pos) 0, 100% 0, 100% 100%, var(--pos) 100%);
+  }
+
+  &__slider {
+    position: absolute;
+    left: var(--pos);
+    height: 100%;
+    width: 3px;
+    background: var(--g0);
+    transform: translate3d(-50%, 0, 0);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 3px solid var(--g0);
+      border-top: none;
+      border-right: none;
+      border-radius: 2px;
+      width: 1em;
+      height: 1em;
+      filter: drop-shadow(var(--shadow));
+    }
+
+    &::before {
+      transform: translate(-100%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(0, -50%) rotate(-135deg);
+    }
+  }
+}

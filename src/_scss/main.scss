@@ -15,7 +15,7 @@
   --secondary: #{$secondary};
   --tertiary: #{$tertiary};
   --shadowColor: #0003;
-  --shadow: 0 0.2rem 0.2rem var(--shadowColor);
+  --shadow: 0 0 0.15rem var(--shadowColor);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,9 +84,10 @@ img {
 @import "./layout";
 @import "./typography";
 @import "./buttons";
+@import "./hero";
 @import "./util";
 @import "./forms";
 @import "./blurbs";
-@import "./hero";
+@import "./beforeafter";
 @import "./coarse";
 @import "./nav";

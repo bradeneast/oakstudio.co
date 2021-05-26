@@ -21,11 +21,19 @@
   </Import>
 </section>
 
-<section class="center">
+<section class="center bleed grid col-2 gap-4 ai-center">
   <Import from="/_/Blurb.html">
     <BlurbTitle>Our Vision</BlurbTitle>
     <BlurbImage from="/_/icons/telescope.svg"></BlurbImage>
     <BlurbDesc from="/_/copy/Vision.md"></BlurbDesc>
+  </Import>
+  <Import from="/_/BeforeAfter.html">
+    <Before>
+      <img src="/_assets/images/360-farms/old.png" alt="The old logo of 360 Farms">
+    </Before>
+    <After>
+      <img src="/_assets/images/360-farms/new.png" alt="The new logo of 360 Farms">
+    </After>
   </Import>
 </section>
 
