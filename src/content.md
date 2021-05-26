@@ -34,7 +34,7 @@
     <After>
       <img src="/_assets/images/360-farms/new.png" alt="The new logo of 360 Farms">
     </After>
-    <SubText>360 Farms Rebrand, 2019</SubText>
+    <SubText>Rebrand of <a href="//360okfarms.com">360 Farms</a></SubText>
   </Import>
 </section>
 
