@@ -9,6 +9,7 @@
   .loading main,
   .loading footer {
     opacity: 0;
+    animation: clearLoad 0s 5s forwards
   }
 
   .loading #loader {
@@ -25,6 +26,13 @@
     transform: translate3d(-50%, -50%, 0);
     background-color: var(--primary);
     animation: load .5s cubic-bezier(.3, 0, .7, 1.3) infinite;
+  }
+
+  @keyframes clearLoad {
+    100% {
+      animation: none;
+      opacity: 1;
+    }
   }
 
   @keyframes load {
