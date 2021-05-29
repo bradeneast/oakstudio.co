@@ -2,39 +2,37 @@
 [More about us](/about)
 
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
-  <Import from="/_/static/Services.html"></Import>
-  <!-- <a class="button center span-all" href="/projects">See our Work</a> -->
+  <Import from="/_/-/Services.html"></Import>
 </section>
 
 <section class="primary bleed center grid ai-center jc-center ac-center col-3 gap-1">
-  <Import from="/_/Review.html">
-    <Review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</Review>
-    <Client>Brenda Jones</Client>
+  <Import from="/_/~/Review.html">
+    <review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</review>
+    <client>Brenda Jones</client>
   </Import>
-  <Import from="/_/Review.html">
-    <Review>I would absolutely recommend.</Review>
-    <Client>William Fecteau</Client>
+  <Import from="/_/~/Review.html">
+    <review>I would absolutely recommend.</review>
+    <client>William Fecteau</client>
   </Import>
-  <Import from="/_/Review.html">
-    <Review>Working with them has been awesome, and they've consistently given me quality design work. Highly recommended!</Review>
-    <Client>Alex Moya</Client>
+  <Import from="/_/~/Review.html">
+    <review>Working with them has been awesome, and they've consistently given me quality design work. Highly recommended!</review>
+    <client>Alex Moya</client>
   </Import>
 </section>
 
 <section class="center bleed grid col-2 gap-4 ai-center">
-  <Import from="/_/Blurb.html">
-    <BlurbTitle>Our Vision</BlurbTitle>
-    <BlurbImage from="/_/icons/telescope.svg"></BlurbImage>
-    <BlurbDesc from="/_/copy/Vision.md"></BlurbDesc>
+  <Import from="/_/~/Blurb.html">
+    <image from="/_/icons/telescope.svg"></image>
+    <text from="/_/copy/Vision.md"></text>
   </Import>
-  <Import from="/_/BeforeAfter.html">
-    <Before>
-      <img src="/_assets/images/360-farms/old.png" alt="The old logo of 360 Farms">
-    </Before>
-    <After>
-      <img src="/_assets/images/360-farms/new.png" alt="The new logo of 360 Farms">
-    </After>
-    <SubText>Rebrand of <a href="//360okfarms.com">360 Farms</a></SubText>
+  <Import from="/_/~/BeforeAfter.html">
+    <before>
+      <img src="/_assets/images/ete/sketch.jpg" alt="A sketch of the new logo for East Texas Elderberries">
+    </before>
+    <after>
+      <img src="/_assets/images/ete/white-on-blue.png" alt="The primary logo of East Texas Elderberries">
+    </after>
+    <text>Identity for East Texas Elderberries</text>
   </Import>
 </section>
 

@@ -12,7 +12,7 @@
 
 <body>
 
-  <Import from="/_/static/Nav.html"></Import>
+  <Import from="/_/-/Nav.html"></Import>
 
   <header>
     <Slot name="Header"></Slot>
@@ -20,14 +20,14 @@
 
   <main id="main">
     <Slot name="Content"></Slot>
-    <Import from="/_/static/ContactInfo.html"></Import>
+    <Import from="/_/-/ContactInfo.html"></Import>
   </main>
 
   <footer class="subtext">
     &copy; {% new Date().getFullYear() %} {*SiteName*}
   </footer>
 
-  <Import from="/_/static/Loader.html"></Import>
+  <Import from="/_/-/Loader.html"></Import>
 
 </body>
 

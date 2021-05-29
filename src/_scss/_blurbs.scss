@@ -18,10 +18,6 @@
     }
   }
 
-  &__link {
-    margin-top: $flow1;
-  }
-
   &__image {
     margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
     height: var(--image-size);
@@ -43,10 +39,6 @@
     svg path {
       fill: var(--g0);
     }
-  }
-
-  &__desc {
-    margin: $flow1 / 2 0;
   }
 }
 
@@ -81,6 +73,23 @@
     font-size: 4em;
     line-height: 0;
     margin: 0;
+  }
+}
+
+.color {
+  border-radius: $borderRadius + $flow1 / 2;
+  background: var(--g7);
+  border: $flow1 solid var(--g7);
+
+  &__swatch {
+    padding-bottom: 100%;
+    width: 100%;
+    border-radius: $borderRadius;
+    margin-bottom: $flow1;
+  }
+
+  &__name {
+    margin-bottom: 0;
   }
 }
 

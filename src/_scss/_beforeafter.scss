@@ -2,7 +2,7 @@
   --val: 50;
   --pos: calc(var(--val) * 1%);
   overflow: hidden;
-  height: 75vmin;
+  height: 63vmin;
   user-select: none;
   cursor: pointer;
   border-radius: $borderRadius;
@@ -55,9 +55,8 @@
       width: 1em;
       height: 1em;
       filter: drop-shadow(var(--shadow));
-      opacity: 0;
       transform: translate(var(--x), -50%) rotate(var(--r));
-      transition: opacity $colorTransition, transform $motionTransition;
+      transition: transform $motionTransition;
     }
 
     &::before {

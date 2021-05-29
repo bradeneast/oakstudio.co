@@ -1,7 +1,3 @@
-#############
-# PLUGINS #
-#############
-
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
@@ -10,18 +6,10 @@ exclude = [
   '**/404/*',
 ]
 
-#############
-# REDIRECTS #
-#############
-
 [[redirects]]
 from = "/*"
 status = 404
 to = "/404/"
-
-###########
-# HEADERS #
-###########
 
 [[headers]]
 # Define which paths this specific [[headers]] block will cover.

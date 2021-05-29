@@ -9,17 +9,21 @@
   </Image>
 
   <Header>
-    <img style="height: 50vh" class="center bleed" alt="" src="{*Image*}" />
+    <div style="overflow: hidden">
+      <img data-parallax="3" style="height: 63vh" class="center bleed" alt="" src="{*Image*}" />
+    </div>
   </Header>
 
   <Content>
     <br><br>
-    <div class="grid squeeze ai-baseline col-3 gap-2">
-      <h1>{*Title*}</h1>
-      <div>
-        <h3>{*Tags*}</h3>
-        {*Type*}
-      </div>
+    <h1>
+      <Slot name="Title"></Slot>
+    </h1>
+    <div>
+      <h3>
+        <Slot name="Tags"></Slot>
+      </h3>
+      <Slot name="Type"></Slot>
     </div>
     <hr>
     <Slot name="Content"></Slot>
