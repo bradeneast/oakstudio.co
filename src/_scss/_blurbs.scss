@@ -76,20 +76,34 @@
   }
 }
 
-.color {
+.soft-grid {
   border-radius: $borderRadius + $flow1 / 2;
+  border: $borderWidth $borderStyle var(--g7);
+  padding: $flow1;
   background: var(--g7);
-  border: $flow1 solid var(--g7);
+  text-decoration: none;
+  transition: background $smoothTransition;
 
-  &__swatch {
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background: var(--g8);
+  }
+
+  &__image {
     padding-bottom: 100%;
     width: 100%;
     border-radius: $borderRadius;
+    overflow: hidden;
     margin-bottom: $flow1;
   }
 
-  &__name {
+  &__title {
     margin-bottom: 0;
+  }
+
+  * {
+    text-decoration: inherit;
   }
 }
 

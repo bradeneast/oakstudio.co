@@ -1,8 +1,11 @@
-<a class="button hollow pad-4" href="{*sys.href*}">
-  <img aria-hidden="true" src="{*Image*}" alt="">
-  <div class="center">
-    <h2 style="color: inherit">
-      <Slot name="Title"></Slot>
-    </h2>
+<a class="soft-grid" href="{*sys.href*}">
+  <div class="soft-grid__image">
+    <img class="pos-abs" aria-hidden="true" src="{*Image*}" alt="">
+  </div>
+  <div class="soft-grid__title">
+    <Slot name="Title"></Slot>
+  </div>
+  <div class="subtext">
+    <Slot name="Tags"></Slot>
   </div>
 </a>

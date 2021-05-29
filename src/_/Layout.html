@@ -23,8 +23,13 @@
     <Import from="/_/-/ContactInfo.html"></Import>
   </main>
 
-  <footer class="subtext">
-    &copy; {% new Date().getFullYear() %} {*SiteName*}
+  <footer class="flex">
+    <div class="left subtext">
+      <Slot name="Footer"></Slot>
+    </div>
+    <div class="right subtext">
+      &copy; {% new Date().getFullYear() %} {*SiteName*}
+    </div>
   </footer>
 
   <Import from="/_/-/Loader.html"></Import>
