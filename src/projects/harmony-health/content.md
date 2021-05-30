@@ -1,13 +1,13 @@
 Harmony Health is a direct primary care practice in Newcastle, Oklahoma. Their brand messaging is summed up in the tagline, &ldquo;Optimal health comes from harmony of body, mind, and spirit.&rdquo;
 
+By analyzing business goals and customer demographics, we were able to arrive at a logo identity which complements that message.
+
 <section class="grid bleed col-2 squeeze">
   <img alt="The Harmony Health logo icon" src="/_assets/images/harmony-health/black-on-white.png">
   <img alt="The Harmony Health logo icon" src="/_assets/images/harmony-health/white-on-black.png">
 </section>
 
-By analyzing business goals and customer demographics, we were able to arrive at a logo identity which complements that message.
-
-<section class="grid gap-1 col-4 squeeze">
+<section class="grid gap-1 col-4 squeeze" style="padding-top: 0;">
   <Import from="/_/~/Colors.html">
     <name>Trusted Navy</name>
     <pms>2955 C</pms>
@@ -25,7 +25,7 @@ By analyzing business goals and customer demographics, we were able to arrive at
   </Import>
 </section>
 
-I selected [Inter](//github.com/rsms/inter/), a modern, trustworthy typeface befitting of this small business. Some letterforms were tweaked to make the mark slightly more approachable.
+We selected [Inter](//github.com/rsms/inter/), a modern, trustworthy typeface befitting of this small business. Some letterforms were tweaked to make the mark slightly more approachable.
 
 <section>
   <Import from="/_/~/BeforeAfter.html">

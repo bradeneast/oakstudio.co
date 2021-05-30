@@ -1,11 +1,13 @@
 <a class="soft-grid" href="{*sys.href*}">
   <div class="soft-grid__image">
-    <img class="pos-abs" aria-hidden="true" src="{*Image*}" alt="">
+    <img class="pos-abs" src="{*Image*}" alt="">
   </div>
-  <div class="soft-grid__title">
-    <Slot name="Title"></Slot>
-  </div>
-  <div class="subtext">
-    <Slot name="Tags"></Slot>
+  <div>
+    <div class="soft-grid__title">
+      <Slot name="Title"></Slot>
+    </div>
+    <div class="subtext">
+      <Slot name="Tags"></Slot>
+    </div>
   </div>
 </a>

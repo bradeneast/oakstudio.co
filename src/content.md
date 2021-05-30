@@ -27,10 +27,10 @@
   </Import>
   <Import from="/_/~/BeforeAfter.html">
     <before>
-      <img src="/_assets/images/ete/sketch.jpg" alt="A sketch of the new logo for East Texas Elderberries">
+      <img src="/_assets/images/east-texas-elderberries/sketch.jpg" alt="A sketch of the new logo for East Texas Elderberries">
     </before>
     <after>
-      <img src="/_assets/images/ete/white-on-blue.png" alt="The primary logo of East Texas Elderberries">
+      <img src="/_assets/images/east-texas-elderberries/white-on-blue.png" alt="The primary logo of East Texas Elderberries">
     </after>
     <text>Identity for East Texas Elderberries</text>
   </Import>

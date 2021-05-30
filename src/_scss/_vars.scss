@@ -23,7 +23,7 @@ $borderRadius: 0.4rem;
 $motionTransition: 0.45s cubic-bezier(0.3, 0.5, 0.1, 1.2);
 $colorTransition: 0.28s cubic-bezier(0.3, 0.3, 0.1, 1);
 $smoothTransition: 0.63s cubic-bezier(0.4, 0.3, 0.1, 1);
-$mobile: 50rem;
+$mobile: 51rem;
 $fallback: showFallback 5s forwards;
 
 @function text-outline($color, $thickness: 1px) {

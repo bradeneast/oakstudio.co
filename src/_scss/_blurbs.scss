@@ -77,6 +77,8 @@
 }
 
 .soft-grid {
+  display: grid;
+  align-items: end;
   border-radius: $borderRadius + $flow1 / 2;
   border: $borderWidth $borderStyle var(--g7);
   padding: $flow1;
@@ -91,6 +93,7 @@
   }
 
   &__image {
+    align-self: start;
     padding-bottom: 100%;
     width: 100%;
     border-radius: $borderRadius;
@@ -99,6 +102,7 @@
   }
 
   &__title {
+    margin-top: 0;
     margin-bottom: 0;
   }
 

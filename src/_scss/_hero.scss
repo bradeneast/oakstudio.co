@@ -1,4 +1,6 @@
 .hero {
+  height: 100vh;
+
   &__heading,
   &__subheading {
     z-index: 3;
@@ -16,6 +18,7 @@
 
 @media screen and (max-width: $mobile) {
   .hero {
+    height: auto;
     padding-top: $flow4;
 
     &__heading,
