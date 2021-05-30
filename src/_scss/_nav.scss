@@ -3,6 +3,7 @@ nav {
   top: 0;
   width: 100%;
   padding: $flow2;
+  padding-bottom: 0;
   z-index: 99;
   --v: calc(255 - 255 * var(--dark));
   background: linear-gradient(
@@ -58,6 +59,7 @@ nav {
 @media screen and (max-width: $mobile) {
   nav {
     padding: $flow1;
+    padding-bottom: 0;
     background: none;
 
     #logo {

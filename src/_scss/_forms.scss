@@ -8,12 +8,8 @@ form {
   border: $borderWidth $borderStyle var(--g6);
   border-radius: $borderRadius;
 
-  & > .subtext:first-child {
-    position: absolute;
-    top: $flow1;
-    right: $flow1;
-    left: $flow1;
-    text-align: right;
+  & > :first-child {
+    margin-top: 0;
   }
 
   * {
@@ -95,7 +91,6 @@ form {
   }
 
   input[type="submit"] {
-    margin-top: $flow1;
     align-self: end;
   }
 
@@ -113,6 +108,11 @@ form {
 
     & > * {
       margin-top: $flow2;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 100%;
     }
   }
 }
