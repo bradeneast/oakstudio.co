@@ -77,8 +77,8 @@
 }
 
 .soft-grid {
-  display: grid;
-  align-items: end;
+  display: flex;
+  flex-flow: column;
   border-radius: $borderRadius + $flow1 / 2;
   border: $borderWidth $borderStyle var(--g7);
   padding: $flow1;
