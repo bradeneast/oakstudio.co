@@ -3,18 +3,8 @@
   <SubHeading>We design timeless brand identities for new businesses and early-stage organizations.</SubHeading>
   <Image>/_assets/images/desk.jpg</Image>
   <Content>
-    <style>
-      #projects> :first-child {
-        grid-column: span 2;
-        grid-row: span 2;
-      }
-
-      #projects> :first-child .soft-grid__image {
-        height: 100%;
-      }
-    </style>
-    <div id="projects" class="grid bleed squeeze col-3 gap-1 pad-1">
-      <Each from="/_/~/ProjectItem.html" match="/projects/.+?" sort="Order"></Each>
+    <div class="special grid bleed squeeze col-3 gap-1 pad-1">
+      <Each from="/_/~/ProjectItem.html" match="/projects/.+?" sort="-Order"></Each>
     </div>
   </Content>
 </Import>

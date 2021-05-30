@@ -90,15 +90,21 @@
   &:focus,
   &:focus-within {
     background: var(--g8);
+
+    .soft-grid__image {
+      opacity: 0.37;
+    }
   }
 
   &__image {
     align-self: start;
     padding-bottom: 100%;
+    height: 100%;
     width: 100%;
     border-radius: $borderRadius;
     overflow: hidden;
     margin-bottom: $flow1;
+    transition: opacity $smoothTransition;
   }
 
   &__title {

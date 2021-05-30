@@ -9,6 +9,11 @@
   letter-spacing: 0.1em;
 }
 
+.special > :first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .pos-abs {
   position: absolute;
   top: 0;
@@ -195,6 +200,11 @@
   .col-2,
   .col-3 {
     grid-template-columns: 1fr;
+  }
+
+  .special > :first-child {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .flex {

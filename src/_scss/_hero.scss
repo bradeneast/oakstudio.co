@@ -14,12 +14,20 @@
     padding-top: $flow6;
     padding-bottom: 0;
   }
+
+  &__feature {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: $mobile) {
   .hero {
     height: auto;
     padding-top: $flow4;
+
+    &__feature {
+      height: 24rem;
+    }
 
     &__heading,
     &__subheading {
