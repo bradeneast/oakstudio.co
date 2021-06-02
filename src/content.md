@@ -32,7 +32,7 @@
     <after>
       <img src="/_assets/images/east-texas-elderberries/white-on-blue.png" alt="The primary logo of East Texas Elderberries">
     </after>
-    <text>Identity for East Texas Elderberries</text>
+    <text>Logo design for East Texas Elderberries</text>
   </Import>
 </section>
 

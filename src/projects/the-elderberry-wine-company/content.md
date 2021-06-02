@@ -10,22 +10,22 @@ The Elderberry Wine Company is a winery owned and operated by [360 Farms](/proje
 We explored several color palettes throughout the design process. Each color represents a specific member of The Elderberry Wine Company's selection. The final palette highlights a unique quality of each specialty blend.
 
 <section class="grid gap-1 col-4 squeeze">
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Elderflower Gold</name>
     <pms>150 C</pms>
     <hex>F4AE62</hex>
   </Import>
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Dry Red</name>
     <pms>1805 C</pms>
     <hex>A82F2C</hex>
   </Import>
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Sweet Rosé</name>
     <pms>205 C</pms>
     <hex>D34C83</hex>
   </Import>
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Elder Indigo</name>
     <pms>275 C</pms>
     <hex>24223E</hex>

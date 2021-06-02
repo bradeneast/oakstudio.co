@@ -18,6 +18,10 @@
   --shadow: 0 0 0.15rem var(--shadowColor);
 }
 
+.dark {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --g0: #{$g8};
@@ -36,6 +40,14 @@
 
   html body {
     color: var(--g2);
+  }
+
+  .light {
+    display: none;
+  }
+
+  .dark {
+    display: block;
   }
 }
 

@@ -8,17 +8,17 @@ By analyzing business goals and customer demographics, we were able to arrive at
 </section>
 
 <section class="grid gap-1 col-4 squeeze" style="padding-top: 0;">
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Trusted Navy</name>
     <pms>2955 C</pms>
     <hex>003764</hex>
   </Import>
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Synergy Blue</name>
     <pms>2925 C</pms>
     <hex>009ADE</hex>
   </Import>
-  <Import from="/_/~/Colors.html">
+  <Import from="/_/~/Color.html">
     <name>Clean Green</name>
     <pms>7465 C</pms>
     <hex>3BBFAD</hex>
