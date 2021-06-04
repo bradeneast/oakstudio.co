@@ -52,11 +52,7 @@ On-brand ads were a must-have for catching the eyes of their target market. So, 
 
 ![An iPhone with a facebook ad for the business](/_assets/images/east-texas-elderberries/fb-ad.png)
 
-<div class="grid col-4 gap-1 squeeze">
-  <img src="/_assets/images/east-texas-elderberries/sm1.jpg" alt="">
-  <img src="/_assets/images/east-texas-elderberries/sm2.jpg" alt="">
-  <img src="/_assets/images/east-texas-elderberries/sm3.jpg" alt="">
-  <img src="/_assets/images/east-texas-elderberries/sm4.jpg" alt="">
-</div>
-
 In the end, we helped East Texas Elderberries establish a brand identity that works in every area they needed. They are a family business that is well-equipped to look attractive and trustworthy for many generations to come.
+
+
+![Two shopping paper bags, branded with the The East Texas Elderberries identity](/_assets/images/east-texas-elderberries/sack.jpg)

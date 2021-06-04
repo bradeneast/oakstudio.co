@@ -204,6 +204,31 @@
   align-self: center;
 }
 
+[data-animate] {
+  transition: $smoothTransition;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+
+  &[data-offscreen] {
+    opacity: 0;
+  }
+}
+
+[data-offscreen] {
+  &[data-animate="from-right"] {
+    transform: translate3d(1em, 0, 0);
+  }
+  &[data-animate="from-left"] {
+    transform: translate3d(-1em, 0, 0);
+  }
+  &[data-animate="from-top"] {
+    transform: translate3d(0, -1em, 0);
+  }
+  &[data-animate="from-bottom"] {
+    transform: translate3d(0, 1em, 0);
+  }
+}
+
 [data-parallax] {
   --offset: 0;
   --perspective: 0;

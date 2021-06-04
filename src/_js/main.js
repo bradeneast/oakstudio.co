@@ -2,6 +2,7 @@
 import { watchBeforeAfterModules } from './_beforeafter';
 import Coarse from './_coarse';
 import { watchForms } from './_forms';
+import observer from './_observer';
 import { initParallax } from './_parallax';
 import { $$ } from './_utils';
 
@@ -18,6 +19,10 @@ function init() {
         swipeSensitivity: .8
       }
     ));
+
+  $$('[data-animate]').forEach(elem =>
+    observer.observe(elem)
+  );
 }
 
 init();
