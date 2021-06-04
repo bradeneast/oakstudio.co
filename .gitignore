@@ -5,3 +5,5 @@ dist/[!_]*
 .env
 # Local Netlify folder
 .netlify
+# NPM package lock
+package-lock.json
