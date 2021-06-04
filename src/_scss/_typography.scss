@@ -96,6 +96,10 @@ a {
   text-decoration-thickness: $borderWidth / 2;
   text-decoration-color: var(--primary);
 
+  &[href="undefined"] {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     color: var(--g0);

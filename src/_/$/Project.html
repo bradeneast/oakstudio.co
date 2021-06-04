@@ -15,17 +15,23 @@
   </Header>
 
   <Content>
+
     <h1>
       <Slot name="Title"></Slot>
     </h1>
+
     <div>
       <h3>
         <Slot name="Type"></Slot>
       </h3>
       <Slot name="Tags"></Slot>
     </div>
+
     <hr>
     <Slot name="Content"></Slot>
+    <hr>
+
+    <Import from="/_/-/PostNav.html"></Import>
   </Content>
 
   <Footer>

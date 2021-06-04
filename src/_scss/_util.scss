@@ -140,6 +140,14 @@
   align-items: stretch;
 }
 
+.ai-space-around {
+  align-items: space-around;
+}
+
+.ai-space-between {
+  align-items: space-between;
+}
+
 .ac-start {
   align-content: start;
 }
@@ -164,14 +172,6 @@
   justify-content: end;
 }
 
-.ai-space-around {
-  align-items: space-around;
-}
-
-.ai-space-between {
-  align-items: space-between;
-}
-
 .ji-center {
   justify-items: center;
 }
@@ -182,6 +182,26 @@
 
 .ji-space-between {
   justify-items: space-between;
+}
+
+.ji-end {
+  justify-items: end;
+}
+
+.ji-start {
+  justify-items: start;
+}
+
+.as-start {
+  align-self: start;
+}
+
+.as-end {
+  align-self: end;
+}
+
+.as-center {
+  align-self: center;
 }
 
 [data-parallax] {

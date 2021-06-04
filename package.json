@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/bradeneast/oakstudio.co#readme",
   "dependencies": {
-    "ingrid-ssg": "^3.0.0"
+    "ingrid-ssg": "^4.0.1"
   }
 }
