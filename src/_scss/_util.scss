@@ -212,6 +212,18 @@
   &[data-offscreen] {
     opacity: 0;
   }
+
+  & + [data-animate] {
+    transition-delay: 0.1s;
+
+    & + [data-animate] {
+      transition-delay: 0.2s;
+
+      & + [data-animate] {
+        transition-delay: 0.3s;
+      }
+    }
+  }
 }
 
 [data-offscreen] {
