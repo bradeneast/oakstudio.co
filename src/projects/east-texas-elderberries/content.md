@@ -43,7 +43,7 @@ This identity needed to adapt fluidly for every application, which can be diffic
 East Texas Elderberries wanted a way to reinforce their brand while interacting online. To help with that, we designed a set of icons to supplement content on their website. These icons were a great visual aid to catch and hold attention of potential customers.
 <style>
   .carousel__item {
-    max-width: 20rem;
+    max-width: 12rem;
   }
 </style>
 <section class="carousel-wrapper bleed light">
