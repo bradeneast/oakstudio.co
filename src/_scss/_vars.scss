@@ -8,7 +8,7 @@ $g6: #cacdd3;
 $g7: #e7e9ee;
 $g8: white;
 $primary: #fe3b1f;
-$secondary: #00c7c7;
+$secondary: #e4009f;
 $tertiary: #225dff;
 $flow1: 1rem;
 $flow2: 1.63rem;
@@ -40,13 +40,20 @@ $fallback: showFallback 5s forwards;
 }
 
 @font-face {
-  font-family: "Indie Flower";
-  src: url("/_assets/fonts/Indie-Flower.woff2") format("woff2"), url("/_assets/fonts/Indie-Flower.ttf") format("ttf");
-  font-weight: bold;
+  font-family: "Merriweather";
+  src: url("/_assets/fonts/Merriweather-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/_assets/fonts/Merriweather-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
   font-style: italic;
   font-display: block;
 }
 
 $fallbackFonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", "Roboto", sans-serif;
 $textFont: "Space Grotesk", $fallbackFonts;
-$altFont: "Indie Flower", "Times", $fallbackFonts;
+$altFont: "Merriweather", "Times", $fallbackFonts;

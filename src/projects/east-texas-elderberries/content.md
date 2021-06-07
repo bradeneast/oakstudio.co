@@ -41,18 +41,47 @@ This identity needed to adapt fluidly for every application, which can be diffic
 
 ## Speaking of web browsing...
 East Texas Elderberries wanted a way to reinforce their brand while interacting online. To help with that, we designed a set of icons to supplement content on their website. These icons were a great visual aid to catch and hold attention of potential customers.
-
-<section class="squeeze">
-  <img class="light" src="/_assets/images/east-texas-elderberries/icons.png" alt="">
-  <img class="dark" src="/_assets/images/east-texas-elderberries/icons-white.png" alt="">
+<style>
+  .carousel__item {
+    max-width: 20rem;
+  }
+</style>
+<section class="carousel-wrapper bleed light">
+  <div class="carousel" data-scrollTime="2000">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-1.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-2.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-3.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-4.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-5.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-6.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-7.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-8.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-9.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-10.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-11.png" alt="">
+  </div>
+  </section>
+  <section class="carousel-wrapper bleed dark">
+  <div class="carousel" data-scrollTime="2000">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-1-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-2-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-3-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-4-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-5-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-6-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-7-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-8-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-9-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-10-white.png" alt="">
+    <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-11-white.png" alt="">
+  </div>
 </section>
 
-## Social media an important place for East Texas Elderberries to put their best foot forward.
+## Social media was an important place for East Texas Elderberries to put their best foot forward.
 On-brand ads were a must-have for catching the eyes of their target market. So, we got to work.
 
 ![An iPhone with a facebook ad for the business](/_assets/images/east-texas-elderberries/fb-ad.png)
 
 In the end, we helped East Texas Elderberries establish a brand identity that works in every area they needed. They are a family business that is well-equipped to look attractive and trustworthy for many generations to come.
-
 
 ![Two shopping paper bags, branded with the The East Texas Elderberries identity](/_assets/images/east-texas-elderberries/sack.jpg)

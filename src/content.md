@@ -30,9 +30,9 @@
       <img src="/_assets/images/east-texas-elderberries/sketch.jpg" alt="A sketch of the new logo for East Texas Elderberries">
     </before>
     <after>
-      <img src="/_assets/images/east-texas-elderberries/white-on-blue.png" alt="The primary logo of East Texas Elderberries">
+      <img src="/_assets/images/east-texas-elderberries/white-on-black.png" alt="The primary logo of East Texas Elderberries">
     </after>
-    <text>Logo design for East Texas Elderberries</text>
+    <text>Logo design for <a href="/projects/east-texas-elderberries">East Texas Elderberries</a></text>
   </Import>
 </section>
 

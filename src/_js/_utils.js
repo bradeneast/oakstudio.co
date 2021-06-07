@@ -11,7 +11,10 @@ export let $ = (selector, context = document) => context.querySelector(selector)
 export let $$ = (selector, context = document) => context.querySelectorAll(selector);
 
 /**@returns {String} */
-export let attr = (element, attributeName) => element.getAttribute(attributeName);
+export let attr = (element, attributeName) => {
+  let a = element.getAttribute(attributeName);
+  if (a) return JSON.parse(a);
+}
 
 let lastFrame = 0;
 export let debounce = (callback) => requestAnimationFrame(thisFrame => {

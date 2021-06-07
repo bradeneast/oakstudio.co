@@ -38,7 +38,8 @@ We selected [Inter](//github.com/rsms/inter/), a modern, trustworthy typeface be
   </Import>
 </section>
 
-Throughout the discovery process, music and sound emerged as the dominant theme. Although Harmony Health did not offer music therapy services, the logo needed to include a musical element.
+## Throughout the discovery process, music and sound emerged as the dominant theme.
+Although Harmony Health did not offer music therapy services, the logo needed to include a musical element.
 
 ![The Harmony Health logo on a white background.](/_assets/images/harmony-health/white-bg.png)
 
