@@ -23,10 +23,11 @@
     <Import from="/_/-/ContactInfo.html"></Import>
   </main>
 
+  <span class="fake-footer left subtext">
+    <Slot name="Footer"></Slot>
+  </span>
+
   <footer class="flex">
-    <div class="left subtext">
-      <Slot name="Footer"></Slot>
-    </div>
     <div class="right subtext">
       &copy; {% new Date().getFullYear() %} {*SiteName*}
     </div>
