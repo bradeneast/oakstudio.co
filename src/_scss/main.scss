@@ -14,8 +14,10 @@
   --primary: #{$primary};
   --secondary: #{$secondary};
   --tertiary: #{$tertiary};
+  --translucent: #{$translucent};
   --shadowColor: #0003;
   --shadow: 0 0 0.15rem var(--shadowColor);
+  --largeShadow: 0 0.6rem 1.5rem -0.6rem var(--shadowColor);
 }
 
 .dark {

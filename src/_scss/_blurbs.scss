@@ -61,17 +61,23 @@
 }
 
 .review {
-  padding: $flow2;
+  background: inherit;
 
-  &__text {
-    font-family: $altFont;
+  .blurb {
+    margin-top: 0;
+
+    &__image {
+      margin-bottom: 0;
+    }
   }
 
   .quote {
+    opacity: 0.37;
     color: var(--g8);
-    font-size: 4em;
-    line-height: 0;
+    font-size: var(--image-size);
     margin: 0;
+    line-height: 0;
+    transform: translateY(0.7em);
   }
 }
 

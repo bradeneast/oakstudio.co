@@ -38,14 +38,15 @@
   transform: translateX(-50%);
 
   button {
-    margin-left: $flow1;
+    margin-left: 0.5em;
     width: 1em;
     height: 1em;
     padding: 0;
     border-radius: 50%;
-    opacity: 0.63;
+    opacity: 0.37;
     transform: scale(0.63);
-    background: var(--g8);
+    background: var(--g0);
+    transition: $colorTransition;
 
     &:first-child {
       margin-left: 0;
@@ -53,7 +54,6 @@
 
     &.selected {
       opacity: 1;
-      transform: scale(1);
     }
   }
 }

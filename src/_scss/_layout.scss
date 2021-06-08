@@ -50,14 +50,12 @@ section {
 
   &.primary {
     background: var(--primary);
-    color: var(--g0);
 
-    svg path {
-      fill: var(--g6);
+    * {
+      color: $g8;
     }
   }
 
-  &.primary,
   &.soft {
     margin-top: $flow6;
 
@@ -81,15 +79,21 @@ section {
   }
 }
 
+.fake-footer,
 footer {
   z-index: 11;
   position: fixed;
-  display: flex;
   left: 0;
   bottom: 0;
-  right: 0;
   padding: $flow2;
   padding-top: 0;
+}
+
+footer {
+  z-index: 10;
+  display: flex;
+  pointer-events: none;
+  right: 0;
 }
 
 @media screen and (max-width: $mobile) {

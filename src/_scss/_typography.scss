@@ -44,7 +44,6 @@ h5 {
   }
 }
 
-h1,
 h2,
 h3,
 h5 {
@@ -55,23 +54,18 @@ h1 {
   font-size: calc(11vmin + 9px);
   line-height: 0.9;
   letter-spacing: -0.05em;
+  margin-left: -0.05em;
   margin-bottom: 0.2em;
-  margin-left: -0.08em;
-
-  @supports (mix-blend-mode: difference) {
-    color: $g0;
-    text-shadow: text-outline($g8);
-    mix-blend-mode: difference;
-
-    em {
-      color: $g8;
-    }
-  }
 
   em {
-    font-style: normal;
-    letter-spacing: -0.07em;
+    font-family: $altFont;
     text-shadow: none;
+
+    @supports (mix-blend-mode: difference) {
+      color: $g0;
+      text-shadow: text-outline($g8);
+      mix-blend-mode: difference;
+    }
   }
 }
 
