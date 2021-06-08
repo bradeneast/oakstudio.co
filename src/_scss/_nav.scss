@@ -1,12 +1,3 @@
-@keyframes load {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -48,7 +39,6 @@ nav {
   [role="menu"] {
     display: flex;
     margin-left: auto;
-    // animation: load 0s 1s forwards;
 
     a {
       margin-left: $flow1;
@@ -115,6 +105,7 @@ nav {
       & ~ [role="menu"] {
         opacity: 1;
         pointer-events: all;
+        transition: opacity $smoothTransition;
       }
 
       & ~ label[for="menu-toggle"] {
@@ -143,7 +134,6 @@ nav {
       background: var(--g8);
       opacity: 0;
       pointer-events: none;
-      transition: opacity $smoothTransition;
 
       a {
         margin-bottom: $flow1;
