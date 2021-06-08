@@ -27,15 +27,20 @@ The target market for East Texas Elderberries is families or businesses that wan
 
 ![A collection of boxes stamped with the East Texas Elderberries seal](/_assets/images/east-texas-elderberries/boxes.jpg)
 
-## East Texas Elderberries expressed that they never wanted to lose sight of their orientation toward family.
+## East Texas Elderberries expressed that they never wanted to lose sight of their orientation toward *family*.
 As we discovered more about this elderberry farm, it became clear that family and generational legacy were the heartbeat of the operation. That gave us a starting point, from which we looked to design something timeless, approachable, and durable.
 
-This identity needed to adapt fluidly for every application, which can be difficult with long words like &ldquo;elderberries&rdquo; in the name of the business. To solve this, we designed logo alternates, which would work at different scales, from as large as a billboard, to as small as a browser favicon.
+![A mother teaching her daughter to plant crops in the soil.](/_assets/images/east-texas-elderberries/family.jpg)
 
-<section class="bleed squeeze">
+## From billboards to browsers
+This identity needed to adapt fluidly for every application. To solve this, we designed logo alternates, which would work at different scales: from as large as a billboard design to as small as a browser favicon.
+
+<p class="bleed">
   <img class="light" src="/_assets/images/east-texas-elderberries/scales-red.png" alt="">
   <img class="dark" src="/_assets/images/east-texas-elderberries/scales-white.png" alt="">
-</section>
+</p>
+
+![A billboard advertising East Texas Elderberries.](/_assets/images/east-texas-elderberries/billboard.jpg)
 
 ![An example of the East Texas Elderberries favicon on a browser tab.](/_assets/images/east-texas-elderberries/web.png)
 
@@ -43,11 +48,11 @@ This identity needed to adapt fluidly for every application, which can be diffic
 East Texas Elderberries wanted a way to reinforce their brand while interacting online. To help with that, we designed a set of icons to supplement content on their website. These icons were a great visual aid to catch and hold attention of potential customers.
 <style>
   .carousel__item {
-    max-width: 12rem;
+    max-width: 14rem;
   }
 </style>
 <section class="carousel-wrapper bleed light">
-  <div class="carousel" data-scrollTime="2000">
+  <div class="carousel" data-dots="false" data-scrollTime="2000">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-1.png" alt="">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-2.png" alt="">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-3.png" alt="">
@@ -62,7 +67,7 @@ East Texas Elderberries wanted a way to reinforce their brand while interacting 
   </div>
   </section>
   <section class="carousel-wrapper bleed dark">
-  <div class="carousel" data-scrollTime="2000">
+  <div class="carousel" data-dots="false" data-scrollTime="2000">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-1-white.png" alt="">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-2-white.png" alt="">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-3-white.png" alt="">
@@ -82,6 +87,7 @@ On-brand ads were a must-have for catching the eyes of their target market. So, 
 
 ![An iPhone with a facebook ad for the business](/_assets/images/east-texas-elderberries/fb-ad.png)
 
+## Outcomes
 In the end, we helped East Texas Elderberries establish a brand identity that works in every area they needed. They are a family business that is well-equipped to look attractive and trustworthy for many generations to come.
 
 ![Two shopping paper bags, branded with the The East Texas Elderberries identity](/_assets/images/east-texas-elderberries/sack.jpg)

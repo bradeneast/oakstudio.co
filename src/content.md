@@ -5,18 +5,21 @@
   <Import from="/_/-/Services.html"></Import>
 </section>
 
-<section class="primary bleed center grid ai-center jc-center ac-center col-3 gap-1">
+<section class="primary squeeze bleed center grid ai-center jc-center ac-center col-3 gap-2">
   <Import from="/_/~/Review.html">
     <review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</review>
     <client>Brenda Jones</client>
+    <company>Love &amp; Bliss Photography</company>
   </Import>
   <Import from="/_/~/Review.html">
     <review>I would absolutely recommend.</review>
     <client>William Fecteau</client>
+    <company>Essential BodywoRX Massage</company>
   </Import>
   <Import from="/_/~/Review.html">
-    <review>Working with them has been awesome, and they've consistently given me quality design work. Highly recommended!</review>
-    <client>Alex Moya</client>
+    <review>They did a great job interpreting our feedback and coming up with some great designs.</review>
+    <client>James Snyder</client>
+    <company>Bandits RPG Gaming</company>
   </Import>
 </section>
 
