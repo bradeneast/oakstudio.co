@@ -14,11 +14,13 @@ function init() {
 
   $$('.carousel').forEach(carousel => {
     let renderControls = attr(carousel, 'data-controls');
+    let renderDots = attr(carousel, 'data-dots');
     let scrollTime = attr(carousel, 'data-scrollTime');
     new Coarse(carousel,
       {
+        renderDots: renderDots == undefined ? true : renderDots,
         renderControls: renderControls || false,
-        autoScroll: scrollTime || 4000,
+        autoScroll: scrollTime == undefined ? 4000 : scrollTime,
         swipeSensitivity: .8
       }
     )
