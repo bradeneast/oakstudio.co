@@ -35,7 +35,7 @@ We explored several color palettes throughout the design process. Each color rep
 
 The Elderberry Wine Company inherited the brand fonts of its parent company, [360 Farms](/projects/360-farms). Pairing [Bodoni* 11](//indestructibletype.com/) with [Montserrat Semibold](//fonts.google.com/specimen/Montserrat) offered a reliably elegant, modern way to communicate on wine labels, signage, and in digital environments.
 
-![A menu design for the Elderberry Wine Company](/_assets/images/elderberry-wine-company/menu.jpg)
+![A stationary design for the Elderberry Wine Company](/_assets/images/elderberry-wine-company/stationary.jpg)
 
 ## Packaging
 The design element below the wordmark offered creative applications in patterns and on packaging. The illustrative icon ties the mark together and uniquely distinguishes The Elderberry Wine Company from competition.
