@@ -7,6 +7,7 @@ The Elderberry Wine Company is a winery owned and operated by [360 Farms](/proje
   <img alt="The secondary mark on a dark background" src="/_assets/images/elderberry-wine-company/flower-dark.svg">
 </section>
 
+## Colorful language
 We explored several color palettes throughout the design process. Each color represents a specific member of The Elderberry Wine Company's selection. The final palette highlights a unique quality of each specialty blend.
 
 <section class="grid gap-1 col-4 squeeze">
@@ -36,6 +37,7 @@ The Elderberry Wine Company inherited the brand fonts of its parent company, [36
 
 ![A menu design for the Elderberry Wine Company](/_assets/images/elderberry-wine-company/menu.jpg)
 
+## Packaging
 The design element below the wordmark offered creative applications in patterns and on packaging. The illustrative icon ties the mark together and uniquely distinguishes The Elderberry Wine Company from competition.
 
 <section class="bleed grid gap-2 col-3 squeeze">
@@ -44,6 +46,7 @@ The design element below the wordmark offered creative applications in patterns 
   <img alt="A bottle of elderberry red" src="/_assets/images/elderberry-wine-company/bottle-red.jpg">
 </section>
 
+## Outcome
 The familiar colors, distinct seal, and bold design helped make the debut of The Elderberry Wine Company a huge success.
 
 ![Two wine glasses being filled with elderberry wine](/_assets/images/elderberry-wine-company/sunset.jpg)

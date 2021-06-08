@@ -20,17 +20,22 @@ With the 15th anniversary of Jude's coming up, we suggested creating patterns fo
   <img alt="A barista in the drive thru window, offering a cup of Jude's coffee" src="/_assets/images/judes/judes-drive-thru.jpg" />
 </section>
 
+## Packaging
 Because Jude's offers a variety of coffee and supplements, among many other things, there was a significant amount of packaging design involved. Aligning these packaging designs with the overall brand identity presented an acute challenge. They had to strike a perfect balance between premium and accessible.
 
 <section class="grid bleed col-2 gap-1 squeeze">
   <img alt="A beautiful menu that makes use of the Jude's colors, typography, and patterns" src="/_assets/images/judes/judes-menu.jpg" />
   <img alt="Two bottles of supplements with Jude's branded packaging. Tumeric and Elderberry, respectively" src="/_assets/images/judes/judes-supplements.jpg" />
-  <img alt="A new design of the Jude's website, featuring their status as best Bartlesville coffee shop" src="/_assets/images/judes/judes-website.jpg">
-  <img alt="A billboard to advertist Jude's coffee" src="/_assets/images/judes/judes-billboard.jpg">
 </section>
 
+## Advertising
 Finally, to help extend the brand reach into neighboring communities, we applied the identity to the Jude's website and an eye-catching billboard.
 
+![A new design of the Jude's website, featuring their status as best Bartlesville coffee shop](/_assets/images/judes/judes-website.jpg)
+
+![A billboard to advertist Jude's coffee](/_assets/images/judes/judes-billboard.jpg)
+
+## Outcomes
 This conceptual rebrand was a special opportunity for Jude’s to resonate even more deeply with the health-conscious and java-loving Bartlesville locals, and stand out as a natural, premium, and accessible personality for an audience that cares about themselves and their environment.
 
 <section>
