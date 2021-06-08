@@ -1,9 +1,18 @@
-<div class="review">
-  <div data-animate="from-bottom" class="quote">&ldquo;</div>
-  <h4 data-animate="from-bottom" class="review__text">
-    <Slot name="review"></Slot>
-  </h4>
-  <p data-animate="from-bottom" class="review__client">
-    <Slot name="client"></Slot>
-  </p>
+<div data-animate="from-bottom" class="review">
+  <Import from="/_/~/Blurb.html">
+    <image>
+      <div class="quote">&ldquo;</div>
+    </image>
+    <text>
+      <h4 class="review__text">
+        <Slot name="review"></Slot>
+      </h4>
+      <div class="review__client">
+        <Slot name="client"></Slot>
+        <div class="subtext">
+          <Slot name="company"></Slot>
+        </div>
+      </div>
+    </text>
+  </Import>
 </div>
