@@ -130,4 +130,8 @@
       padding-top: $flow2;
     }
   }
+
+  .review:not(:last-child) {
+    margin-bottom: $flow3;
+  }
 }

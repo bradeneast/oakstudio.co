@@ -1,45 +1,60 @@
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 nav {
   position: fixed;
   top: 0;
+  height: 4rem;
   width: 100%;
-  padding: $flow2;
-  padding-bottom: 0;
-  z-index: 99;
+  padding: $flow1 $flow2 0 $flow2;
+  z-index: 19;
   --v: calc(255 - 255 * var(--dark));
   background: linear-gradient(
-    rgba(var(--v), var(--v), var(--v), 0.6),
-    rgba(var(--v), var(--v), var(--v), 0.2),
+    rgba(var(--v), var(--v), var(--v), 0.8),
+    rgba(var(--v), var(--v), var(--v), 0.37),
     transparent
   );
   background-size: 100% 12em;
   background-position: bottom;
 
   #logo {
-    display: flex;
-    width: 5em;
+    height: 100%;
+    width: auto;
     z-index: 9;
 
-    svg path {
-      transition: $colorTransition;
+    img {
+      height: 100%;
+      width: auto;
     }
+  }
 
-    &:hover,
-    &:focus {
-      svg path {
-        fill: var(--primary);
-      }
-    }
+  #menu-toggle {
+    position: absolute;
+    top: -99vw;
+    left: -99vw;
+    opacity: 0.001;
+  }
+
+  label[for="menu-toggle"] {
+    display: none;
   }
 
   [role="menu"] {
     display: flex;
     margin-left: auto;
+    // animation: load 0s 1s forwards;
 
     a {
       margin-left: $flow1;
       display: inline-block;
-      padding-left: 0.2em;
-      transform: translateX(-0.2em);
+      padding-left: 0.15em;
+      transform: translateX(-0.15em);
       text-decoration: none;
       color: var(--g0);
 
@@ -64,6 +79,75 @@ nav {
 
     #logo {
       width: 4em;
+    }
+
+    label[for="menu-toggle"] {
+      display: block;
+      z-index: 9;
+      margin-left: auto;
+      width: 1.8rem;
+      height: 1.8rem;
+
+      &::before,
+      &::after {
+        --r: 65deg;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: $borderWidth;
+        background: var(--g0);
+        transform: translate(-50%, -50%) rotate(var(--r));
+        transition: transform $motionTransition;
+      }
+
+      &::before {
+        left: calc(50% + 0.3rem);
+      }
+
+      &::after {
+        left: calc(50% - 0.3rem);
+      }
+    }
+
+    #menu-toggle:checked {
+      & ~ [role="menu"] {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      & ~ label[for="menu-toggle"] {
+        &::before {
+          --r: 225deg;
+          left: 50%;
+        }
+
+        &::after {
+          --r: 135deg;
+          left: 50%;
+        }
+      }
+    }
+
+    [role="menu"] {
+      font-size: 2em;
+      place-content: center;
+      place-items: center;
+      position: fixed;
+      flex-flow: column;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: var(--g8);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity $smoothTransition;
+
+      a {
+        margin-bottom: $flow1;
+      }
     }
   }
 }
