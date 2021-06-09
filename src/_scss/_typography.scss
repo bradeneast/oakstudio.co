@@ -60,12 +60,8 @@ h1 {
   em {
     font-family: $altFont;
     text-shadow: none;
-
-    @supports (mix-blend-mode: difference) {
-      color: $g0;
-      text-shadow: text-outline($g8);
-      mix-blend-mode: difference;
-    }
+    color: var(--g8);
+    text-shadow: text-outline(var(--g0));
   }
 }
 
