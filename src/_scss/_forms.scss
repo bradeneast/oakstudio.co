@@ -1,19 +1,26 @@
 form {
-  display: flex;
   place-items: start;
   flex-flow: row wrap;
-  gap: $flow1;
   padding: $flow3;
+  padding-right: $flow2;
   margin: $flow4 0;
   border: $borderWidth $borderStyle var(--g6);
   border-radius: $borderRadius;
+
+  * {
+    margin-bottom: 0;
+  }
 
   & > :first-child {
     margin-top: 0;
   }
 
-  * {
-    margin-bottom: 0;
+  & > :not(:last-child) {
+    margin-bottom: $flow1;
+  }
+
+  & > * {
+    margin-right: $flow1;
   }
 
   h2,
@@ -22,20 +29,6 @@ form {
   h5,
   h6 {
     margin-bottom: $flow1 / 2;
-  }
-
-  :last-child {
-    margin-bottom: 0 !important;
-  }
-
-  .half {
-    flex: 1;
-  }
-
-  .full {
-    width: 100%;
-    flex-grow: 1;
-    flex-shrink: 0;
   }
 
   label {
@@ -55,6 +48,7 @@ form {
 
   input,
   textarea {
+    width: 100%;
     display: inline-block;
     font-family: $textFont;
     padding: 0.37em 0.63em;
@@ -77,6 +71,7 @@ form {
   input[type="checkbox"] {
     padding: 0;
     margin-right: $flow1 / 2;
+    margin-bottom: 0;
     appearance: none;
     background: none;
     border-radius: 50%;
@@ -104,11 +99,8 @@ form {
 @media screen and (max-width: $mobile) {
   form {
     padding: $flow2;
+    padding-right: $flow1;
     display: block;
-
-    & > * {
-      margin-top: $flow2;
-    }
 
     input[type="submit"] {
       display: block;
