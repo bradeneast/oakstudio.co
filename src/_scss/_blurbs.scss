@@ -8,7 +8,7 @@
   margin-top: calc(var(--image-size) / 3);
   border: $borderWidth $borderStyle var(--g6);
   border-radius: $borderRadius;
-  background: inherit;
+  background-color: inherit;
 
   & > * {
     margin: 0;
@@ -22,14 +22,14 @@
     margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
     height: var(--image-size);
     width: var(--image-size);
-    background: inherit;
+    background-color: inherit;
     transition: $colorTransition;
 
     &::before {
       content: "";
       position: absolute;
       border-radius: inherit;
-      background: inherit;
+      background-color: inherit;
       width: calc(100% + #{$borderWidth * 2});
       height: calc(100% + #{$borderWidth * 2});
       top: -$borderWidth;
@@ -61,7 +61,7 @@
 }
 
 .review {
-  background: inherit;
+  background-color: inherit;
 
   .blurb {
     margin-top: 0;

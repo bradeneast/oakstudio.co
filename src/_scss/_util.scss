@@ -9,6 +9,13 @@
   letter-spacing: 0.1em;
 }
 
+.pattern-bg {
+  background-image: url("/_assets/images/pattern.svg");
+  background-position: -5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .special > :first-child {
   grid-column: span 2;
   grid-row: span 2;
@@ -32,10 +39,6 @@
 
 .round {
   border-radius: 50%;
-}
-
-.soft {
-  background: var(--g7);
 }
 
 .flow > * {
