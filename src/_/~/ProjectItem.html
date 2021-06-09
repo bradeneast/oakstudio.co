@@ -1,13 +1,15 @@
-<a data-animate="from-bottom" class="soft-grid" href="{*sys.href*}">
-  <div class="soft-grid__image">
-    <img class="pos-abs" src="{*Image*}" alt="">
-  </div>
-  <div>
-    <div class="soft-grid__title">
-      <Slot name="Title"></Slot>
+<div data-animate="from-bottom">
+  <a style="height: 100%;" class="soft-grid" href="{*sys.href*}">
+    <div class="soft-grid__image">
+      <img class="pos-abs" src="{*Image*}" alt="">
     </div>
-    <div class="subtext">
-      <Slot name="Tags"></Slot>
+    <div>
+      <div class="soft-grid__title">
+        <Slot name="Title"></Slot>
+      </div>
+      <div class="subtext">
+        <Slot name="Tags"></Slot>
+      </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>

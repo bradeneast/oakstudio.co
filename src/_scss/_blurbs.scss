@@ -88,12 +88,13 @@
   padding: $flow1;
   background: var(--g7);
   text-decoration: none;
-  transition: background $smoothTransition;
+  transition: background $smoothTransition, border $colorTransition;
 
   &:hover,
   &:focus,
   &:focus-within {
     background: var(--g8);
+    border-color: var(--g5);
 
     .soft-grid__image {
       opacity: 0.37;
