@@ -13,7 +13,14 @@ export let $$ = (selector, context = document) => context.querySelectorAll(selec
 /**@returns {String} */
 export let attr = (element, attributeName) => {
   let a = element.getAttribute(attributeName);
-  if (a) return JSON.parse(a);
+  if (a) {
+    try {
+      return JSON.parse(a)
+    }
+    catch (e) {
+      return a;
+    }
+  }
 }
 
 let lastFrame = 0;
