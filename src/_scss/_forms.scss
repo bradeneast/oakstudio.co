@@ -53,13 +53,13 @@ form {
     font-family: $textFont;
     padding: 0.37em 0.63em;
     background: none;
-    border: $borderWidth $borderStyle var(--g6);
+    border: $borderWidth $borderStyle var(--g4);
     border-radius: $borderRadius;
     color: var(--g0);
     transition: border-color $colorTransition;
 
     &:hover {
-      border-color: var(--g3);
+      border-color: var(--g2);
     }
   }
 
