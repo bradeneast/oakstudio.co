@@ -1,4 +1,4 @@
-- We don't do hourly billing, and [we never will](//jonathanstark.com/how-i-realized-that-hourly-billing-is-nuts).
+- We don't do hourly billing, and we never will.
 - There's no jargon in our vocabulary.
 - We do everything up front and out in the open. Branding shouldn't be uncertain.
 - Time crunches are no fun. We work at a faster pace than most design agencies.

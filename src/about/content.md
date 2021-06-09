@@ -16,7 +16,7 @@ We see our work as a way to **create permanence** in a time when it seems like n
 ## How we operate
 <Import from="/_/copy/MO.md"></Import>
 
-<section class="soft bleed">
+<section class="soft bleed pattern-bg">
   <Import from="/_/~/Person.html">
     <headshot>
       <img src="/_assets/images/braden.jpg" alt="Braden East, founder of Oak Studio">
