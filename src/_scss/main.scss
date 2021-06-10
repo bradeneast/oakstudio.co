@@ -51,6 +51,10 @@
   .dark {
     display: block;
   }
+
+  .gallery img {
+    filter: invert(1);
+  }
 }
 
 *,
