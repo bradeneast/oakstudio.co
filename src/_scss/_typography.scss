@@ -79,6 +79,7 @@ h4 {
 }
 
 a {
+  touch-action: manipulation;
   color: var(--g2);
   text-underline-offset: $borderWidth * 2;
   text-decoration-thickness: $borderWidth / 2;
