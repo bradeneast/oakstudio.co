@@ -1,22 +1,8 @@
 {
   "name": "oakstudio.co",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bradeneast/oakstudio.co.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bradeneast/oakstudio.co/issues"
-  },
-  "homepage": "https://github.com/bradeneast/oakstudio.co#readme",
+  "description": "Website of Oak Studio Oklahoma - Bartlesville's creative agency.",
+  "author": "Braden East",
+  "homepage": "https://oakstudio.co",
   "dependencies": {
     "ingrid-ssg": "^4.0.1"
   }
