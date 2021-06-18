@@ -91,3 +91,11 @@ On-brand ads were a must-have for catching the eyes of their target market. So, 
 In the end, we helped East Texas Elderberries establish a brand identity that works in every area they needed. They are a family business that is well-equipped to look attractive and trustworthy for many generations to come.
 
 ![Two shopping paper bags, branded with the The East Texas Elderberries identity](/_assets/images/east-texas-elderberries/sack.jpg)
+
+<section class="center">
+  <h3>&ldquo;We had a wonderful experience with the team.&rdquo;</h3>
+  <p>
+    &ldquo;The outstanding quality and the attention to detail was beyond compare. I highly recommend their services.&rdquo;
+  </p>
+  <em>- Ed Wells</em>
+</section>

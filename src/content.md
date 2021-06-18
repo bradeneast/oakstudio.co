@@ -7,14 +7,14 @@
 
 <section class="primary squeeze bleed center grid ai-center jc-center ac-center col-3 gap-2">
   <Import from="/_/~/Review.html">
-    <review>They designed a new logo for my business and I love it! They are easy to work with and communicate well.</review>
-    <client>Brenda Jones</client>
-    <company>Love &amp; Bliss Photography</company>
-  </Import>
-  <Import from="/_/~/Review.html">
     <review>I would absolutely recommend.</review>
     <client>William Fecteau</client>
     <company>Essential BodywoRX Massage</company>
+  </Import>
+  <Import from="/_/~/Review.html">
+    <review>We had a wonderful experience with the team. The outstanding quality and the attention to detail was beyond compare. I highly recommend their services.</review>
+    <client>Ed Wells</client>
+    <company>East Texas Elderberries</company>
   </Import>
   <Import from="/_/~/Review.html">
     <review>They did a great job interpreting our feedback and coming up with some great designs.</review>
