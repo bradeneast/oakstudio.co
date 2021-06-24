@@ -1,4 +1,3 @@
-// import Schwifty from './schwifty';
 import { watchBeforeAfterModules } from './_beforeafter';
 import Coarse from './_coarse';
 import { watchForms } from './_forms';
@@ -8,11 +7,14 @@ import { $$, attr } from './_utils';
 
 function init() {
 
+  let parallaxItems = $$('[data-parallax]');
+  let animatedItems = $$('[data-animate]');
+  let carousels = $$('.carousel');
+
   watchForms();
   watchBeforeAfterModules();
-  initParallax($$('[data-parallax]'));
 
-  $$('.carousel').forEach(carousel => {
+  carousels.forEach(carousel => {
     let renderControls = attr(carousel, 'data-controls');
     let renderDots = attr(carousel, 'data-dots');
     let scrollTime = attr(carousel, 'data-scrollTime');
@@ -26,14 +28,8 @@ function init() {
     )
   })
 
-  $$('[data-animate]').forEach(elem =>
-    observer.observe(elem)
-  );
+  animatedItems.forEach(elem => observer.observe(elem));
+  initParallax(parallaxItems);
 }
 
 init();
-
-// new Schwifty({
-//   preserveScroll: false,
-//   onload: init
-// })

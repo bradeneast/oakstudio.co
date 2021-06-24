@@ -8,7 +8,7 @@ export let round = (x, places = 0) =>
 export let $ = (selector, context = document) => context.querySelector(selector);
 
 /**@returns {NodeList} */
-export let $$ = (selector, context = document) => context.querySelectorAll(selector);
+export let $$ = (selector, context = document) => Array.from(context.querySelectorAll(selector));
 
 /**@returns {String} */
 export let attr = (element, attributeName) => {
