@@ -1,9 +1,5 @@
+.DS_Store
+_site
 node_modules
-# Everything that gets rebuilt in the published directory
-dist/[!_]*
-# Environment variables
-.env
-# Local Netlify folder
-.netlify
-# NPM package lock
-package-lock.json
+_src/img/sm
+dist

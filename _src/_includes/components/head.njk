@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or site.title }} \\ Oak Studio \\ Bartlesville's Creative Agency</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ site.default_image | url }}" />
+
+  <link rel="alternate" href="{{ 'feed.xml' | url }}" type="application/atom+xml" title="{{ site.title }}">
+
+  <link rel="preconnect" href="//d33wubrfki0l68.cloudfront.net">
+  <link rel="dns-prefetch" href="//d33wubrfki0l68.cloudfront.net">
+  <link rel="preconnect" href="{{ site.root }}">
+  <link rel="dns-prefetch" href="{{ site.root }}">
+  <link rel="preconnect" href="{{ site.root | replace(" //", "https://www." ) }}">
+  <link rel="dns-prefetch" href="{{ site.root | replace(" //", "https://www." ) }}">
+
+  <link rel="preload" as="script" href="//polyfill.io/v3/polyfill.min.js?features=default">
+  <link rel="preload" as="script" href="/main.min.js">
+  <link rel="preload" as="style" href="/main.css">
+
+  <link rel="stylesheet" href="{{ '/main.css' | url }}">
+  <script defer src="//polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script defer src="/main.min.js"></script>
+  <script>
+    document.documentElement.classList.add('loading');
+    addEventListener('load', function () {
+      document.documentElement.classList.remove('loading');
+    })
+  </script>
+</head>

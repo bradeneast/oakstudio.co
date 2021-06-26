@@ -1,4 +1,4 @@
-<form class="flex" netlify>
+<form class="flex" netlify action="/success" method="POST" data-netlify="true">
 
   <p class="subtext right" style="width: 100%">Fields marked with an asterisk (*) are required.</p>
 
@@ -14,12 +14,12 @@
 
   <div class="full">
     <h3>How should we follow up? *</h3>
-    <label class="mark_input" for="use_phone">
-      <input required data-has-conditional type="radio" name="method" id="use_phone">
+    <label class="mark_input">
+      <input data-has-conditional type="radio" name="method" id="use_phone">
       Phone
     </label>
-    <label class="mark_input" for="use_email">
-      <input required data-has-conditional type="radio" name="method" id="use_email">
+    <label class="mark_input">
+      <input data-has-conditional type="radio" name="method" id="use_email">
       Email
     </label>
   </div>
@@ -34,5 +34,5 @@
     <input type="tel" inputmode="tel" name="phone" id="phone" />
   </label>
 
-  <input type="submit" value="Submit" />
+  <input type="submit" value="Send Our Way" />
 </form>

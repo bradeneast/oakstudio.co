@@ -1,18 +1,18 @@
 {
-  "liveServer.settings.root": "/dist",
+  "netlify.site_id": "oakstudio.netlify.com",
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
       "extensionName": ".css",
-      "savePath": "/dist/_assets/css"
+      "savePath": "/_src"
     }
   ],
+  "liveServer.settings.root": "/_site",
   "saveAndRun": {
     "commands": [
       {
-        "cmd": "esbuild src/_js/main.js --outfile=dist/_assets/js/main.js --target=es6 --bundle --minify",
-        "match": ".*src.*js",
-        "silent": true,
+        "cmd": "esbuild _src/_includes/js/main.js --outfile=_src/_includes/js/main.min.js --minify --bundle",
+        "match": "_includes/*.js"
       }
     ]
   }

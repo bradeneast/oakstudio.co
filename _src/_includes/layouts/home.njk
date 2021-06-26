@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="bleed">
+  <div class="hero grid col-2 ai-stretch gap-4 squeeze">
+    <div class="grid ac-end ai-end gap-2">
+      {{ headline | md | safe }}
+    </div>
+    <div class="carousel-wrapper right hero__feature">
+      <div class="carousel">
+        {% for image in carousel %}
+        <div class="carousel__item {% if loop.index == 1 %}selected{% endif %}">
+          <img loading="lazy" src="{{ image }}" alt="" />
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</header>
+
+{{ content | md | safe }}

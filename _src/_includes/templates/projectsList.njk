@@ -1,0 +1,20 @@
+{% for project in projectsList | reverse %}
+<div class="projectsList__item" data-animate="from-bottom" style="background-image: url('{{ project.data.photos[0].file }}')">
+
+  <div class="projectsList__item--text">
+    <h3>
+      <a class="arrow-link" href="{{ project.data.url | url }}" {% if entry.data.url == url %} aria-current="page"{% endif %}>
+        {{ project.data.title }}
+      </a>
+    </h3>
+    {% for tag in project.data.tags %}
+      {% for tagPage in search.pages("type=tag") %}
+        {% if tagPage.data.tag == tag %}
+        <a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+
+</div>
+{% endfor %}

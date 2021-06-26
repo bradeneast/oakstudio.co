@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+---
+
+<h1 class="headline center">{{ title }}</h1>
+
+<p class="center subtext">Page {{ pagination.page }}</p>
+
+<section class="bleed masonry">
+  {% set shootsList = results %}
+  {% include "templates/shootsList.njk" %}
+</section>
+
+<section class="bleed">
+  <div class="pagination">
+    {%- if pagination.previous %}
+      <a class="left" href="{{ pagination.previous | url }}" rel="prev">← Previous Page</a>
+      {% else %}
+      <div></div>
+    {% endif %}
+    <div class="center subtext">
+      Page {{ pagination.page }}
+    </div>
+    {%- if pagination.next %}
+      <a class="right" href="{{ pagination.next | url }}" rel="next">Next Page →</a>
+      {% else %}
+      <div></div>
+    {% endif %}
+  </div>
+</section>

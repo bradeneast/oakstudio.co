@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>Tagged “{{ tag }}”</h1>
+
+<section class="masonry col-2">
+  {% set projectsList = search.pages("type=project '" + tag + "'") %}  
+  {% include "templates/projectsList.njk" %}
+</section>
+
+<hr>
+
+<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  {% include "components/head.njk" %}
+  <body>
+  
+    {% include "components/nav.njk" %}
+
+    <main id="main">
+
+      {{ content | safe }}
+
+      <section class="bleed grid squeeze col-3 ac-start">
+        <div class="grid squeeze ai-start ji-start ac-start">
+          <a href="//twitter.com/oakstudioco">Twitter</a>
+          <a href="//facebook.com/oakstudioco">Facebook</a>
+          <a href="//instagram.com/oakstudioco">Instagram</a>
+        </div>
+        <div class="grid squeeze ai-start ji-start ac-start">
+          <a href="mailto:hello@oakstudio.co">hello@oakstudio.co</a>
+        </div>
+        <div class="grid squeeze ai-start ji-start ac-start"></div>
+      </section>
+    </main>
+
+    <span class="fake-footer left subtext">
+      {{ footer }}
+    </span>
+
+    <footer class="flex">
+      <div class="right subtext">
+        &copy; 2021 {{ site.title }}
+      </div>
+    </footer>
+
+    {% include "components/loader.html" %}
+
+    <!-- Current page: {{ url | url }} -->
+  </body>
+
+</html>

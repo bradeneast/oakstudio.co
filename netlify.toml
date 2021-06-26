@@ -1,18 +1,17 @@
-[[plugins]]
-package = "@netlify/plugin-sitemap"
-
-[plugins.inputs]
-exclude = [
-  '**/404/*',
-]
-
-[[redirects]]
-from = "/*"
-status = 404
-to = "/404/"
-
 [[headers]]
 # Define which paths this specific [[headers]] block will cover.
 for = "/*"
 [headers.values]
 Access-Control-Allow-Origin = "*"
+
+[build]
+command = "npm run prebuild && curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.js --location=https://oakstudio.co/"
+publish = "_site"
+
+[dev]
+autoLaunch = true
+command = "npm run prebuild && lume --serve"
+framework = "#custom"
+port = 8888
+publish = "_site"
+targetPort = 3000
