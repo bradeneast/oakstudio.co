@@ -1,12 +1,13 @@
 ---
 layout: layouts/base.njk
 ---
-<h1>Tags</h1>
+
+<h1 class="alignment-optical">Tags</h1>
 
 <section>
-  {% for tagPage in search.pages("type=tag", "tag") %}
-    <a href="{{ tagPage.data.url | url }}" class="tag large">
-      {{ tagPage.data.tag }}
-    </a>
-  {% endfor %}
+{%- for tagPage in search.pages("type=tag", "tag") -%}
+  <a href="{{ tagPage.data.url | url }}" class="tag large">
+    {{- tagPage.data.tag -}}
+  </a>
+{%- endfor -%}
 </section>

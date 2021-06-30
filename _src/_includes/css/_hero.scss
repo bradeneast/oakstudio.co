@@ -7,7 +7,7 @@
     width: 80vmin;
     min-width: 18rem;
     max-width: $mobile;
-    padding: $flow3 15vmin;
+    padding: $flow3 10vmin;
   }
 
   &__heading {
@@ -16,6 +16,7 @@
   }
 
   &__feature {
+    overflow: hidden;
     height: 100vh;
   }
 }

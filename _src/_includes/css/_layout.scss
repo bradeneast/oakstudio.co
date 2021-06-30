@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  margin-bottom: $flow2;
+  margin-bottom: $flow6;
 }
 
 main {
@@ -11,28 +11,27 @@ main {
   grid-column-end: -1;
   padding: 0 0 $flow2 0;
 
-  & > :first-child:not(section):not(header) {
-    margin-top: $flow4;
+  & > :first-child:not(header) {
+    margin-top: $flow6 * 2;
   }
 
   p > img,
   p > video {
     margin: $flow4 0;
   }
+}
 
+article {
+  padding-top: $flow6;
+}
+
+main,
+article {
   & > *:not(.bleed) {
     max-width: $mobile;
     margin-left: auto;
     margin-right: auto;
   }
-
-  * + * {
-    margin-top: $flow2;
-  }
-}
-
-article {
-  padding-top: $flow6;
 }
 
 section {
@@ -108,6 +107,10 @@ footer {
     padding: $flow1;
   }
 
+  header {
+    margin: 0;
+  }
+
   footer {
     position: relative;
   }
@@ -115,14 +118,17 @@ footer {
   main {
     padding: 0 0 $flow6 0;
 
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  main,
+  article {
     & > *:not(.bleed) {
       max-width: $mobile;
       margin-left: $flow1;
       margin-right: $flow1;
-    }
-
-    &:first-child {
-      margin-top: 0;
     }
   }
 
@@ -133,9 +139,5 @@ footer {
       padding-left: $flow1;
       padding-right: $flow1;
     }
-  }
-
-  header {
-    margin: 0;
   }
 }

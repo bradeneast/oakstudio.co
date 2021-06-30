@@ -1,0 +1,5 @@
+- We don't do hourly billing, and we never will.
+- There's no jargon in our vocabulary.
+- We do everything up front and out in the open. Branding shouldn't be uncertain.
+- Time crunches are no fun. We work at a faster pace than most design agencies.
+- While we're trusted by over 25 businesses in Oklahoma and in the Midwest, we'd be happy to consider an extra-regional project.

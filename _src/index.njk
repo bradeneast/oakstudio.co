@@ -1,0 +1,113 @@
+---
+layout: layouts/hero.njk
+title: Home
+hero_left: >-
+  <h1 class="hero__heading">
+    <style>
+      .split-headline {
+        display: flex;
+        line-height: 0.8;
+      }
+
+      .split-headline div {
+        padding: 0 0.2em;
+        margin: 0 -0.2em;
+      }
+    </style>
+    <div class="split-headline">
+      <div data-parallax="4">B</div>
+      <div data-parallax="3">u</div>
+      <div>i</div>
+      <div data-parallax="5">l</div>
+      <div data-parallax="2">d</div>
+    </div>
+    <div class="split-headline">
+      <div data-parallax="3">s</div>
+      <div data-parallax="5">o</div>
+      <div data-parallax="1">m</div>
+      <div data-parallax="4">e</div>
+      <div data-parallax="2">t</div>
+      <div>h</div>
+      <div data-parallax="3">i</div>
+      <div data-parallax="5">n</div>
+      <div data-parallax="1">g</div>
+    </div>
+    <em>permanent.</em>
+  </h1>
+  <div class="hero__subheading">
+    <p>
+      We've helped dozens of family-owned (and family-minded) businesses establish brands that endure.
+    </p>
+    <a href="#btf" class="button primary">Tell Me More</a>
+  </div>
+hero_right: >-
+  {% set carouselItems = [
+    "judes-coffee-cup.jpg",
+    "my-raggedy-herbs-business_cards.jpg",
+    "harmony-health-clothing.jpg",
+    "elderberry-wine-company-menu.jpg",
+    "east-texas-elderberries-sack.jpg",
+    "360-farms-tea-boxes.jpg"
+  ] %}
+  <div class="carousel">
+    {% for image in carouselItems %}
+      <img class="carousel__item {{ 'selected' if loop.index == 1 }}" src="/img/{{ image }}" alt="">
+    {% endfor %}
+  </div>
+---
+
+{# Macro imports #}
+{% from "macros.njk" import blurb, review, before_after %}
+
+{# Icons #}
+{% set leaf %}{% include "icons/starting-over.svg" %}{% endset %}
+{% set telescope %}{% include "icons/telescope.svg" %}{% endset %}
+{% set corner %}{% include "icons/turning-a-corner.svg" %}{% endset %}
+{# Copy #}
+{% set rebrand %}{% include "copy/rebrand.md" %}{% endset %}
+{% set vision %}{% include "copy/vision.md" %}{% endset %}
+{% set identity %}{% include "copy/identity.md" %}{% endset %}
+
+## We're a creative agency that sees design as a means of permanence.
+
+[More about us](/about)
+
+<section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
+  {{ blurb(leaf, identity) }}
+  {{ blurb(corner, rebrand) }}
+</section>
+
+<section class="primary squeeze bleed center grid ai-center jc-center ac-center col-3 gap-2">
+{{ review(
+  "William Fecteau",
+  "Essential BodywoRX",
+  "I would absolutely reccomend."
+) }}
+{{ review(
+  "Ed Wells",
+  "East Texas Elderberries",
+  "We had a wonderful experience with the team. The outstanding quality and the attention to detail was beyond compare. I highly recommend their services."
+) }}
+{{ review(
+  "James Snyder",
+  "Bandits RPG Gaming",
+  "They did a great job interpreting our feedback and coming up with some great designs."
+) }}
+</section>
+
+<section class="center bleed grid col-2 gap-4 ai-center">
+  {{ blurb(telescope, vision) }}
+  {{ before_after(
+    "east-texas-elderberries-sketch.jpg",
+    "east-texas-elderberries-white-on-black.png",
+    "Logo design for [East Texas Elderberries](/projects/east-texas-elderberries)"
+  ) }}
+</section>
+
+## A few more things:
+{% include "copy/mo.md" %}
+
+<section class="center">
+  <p>You probably have some questions by now.</p>
+  <a class="button" href="/contact">We Can Answer Them</a>
+</section>

@@ -1,7 +1,3 @@
-.carousel-wrapper {
-  overflow: hidden;
-}
-
 .carousel {
   display: flex;
   gap: 0;
@@ -38,6 +34,7 @@
   transform: translateX(-50%);
 
   button {
+    margin: 0;
     margin-left: 0.5em;
     width: 1em;
     height: 1em;

@@ -19,10 +19,6 @@ form {
     margin-bottom: $flow1;
   }
 
-  & > * {
-    margin-right: $flow1;
-  }
-
   h2,
   h3,
   h4,
@@ -99,7 +95,6 @@ form {
 @media screen and (max-width: $mobile) {
   form {
     padding: $flow2;
-    padding-right: $flow1;
     display: block;
 
     input[type="submit"] {

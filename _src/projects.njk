@@ -1,0 +1,14 @@
+---
+layout: layouts/hero.njk
+title: Our Work
+description: We design timeless brand identities for new businesses and evolving organizations.
+image: desk.jpg
+menu:
+  visible: true
+  order: 2
+---
+
+<div class="special grid bleed squeeze col-3 gap-1 pad-1">
+  {% set projects = search.pages("type=project", "order") %}
+  {%- include "templates/projectsList.njk" -%}
+</div>

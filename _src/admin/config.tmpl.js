@@ -1,4 +1,4 @@
-import { stringify } from "lume/deps/yaml.js";
+import { stringify } from "lume/deps/yaml.ts";
 
 export const url = "./config.yml";
 
@@ -112,24 +112,6 @@ export default (data, { url }) => {
     description: "Here you can edit your individual pages",
     preview: false,
     files: [
-      {
-        label: "Home",
-        name: "home",
-        file: "/_src/index.md",
-        fields: [
-          field("title"),
-          field("headline"),
-          field("reviews_section", "markdown", {
-            label: "reviews section",
-            buttons: markdownButtons,
-          }),
-          field("contact_section", "markdown", {
-            label: "contact section",
-            buttons: markdownButtons,
-          }),
-          field("layout", "hidden")
-        ],
-      },
       {
         label: "Contact",
         name: "contact",

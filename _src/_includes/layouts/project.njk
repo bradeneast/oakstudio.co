@@ -2,56 +2,74 @@
 layout: layouts/base.njk
 ---
 
-<article class="project">
-  <header>
-    <h1 class="project__title">{{ title }}</h1>
+{% import "macros.njk" as _ %}
 
-    <div class="project__description">
-      {{ description | md | safe }}
-    </div>
+<header class="bleed" style="margin-bottom: 0;">
+  <div style="overflow: hidden">
+    <img data-parallax="3" style="opacity: calc(1 - var(--amt)); max-height: 63vmin; height: 63vh;" class="center bleed" alt="" src="{{ image | url }}" />
+  </div>
+</header>
 
-    <div class="flex" style="margin-top: var(--flow3)">
-    {% for tag in tags %}
+<article class="project bleed">
+
+  <div class="subtext">Case Study</div>
+  <h1 class="alignment-optical">{{ title }}</h1>
+  <div>
+    <h3 style="margin-bottom: 0;">{{ entity }}</h3>
+    {%- for tag in tags -%}
       {% for tagPage in search.pages("type=tag") %}
-        {% if tagPage.data.tag == tag %}
-        <a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
-        {% endif %}
+        {%- if tagPage.data.tag == tag -%}
+        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
       {% endfor %}
-    {% endfor %}
+    {%- endfor -%}
+  </div>
+
+  <hr>
+
+  {{ description | md | safe }}
+
+  {% if logo %}
+  <section class="bleed grid col-2 squeeze">
+    <div style="background: white; padding: 15%">
+      <img src="{{ logo }}" alt="Logo of {{ title }} on white" />
     </div>
-  </header>
+    <div class="pad-4" style="background: white;  padding: 15%; filter: invert(1)">
+      <img src="{{ logo }}" alt="Logo of {{ title }} on black" />
+    </div>
+  </section>
+  {% endif %}
+
+  {% if colors %}
+  <section class="grid gap-1 col-4 squeeze" style="padding-top: 0">
+    {% for color in colors %}
+      {{ _.swatch(color.name, color.hex, color.pantone) }}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {{- content | njk | md | safe -}}
+
+  <hr>
+
 </article>
 
-<hr>
+<section class="flex bleed gap-2">
 
-<section class="grid col-4 gap-2">
-
-  {%- set previousProject = search.previousPage(url, "type=project", "date") %}
-  {%- if previousProject %}
-  <a data-animate="from-left" class="projectsList__item" href="{{ previousProject.data.url | url }}" rel="previous">
-    {# Image srcs will get processed (see _config.js) #}
-    <img class="projectsList__item--image" src="{{ previousProject.data.image }}" alt="" />
-    <div class="projectsList__item--text squeeze grid gap-1">
-      <div class="subtext">← Previous</div>
-      <h3>{{ previousProject.data.title }}</h3>
-    </div>
+  {%- set previousProject = search.previousPage(url, "type=project", "order") %}
+  {%- if previousProject -%}
+  <a data-animate="from-left" style="text-decoration: none;" href="{{ previousProject.data.url | url }}" class="left">
+    <div class="subtext">Previous</div>
+    <h3>{{ previousProject.data.title }}</h3>
   </a>
-  {% else %}
-  <div></div>
-  {% endif %}
+  {%- endif -%}
 
-  {%- set nextProject = search.nextPage(url, "type=project", "date") %}
-  {%- if nextProject %}
-  <a data-animate="from-right" class="projectsList__item" href="{{ nextProject.data.url | url }}" rel="next">
-    {# Image srcs will get processed (see _config.js) #}
-    <img class="projectsList__item--image" src="{{ nextProject.data.image }}" alt="" />
-    <div class="projectsList__item--text squeeze grid gap-1">
-      <div class="subtext">Next →</div>
-      <h3>{{ nextProject.data.title }}</h3>
-    </div>
+  {%- set nextProject = search.nextPage(url, "type=project", "order") %}
+  {%- if nextProject -%}
+  <a data-animate="from-right" style="text-decoration: none;" href="{{ nextProject.data.url | url }}" class="right">
+    <div class="subtext">Next</div>
+    <h3>{{ nextProject.data.title }}</h3>
   </a>
-  {% else %}
-  <div></div>
-  {% endif %}
+  {%- endif -%}
 
 </section>

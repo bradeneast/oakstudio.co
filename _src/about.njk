@@ -1,0 +1,57 @@
+---
+layout: layouts/hero.njk
+title: About Us
+image: us.jpg
+menu:
+  visible: true
+  order: 2
+description: >-
+  They will be called oaks of righteousness, a planting of the Lord, that He may be glorified.
+
+  
+  *Isaiah 61:3b*
+---
+
+{# Macro imports #}
+{% from "macros.njk" import blurb, person %}
+
+{# Icons #}
+{% set scrapbook %}{% include "icons/scrapbook.svg" %}{% endset %}
+{% set telescope %}{% include "icons/telescope.svg" %}{% endset %}
+{% set leaf %}{% include "icons/starting-over.svg" %}{% endset %}
+{% set corner %}{% include "icons/turning-a-corner.svg" %}{% endset %}
+{# Copy #}
+{% set vision %}{% include "copy/vision.md" %}{% endset %}
+{% set background %}{% include "copy/background.md" %}{% endset %}
+{% set rebrand %}{% include "copy/rebrand.md" %}{% endset %}
+{% set identity %}{% include "copy/identity.md" %}{% endset %}
+{% set bradenBio %}{% include "copy/braden_east_bio.md" %}{% endset %}
+
+## Oak Studio is a small creative agency based in Bartlesville, Oklahoma.
+
+We see our work as a way to **create permanence** in a time when it seems like nothing sticks around. We think family-minded businesses are the best way to pass on trades, strengthen communities, and preserve legacies. Most importantly, we think like our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
+
+<section class="center grid jc-center gap-4 col-3">
+{{ blurb(scrapbook, background) }}
+{{ blurb(telescope, vision) }}
+</section>
+
+## How we operate
+
+{% include "copy/mo.md" %}
+
+<section class="soft bleed pattern-bg">
+{{ person(
+  "braden.jpg",
+  "Braden East",
+  "Founder",
+  bradenBio
+) }}
+</section>
+
+<section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
+  <h2 class="center span-all">Our Services</h2>
+  {{- blurb(leaf, identity) -}}
+  {{- blurb(corner, rebrand) -}}
+  <a class="center button span-all" style="--hover-bg: var(--primary)" href="/contact">Schedule a Call</a>
+</section>

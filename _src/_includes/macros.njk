@@ -1,0 +1,118 @@
+{################}
+{#### BLURBS ####}
+{################}
+
+{# Blurb Base #}
+{% macro blurb(image, text) %}
+<div class="blurb">
+  <div data-animate="from-top" class="blurb__image" aria-hidden="true">
+    {{- image | safe -}}
+  </div>
+  <div class="blurb__text flow">
+    {{- text | md | safe -}}
+  </div>
+</div>
+{% endmacro %}
+
+{# Review Blurb #}
+{% macro review(clientName, clientCompany, review) %}
+<div data-animate="from-bottom" class="review">
+  {% set image -%}<div class="quote">&ldquo;</div>{% endset %}
+  {% set text -%}
+  <h4 class="review__text">{{ review }}</h4>
+  <div class="review__client">
+    <em>{{ clientName }}</em>
+    <div class="subtext">{{ clientCompany }}</div>
+  </div>
+  {% endset %}
+  {{- blurb(image, text) -}}
+</div>
+{% endmacro %}
+
+{# Customer Profile #}
+{% macro profile(photo, name, description) %}
+{% set image %}
+<img class="round" src="/img/{{ photo }}" alt="{{ name }}">
+{% endset %}
+{% set text -%}
+#### {{ name }}
+{{ description }}
+{% endset %}
+{{- blurb(image, text) -}}
+{% endmacro %}
+
+
+{#####################}
+{#### INTERACTIVE ####}
+{#####################}
+
+{# Before/After Slider #}
+{% macro before_after(before, after, text) %}
+<div>
+  <div class="beforeafter">
+    <div class="beforeafter__before">
+      <img src="/img/{{- before -}}" alt="">
+    </div>
+    <div class="beforeafter__after">
+      <img src="/img/{{- after -}}" alt="">
+    </div>
+    <div class="beforeafter__slider"></div>
+  </div>
+  <div class="subtext left">
+    {{- text | md | safe -}}
+  </div>
+</div>
+{% endmacro %}
+
+{# Carousel #}
+{% macro carousel(images) %}
+<div class="carousel">
+  {%- for image in images -%}
+    <img class="carousel__item {{- 'selected' if loop.index == 1 -}}" src="/img/{{- image -}}" alt="">
+  {%- endfor -%}
+</div>
+{% endmacro %}
+
+
+{#################}
+{#### LAYOUTS ####}
+{#################}
+
+{# 2 Column Image Grid #}
+{% macro image_2_column(left, right, classes) %}
+<section class="{{ classes }} grid squeeze col-3 gap-1">
+  <img alt="" src="/img/{{ left }}">
+  <img alt="" src="/img/{{ right }}">
+</section>
+{% endmacro %}
+
+
+{#######################}
+{#### MISCELLANEOUS ####}
+{#######################}
+
+{# Person #}
+{% macro person(photo, name, title, bio) %}
+<div class="person flex">
+  <div data-animate="from-left" class="person__headshot">
+    <img src="/img/{{ photo }}" alt="{{ name }}, {{ title }}">
+  </div>
+  <div data-animate="from-right" class="person__info squeeze">
+    <h4 class="person__info--name">{{ name }}</h4>
+    <h5 class="person__info--position"><em>{{ title }}</em></h5>
+    <div class="person__info--bio">{{ bio | md | safe }}</div>
+  </div>
+</div>
+{% endmacro %}
+
+{# Swatch #}
+{% macro swatch(name, hex, pantone) %}
+<div class="soft-grid">
+  <div class="soft-grid__image" style="background-color: {{ hex }}; opacity: 1"></div>
+  <div class="soft-grid__title">{{ name }}</div>
+  <div class="subtext">
+    <div>Pantone {{ pantone }}</div>
+    {{ hex }}
+  </div>
+</div>
+{% endmacro %}

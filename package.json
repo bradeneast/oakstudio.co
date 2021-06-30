@@ -3,7 +3,7 @@
   "description": "Website of Oak Studio Oklahoma - Bartlesville's creative agency.",
   "author": "Braden East",
   "homepage": "https://oakstudio.co",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "prebuild": "node prebuild/index.js"
   },

@@ -65,8 +65,8 @@ East Texas Elderberries wanted a way to reinforce their brand while interacting 
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-10.png" alt="">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-11.png" alt="">
   </div>
-  </section>
-  <section class="carousel-wrapper bleed dark">
+</section>
+<section class="carousel-wrapper bleed dark">
   <div class="carousel" data-dots="false" data-scrollTime="2000">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-1-white.png" alt="">
     <img class="carousel__item" src="/_assets/images/east-texas-elderberries/icon-example-2-white.png" alt="">

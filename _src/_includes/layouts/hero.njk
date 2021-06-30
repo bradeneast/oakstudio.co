@@ -5,10 +5,23 @@ layout: layouts/base.njk
 <header class="bleed">
   <div class="hero grid col-2 ai-stretch gap-4 squeeze">
     <div class="grid ac-end ai-end gap-2">
-      {{ headline | md | safe }}
+      {% if hero_left %}
+        {{ hero_left | njk | safe }}
+      {% else %}
+        <h1 class="hero__heading">{{ title }}</h1>
+        <div class="hero__subheading">{{ description | md | safe }}</div>
+      {% endif %}
     </div>
-    <img class="hero__feature" src="{{ image }}" alt="" />
+    <div class="hero__feature">
+      {% if hero_right %}
+        {{ hero_right | njk | safe }}
+      {% else %}
+        <img style="height: 100%;" src="/img/{{ image }}" alt="" />
+      {% endif %}
+    </div>
   </div>
 </header>
 
-{{ content | md | safe }}
+<br id="btf" />
+
+{{- content | njk | md | safe -}}
