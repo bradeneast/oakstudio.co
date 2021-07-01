@@ -54,13 +54,13 @@ export default (data, { url }) => {
       field("logo", "image", { required: false }),
       field("colors", "list", {
         fields: [
+          field("name"),
           field("hex", "color", {
             allowInput: true,
             enableAlpha: false
           }),
           field("pantone", "string", { required: false })
         ],
-        summary: "{{fields.hex}}",
         allowAdd: true,
         add_to_top: true,
         collapsed: true,
