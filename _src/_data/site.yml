@@ -1,8 +1,8 @@
 title: Oak Studio
 description: Bartlesville's Branding Agency
-root: //oakstudio.co
+root: https://dreamy-noyce-6c21ca.netlify.app/
 default_image: /img/desk.jpg
-logo: /img/logos/logo_dark_cropped.png
+logo: /logo.svg
 netlify_site_id: 2112d40a-630d-4469-81a4-4e28af97a843
 author:
   name: Braden East,

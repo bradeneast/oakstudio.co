@@ -19,7 +19,7 @@ export default (data, { url }) => {
     media_folder: "_src/img",
     public_folder: "/img",
     display_url: url("/"),
-    logo_url: "/logo_light_cropped.png",
+    logo_url: "/logo.svg",
     collections: [],
   };
 
