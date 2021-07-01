@@ -7,7 +7,7 @@ export default (data, { url }) => {
     backend: {
       name: "git-gateway",
       repo: "bradeneast/oakstudio.co",
-      branch: "main",
+      branch: "lume",
       commit_messages: {
         create: 'CMS Create {{collection}} “{{slug}}”',
         update: 'CMS Update {{collection}} “{{slug}}”',
@@ -46,19 +46,24 @@ export default (data, { url }) => {
     fields: [
       field("title"),
       draftField,
+      field("image", "image"),
       field("order", "number"),
+      field("entity"),
+      field("tags", "list", { required: false }),
       field("description", "markdown", {
         markdownButtons,
         editorComponents: [],
       }),
-      field("tags", "list", { required: false }),
       field("logo", "image", { required: false }),
-      field("image", "image"),
       field("colors", "list", {
         fields: [
-          field("hex", "color"),
+          field("hex", "color", {
+            allowInput: true,
+            enableAlpha: false
+          }),
           field("pantone", "string", { required: false })
         ],
+        summary: "{{fields.hex}}",
         allowAdd: true,
         add_to_top: true,
         collapsed: true,
