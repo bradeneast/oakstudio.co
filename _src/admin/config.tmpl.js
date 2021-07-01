@@ -19,7 +19,7 @@ export default (data, { url }) => {
     media_folder: "_src/img",
     public_folder: "/img",
     display_url: url("/"),
-    logo_url: "/logo.svg",
+    logo_url: "/logo-cms.svg",
     collections: [],
   };
 
@@ -32,7 +32,7 @@ export default (data, { url }) => {
   config.collections.push({
     label: "Project",
     name: "projects",
-    folder: "_src/projects",
+    folder: "_src/projects/",
     description: "Here you can create or edit your projects",
     preview: false,
     create: true,
@@ -52,6 +52,7 @@ export default (data, { url }) => {
         editorComponents: [],
       }),
       field("tags", "list", { required: false }),
+      field("logo", "image", { required: false }),
       field("image", "image"),
       field("colors", "list", {
         fields: [

@@ -13,7 +13,6 @@
   --dark: 0;
   --primary: #{$primary};
   --secondary: #{$secondary};
-  --tertiary: #{$tertiary};
   --translucent: #{$translucent};
   --shadowColor: #0003;
   --shadow: 0 0 0.15rem var(--shadowColor);
@@ -35,6 +34,7 @@
     --g6: #{$g2};
     --g7: #{$g1};
     --g8: #{$g0};
+    --primary: var(--secondary);
     --dark: 1;
     --fontWeightRegular: 300;
     --shadowColor: #0009;
