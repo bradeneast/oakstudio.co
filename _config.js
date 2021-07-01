@@ -1,7 +1,7 @@
 import lume from "lume/mod.js";
 import date from "lume/plugins/date.js";
 import slugifyUrls from "https://deno.land/x/lume@v0.24.0/plugins/slugify_urls.js";
-import { matchExts, matchSrc, resizeOptions, targetExt } from "./prebuild/_options.js";
+import { matchExts, resizeOptions, targetExt } from "./prebuild/_options.js";
 
 const site = lume({
   location: new URL("https://dreamy-noyce-6c21ca.netlify.app/"),
