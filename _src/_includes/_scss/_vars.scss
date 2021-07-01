@@ -35,7 +35,7 @@ $fallback: showFallback 5s forwards;
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("/img/fonts/SpaceGrotesk.woff2") format("woff2-variations");
+  src: url("/SpaceGrotesk.woff2") format("woff2-variations");
   font-feature-settings: "ss02" 1, "ss03" 1, "ss04" 1, "case" 1, "zero" 1;
   font-weight: 300 700;
   font-display: block;
@@ -43,14 +43,14 @@ $fallback: showFallback 5s forwards;
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/img/fonts/Merriweather-Bold.woff2") format("woff2");
+  src: url("/Merriweather-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: block;
 }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/img/fonts/Merriweather-BoldItalic.woff2") format("woff2");
+  src: url("/Merriweather-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: block;

@@ -12,14 +12,14 @@
   <link rel="dns-prefetch" href="//d33wubrfki0l68.cloudfront.net">
   <link rel="preconnect" href="{{ site.root }}">
   <link rel="dns-prefetch" href="{{ site.root }}">
-  <link rel="preconnect" href="{{ site.root | replace(" //", "https://www." ) }}">
-  <link rel="dns-prefetch" href="{{ site.root | replace(" //", "https://www." ) }}">
+  <link rel="preconnect" href="{{ site.root | replace("://", "://www." ) }}">
+  <link rel="dns-prefetch" href="{{ site.root | replace("://", "://www." ) }}">
 
   <link rel="preload" as="script" href="//polyfill.io/v3/polyfill.min.js?features=default">
   <link rel="preload" as="script" href="/main.min.js">
   <link rel="preload" as="style" href="/main.css">
 
-  <link rel="stylesheet" href="{{ '/main.css' | url }}">
+  <link rel="stylesheet" href="/main.css">
   <script defer src="//polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script defer src="/main.min.js"></script>
   <script>

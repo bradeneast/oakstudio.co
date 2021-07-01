@@ -4,14 +4,14 @@
     {
       "format": "compressed",
       "extensionName": ".css",
-      "savePath": "/_src"
+      "savePath": "/_src/_includes/assets/"
     }
   ],
   "liveServer.settings.root": "/_site",
   "saveAndRun": {
     "commands": [
       {
-        "cmd": "esbuild _src/_includes/js/main.js --outfile=_src/_includes/js/main.min.js --minify --bundle",
+        "cmd": "esbuild _src/_includes/_js/main.js --outfile=_src/_includes/assets/main.min.js --minify --bundle",
         "match": "_includes/*.js"
       }
     ]

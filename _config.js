@@ -9,11 +9,7 @@ const site = lume({
 });
 
 site.copy("img");
-site.copy("main.css");
-site.copy("_includes/fonts", "img/fonts");
-site.copy("_includes/logos", "/");
-site.copy("_includes/js/main.min.js", "main.min.js");
-site.copy("_includes/favicon.ico", "favicon.ico");
+site.copy("_includes/assets/", "/");
 
 // Process output HTML
 let [width, height, opts] = resizeOptions;

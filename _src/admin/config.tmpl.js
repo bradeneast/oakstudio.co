@@ -48,12 +48,9 @@ export default (data, { url }) => {
       draftField,
       field("image", "image"),
       field("order", "number"),
-      field("entity"),
+      field("entity", "text", { default: "Small Business" }),
       field("tags", "list", { required: false }),
-      field("description", "markdown", {
-        markdownButtons,
-        editorComponents: [],
-      }),
+      field("description", "markdown", { editorComponents: [] }),
       field("logo", "image", { required: false }),
       field("colors", "list", {
         fields: [
@@ -70,31 +67,28 @@ export default (data, { url }) => {
         minimizeCollapsed: true
       }),
       field("body", "markdown", {
-        buttons: markdownButtons,
-        editorComponents: ["image"],
-      }),
+        modes: ["raw"],
+        buttons: markdownButtons
+      })
     ],
   });
 
   const pageFields = [
     field("title"),
-    field("description", "markdown", {
-      buttons: markdownButtons,
-      editorComponents: []
-    }),
     field("image", "image"),
-    field("body", "markdown", {
-      buttons: markdownButtons,
-      editorComponents: ["image"],
-    }),
-    field("layout", "hidden", { default: "base" }),
     field("menu", "object", {
       fields: [
         field("visible", "boolean", { required: false }),
         field("order", "number")
       ],
       required: false
-    })
+    }),
+    field("layout", "hidden"),
+    field("description", "markdown", {
+      buttons: markdownButtons,
+      editorComponents: [],
+    }),
+    field("body", "markdown")
   ];
 
   // Individual pages
@@ -107,13 +101,7 @@ export default (data, { url }) => {
       {
         label: "Contact",
         name: "contact",
-        file: "/_src/contact.njk",
-        fields: pageFields,
-      },
-      {
-        label: "About",
-        name: "about",
-        file: "/_src/about.njk",
+        file: "/_src/contact.md",
         fields: pageFields,
       },
       {
