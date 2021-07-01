@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-{% import "macros.njk" as _ %}
+{% import "macros.njk" as macros %}
 
 <header class="bleed" style="margin-bottom: 0;">
   <div style="overflow: hidden">
@@ -43,18 +43,18 @@ layout: layouts/base.njk
   {% if colors %}
   <section class="grid gap-1 col-4 squeeze" style="padding-top: 0">
     {% for color in colors %}
-      {{ _.swatch(color.name, color.hex, color.pantone) }}
+      {{ macros.swatch(color.name, color.hex, color.pantone) }}
     {% endfor %}
   </section>
   {% endif %}
 
-  {{- content | njk | md | safe -}}
+  {{- content | safe -}}
 
   <hr>
 
 </article>
 
-<section class="flex bleed gap-2">
+<section class="post-nav flex bleed gap-2">
 
   {%- set previousProject = search.previousPage(url, "type=project", "order") %}
   {%- if previousProject -%}

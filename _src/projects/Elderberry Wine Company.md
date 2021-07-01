@@ -27,13 +27,13 @@ colors:
     pantone: 275 C
 ---
 
-{% import "macros.njk" as _ %}
+{% from "macros.njk" import image_2_column, before_after %}
 
 ## Colorful language
 
 We explored several color palettes throughout the design process. Each color represents a specific member of The Elderberry Wine Company's selection. The final palette highlights a unique quality of each specialty blend.
 
-{{ _.image_2_column(
+{{ image_2_column(
   "elderberry-wine-company-berries.svg",
   "elderberry-wine-company-flower.svg"
 ) }}

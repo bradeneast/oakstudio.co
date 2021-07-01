@@ -22,14 +22,14 @@ colors:
     pantone: 7465 C
 ---
 
-{% import "macros.njk" as _ %}
+{% from 'macros.njk' import before_after %}
 
 ## Looking the part
 
 We selected [Inter](//github.com/rsms/inter/), a modern, trustworthy typeface befitting of this small business. Some letterforms were tweaked to make the mark slightly more approachable.
 
 <section>
-{{ _.before_after(
+{{ before_after(
   "harmony-health-old-wordmark.png",
   "harmony-health-new-wordmark.png"
 ) }}

@@ -10,13 +10,13 @@ tags:
   - Concept
 ---
 
-{% import "macros.njk" as _ %}
+{% from "macros.njk" import image_2_column, before_after %}
 
 ![Images of inspriation in designing the logo icon](/img/judes-icon-process.jpg)
 
 Because Jude’s was an established local business that stood on consistency, familiar faces, and outstanding quality, there was huge potential to be unlocked from further developing their brand.
 
-{{ _.image_2_column(
+{{ image_2_column(
 	"judes-seal.svg",
 	"judes-inline.svg",
 	"bleed"
@@ -28,7 +28,7 @@ With the 15th anniversary of Jude's coming up, we suggested creating patterns fo
 
 ## Branded apparel was also an important part of the rebrand, for both customers and employees.
 
-{{ _.image_2_column(
+{{ image_2_column(
 	"judes-hoodie.jpg",
 	"judes-drive-thru.jpg",
 	"ai-center"
@@ -37,7 +37,7 @@ With the 15th anniversary of Jude's coming up, we suggested creating patterns fo
 ## Packaging
 Because Jude's offers a variety of coffee and supplements, among many other things, there was a significant amount of packaging design involved. Aligning these packaging designs with the overall brand identity presented an acute challenge. They had to strike a perfect balance between premium and accessible.
 
-{{ _.image_2_column(
+{{ image_2_column(
 	"judes-menu.jpg",
 	"judes-supplements.jpg",
 	"bleed"
@@ -56,7 +56,7 @@ Finally, to help extend the brand reach into neighboring communities, we applied
 This conceptual rebrand was a special opportunity for Jude’s to resonate even more deeply with the health-conscious and java-loving Bartlesville locals, and stand out as a natural, premium, and accessible personality for an audience that cares about themselves and their environment.
 
 <section>
-{{ _.before_after(
+{{ before_after(
 	"judes-old.png",
 	"judes-new.png",
 	"Before/After of this conceptual rebrand for [Jude's Health and Java House](//judesjava.com)"

@@ -22,8 +22,6 @@ colors:
     pantone: 7506 C
 ---
 
-{% import "macros.njk" as _ %}
-
 The target market for East Texas Elderberries is families or businesses that want to create their own syrup or elderberry products. They sell elderberries in a frozen or dehydrated form and wanted a brand that could scale rapidly with production.
 
 ![A collection of boxes stamped with the East Texas Elderberries seal](/img/east-texas-elderberries-boxes.jpg)
@@ -52,10 +50,10 @@ This identity needed to adapt fluidly for every application. To solve this, we d
 East Texas Elderberries wanted a way to reinforce their brand while interacting online. To help with that, we designed a set of icons to supplement content on their website. These icons were a great visual aid to catch and hold attention of potential customers.
 
 {% for scheme in ["light", "dark"] -%}
-<section class="carousel-wrapper bleed {{ _.scheme }}">
+<section class="carousel-wrapper bleed {{ scheme }}">
 	<div class="carousel" data-dots="false" data-scrollTime="2000">
 		{%- for i in range(1, 11) -%}
-		<img class="carousel__item" style="max-width: 12rem;" src="/img/east-texas-elderberries-icon-example-{{ _.i }}-{{ _.scheme }}.png" alt="" />
+		<img class="carousel__item" style="max-width: 12rem;" src="/img/east-texas-elderberries-icon-example-{{ i }}-{{ scheme }}.png" alt="" />
 		{%- endfor -%}
 	</div>
 </section>
