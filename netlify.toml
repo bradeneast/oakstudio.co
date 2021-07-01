@@ -10,7 +10,7 @@ publish = "_site"
 
 [dev]
 autoLaunch = true
-command = "npm run prebuild && lume --serve"
+command = "lume --serve"
 framework = "#custom"
 port = 8888
 publish = "_site"

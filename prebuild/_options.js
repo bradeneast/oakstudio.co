@@ -1,5 +1,3 @@
-let normalize = path => path.replace(/\//g, '\\');
-
 let validExts = [
   "jpeg",
   "jpg",
@@ -10,8 +8,8 @@ let validExts = [
   "avif",
   "webp"
 ];
-export let inDir = normalize("_src/img");
-export let outDir = normalize("_src/img/sm");
+export let inDir = "_src/img";
+export let outDir = "_src/img/sm";
 export let targetExt = "webp";
 export let matchExts = new RegExp(`(${validExts.join('|')})$`, 'i');
 export let matchSrc = /(?<= (src=|url\()(["'`])).+?(?=\2[ >\/\)])/gi;

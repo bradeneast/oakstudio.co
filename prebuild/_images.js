@@ -20,6 +20,8 @@ async function resizeImage(src, dest, filename) {
   }
 }
 
+let depth = 0;
+
 /**Iterates over a directory and processes each image file
  * Outputs to a subfolder within the source directory
  */
@@ -35,11 +37,7 @@ async function processImages(currentDir) {
     let dest = join(outDir, currentDirName, filename.replace(matchExts, targetExt));
 
     if (src == outDir) return;
-
-    if (fs.lstatSync(src).isDirectory()) {
-      processImages(src);
-      return;
-    }
+    if (fs.lstatSync(src).isDirectory()) return;
 
     if (matchExts.test(filename))
       resizeImage(src, dest, filename)
