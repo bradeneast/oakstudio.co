@@ -34,7 +34,6 @@
     --g6: #{$g2};
     --g7: #{$g1};
     --g8: #{$g0};
-    --primary: var(--secondary);
     --dark: 1;
     --fontWeightRegular: 300;
     --shadowColor: #0009;
@@ -109,4 +108,5 @@ img {
 @import "./blurbs";
 @import "./beforeafter";
 @import "./coarse";
+@import "./project";
 @import "./util";

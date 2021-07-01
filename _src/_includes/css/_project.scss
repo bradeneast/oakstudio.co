@@ -1,0 +1,25 @@
+.post-nav {
+  .left,
+  .right {
+    & > * {
+      transition: $smoothTransition;
+
+      &:first-child {
+        transition-delay: 0.03s;
+      }
+    }
+  }
+  .right {
+    &:hover > *,
+    &:focus > * {
+      transform: translateX(#{-$flow1});
+    }
+  }
+
+  .left {
+    &:hover > *,
+    &:focus > * {
+      transform: translateX(#{$flow1});
+    }
+  }
+}
