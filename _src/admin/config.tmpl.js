@@ -19,7 +19,7 @@ export default (data, { url }) => {
     media_folder: "_src/img",
     public_folder: "/img",
     display_url: url("/"),
-    logo_url: "/img/logos/logo_light_cropped.png",
+    logo_url: "/logo_light_cropped.png",
     collections: [],
   };
 
@@ -46,8 +46,11 @@ export default (data, { url }) => {
     fields: [
       field("title"),
       draftField,
-      field("date", "date"),
-      field("intro", "text"),
+      field("order", "number"),
+      field("description", "markdown", {
+        markdownButtons,
+        editorComponents: [],
+      }),
       field("tags", "list", { required: false }),
       field("image", "image"),
       field("colors", "list", {
@@ -61,48 +64,31 @@ export default (data, { url }) => {
         minimizeCollapsed: true
       }),
       field("body", "markdown", {
-        buttons: ["heading-one", ...markdownButtons],
+        buttons: markdownButtons,
         editorComponents: ["image"],
       }),
     ],
   });
 
-  // Reviews
-  config.collections.push({
-    label: "Review",
-    name: "reviews",
-    folder: "_src/reviews",
-    description: "Here you can add or edit reviews from clients",
-    preview: false,
-    create: true,
-    view_filters: [
-      {
-        label: "Drafts",
-        field: "draft",
-        pattern: true
-      }
-    ],
-    fields: [
-      field("client"),
-      field("company"),
-      draftField,
-      field("review"),
-      field("image", "image", { required: false }),
-    ]
-  })
-
   const pageFields = [
     field("title"),
-    field("image", "image"),
-    field("headline", "markdown", {
+    field("description", "markdown", {
       buttons: markdownButtons,
       editorComponents: []
     }),
+    field("image", "image"),
     field("body", "markdown", {
       buttons: markdownButtons,
       editorComponents: ["image"],
     }),
-    field("layout", "hidden"),
+    field("layout", "hidden", { default: "base" }),
+    field("menu", "object", {
+      fields: [
+        field("visible", "boolean", { required: false }),
+        field("order", "number")
+      ],
+      required: false
+    })
   ];
 
   // Individual pages
@@ -115,13 +101,13 @@ export default (data, { url }) => {
       {
         label: "Contact",
         name: "contact",
-        file: "/_src/contact.md",
+        file: "/_src/contact.njk",
         fields: pageFields,
       },
       {
         label: "About",
         name: "about",
-        file: "/_src/about.md",
+        file: "/_src/about.njk",
         fields: pageFields,
       },
       {
