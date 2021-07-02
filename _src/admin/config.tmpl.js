@@ -44,29 +44,29 @@ export default (data, { url }) => {
       },
     ],
     fields: [
-      field("title"),
+      field("Title"),
       draftField,
-      field("image", "image"),
-      field("order", "number"),
-      field("entity", "text", { default: "Small Business" }),
-      field("tags", "list", { required: false }),
-      field("description", "markdown", { editorComponents: [] }),
-      field("logo", "image", { required: false }),
-      field("colors", "list", {
+      field("Image", "image"),
+      field("Order", "number"),
+      field("Entity", "text", { default: "Small Business" }),
+      field("Tags", "list", { required: false }),
+      field("Description", "markdown", { editorComponents: [] }),
+      field("Logo", "image", { required: false }),
+      field("Colors", "list", {
         fields: [
-          field("name"),
-          field("hex", "color", {
+          field("Name"),
+          field("Hex", "color", {
             allowInput: true,
             enableAlpha: false
           }),
-          field("pantone", "string", { required: false })
+          field("Pantone", "string", { required: false })
         ],
         allowAdd: true,
         add_to_top: true,
         collapsed: true,
         minimizeCollapsed: true
       }),
-      field("body", "markdown", {
+      field("Body", "markdown", {
         modes: ["raw"],
         buttons: markdownButtons
       })
@@ -74,21 +74,21 @@ export default (data, { url }) => {
   });
 
   const pageFields = [
-    field("title"),
-    field("image", "image"),
-    field("menu", "object", {
+    field("Title"),
+    field("Image", "image"),
+    field("Menu", "object", {
       fields: [
-        field("visible", "boolean", { required: false }),
-        field("order", "number")
+        field("Visible", "boolean", { required: false }),
+        field("Order", "number")
       ],
       required: false
     }),
-    field("layout", "hidden"),
-    field("description", "markdown", {
+    field("Layout", "hidden"),
+    field("Description", "markdown", {
       buttons: markdownButtons,
       editorComponents: [],
     }),
-    field("body", "markdown")
+    field("Body", "markdown")
   ];
 
   // Individual pages
