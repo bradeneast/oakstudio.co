@@ -7,7 +7,7 @@ export default (data, { url }) => {
     backend: {
       name: "git-gateway",
       repo: "bradeneast/oakstudio.co",
-      branch: "lume",
+      branch: "main",
       commit_messages: {
         create: 'CMS Create {{collection}} “{{slug}}”',
         update: 'CMS Update {{collection}} “{{slug}}”',

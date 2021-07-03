@@ -5,7 +5,7 @@ for = "/*"
 Access-Control-Allow-Origin = "*"
 
 [build]
-command = "npm run prebuild && curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.js --location=https://dreamy-noyce-6c21ca.netlify.app/"
+command = "npm run prebuild && curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.js --location=https://oakstudio.co/"
 publish = "_site"
 
 [dev]

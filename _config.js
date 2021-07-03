@@ -6,7 +6,7 @@ import { imageDirName, siteSrc } from "./prebuild/_options.js";
 import * as processors from "./_processors.js";
 
 const site = lume({
-  location: new URL("https://dreamy-noyce-6c21ca.netlify.app/"),
+  location: new URL("https://oakstudio.co/"),
   src: siteSrc,
 });
 
