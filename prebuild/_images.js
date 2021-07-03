@@ -33,8 +33,7 @@ async function processImages(currentDir) {
   /**Generates src and dest paths for an image file and resizes or copies it */
   async function processImage(filename) {
     let src = join(currentDir, filename);
-    let currentDirName = currentDir.replace(inDir, "");
-    let dest = join(outDir, currentDirName, filename.replace(matchExts, targetExt));
+    let dest = join(outDir, filename.replace(matchExts, targetExt));
 
     if (src == outDir) return;
     if (fs.lstatSync(src).isDirectory()) return;
