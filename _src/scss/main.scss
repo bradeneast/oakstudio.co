@@ -75,7 +75,7 @@
 
 html,
 body {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -99,6 +99,7 @@ img {
   height: auto;
 }
 
+@import "./animations";
 @import "./layout";
 @import "./nav";
 @import "./typography";

@@ -8,6 +8,8 @@ export function html(page) {
   let images = page.document.querySelectorAll(imgSelector);
 
   images.forEach(img => {
+    let noResize = img.hasAttribute('no-resize');
+    if (noResize) return;
     let src = img.getAttribute('src');
     img.setAttribute('src', src.replace(`/${imageDirName}/`, `/${imageDirName}/${outDirName}/`).replace(matchExts, targetExt));
     img.setAttribute('width', width); // Set intrisic width

@@ -12,6 +12,8 @@ const site = lume({
 
 site.copy(imageDirName);
 site.copy("_includes/assets/", "/");
+site.copy("/main.css", "/main.css");
+site.copy("/cms.css", "/cms.css");
 
 // Process output HTML
 site.process([".html"], processors.html);

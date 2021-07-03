@@ -246,55 +246,6 @@
   align-self: center;
 }
 
-[data-animate] {
-  transition: $smoothTransition;
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-
-  &[data-offscreen] {
-    opacity: 0;
-  }
-
-  & + [data-animate] {
-    transition-delay: 0.1s;
-
-    & + [data-animate] {
-      transition-delay: 0.2s;
-
-      & + [data-animate] {
-        transition-delay: 0.3s;
-      }
-    }
-  }
-}
-
-[data-offscreen] {
-  &[data-animate="from-right"] {
-    transform: translate3d(1em, 0, 0);
-  }
-  &[data-animate="from-left"] {
-    transform: translate3d(-1em, 0, 0);
-  }
-  &[data-animate="from-top"] {
-    transform: translate3d(0, -1em, 0);
-  }
-  &[data-animate="from-bottom"] {
-    transform: translate3d(0, 1em, 0);
-  }
-}
-
-[data-parallax] {
-  --offset: 0;
-  --perspective: 0;
-  transform: translate3d(0, calc(var(--offset) * var(--perspective) * 1px), 0);
-}
-
-@for $i from 1 to 10 {
-  [data-parallax="#{$i}"] {
-    --perspective: #{$i * 0.1};
-  }
-}
-
 @media screen and (max-width: $mobile) {
   .col-2,
   .col-3 {

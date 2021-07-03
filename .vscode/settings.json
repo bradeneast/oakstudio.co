@@ -4,7 +4,7 @@
     {
       "format": "compressed",
       "extensionName": ".css",
-      "savePath": "/_src/_includes/assets/"
+      "savePath": "/_src/"
     }
   ],
   // "saveAndRun": {
