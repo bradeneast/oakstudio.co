@@ -21,7 +21,7 @@ config_file: /admin/config.yml
   <!-- Add Netlify Status Badge -->
   <script>
     var netlifyStatusBadge = document.createElement('img');
-    netlifyStatusBadge.src = "https://api.netlify.com/api/v1/badges/{{netlify_site_id}}/deploy-status";
+    netlifyStatusBadge.src = "https://api.netlify.com/api/v1/badges/{{site.netlify_site_id}}/deploy-status";
     netlifyStatusBadge.alt = "Netlify Status";
     netlifyStatusBadge.id = "netlify_status_badge";
     document.body.appendChild(netlifyStatusBadge);
