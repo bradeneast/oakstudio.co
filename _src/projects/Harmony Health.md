@@ -1,23 +1,22 @@
 ---
 title: Harmony Health
 image: /img/harmony-health-clothing.jpg
-logo: /img/harmony-health-logo.svg
-entity: Medical Practice
 order: 4
-description: Harmony Health is a direct primary care practice in Newcastle, Oklahoma. Their brand messaging is summed up in the tagline, &ldquo;Optimal health comes from harmony of body, mind, and spirit.&rdquo;
+entity: Medical Practice
 tags:
   - Identity
+description: Harmony Health is a direct primary care practice in Newcastle,
+  Oklahoma. Their brand messaging is summed up in the tagline, &ldquo;Optimal
+  health comes from harmony of body, mind, and spirit.&rdquo;
+logo: /img/harmony-health-logo.svg
 colors:
-  - 
-    name: Trusted Navy
+  - name: Trusted Navy
     hex: "#003764"
     pantone: 2955 C
-  - 
-    name: Synergy Blue
+  - name: Synergy Blue
     hex: "#009ADE"
     pantone: 2925 C
-  - 
-    name: Clean Green
+  - name: Clean Green
     hex: "#3BBFAD"
     pantone: 7465 C
 ---
@@ -39,7 +38,7 @@ By analyzing business goals and customer demographics, we were able to arrive at
 
 ## Throughout the discovery process, music and sound emerged as the dominant theme.
 
-Although Harmony Health did not offer music therapy services, the logo needed to include a musical element.
+Although Harmony Health did not offer music therapy services, the identity needed to include a musical element.
 
 ![The Harmony Health logo on a white background.](/img/harmony-health-white-bg.png)
 
