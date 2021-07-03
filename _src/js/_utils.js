@@ -10,7 +10,6 @@ export let $ = (selector, context = document) => context.querySelector(selector)
 /**@returns {NodeList} */
 export let $$ = (selector, context = document) => Array.from(context.querySelectorAll(selector));
 
-/**@returns {String} */
 export let attr = (element, attributeName) => {
   let a = element.getAttribute(attributeName);
   if (a) {

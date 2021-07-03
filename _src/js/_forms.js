@@ -1,4 +1,4 @@
-import { $$, attr } from './_utils';
+import { $$, attr } from './_utils.js';
 
 export function watchForms() {
   $$('form').forEach(form => {

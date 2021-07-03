@@ -1,30 +1,42 @@
 import lume from "lume/mod.js";
 import date from "lume/plugins/date.js";
-import slugifyUrls from "https://deno.land/x/lume@v0.24.0/plugins/slugify_urls.js";
-import { matchExts, resizeOptions, targetExt } from "./prebuild/_options.js";
+import slugifyUrls from "lume/plugins/slugify_urls.js";
+import textLoader from "lume/loaders/text.js";
+import { imageDirName, siteSrc } from "./prebuild/_options.js";
+import * as processors from "./_processors.js";
 
 const site = lume({
   location: new URL("https://dreamy-noyce-6c21ca.netlify.app/"),
-  src: "_src",
+  src: siteSrc,
 });
 
-site.copy("img");
+site.copy(imageDirName);
 site.copy("_includes/assets/", "/");
 
 // Process output HTML
-let [width, height, opts] = resizeOptions;
-site.process([".html"], page =>
-  page.document
-    .querySelectorAll('img[src*="/img/"]')
-    .forEach(img => {
-      let src = img.getAttribute('src');
-      img.setAttribute('src', src.replace("/img/", "/img/sm/").replace(matchExts, targetExt));
-      img.setAttribute('width', width); // Set intrisic width
-      img.setAttribute('height', height); // Set intrisic height
-    })
-);
+site.process([".html"], processors.html);
+
+// Bundle JS with esbuild
+site.loadAssets([".js"], textLoader);
+site.process([".js"], processors.js);
 
 site.use(slugifyUrls());
 site.use(date());
+
+site.helper('before_after', async (before, after, text) => {
+  return `
+<div>
+  <div class="beforeafter">
+    <div class="beforeafter__before">
+      <img src="/img/${before}" alt="">
+    </div>
+    <div class="beforeafter__after">
+      <img src="/img/${after}" alt="">
+    </div>
+    <div class="beforeafter__slider"></div>
+  </div>
+  <div class="subtext left">${text}</div>
+</div>`;
+}, { type: "tag" });
 
 export default site;
