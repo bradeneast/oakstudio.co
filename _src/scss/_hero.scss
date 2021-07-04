@@ -4,9 +4,8 @@
   &__heading,
   &__subheading {
     z-index: 3;
-    width: 80vmin;
-    min-width: 18rem;
-    max-width: $mobile;
+    width: 100%;
+    max-width: 80vmin;
     padding: $flow3 10vmin;
   }
 
@@ -24,8 +23,10 @@
 @media screen and (max-width: $mobile) {
   .hero {
     height: auto;
-    padding-top: $flow4;
+    padding-top: $flow6;
     margin-bottom: $flow4;
+    gap: $flow1;
+    grid-gap: $flow1;
 
     &__feature {
       height: 24rem;
@@ -33,8 +34,8 @@
 
     &__heading,
     &__subheading {
-      padding-left: $flow2;
-      padding-right: 0;
+      margin-bottom: 0;
+      padding: 0 0 0 $flow2;
     }
   }
 }

@@ -89,7 +89,7 @@ nav {
         height: $borderWidth;
         background: var(--g0);
         transform: translate(-50%, -50%) rotate(var(--r));
-        transition: transform $motionTransition;
+        transition: transform $smoothTransition;
       }
 
       &::before {
