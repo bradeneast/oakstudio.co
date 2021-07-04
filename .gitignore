@@ -1,5 +1,4 @@
 .DS_Store
-_site
 node_modules
 _src/img/sm
-dist
+_site

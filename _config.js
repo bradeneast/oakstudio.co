@@ -1,32 +1,32 @@
-import lume from "lume/mod.js";
-import date from "lume/plugins/date.js";
-import slugifyUrls from "lume/plugins/slugify_urls.js";
-import textLoader from "lume/loaders/text.js";
-import { imageDirName, siteSrc } from "./prebuild/_options.js";
+import lume from "lume";
+import date from "lume/plugins/date.ts";
+import slugifyUrls from "lume/plugins/slugify_urls.ts";
+import textLoader from "lume/loaders/text.ts";
 import * as processors from "./_processors.js";
+import { imageDirName, siteSrc } from "./prebuild/_options.js";
 
 const site = lume({
   location: new URL("https://oakstudio.co/"),
   src: siteSrc,
 });
 
-site.copy(imageDirName);
-site.copy("_includes/assets/", "/");
-site.copy("/main.css", "/main.css");
-site.copy("/cms.css", "/cms.css");
+site
+  .copy(imageDirName)
+  .copy("_includes/assets/", "/")
+  .copy("/main.css", "/main.css")
+  .copy("/cms.css", "/cms.css")
+  .loadAssets([".js"], textLoader)
 
-// Process output HTML
-site.process([".html"], processors.html);
+  // Processors
+  .process([".html"], processors.html)
+  .process([".js"], processors.js)
 
-// Bundle JS with esbuild
-site.loadAssets([".js"], textLoader);
-site.process([".js"], processors.js);
+  // Plugins
+  .use(slugifyUrls())
+  .use(date())
 
-site.use(slugifyUrls());
-site.use(date());
-
-site.helper('before_after', async (before, after, text) => {
-  return `
+  // Helpers
+  .helper('before_after', async (before, after, text) => `
 <div>
   <div class="beforeafter">
     <div class="beforeafter__before">
@@ -38,7 +38,8 @@ site.helper('before_after', async (before, after, text) => {
     <div class="beforeafter__slider"></div>
   </div>
   <div class="subtext left">${text}</div>
-</div>`;
-}, { type: "tag" });
+</div>`,
+    { type: "tag" }
+  )
 
 export default site;
