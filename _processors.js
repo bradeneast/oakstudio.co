@@ -21,12 +21,13 @@ export async function js(page) {
 
   let { path, ext } = page.src;
   let entryPoint = path + ext;
-  let outfile = "/main.min.js";
+  let filename = path.split(/[\\\/]/).pop();
+  let outfile = filename + ".min" + ext;
 
   esbuild
     .build({
       entryPoints: [siteSrc + entryPoint],
-      outfile: "_site" + outfile,
+      outfile: "_site/" + outfile,
       bundle: true,
       minify: true,
     })
