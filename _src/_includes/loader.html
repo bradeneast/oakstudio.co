@@ -14,6 +14,7 @@
 
   .loading #loader {
     opacity: 1;
+    animation-play-state: running;
   }
 
   #loader {
@@ -25,7 +26,7 @@
     opacity: 0;
     transform: translate3d(-50%, -50%, 0);
     background-color: var(--primary);
-    animation: load .5s cubic-bezier(.3, 0, .7, 1.3) infinite;
+    animation: load .5s cubic-bezier(.3, 0, .7, 1.3) infinite paused;
   }
 
   @keyframes clearLoad {

@@ -8,7 +8,7 @@ layout: layouts/base.njk
       {% if hero_left %}
         {{ hero_left | njk | safe }}
       {% else %}
-        <h1 class="hero__heading">{{ title }}</h1>
+        <h1 data-splitting class="hero__heading">{{ title }}</h1>
         <div class="hero__subheading">{{ description | md | safe }}</div>
       {% endif %}
     </div>

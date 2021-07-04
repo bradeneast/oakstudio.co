@@ -3,9 +3,10 @@ import * as esbuild from "https://deno.land/x/esbuild@v0.12.14/mod.js";
 
 export function html(page) {
 
+  let $$ = selector => page.document.querySelectorAll(selector);
+
   let [width, height, opts] = resizeOptions;
-  let imgSelector = `img[src*="/${imageDirName}/"]`;
-  let images = page.document.querySelectorAll(imgSelector);
+  let images = $$(`img[src*="/${imageDirName}/"]`);
 
   images.forEach(img => {
     let noResize = img.hasAttribute('no-resize');
@@ -15,6 +16,16 @@ export function html(page) {
     img.setAttribute('width', width); // Set intrisic width
     img.setAttribute('height', height); // Set intrisic height
   })
+
+  $$('p > img').forEach(img =>
+    img.setAttribute('data-animate', 'from-bottom')
+  )
+
+  // Add data-splitting to h2 elements
+  $$('h2').forEach(h2 => {
+    h2.setAttribute('data-splitting', '');
+    h2.setAttribute('data-animate', '');
+  });
 }
 
 export async function js(page) {

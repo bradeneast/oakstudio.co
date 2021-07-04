@@ -6,7 +6,8 @@
     z-index: 3;
     width: 100%;
     max-width: 80vmin;
-    padding: $flow3 10vmin;
+    padding: $flow2 0 $flow4 10vmin;
+    margin-bottom: 0;
   }
 
   &__heading {
@@ -34,7 +35,6 @@
 
     &__heading,
     &__subheading {
-      margin-bottom: 0;
       padding: 0 0 0 $flow2;
     }
   }

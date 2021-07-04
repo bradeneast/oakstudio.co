@@ -5,7 +5,7 @@ html {
 
   .project main > *,
   .hero > * {
-    transition: transform $smoothTransition, clip-path $motionTransition;
+    transition: clip-path $motionTransition, transform $smoothTransition;
 
     &:nth-child(2) {
       transition-delay: 0.3s;
@@ -18,16 +18,19 @@ html {
     }
   }
 
-  &[data-schwifty] {
-    transition-duration: 0.4s;
-  }
-
   .project main > *,
   .hero > * {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   &[data-schwifty] {
+    transition-duration: 0.3s;
+
+    #loader {
+      opacity: 1;
+      animation-play-state: running;
+    }
+
     main {
       opacity: 0;
     }
@@ -42,6 +45,49 @@ html {
         clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
       }
     }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transform: translateY(1.2em);
+  }
+}
+
+.splitting {
+  .word {
+    display: inline-flex;
+  }
+
+  .char {
+    display: inline-block;
+    clip-path: polygon(-40% -15%, 140% -15%, 140% 115%, -40% 115%);
+    animation: slide-in $smoothTransition both;
+    animation-delay: calc(var(--char-index) * 30ms);
+  }
+}
+
+h1.splitting .char {
+  animation: slide-in $motionTransition both;
+  animation-delay: calc(0.5s + var(--char-index) * 50ms);
+}
+
+[data-offscreen] {
+  &[data-animate="from-right"] {
+    transform: translate3d(1em, 0, 0);
+  }
+  &[data-animate="from-left"] {
+    transform: translate3d(-1em, 0, 0);
+  }
+  &[data-animate="from-top"] {
+    transform: translate3d(0, -1em, 0);
+  }
+  &[data-animate="from-bottom"] {
+    transform: translate3d(0, 1em, 0);
+  }
+  &.splitting .char {
+    animation-play-state: paused;
   }
 }
 
@@ -64,20 +110,5 @@ html {
         transition-delay: 0.3s;
       }
     }
-  }
-}
-
-[data-offscreen] {
-  &[data-animate="from-right"] {
-    transform: translate3d(1em, 0, 0);
-  }
-  &[data-animate="from-left"] {
-    transform: translate3d(-1em, 0, 0);
-  }
-  &[data-animate="from-top"] {
-    transform: translate3d(0, -1em, 0);
-  }
-  &[data-animate="from-bottom"] {
-    transform: translate3d(0, 1em, 0);
   }
 }
