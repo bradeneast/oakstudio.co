@@ -10,7 +10,7 @@ layout: layouts/base.njk
       {% else %}
         <h1 class="hero__heading splitting">{{ title | splitting | safe }}</h1>
         <div data-animate="from-left" class="hero__subheading">
-        {{ description | safe }}
+        {{ description | md | safe }}
         </div>
       {% endif %}
     </div>
