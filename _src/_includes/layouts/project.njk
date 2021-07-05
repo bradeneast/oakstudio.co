@@ -4,17 +4,17 @@ layout: layouts/base.njk
 
 {% import "macros.njk" as macros %}
 
-<header class="bleed" style="margin-bottom: 0;">
+<header class="project__header bleed" style="margin-bottom: 0;">
   <div style="overflow: hidden">
     <img class="rellax center bleed" data-rellax-speed="-4" style="max-height: 63vmin; height: 63vh;" alt="" src="{{ image | url }}" no-resize />
   </div>
 </header>
 
-<article class="project bleed">
+<article class="bleed">
 
   <div class="subtext">Case Study</div>
   <h1 data-splitting class="alignment-optical">{{ title }}</h1>
-  <div>
+  <div data-splitting>
     <h3 style="margin-bottom: 0;">{{ entity }}</h3>
     {%- for tag in tags -%}
       {% for tagPage in search.pages("type=tag") %}

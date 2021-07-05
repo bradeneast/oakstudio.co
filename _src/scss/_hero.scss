@@ -30,12 +30,13 @@
     grid-gap: $flow1;
 
     &__feature {
-      height: 24rem;
+      height: 28rem;
     }
 
     &__heading,
     &__subheading {
-      padding: 0 0 0 $flow2;
+      max-width: none;
+      padding: 0 $flow2;
     }
   }
 }

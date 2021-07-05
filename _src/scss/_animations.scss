@@ -3,23 +3,13 @@ html {
     transition: opacity $smoothTransition;
   }
 
-  .project main > *,
-  .hero > * {
-    transition: clip-path $motionTransition, transform $smoothTransition;
-
-    &:nth-child(2) {
-      transition-delay: 0.3s;
-    }
-    &:nth-child(3) {
-      transition-delay: 0.6s;
-    }
-    &:nth-child(4) {
-      transition-delay: 0.9s;
-    }
+  .project__header,
+  .hero__feature {
+    transition: $motionTransition, transform $smoothTransition;
   }
 
-  .project main > *,
-  .hero > * {
+  .project__header,
+  .hero__feature {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
@@ -35,15 +25,21 @@ html {
       opacity: 0;
     }
 
-    .project main > *,
-    .hero > * {
-      transform: translate3d(0, -3rem, 0);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    .project__header {
+      transform: translate3d(0, -3rem, 0) scale(1.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 -50%);
+    }
 
-      &:nth-child(2) {
-        transform: translate3d(3rem, 0, 0);
-        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-      }
+    .hero__feature {
+      transform: translate3d(3rem, 0, 0) scale(1.1);
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);
+    }
+  }
+
+  &[data-schwifty="out"] {
+    .hero__feature {
+      transform: translate3d(-3rem, 0, 0) scale(0.94);
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     }
   }
 }
@@ -51,20 +47,32 @@ html {
 @keyframes slide-in {
   from {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transform: translateY(1.2em);
+    transform: translateY(1.2em) rotate(0.01turn);
   }
 }
 
 .splitting {
+  --char-delay: 0s;
+
   .word {
     display: inline-flex;
   }
 
+  &.lines .word {
+    animation: slide-in $smoothTransition both;
+    animation-delay: calc(var(--char-delay) + var(--line-index) * 50ms);
+  }
+
   .char {
     display: inline-block;
-    clip-path: polygon(-40% -15%, 140% -15%, 140% 115%, -40% 115%);
+    clip-path: polygon(-40% -15%, 140% -15%, 140% 120%, -40% 120%);
     animation: slide-in $smoothTransition both;
-    animation-delay: calc(var(--char-index) * 30ms);
+    animation-delay: calc(var(--char-delay) + var(--char-index) * 20ms);
+  }
+
+  &.lines > * {
+    animation: slide-in $smoothTransition both;
+    animation-delay: calc(0.5s + var(--line-index) * 30ms);
   }
 }
 

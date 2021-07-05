@@ -2,7 +2,7 @@
 title: 360 Farms
 image: /img/360-farms-tea-boxes.jpg
 logo: /img/360-farms-logo.svg
-entity: Small Business,
+entity: Small Business
 description: 360 Farms is the only business that makes start-to-finish elderberry products for people seeking value and quality. The goal was to reinforce their brand with those wanting improved health and well-being in an era of McDonald’s and WalMart.
 order: 2
 tags:
