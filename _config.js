@@ -25,21 +25,4 @@ site
   .use(slugifyUrls())
   .use(date())
 
-  // Helpers
-  .helper('before_after', async (before, after, text) => `
-<div>
-  <div class="beforeafter">
-    <div class="beforeafter__before">
-      <img src="/img/${before}" alt="">
-    </div>
-    <div class="beforeafter__after">
-      <img src="/img/${after}" alt="">
-    </div>
-    <div class="beforeafter__slider"></div>
-  </div>
-  <div class="subtext left">${text}</div>
-</div>`,
-    { type: "tag" }
-  )
-
 export default site;
