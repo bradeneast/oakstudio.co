@@ -3,6 +3,7 @@ import date from "lume/plugins/date.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import textLoader from "lume/loaders/text.ts";
 import * as processors from "./_processors.js";
+import * as filters from "./_filters.js";
 import { imageDirName, siteSrc } from "./prebuild/_options.js";
 
 const site = lume({
@@ -24,5 +25,8 @@ site
   // Plugins
   .use(slugifyUrls())
   .use(date())
+
+  // Helpers
+  .filter('splitting', filters.splitting, { type: "tag", body: true })
 
 export default site;

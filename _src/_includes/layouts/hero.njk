@@ -8,8 +8,10 @@ layout: layouts/base.njk
       {% if hero_left %}
         {{ hero_left | njk | safe }}
       {% else %}
-        <h1 data-splitting class="hero__heading">{{ title }}</h1>
-        <div data-splitting="lines" class="hero__subheading" style="--char-delay: .5s">{{ description | md | safe }}</div>
+        <h1 class="hero__heading splitting">{{ title | splitting | safe }}</h1>
+        <div class="hero__subheading splitting" style="--char-delay: .5s">
+        {{ description | splitting | md | safe }}
+        </div>
       {% endif %}
     </div>
     <div class="hero__feature">

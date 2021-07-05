@@ -12,12 +12,10 @@ hero_left: >-
       {% endfor %}
     </div>
     {% endfor %}
-    <em data-splitting>permanent.</em>
+    <em>{{ "permanent." | splitting | safe }}</em>
   </h1>
   <div class="hero__subheading">
-    <p data-splitting="lines">
-      We've helped dozens of family-owned (and family-minded) businesses establish brands that endure.
-    </p>
+    <p>{{ "We've helped dozens of family-owned (and family-minded) businesses establish brands that endure." | splitting | safe }}</p>
     <a href="/projects" class="button primary">See Examples</a>
   </div>
 hero_right: >-

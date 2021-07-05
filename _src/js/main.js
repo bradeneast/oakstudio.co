@@ -5,7 +5,7 @@ import { watchForms } from "./_forms.js";
 import observer from "./_observer.js";
 import { $$, attr } from "./_utils.js";
 import Rellax from "./_rellax.js";
-import Splitting from "./_splitting.js";
+// import Splitting from "./_splitting.js";
 
 function init() {
 
@@ -29,7 +29,7 @@ function init() {
   // @ts-ignore
   $$("[data-animate]").forEach(elem => observer.observe(elem));
   new Rellax('.rellax');
-  Splitting();
+  // Splitting();
 }
 
 init();
