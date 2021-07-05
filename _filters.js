@@ -17,5 +17,4 @@ export function splitting(text) {
   }
 
   return lines.map(lineTemplate).join("\n");
-
 }

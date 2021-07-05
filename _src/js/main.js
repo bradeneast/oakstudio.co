@@ -27,7 +27,10 @@ function init() {
   })
 
   // @ts-ignore
-  $$("[data-animate]").forEach(elem => observer.observe(elem));
+  $$("[data-animate]").forEach(elem => {
+    elem.setAttribute("data-offscreen", true);
+    setTimeout(() => observer.observe(elem), 500);
+  });
   new Rellax('.rellax');
   // Splitting();
 }
