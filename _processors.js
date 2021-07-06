@@ -4,23 +4,35 @@ import * as esbuild from "https://deno.land/x/esbuild@v0.12.14/mod.js";
 
 export function html(page) {
 
-  let $$ = selector => page.document.querySelectorAll(selector);
-
+  let $$ = (selector, context = page.document) => context.querySelectorAll(selector);
   let [width, height, opts] = resizeOptions;
   let images = $$(`img[src*="/${imageDirName}/"]`);
 
   images.forEach(img => {
-    let noResize = img.hasAttribute('no-resize');
-    if (noResize) return;
+    // Check for no-resize attribute
+    if (img.hasAttribute('no-resize')) return;
+
     let src = img.getAttribute('src');
-    img.setAttribute('src', src.replace(`/${imageDirName}/`, `/${imageDirName}/${outDirName}/`).replace(matchExts, targetExt));
+    let resizedSrc = src
+      .replace(`/${imageDirName}/`, `/${imageDirName}/${outDirName}/`)
+      .replace(matchExts, targetExt);
+
+    img.setAttribute('src', resizedSrc); // Set resized src
     img.setAttribute('width', width); // Set intrisic width
     img.setAttribute('height', height); // Set intrisic height
   })
 
-  $$('p > img').forEach(img =>
-    img.setAttribute('data-animate', 'from-bottom')
-  )
+  let addParallax = section => {
+    $$('img', section).forEach((child, i) => {
+      child.classList.add('rellax');
+      child.setAttribute('data-rellax-speed', -0.5 * (i + 1));
+      child.setAttribute('data-rellax-percentage', 0.5);
+    })
+  }
+
+  $$('.project .bleed.col-2').forEach(addParallax);
+  $$('.project .bleed.col-3').forEach(addParallax);
+  $$('.project .bleed.col-4').forEach(addParallax);
 
   // Add data-splitting to h2 elements
   $$('h2').forEach(h2 => {
