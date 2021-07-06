@@ -1,4 +1,4 @@
-import { $, $$, debounce, round, setProp } from "./_utils.js";
+import { $, $$, debounce, round, setProp } from "./utils.js";
 
 export function watchBeforeAfterModules() {
 

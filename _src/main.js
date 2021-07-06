@@ -1,11 +1,11 @@
-import { watchBeforeAfterModules } from "./_beforeafter.js";
-import Coarse from "./_coarse.js";
-import Schwifty from "./_schwifty.js";
-import { watchForms } from "./_forms.js";
-import observer from "./_observer.js";
-import { $$, attr } from "./_utils.js";
-import Rellax from "./_rellax.js";
-// import Splitting from "./_splitting.js";
+import { $$, attr } from "./_includes/_js/utils.js";
+import { watchBeforeAfterModules } from "./_includes/_js/beforeafter.js";
+import { watchForms } from "./_includes/_js/forms.js";
+import observer from "./_includes/_js/observer.js";
+// Library imports
+import Rellax from "./_includes/_js/libs/rellax.js";
+import Coarse from "./_includes/_js/libs/coarse.js";
+import Schwifty from "./_includes/_js/libs/schwifty.js";
 
 function init() {
 
@@ -32,7 +32,6 @@ function init() {
     setTimeout(() => observer.observe(elem), 500);
   });
   new Rellax('.rellax');
-  // Splitting();
 }
 
 init();
