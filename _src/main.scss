@@ -1,4 +1,4 @@
-@import "./vars";
+@import "./_includes/_scss/vars";
 
 :root {
   --g0: #{$g0};
@@ -99,15 +99,15 @@ img {
   height: auto;
 }
 
-@import "./animations";
-@import "./layout";
-@import "./nav";
-@import "./typography";
-@import "./buttons";
-@import "./hero";
-@import "./forms";
-@import "./blurbs";
-@import "./beforeafter";
-@import "./coarse";
-@import "./project";
-@import "./util";
+@import "./_includes/_scss/animations";
+@import "./_includes/_scss/layout";
+@import "./_includes/_scss/nav";
+@import "./_includes/_scss/typography";
+@import "./_includes/_scss/buttons";
+@import "./_includes/_scss/hero";
+@import "./_includes/_scss/forms";
+@import "./_includes/_scss/blurbs";
+@import "./_includes/_scss/beforeafter";
+@import "./_includes/_scss/coarse";
+@import "./_includes/_scss/project";
+@import "./_includes/_scss/util";
