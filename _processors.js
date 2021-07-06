@@ -22,18 +22,6 @@ export function html(page) {
     img.setAttribute('height', height); // Set intrisic height
   })
 
-  let addParallax = section => {
-    $$('img', section).forEach((child, i) => {
-      child.classList.add('rellax');
-      child.setAttribute('data-rellax-speed', -0.5 * (i + 1));
-      child.setAttribute('data-rellax-percentage', 0.5);
-    })
-  }
-
-  $$('.project .bleed.col-2').forEach(addParallax);
-  $$('.project .bleed.col-3').forEach(addParallax);
-  $$('.project .bleed.col-4').forEach(addParallax);
-
   // Add data-splitting to h2 elements
   $$('h2').forEach(h2 => {
     h2.classList.add('splitting');
