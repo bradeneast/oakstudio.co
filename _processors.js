@@ -1,4 +1,5 @@
 import { imageDirName, resizeOptions, matchExts, outDirName, siteSrc, targetExt } from "./prebuild/_options.js";
+import * as filters from "./_filters.js";
 import * as esbuild from "https://deno.land/x/esbuild@v0.12.14/mod.js";
 
 export function html(page) {
@@ -23,8 +24,9 @@ export function html(page) {
 
   // Add data-splitting to h2 elements
   $$('h2').forEach(h2 => {
-    h2.setAttribute('data-splitting', '');
+    h2.classList.add('splitting');
     h2.setAttribute('data-animate', '');
+    h2.innerHTML = filters.splitting(h2.innerText);
   });
 }
 
