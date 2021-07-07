@@ -3,8 +3,9 @@
 {################}
 
 {# Blurb Base #}
-{% macro blurb(image, text) %}
+{% macro blurb(image, text, background) %}
 <div class="blurb">
+  {{ background | safe }}
   <div data-animate="from-top" class="blurb__image" aria-hidden="true">
     {{- image | safe -}}
   </div>
@@ -16,16 +17,19 @@
 
 {# Review Blurb #}
 {% macro review(clientName, clientCompany, review) %}
-<div data-animate="from-bottom" class="review">
+<div class="review rellax" data-rellax-speed="{{ [0, 0.5, 1] | random }}" data-rellax-percentage="0">
   {% set image -%}<div class="quote">&ldquo;</div>{% endset %}
   {% set text -%}
-  <h4 class="review__text">{{ review }}</h4>
+  #### {{ review }}
   <div class="review__client">
     <em>{{ clientName }}</em>
     <div class="subtext">{{ clientCompany }}</div>
   </div>
   {% endset %}
-  {{- blurb(image, text) -}}
+  {% set background %}
+  <div class="review__background rellax" data-rellax-speed="-2" data-rellax-percentage="0"></div>
+  {% endset %}
+  {{- blurb(image, text, background) -}}
 </div>
 {% endmacro %}
 

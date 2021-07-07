@@ -10,6 +10,8 @@
     }
   }
   .right {
+    padding-left: $flow1;
+
     &:hover > *,
     &:focus > * {
       transform: translateX(#{-$flow1});
@@ -17,6 +19,8 @@
   }
 
   .left {
+    padding-right: $flow1;
+
     &:hover > *,
     &:focus > * {
       transform: translateX(#{$flow1});

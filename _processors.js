@@ -7,6 +7,7 @@ export function html(page) {
   let $$ = (selector, context = page.document) => context.querySelectorAll(selector);
   let [width, height, opts] = resizeOptions;
   let images = $$(`img[src*="/${imageDirName}/"]`);
+  let directions = ["left", "right", "top", "bottom"];
 
   images.forEach(img => {
     // Check for no-resize attribute
@@ -20,6 +21,12 @@ export function html(page) {
     img.setAttribute('src', resizedSrc); // Set resized src
     img.setAttribute('width', width); // Set intrisic width
     img.setAttribute('height', height); // Set intrisic height
+  })
+
+  $$('.project p > img').forEach((img, i) => {
+    let index = i;
+    while (index > 1) index = index - 2;
+    img.setAttribute('data-animate', `clip-${directions[index]}`);
   })
 
   // Add data-splitting to h2 elements

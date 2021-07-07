@@ -4,13 +4,7 @@ nav {
   height: 4rem;
   width: 100%;
   padding: $flow1 $flow2 0 $flow2;
-  z-index: 19;
-  --v: calc(255 - 255 * var(--dark));
-  background: linear-gradient(
-    rgba(var(--v), var(--v), var(--v), 0.8),
-    rgba(var(--v), var(--v), var(--v), 0.37),
-    transparent
-  );
+  z-index: 99;
   background-size: 100% 12em;
   background-position: bottom;
 

@@ -8,7 +8,7 @@
   margin-top: calc(var(--image-size) / 3);
   border: $borderWidth $borderStyle var(--g6);
   border-radius: $borderRadius;
-  background-color: inherit;
+  background-color: var(--g8);
 
   & > * {
     margin: 0;
@@ -61,11 +61,36 @@
 }
 
 .review {
-  background-color: inherit;
+  color: var(--g0);
+
+  &__background::before {
+    --r: -112deg;
+    position: absolute;
+    content: "";
+    width: 72%;
+    aspect-ratio: 1;
+    top: 50%;
+    left: 50%;
+    background: var(--secondary);
+    border: $borderWidth $borderStyle var(--secondary);
+    border-radius: $borderRadius;
+    transform: translate(-50%, -50%) rotate(var(--r));
+  }
+
+  &:nth-child(2n) .review__background::before {
+    --r: -67deg;
+  }
+
+  &:nth-child(3n) .review__background::before {
+    --r: 37deg;
+  }
 
   .blurb {
+    border: none;
     margin-top: 0;
+    padding: 0;
     width: 100%;
+    background: none;
 
     &__image {
       margin-bottom: 0;
@@ -89,7 +114,7 @@
   padding: $flow1;
   background: var(--g7);
   text-decoration: none;
-  transition: background $smoothTransition, border $colorTransition;
+  transition: $smoothTransition, border $colorTransition;
 
   &:hover,
   &:focus,
@@ -110,7 +135,7 @@
     border-radius: $borderRadius;
     overflow: hidden;
     margin-bottom: $flow1;
-    transition: opacity $smoothTransition;
+    transition: $smoothTransition;
   }
 
   &__title {

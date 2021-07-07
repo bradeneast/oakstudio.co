@@ -14,6 +14,8 @@ const site = lume({
 site
   .copy(imageDirName)
   .copy("_includes/assets/", "/")
+  .copy("main.css")
+  .copy("cms.css")
   .loadAssets([".js"], textLoader)
 
   // Processors

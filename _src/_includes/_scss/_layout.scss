@@ -38,19 +38,10 @@ article {
 section {
   margin: 0;
   padding: $flow6 0;
-  background: var(--g8);
 
   &.bleed {
     padding-left: $flow2;
     padding-right: $flow2;
-  }
-
-  &.primary {
-    background-color: var(--primary);
-
-    * {
-      color: $g8;
-    }
   }
 
   &.soft {

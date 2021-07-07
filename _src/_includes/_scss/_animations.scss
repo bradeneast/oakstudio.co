@@ -38,8 +38,8 @@ html {
 
   &[data-schwifty="out"] {
     .hero__feature {
-      transform: translate3d(-3rem, 0, 0) scale(0.94);
-      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      transform: translate3d(0, -3rem, 0);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 -50%);
     }
   }
 }
@@ -49,6 +49,64 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transform: translateY(1.2em) rotate(0.01turn);
   }
+}
+
+[data-animate] {
+  & + [data-animate] {
+    transition-delay: 0.1s;
+
+    & + [data-animate] {
+      transition-delay: 0.2s;
+
+      & + [data-animate] {
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
+
+[data-offscreen] {
+  opacity: 0;
+
+  &[data-animate="clip-left"] {
+    clip-path: polygon(0 0, 0 0, -50% 100%, 0 100%);
+  }
+  &[data-animate="clip-right"] {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);
+  }
+  &[data-animate="clip-top"] {
+    clip-path: polygon(0 0, 100% 0, 100% -50%, 0 0);
+  }
+  &[data-animate="clip-bottom"] {
+    clip-path: polygon(0 100%, 100% 100%, 100% 150%, 0 100%);
+  }
+  &.splitting .char {
+    animation-play-state: paused;
+  }
+  &[data-animate*="-right"] {
+    transform: translate3d(1em, 0, 0);
+  }
+  &[data-animate*="-left"] {
+    transform: translate3d(-1em, 0, 0);
+  }
+  &[data-animate*="-top"] {
+    transform: translate3d(0, -1em, 0);
+  }
+  &[data-animate*="-bottom"] {
+    transform: translate3d(0, 1em, 0);
+  }
+}
+
+[data-animate*="clip-"] {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: translate3d(0, 0, 0);
+  transition: transform $motionTransition, clip-path $motionTransition 0.2s;
+}
+
+[data-animate*="from-"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: transform $smoothTransition, opacity $smoothTransition;
 }
 
 .splitting {
@@ -79,44 +137,4 @@ html {
 h1.splitting .char {
   animation: slide-in $motionTransition both;
   animation-delay: calc(0.5s + var(--char-index) * 50ms);
-}
-
-[data-offscreen] {
-  &[data-animate="from-right"] {
-    transform: translate3d(1em, 0, 0);
-  }
-  &[data-animate="from-left"] {
-    transform: translate3d(-1em, 0, 0);
-  }
-  &[data-animate="from-top"] {
-    transform: translate3d(0, -1em, 0);
-  }
-  &[data-animate="from-bottom"] {
-    transform: translate3d(0, 1em, 0);
-  }
-  &.splitting .char {
-    animation-play-state: paused;
-  }
-}
-
-[data-animate] {
-  transition: $smoothTransition;
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-
-  &[data-offscreen] {
-    opacity: 0;
-  }
-
-  & + [data-animate] {
-    transition-delay: 0.1s;
-
-    & + [data-animate] {
-      transition-delay: 0.2s;
-
-      & + [data-animate] {
-        transition-delay: 0.3s;
-      }
-    }
-  }
 }
