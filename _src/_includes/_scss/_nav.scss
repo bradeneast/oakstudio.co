@@ -97,9 +97,10 @@ nav {
 
     #menu-toggle:checked {
       & ~ [role="menu"] {
-        opacity: 1;
+        clip-path: $clipSquare;
+        background: var(--g8);
         pointer-events: all;
-        transition: opacity $smoothTransition;
+        transition: $motionTransition;
       }
 
       & ~ label[for="menu-toggle"] {
@@ -127,13 +128,15 @@ nav {
       top: 0;
       left: 0;
       background: var(--g8);
-      opacity: 0;
+      clip-path: $clipOffsetTop;
       pointer-events: none;
 
       a {
         font-size: $fontSizeLarge;
         margin: 0;
         margin-bottom: $flow1;
+        clip-path: $clipSquare;
+        transition: $smoothTransition;
       }
     }
   }

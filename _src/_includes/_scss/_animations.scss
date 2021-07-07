@@ -10,16 +10,11 @@ html {
 
   .project__header,
   .hero__feature {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: $clipSquare;
   }
 
   &[data-schwifty] {
-    transition-duration: 0.3s;
-
-    #loader {
-      opacity: 1;
-      animation-play-state: running;
-    }
+    transition-duration: 0.4s;
 
     main {
       opacity: 0;
@@ -27,20 +22,26 @@ html {
 
     .project__header {
       transform: translate3d(0, -3rem, 0) scale(1.1);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 -50%);
+      clip-path: $clipOffsetTop;
     }
 
     .hero__feature {
       transform: translate3d(3rem, 0, 0) scale(1.1);
-      clip-path: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);
+      clip-path: $clipOffsetRight;
     }
   }
 
   &[data-schwifty="out"] {
     .hero__feature {
       transform: translate3d(0, -3rem, 0);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 -50%);
+      clip-path: $clipOffsetTop;
     }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  html[data-schwifty] nav [role="menu"] a {
+    clip-path: $clipOffsetLeft;
   }
 }
 
@@ -69,20 +70,22 @@ html {
   opacity: 0;
 
   &[data-animate="clip-left"] {
-    clip-path: polygon(0 0, 0 0, -50% 100%, 0 100%);
+    clip-path: $clipOffsetLeft;
   }
   &[data-animate="clip-right"] {
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);
+    clip-path: $clipOffsetRight;
   }
   &[data-animate="clip-top"] {
-    clip-path: polygon(0 0, 100% 0, 100% -50%, 0 0);
+    clip-path: $clipOffsetTop;
   }
   &[data-animate="clip-bottom"] {
-    clip-path: polygon(0 100%, 100% 100%, 100% 150%, 0 100%);
+    clip-path: $clipOffsetBottom;
   }
+
   &.splitting .char {
     animation-play-state: paused;
   }
+
   &[data-animate*="-right"] {
     transform: translate3d(1em, 0, 0);
   }
@@ -98,7 +101,7 @@ html {
 }
 
 [data-animate*="clip-"] {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: $clipSquare;
   transform: translate3d(0, 0, 0);
   transition: transform $motionTransition, clip-path $motionTransition 0.2s;
 }
