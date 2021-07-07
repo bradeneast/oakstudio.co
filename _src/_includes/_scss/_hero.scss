@@ -18,6 +18,11 @@
   &__feature {
     overflow: hidden;
     height: 100vh;
+
+    &--image {
+      height: 100%;
+      border-radius: 0 0 0 $borderRadius;
+    }
   }
 }
 
@@ -25,12 +30,17 @@
   .hero {
     height: auto;
     padding-top: $flow6;
-    margin-bottom: $flow4;
+    margin-bottom: $flow3;
     gap: $flow1;
     grid-gap: $flow1;
 
     &__feature {
       height: 28rem;
+
+      &--image {
+        object-fit: contain;
+        border-radius: 0;
+      }
     }
 
     &__heading,

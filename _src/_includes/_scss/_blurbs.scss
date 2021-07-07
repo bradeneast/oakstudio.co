@@ -8,7 +8,6 @@
   margin-top: calc(var(--image-size) / 3);
   border: $borderWidth $borderStyle var(--g6);
   border-radius: $borderRadius;
-  background-color: var(--g8);
 
   & > * {
     margin: 0;
@@ -22,18 +21,16 @@
     margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
     height: var(--image-size);
     width: var(--image-size);
-    background-color: inherit;
-    transition: $colorTransition;
 
     &::before {
       content: "";
       position: absolute;
       border-radius: inherit;
-      background-color: inherit;
-      width: calc(100% + #{$borderWidth * 2});
-      height: calc(100% + #{$borderWidth * 2});
-      top: -$borderWidth;
-      left: -$borderWidth;
+      background-color: var(--g8);
+      width: calc(100% + #{$borderWidth * 8});
+      height: $borderWidth;
+      top: calc(50% - #{$borderWidth});
+      left: $borderWidth * -4;
     }
 
     svg path {
@@ -63,18 +60,27 @@
 .review {
   color: var(--g0);
 
-  &__background::before {
-    --r: -112deg;
+  &__background {
     position: absolute;
-    content: "";
-    width: 72%;
-    aspect-ratio: 1;
-    top: 50%;
-    left: 50%;
-    background: var(--secondary);
-    border: $borderWidth $borderStyle var(--secondary);
-    border-radius: $borderRadius;
-    transform: translate(-50%, -50%) rotate(var(--r));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      --r: -112deg;
+      position: absolute;
+      pointer-events: none;
+      content: "";
+      width: 100%;
+      padding-bottom: 100%;
+      top: 50%;
+      left: 50%;
+      background: var(--primary);
+      opacity: 0.37;
+      border-radius: $borderRadius;
+      transform: translate(-50%, -50%) scale(0.65) rotate(var(--r));
+    }
   }
 
   &:nth-child(2n) .review__background::before {
@@ -90,10 +96,13 @@
     margin-top: 0;
     padding: 0;
     width: 100%;
-    background: none;
 
     &__image {
       margin-bottom: 0;
+
+      &::before {
+        display: none;
+      }
     }
   }
 

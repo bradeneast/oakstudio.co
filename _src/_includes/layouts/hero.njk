@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 <header class="bleed">
   <div class="hero grid col-2 ai-stretch gap-4 squeeze">
-    <div class="grid ac-end ai-end gap-1">
+    <div data-rellax-speed="-2" class="grid ac-end ai-end gap-1 rellax">
       {% if hero_left %}
         {{ hero_left | njk | safe }}
       {% else %}
@@ -18,7 +18,7 @@ layout: layouts/base.njk
       {% if hero_right %}
         {{ hero_right | njk | safe }}
       {% else %}
-        <img style="height: 100%;" src="/img/{{ image }}" alt="" />
+        <img data-rellax-speed="2" class="hero__feature--image rellax" src="/img/{{ image }}" alt="" />
       {% endif %}
     </div>
   </div>

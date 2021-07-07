@@ -6,7 +6,7 @@
 {% macro blurb(image, text, background) %}
 <div class="blurb">
   {{ background | safe }}
-  <div data-animate="from-top" class="blurb__image" aria-hidden="true">
+  <div class="blurb__image" aria-hidden="true">
     {{- image | safe -}}
   </div>
   <div class="blurb__text flow">
@@ -17,7 +17,7 @@
 
 {# Review Blurb #}
 {% macro review(clientName, clientCompany, review) %}
-<div class="review rellax" data-rellax-speed="{{ [0, 0.5, 1] | random }}" data-rellax-percentage="0">
+<div class="review rellax" data-rellax-speed="{{ [0.5, 1, 1.5] | random }}" data-rellax-percentage="0">
   {% set image -%}<div class="quote">&ldquo;</div>{% endset %}
   {% set text -%}
   #### {{ review }}
@@ -27,7 +27,7 @@
   </div>
   {% endset %}
   {% set background %}
-  <div class="review__background rellax" data-rellax-speed="-2" data-rellax-percentage="0"></div>
+  <div class="review__background rellax" data-rellax-speed="-1" data-rellax-percentage="0.5"></div>
   {% endset %}
   {{- blurb(image, text, background) -}}
 </div>

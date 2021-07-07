@@ -6,7 +6,7 @@ hero_left: >-
     {% set speeds = [ 0, -1,-2,-3,-4,-5 ] %}
     {% set words = ["Build", "something"] %}
     {% for word in words %}
-    <div class="word">
+    <div class="word" style="z-index:9">
       {% for char in word | list %}
       <div class="char rellax" style="--char-index:{{loop.index}}" data-rellax-speed="{{ speeds | random }}">{{ char }}</div>
       {% endfor %}
