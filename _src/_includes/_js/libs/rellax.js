@@ -394,6 +394,8 @@ var Rellax = function (el, options) {
       var horizontalScrollX = horizontalScrollAxis.indexOf("x") != -1 ? posX : 0;
       var horizontalScrollY = horizontalScrollAxis.indexOf("y") != -1 ? posX : 0;
 
+      document.documentElement.style.setProperty('--user-scroll', verticalScrollY);
+
       var percentageY = ((verticalScrollY + horizontalScrollY - blocks[i].top + screenY) / (blocks[i].height + screenY));
       var percentageX = ((verticalScrollX + horizontalScrollX - blocks[i].left + screenX) / (blocks[i].width + screenX));
 

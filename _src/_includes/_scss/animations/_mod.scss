@@ -1,0 +1,24 @@
+@import "./intersections";
+@import "./keyframes";
+@import "./splitting";
+@import "./transitions";
+
+.spinner {
+  --size: 15em;
+  position: absolute;
+  left: calc(var(--size) * -0.75);
+  top: 0;
+  width: var(--size);
+  height: var(--size);
+  font-size: 1rem;
+  animation: spin 10s linear infinite reverse paused;
+  animation-delay: calc(-0.004s * var(--user-scroll));
+
+  circle {
+    fill: transparent;
+  }
+
+  text {
+    fill: var(--g5);
+  }
+}

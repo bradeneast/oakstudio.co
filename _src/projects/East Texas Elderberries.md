@@ -22,6 +22,8 @@ colors:
     pantone: 7506 C
 ---
 
+## Goals
+
 The target market for East Texas Elderberries is families or businesses that want to create their own syrup or elderberry products. They sell elderberries in a frozen or dehydrated form and wanted a brand that could scale rapidly with production.
 
 ![A collection of boxes stamped with the East Texas Elderberries seal](/img/east-texas-elderberries-boxes.jpg)

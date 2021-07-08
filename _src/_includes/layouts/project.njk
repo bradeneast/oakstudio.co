@@ -12,7 +12,16 @@ layout: layouts/base.njk
 
 <article class="bleed">
 
-  <div class="splitting subtext" style="--char-delay: .5s">{{ "Case Study" | splitting | safe }}</div>
+  <div class="subtext">
+    <svg class="spinner" viewBox="0 0 100 100">
+      <circle id="circle" r="31" cx="50" cy="50" />
+      <text>
+        <textPath alignment-baseline="top" xlink:href="#circle">
+          Design &nbsp;Case &nbsp;Study
+        </textPath>
+      </text>
+    </svg>
+  </div>
   <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
   <div>
     <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">{{ entity | splitting | safe }}</h3>

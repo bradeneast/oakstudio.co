@@ -14,9 +14,9 @@
   --primary: #{$primary};
   --secondary: #{$secondary};
   --translucent: #{$translucent};
-  --shadowColor: #0003;
-  --shadow: 0 0 0.15rem var(--shadowColor);
-  --largeShadow: 0 0.6rem 1.5rem -0.6rem var(--shadowColor);
+  --shadow-color: #{$g0};
+  --shadow: 0 0 1rem var(--shadow-color);
+  --large-shadow: 0 0 1.8rem -0.6rem var(--shadow-color);
 }
 
 .dark {
@@ -35,7 +35,6 @@
     --g7: #{$g1};
     --g8: #{$g0};
     --dark: 1;
-    --fontWeightRegular: 300;
     --shadowColor: #0009;
   }
 
@@ -99,7 +98,7 @@ img {
   height: auto;
 }
 
-@import "./animations";
+@import "./animations/mod";
 @import "./layout";
 @import "./nav";
 @import "./typography";

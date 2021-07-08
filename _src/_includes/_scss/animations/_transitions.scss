@@ -1,0 +1,46 @@
+html {
+  main {
+    transition: opacity $smoothTransition;
+  }
+
+  .project__header,
+  .hero__feature {
+    transition: $motionTransition, transform $smoothTransition;
+  }
+
+  .project__header,
+  .hero__feature {
+    clip-path: $clipSquare;
+  }
+
+  &[data-schwifty] {
+    transition-duration: 0.4s;
+
+    main {
+      opacity: 0;
+    }
+
+    .project__header {
+      transform: translate3d(0, -3rem, 0) scale(1.1);
+      clip-path: $clipOffsetTop;
+    }
+
+    .hero__feature {
+      transform: translate3d(3rem, 0, 0) scale(1.1);
+      clip-path: $clipOffsetRight;
+    }
+  }
+
+  &[data-schwifty="out"] {
+    .hero__feature {
+      transform: translate3d(0, -3rem, 0);
+      clip-path: $clipOffsetTop;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  html[data-schwifty] nav [role="menu"] a {
+    clip-path: $clipOffsetLeft;
+  }
+}
