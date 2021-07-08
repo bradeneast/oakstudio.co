@@ -1,3 +1,4 @@
+// Color
 $g0: #000000;
 $g1: #15161b;
 $g2: #25252b;
@@ -8,36 +9,52 @@ $g6: #c4bdb9;
 $g7: #dad1d0;
 $g8: #e6dedc;
 $translucent: rgba(0, 0, 0, 0.28);
-$clipSquare: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-$clipOffsetTop: polygon(0 0, 100% 0, 100% -50%, 0 0);
-$clipOffsetRight: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);
-$clipOffsetBottom: polygon(0 100%, 100% 100%, 100% 150%, 0 100%);
-$clipOffsetLeft: polygon(0 0, 0 0, -50% 100%, 0 100%);
 $primary: #e4461e;
 $secondary: #c9331f;
+
+// Spacing
 $flow1: 1rem;
 $flow2: 1.63rem;
 $flow3: 3rem;
 $flow4: 5rem;
 $flow6: 8rem;
+
+// Fonts
 $fontWeightRegular: 400;
 $fontWeightHeavy: 700;
 $fontSizeSmall: 0.8rem;
 $fontSizeLarge: 1.63rem;
+$fallbackFonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", "Roboto", sans-serif;
+$textFont: "Space Grotesk", $fallbackFonts;
+$altFont: "Merriweather", "Times", $fallbackFonts;
+
+// Borders
 $borderWidth: 2px;
 $borderStyle: solid;
 $borderRadius: 0.4rem;
+
+// Clip Paths
+$clipSquare: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+$clipOffsetTop: polygon(0 0, 100% 0, 100% 0, 0 -50%);
+$clipOffsetRight: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);
+$clipOffsetBottom: polygon(0 100%, 100% 100%, 100% 150%, 0 100%);
+$clipOffsetLeft: polygon(0 0, -50% 0, 0 100%, 0 100%);
+
+// Transitions
 $colorTransition: 0.28s cubic-bezier(0.3, 0.3, 0.1, 1);
 $smoothTransition: 0.54s cubic-bezier(0.4, 0.3, 0.1, 1);
 $motionTransition: 1s cubic-bezier(0.5, 0.8, 0.3, 1);
-$mobile: 51rem;
-$fallback: showFallback 5s forwards;
 
+// Breakpoints
+$mobile: 51rem;
+
+// Functions
 @function text-outline($color, $thickness: 1px) {
   @return $thickness $thickness $color, -$thickness -#{$thickness} $color, $thickness #{-$thickness} $color,
     -$thickness $thickness $color;
 }
 
+// Font Imports
 @font-face {
   font-family: "Space Grotesk";
   src: url("/SpaceGrotesk.woff2") format("woff2-variations");
@@ -60,7 +77,3 @@ $fallback: showFallback 5s forwards;
   font-style: italic;
   font-display: block;
 }
-
-$fallbackFonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", "Roboto", sans-serif;
-$textFont: "Space Grotesk", $fallbackFonts;
-$altFont: "Merriweather", "Times", $fallbackFonts;
