@@ -45,6 +45,10 @@
     &__feature {
       height: 28rem;
 
+      &::after {
+        display: none;
+      }
+
       &--image {
         border-radius: 0;
       }

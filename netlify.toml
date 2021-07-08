@@ -1,9 +1,3 @@
-[[headers]]
-# Define which paths this specific [[headers]] block will cover.
-for = "/*"
-[headers.values]
-Access-Control-Allow-Origin = "*"
-
 [build]
 command = "npm run prebuild && curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.ts --location=https://oakstudio.co/"
 publish = "_site"
@@ -15,3 +9,14 @@ framework = "#custom"
 port = 8888
 publish = "_site"
 targetPort = 3000
+
+[[redirects]]
+from = "/*"
+status = 404
+to = "/404"
+
+[[redirects]]
+force = true
+from = "https://somenetlifysite.netlify.app"
+status = 301
+to = "https://mycustomdomain.com"
