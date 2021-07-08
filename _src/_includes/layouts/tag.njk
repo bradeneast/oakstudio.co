@@ -2,12 +2,15 @@
 layout: layouts/base.njk
 ---
 
-<section class="special bleed grid col-3 gap-2">
+<section class="bleed grid col-3 gap-3">
   <div>
-    <h2>Tagged “{{ tag }}”</h2>
-    <hr>
+    <div class="right">
+      <div class="subtext">Projects tagged</div>
+      <h1>{{ tag }}</h1>
+      <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+      <hr>
+    </div>
   </div>
   {% set projects = search.pages("type=project '" + tag + "'") %}  
   {% include "templates/projectsList.njk" %}
-  <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
 </section>

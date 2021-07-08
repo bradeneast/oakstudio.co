@@ -1,3 +1,9 @@
+.blurb,
+.review__background,
+.soft-grid {
+  border-radius: $borderRadius + $flow1 / 2;
+}
+
 .blurb {
   --image-size: 7rem;
   display: inline-block;
@@ -7,7 +13,6 @@
   margin: 0 auto;
   margin-top: calc(var(--image-size) / 3);
   border: $borderWidth $borderStyle var(--g6);
-  border-radius: $borderRadius;
 
   & > * {
     margin: 0;
@@ -59,6 +64,7 @@
 
 .review {
   --background-rotation: 4deg;
+  --background-border-color: var(--g6);
   color: var(--primary);
 
   &__background {
@@ -68,31 +74,8 @@
     padding-left: 100%;
     top: 50%;
     left: 50%;
-    border: $borderWidth $borderStyle var(--g6);
-    border-radius: $borderRadius;
-    transform: translate(-50%, -50%) rotate(var(--background-rotation));
-
-    &::before,
-    &::after {
-      position: absolute;
-      font-size: 1500%;
-      line-height: 0;
-      color: var(--g8);
-      text-shadow: text-outline(var(--g6), $thickness: 1.4px);
-      transform: translateY(0.25em);
-    }
-
-    &::before {
-      top: 0.08em;
-      left: 0;
-      content: "“";
-    }
-
-    &::after {
-      bottom: 0.08em;
-      right: 0;
-      content: "”";
-    }
+    border: $borderWidth $borderStyle var(--background-border-color);
+    transform: translate(-50%, -50%) scale(0.9) rotate(var(--background-rotation));
   }
 
   &:nth-child(2n) {
@@ -114,7 +97,6 @@
 .soft-grid {
   display: flex;
   flex-flow: column;
-  border-radius: $borderRadius + $flow1 / 2;
   border: $borderWidth $borderStyle var(--g7);
   padding: $flow1;
   background: var(--g7);
