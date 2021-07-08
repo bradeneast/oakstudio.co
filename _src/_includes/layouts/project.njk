@@ -5,33 +5,36 @@ layout: layouts/base.njk
 {% import "macros.njk" as macros %}
 
 <header class="project__header bleed" style="margin-bottom: 0;">
-  <div style="overflow: hidden">
-    <img class="rellax center bleed" data-rellax-speed="-4" style="max-height: 63vmin; height: 63vh;" alt="" src="{{ image | url }}" no-resize />
+  <div class="project__header--image">
+    <img class="rellax center bleed" data-rellax-speed="-4" alt="" src="{{ image | url }}" no-resize />
   </div>
 </header>
 
 <article class="bleed">
 
-  <div class="subtext">
+  <div class="subtext bleed">
     <svg class="spinner" viewBox="0 0 100 100">
       <circle id="circle" r="31" cx="50" cy="50" />
       <text>
         <textPath alignment-baseline="top" xlink:href="#circle">
-          Design &nbsp;Case &nbsp;Study
+          Design Case Study
         </textPath>
       </text>
     </svg>
   </div>
-  <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
-  <div>
-    <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">{{ entity | splitting | safe }}</h3>
-    {%- for tag in tags -%}
-      {% for tagPage in search.pages("type=tag") %}
-        {%- if tagPage.data.tag == tag -%}
-        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-    {%- endfor -%}
+
+  <div class="bleed top-text">
+    <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
+    <div>
+      <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">{{ entity | splitting | safe }}</h3>
+      {%- for tag in tags -%}
+        {% for tagPage in search.pages("type=tag") %}
+          {%- if tagPage.data.tag == tag -%}
+          {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      {%- endfor -%}
+    </div>
   </div>
 
   <hr>

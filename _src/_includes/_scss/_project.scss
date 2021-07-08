@@ -1,3 +1,29 @@
+.project__header {
+  max-height: 63vmin;
+  height: 63vh;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at 50% 50%, transparent, var(--g8));
+    opacity: 0.37;
+  }
+
+  &--image {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+}
+
 .post-nav {
   .left,
   .right {

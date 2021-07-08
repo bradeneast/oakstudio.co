@@ -8,6 +8,11 @@ nav {
   background-size: 100% 12em;
   background-position: bottom;
 
+  #logo,
+  [role="menu"] {
+    filter: drop-shadow(0 0 1rem var(--shadow-color));
+  }
+
   #logo {
     height: 100%;
     width: auto;

@@ -58,7 +58,7 @@
 }
 
 .review {
-  --background-rotation: calc(-0.01deg * var(--user-scroll));
+  --background-rotation: 4deg;
   color: var(--primary);
 
   &__background {
@@ -96,7 +96,7 @@
   }
 
   &:nth-child(2n) {
-    --background-rotation: calc(0.01deg * var(--user-scroll));
+    --background-rotation: -4deg;
   }
 
   .blurb {

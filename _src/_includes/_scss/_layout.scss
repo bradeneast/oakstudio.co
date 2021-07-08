@@ -26,6 +26,12 @@ article {
   padding-top: $flow4;
 }
 
+.top-text {
+  width: 100%;
+  max-width: 80vmin;
+  padding: $flow2 0 $flow4 10vmin;
+}
+
 main,
 article {
   & > *:not(.bleed) {
@@ -113,6 +119,11 @@ footer {
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  .top-text {
+    max-width: none;
+    padding: 0 $flow2;
   }
 
   main,
