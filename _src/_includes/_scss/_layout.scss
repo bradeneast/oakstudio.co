@@ -119,6 +119,10 @@ footer {
     &:first-child {
       margin-top: 0;
     }
+
+    & > :first-child:not(header) {
+      margin-top: $flow6;
+    }
   }
 
   .top-text {
