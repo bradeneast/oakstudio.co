@@ -15,9 +15,6 @@ colors:
   - name: Elder Indigo
     hex: "#1d1934"
     pantone: 5255 C
-  - name: Heritage
-    hex: "#345d9d"
-    pantone: 7684 C
   - name: Deep Roots
     hex: "#ddc9a3"
     pantone: 468 C
