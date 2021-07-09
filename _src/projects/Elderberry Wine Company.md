@@ -1,30 +1,28 @@
 ---
 title: The Elderberry Wine Company
 image: /img/elderberry-wine-company-menu.jpg
-logo: /img/elderberry-wine-company-logo.svg
-description: The Elderberry Wine Company is a winery owned and operated by [360 Farms](/projects/360-farms), who makes specialty wines for health-conscious moms and those who prefer natural alternatives to pharmaceutical products.
-entity: Small Business
 order: 2
+entity: Small Business
 tags:
   - Identity
   - Packaging
+description: The Elderberry Wine Company is a winery owned and operated by [360
+  Farms](/projects/360-farms), who makes specialty wines for health-conscious
+  moms and those who prefer natural alternatives to pharmaceutical products.
+logo: /img/elderberry-wine-company-logo.svg
 colors:
-  -
-    name: Elderflower Gold
+  - name: Elderflower Gold
     hex: "#F4AE62"
     pantone: 150 C
-  -
-    name: Dry Red
+  - name: Dry Red
     hex: "#A82F2C"
     pantone: 1805 C
-  -
-    name: Sweet Rosé
+  - name: Sweet Rosé
     hex: "#D34C83"
     pantone: 205 C
-  -
-    name: Elder Indigo
-    hex: "#24223E"
-    pantone: 275 C
+  - name: Elder Indigo
+    hex: "#1d1934"
+    pantone: 5255 C
 ---
 
 {% from "macros.njk" import image_2_column, before_after %}
