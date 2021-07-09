@@ -28,39 +28,43 @@ async function resizeImage(src, dest, filename) {
 /**Iterates over a directory and processes each image file
  * Outputs to a subfolder within the source directory
  */
-async function processImages(dir) {
+async function processImages(dir, useCache = false) {
 
-  dir = normalize(dir);
-
-  let cache = JSON.parse(fs.readFileSync(cacheFile, "utf-8"))
-  let images = fs.readdirSync(dir);
+  let dirName = normalize(dir);
+  let images = fs.readdirSync(dirName);
+  let cache = JSON.parse(fs.readFileSync(cacheFile, "utf-8"));
   let diff = cache.images.filter(image => !images.includes(image));
 
-  if (diff.length)
+  // Diff cached images with images present
+  if (diff.length && useCache)
     for (let filename of diff) {
 
       // Remove filename from cache
-      let index = cache.images.indexOf(filename);
-      cache.images.splice(index, 1);
+      cache.images.splice(cache.images.indexOf(filename), 1);
 
       // Remove file from output directory
       fs.remove(join(outDir, filename.replace(matchExts, targetExt)))
         .then(() => logFile("🗑️ Removed cached file", filename));
     }
 
-  images.forEach(processImage);
+  // Process uncached images
+  images
+    .filter(image => cache.images.includes(image))
+    .map(processImage);
 
   /**Generates src and dest paths for an image file and resizes or copies it */
   async function processImage(filename) {
 
-    let src = join(dir, filename);
+    let src = join(dirName, filename);
     let dest = join(outDir, filename.replace(matchExts, targetExt));
 
-    if (src == outDir) return;
+    // Return if file is directory
     if (fs.lstatSync(src).isDirectory()) return;
-    if (cache.images.includes(filename))
+    // Return if file is cached
+    if (useCache && cache.images.includes(filename))
       return logFile("Using cached file", filename);
 
+    // Resize if file is supported format : else copy file
     if (matchExts.test(filename))
       resizeImage(src, dest, filename)
     else {
@@ -68,10 +72,12 @@ async function processImages(dir) {
       fs.copyFile(src, dest).then(() => logFile("📄 COPD", filename))
     }
 
-    cache.images.push(filename);
+    // Add filename to cache
+    if (useCache) cache.images.push(filename);
   }
 
-  fs.writeFile(cacheFile, JSON.stringify(cache));
+  // Write updated cache to cache file
+  if (useCache) fs.writeFile(cacheFile, JSON.stringify(cache));
 }
 
 export default processImages;
