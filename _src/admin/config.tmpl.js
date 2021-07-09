@@ -16,7 +16,6 @@ export default (data, { url }) => {
         deleteMedia: '[skip ci] CMS Delete “{{path}}”',
       },
     },
-    publish_mode: "editorial_workflow",
     media_folder: "_src/img",
     public_folder: "/img",
     display_url: url("/"),
