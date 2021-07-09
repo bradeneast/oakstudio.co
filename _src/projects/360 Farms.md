@@ -13,8 +13,8 @@ description: 360 Farms is the only business that makes start-to-finish
 logo: /img/360-farms-logo.svg
 colors:
   - name: Elder Indigo
-    hex: "#201747"
-    pantone: 275 C
+    hex: "#1d1934"
+    pantone: 5255 C
   - name: Heritage
     hex: "#345d9d"
     pantone: 7684 C
