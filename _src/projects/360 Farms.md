@@ -1,13 +1,26 @@
 ---
 title: 360 Farms
 image: /img/360-farms-tea-boxes.jpg
-logo: /img/360-farms-logo.svg
-entity: Small Business
-description: 360 Farms is the only business that makes start-to-finish elderberry products for people seeking value and quality. The goal was to reinforce their brand with those wanting improved health and well-being in an era of McDonald’s and WalMart.
 order: 2
+entity: Small Business
 tags:
   - Identity
   - Strategy
+description: 360 Farms is the only business that makes start-to-finish
+  elderberry products for people seeking value and quality. The goal was to
+  reinforce their brand with those wanting improved health and well-being in an
+  era of McDonald’s and WalMart.
+logo: /img/360-farms-logo.svg
+colors:
+  - name: Elder Indigo
+    hex: "#201747"
+    pantone: 275 C
+  - name: Heritage
+    hex: "#345d9d"
+    pantone: 7684 C
+  - name: Deep Roots
+    hex: "#ddc9a3"
+    pantone: 468 C
 ---
 
 {% from "macros.njk" import profile, image_2_column, before_after %}
@@ -22,14 +35,14 @@ Before designing their identity, we studied customer archetypes to help 360 Farm
 
 <section class="grid squeeze col-3 gap-3">
 {{ profile(
-	"360-farms-julia.jpg", 
-	"Julia", 
-	"Julia is a crunchy mom who is interested in organic, novel products. She probably homeschools."
+  "360-farms-julia.jpg", 
+  "Julia", 
+  "Julia is a crunchy mom who is interested in organic, novel products. She probably homeschools."
 ) }}
 {{ profile(
-	"360-farms-richard.jpg", 
-	"Richard",
-	"A middle-aged man who wants an alternative to prescription drugs for health and longevity."
+  "360-farms-richard.jpg", 
+  "Richard",
+  "A middle-aged man who wants an alternative to prescription drugs for health and longevity."
 ) }}
 </section>
 
@@ -48,9 +61,9 @@ The land on which the farm operated had been kept in the family since 1947. This
 From elderflower soaps to elderberry wines, 360 Farms produces and sells it all. Because of this wide range of products, they had great need for a versatile logo that would work in any context.
 
 {{ image_2_column(
-	"360-farms-office.jpg",
-	"360-farms-honey.jpg",
-	"ai-center"
+  "360-farms-office.jpg",
+  "360-farms-honey.jpg",
+  "ai-center"
 ) }}
 
 ## Results
@@ -59,7 +72,7 @@ Since refreshing their brand, 360 Farms is helping even more high-quality people
 
 <section>
 {{ before_after(
-	"360-farms-old.png",
-	"360-farms-new.png"
+  "360-farms-old.png",
+  "360-farms-new.png"
 ) }}
 </section>
