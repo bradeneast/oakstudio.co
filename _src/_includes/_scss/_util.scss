@@ -39,6 +39,10 @@
   background-repeat: no-repeat;
 }
 
+.soft {
+  background-color: var(--g7);
+}
+
 .alignment-optical {
   transform: translate(-0.05em, 0);
 }
@@ -64,8 +68,13 @@
   background-position: center;
 }
 
-.round {
+.circle {
   border-radius: 50%;
+}
+
+.round {
+  overflow: hidden;
+  border-radius: $borderRadius;
 }
 
 .left {

@@ -1,0 +1,24 @@
+{%- for post in posts -%}
+<div class="round post" data-animate="from-bottom">
+  <!---->
+  <a class="flex" href="{{ post.data.url | url }}">
+    <img data-animate="clip-left" src="{{ post.data.image | url }}" alt="">
+  </a>
+    <!---->
+    <div class="soft pad-1 flow">
+      <a style="text-decoration: none;" href="{{ post.data.url | url }}">
+        <h2 class="splitting">{{ post.data.title | splitting | safe }}</h2>
+      </a>
+      <div class="post__tags subtext">
+      {% for tag in post.data.tags %}
+      {%- for tagPage in search.pages("type=tag") -%}
+        {%- if tagPage.data.tag == tag -%}
+        {{ "," if loop.index > 1 }} <span class="tag">{{ tag }}</span>
+        {%- endif -%}
+      {%- endfor -%}
+      {% endfor %}
+      </div>
+    </div>
+  <!---->
+</div>
+{%- endfor -%}

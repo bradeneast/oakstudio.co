@@ -4,7 +4,7 @@ layout: layouts/base.njk
 templateEngine: njk,md
 menu:
   visible: true
-  order: 3
+  order: 4
 ---
 
 ## Let's talk about you.

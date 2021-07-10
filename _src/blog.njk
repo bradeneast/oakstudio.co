@@ -1,0 +1,15 @@
+---
+layout: layouts/hero.njk
+title: The Oak Studio Blog
+image: /img/pattern.svg
+menu:
+  visible: false
+  order: 3
+  title: Blog
+sort_by: date
+---
+
+<div class="posts-list">
+  {% set posts = search.pages("type=post", sort_by) %}
+  {%- include "templates/postsList.njk" -%}
+</div>

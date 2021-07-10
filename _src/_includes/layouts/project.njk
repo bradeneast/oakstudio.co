@@ -1,87 +1,46 @@
 ---
-layout: layouts/base.njk
+layout: layouts/post.njk
 ---
 
 {% import "macros.njk" as macros %}
 
-<header class="project__header bleed" style="margin-bottom: 0;">
-  <div class="project__header--image">
-    <img class="rellax center bleed" data-rellax-speed="-4" alt="" src="{{ image | url }}" no-resize />
+{{ macros.spinner("Design Case Study") }}
+
+<div class="bleed top-text">
+  <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
+  <div>
+    <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">{{ entity | splitting | safe }}</h3>
+    {%- for tag in tags -%}
+      {% for tagPage in search.pages("type=tag") %}
+        {%- if tagPage.data.tag == tag -%}
+        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
+      {% endfor %}
+    {%- endfor -%}
   </div>
-</header>
+</div>
 
-<article class="bleed">
+<hr>
 
-  <div class="subtext bleed">
-    <svg class="spinner" viewBox="0 0 100 100">
-      <circle id="circle" r="31" cx="50" cy="50" />
-      <text>
-        <textPath alignment-baseline="top" xlink:href="#circle">
-          Design Case Study
-        </textPath>
-      </text>
-    </svg>
+{{ description | md | safe }}
+
+{% if logo %}
+<section class="bleed grid col-2 squeeze">
+  <div style="background: white; padding: 15%">
+    <img src="{{ logo }}" alt="Logo of {{ title }} on white" />
   </div>
-
-  <div class="bleed top-text">
-    <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
-    <div>
-      <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">{{ entity | splitting | safe }}</h3>
-      {%- for tag in tags -%}
-        {% for tagPage in search.pages("type=tag") %}
-          {%- if tagPage.data.tag == tag -%}
-          {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
-          {%- endif -%}
-        {% endfor %}
-      {%- endfor -%}
-    </div>
+  <div class="pad-4" style="background: white;  padding: 15%; filter: invert(1)">
+    <img aria-hidden="true" src="{{ logo }}" alt="Logo of {{ title }} on black" />
   </div>
-
-  <hr>
-
-  {{ description | md | safe }}
-
-  {% if logo %}
-  <section class="bleed grid col-2 squeeze">
-    <div style="background: white; padding: 15%">
-      <img src="{{ logo }}" alt="Logo of {{ title }} on white" />
-    </div>
-    <div class="pad-4" style="background: white;  padding: 15%; filter: invert(1)">
-      <img src="{{ logo }}" alt="Logo of {{ title }} on black" />
-    </div>
-  </section>
-  {% endif %}
-
-  {% if colors %}
-  <section class="grid gap-1 col-4 squeeze" style="padding-top: 0">
-    {% for color in colors %}
-      {{ macros.swatch(color.name, color.hex, color.pantone) }}
-    {% endfor %}
-  </section>
-  {% endif %}
-
-  {{- content | safe -}}
-
-  <hr>
-
-</article>
-
-<section class="post-nav flex bleed gap-2">
-
-  {%- set previousProject = search.previousPage(url, "type=project", "order") %}
-  {%- if previousProject -%}
-  <a data-animate="from-left" style="text-decoration: none;" href="{{ previousProject.data.url | url }}" class="left">
-    <div class="subtext">Previous</div>
-    <h3>{{ previousProject.data.title }}</h3>
-  </a>
-  {%- endif -%}
-
-  {%- set nextProject = search.nextPage(url, "type=project", "order") %}
-  {%- if nextProject -%}
-  <a data-animate="from-right" style="text-decoration: none;" href="{{ nextProject.data.url | url }}" class="right">
-    <div class="subtext">Next</div>
-    <h3>{{ nextProject.data.title }}</h3>
-  </a>
-  {%- endif -%}
-
 </section>
+{% endif %}
+
+{% if colors %}
+<section class="grid gap-1 col-4 squeeze" style="padding-top: 0">
+  {% for color in colors %}
+    {{ macros.swatch(color.name, color.hex, color.pantone) }}
+  {% endfor %}
+</section>
+{% endif %}
+
+{{- content | safe -}}

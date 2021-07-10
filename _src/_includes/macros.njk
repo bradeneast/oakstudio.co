@@ -37,7 +37,7 @@
 {# Customer Profile #}
 {% macro profile(photo, name, description) %}
 {% set image %}
-<img class="round" src="/img/{{ photo }}" alt="{{ name }}">
+<img class="circle" src="/img/{{ photo }}" alt="{{ name }}">
 {% endset %}
 {% set text -%}
 #### {{ name }}
@@ -75,6 +75,17 @@
   {%- for image in images -%}
     <img class="carousel__item {{- 'selected' if loop.index == 1 -}}" src="/img/{{- image -}}" alt="">
   {%- endfor -%}
+</div>
+{% endmacro %}
+
+{% macro spinner(text) %}
+<div class="subtext bleed">
+  <svg style="--char-count:{{ text | length }}" aria-hidden="true" class="spinner" viewBox="0 0 100 100">
+    <circle id="circle" r="31" cx="50" cy="50" />
+    <text>
+      <textPath alignment-baseline="top" xlink:href="#circle">{{ text }}</textPath>
+    </text>
+  </svg>
 </div>
 {% endmacro %}
 

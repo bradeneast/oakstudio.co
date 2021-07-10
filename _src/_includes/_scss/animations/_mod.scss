@@ -5,14 +5,15 @@
 
 .spinner {
   --size: calc(20vmin + 5rem);
+  --scale: 0.4rem;
   position: absolute;
   z-index: 9;
   right: 0;
   top: calc(var(--size) * -1);
   width: var(--size);
   height: var(--size);
-  letter-spacing: 0.8em;
-  font-size: 0.5rem;
+  letter-spacing: calc(var(--scale) - 0.0014rem * var(--char-count));
+  font-size: calc(1.2rem - var(--scale) * 0.1 * var(--char-count));
   animation: spin 1000s linear infinite paused;
   animation-delay: calc(-0.4s * var(--user-scroll));
 

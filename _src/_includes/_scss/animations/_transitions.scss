@@ -1,14 +1,21 @@
 html {
+  &[data-schwifty],
+  &.loading {
+    main {
+      opacity: 0;
+    }
+  }
+
   main {
     transition: opacity $smoothTransition;
   }
 
-  .project__header,
+  .post__header,
   .hero__feature {
     transition: $motionTransition, transform $smoothTransition;
   }
 
-  .project__header,
+  .post__header,
   .hero__feature {
     clip-path: $clipSquare;
   }
@@ -16,11 +23,7 @@ html {
   &[data-schwifty] {
     transition-duration: 0.4s;
 
-    main {
-      opacity: 0;
-    }
-
-    .project__header {
+    .post__header {
       transform: translate3d(0, -3rem, 0) scale(1.1);
       clip-path: $clipOffsetTop;
     }

@@ -33,7 +33,7 @@ export default (data, { url }) => {
     label: "Project",
     name: "projects",
     folder: "_src/projects/",
-    description: "Here you can create or edit your projects",
+    description: "Create or edit projects",
     preview: false,
     create: true,
     view_filters: [
@@ -73,6 +73,33 @@ export default (data, { url }) => {
     ],
   });
 
+  config.collections.push({
+    label: "Blog Post",
+    name: "posts",
+    folder: "_src/blog/",
+    description: "Create or edit blog posts",
+    preview: false,
+    create: true,
+    view_filters: [
+      {
+        label: "Drafts",
+        field: "draft",
+        pattern: true,
+      },
+    ],
+    fields: [
+      field("Title"),
+      draftField,
+      field("Image", "image"),
+      field("Date", "date"),
+      field("Tags", "list", { required: false }),
+      field("Body", "markdown", {
+        modes: ["raw"],
+        buttons: markdownButtons
+      })
+    ]
+  })
+
   const pageFields = [
     field("Title"),
     field("Image", "image"),
@@ -95,7 +122,7 @@ export default (data, { url }) => {
   config.collections.push({
     label: "Page",
     name: "pages",
-    description: "Here you can edit your individual pages",
+    description: "Edit individual pages",
     preview: false,
     files: [
       {

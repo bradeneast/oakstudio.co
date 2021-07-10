@@ -1,0 +1,25 @@
+---
+layout: layouts/post.njk
+---
+
+{% import "macros.njk" as macros %}
+
+{{ macros.spinner("The Oak Studio Blog") }}
+
+<div class="bleed top-text">
+  <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
+  <div>
+    <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">
+      <time datetime="{{ date | date }}">{{ date | date('HUMAN_DATE') | splitting | safe }}</time>
+    </h3>
+    {%- for tag in tags -%}
+      {% for tagPage in search.pages("type=tag") %}
+        {%- if tagPage.data.tag == tag -%}
+        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
+      {% endfor %}
+    {%- endfor -%}
+  </div>
+</div>
+
+{{- content | safe -}}

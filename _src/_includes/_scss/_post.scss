@@ -1,4 +1,48 @@
-.project__header {
+.posts-list {
+  .post {
+    border: $borderWidth $borderStyle transparent;
+    transition: $smoothTransition;
+
+    &__tags {
+      background: var(--g7);
+      padding: 0.37em 0.63em;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      border-radius: 0 $borderRadius 0 0;
+    }
+
+    .soft,
+    &__tags {
+      transition: background $smoothTransition;
+    }
+
+    &:hover,
+    &:focus-within {
+      border-color: var(--primary);
+
+      .soft,
+      .post__tags {
+        background: var(--primary);
+      }
+
+      .post__tags {
+        color: var(--g8);
+      }
+    }
+
+    a:hover,
+    a:focus {
+      img {
+        height: 100%;
+        transition: $smoothTransition;
+        transform: scale(1.04);
+      }
+    }
+  }
+}
+
+.post__header {
   max-height: 63vmin;
   height: 63vh;
 
@@ -24,7 +68,7 @@
   }
 }
 
-.post-nav {
+.post__nav {
   .left,
   .right {
     & > * {
