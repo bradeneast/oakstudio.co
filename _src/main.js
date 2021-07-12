@@ -29,7 +29,7 @@ function init() {
   // @ts-ignore
   $$("[data-animate]").forEach(elem => {
     elem.setAttribute("data-offscreen", true);
-    setTimeout(() => observer.observe(elem), 500);
+    setTimeout(() => observer.observe(elem), 100);
   });
   new Rellax('.rellax');
 }
