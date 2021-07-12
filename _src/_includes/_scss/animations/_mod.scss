@@ -15,7 +15,7 @@
   letter-spacing: calc(var(--scale) - 0.0014rem * var(--char-count));
   font-size: calc(1.2rem - var(--scale) * 0.1 * var(--char-count));
   animation: spin 1000s linear infinite paused;
-  animation-delay: calc(-0.4s * var(--user-scroll));
+  animation-delay: calc(-0.5s * var(--user-scroll));
 
   circle {
     fill: transparent;
