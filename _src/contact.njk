@@ -1,0 +1,25 @@
+---
+title: Contact
+layout: layouts/base.njk
+menu:
+  visible: true
+  order: 4
+---
+
+<section class="bleed">
+  <a href="mailto:{{ site.email }}">
+    <h1 class="splitting">{{ site.email | splitting | safe }}</h1>
+  </a>
+  <div class="subtext splitting" style="--char-delay: 1s">
+    {{ "We don't spam or automate." | splitting | safe }}
+  </div>
+</section>
+
+<section class="right" data-animate="from-right">
+  <p>
+    Not sure about hitting send?
+  </p>
+  <p>
+    We'll be honest: we might not be able to help. That said, we have experience solving real-world problems for businesses like yours. Our backgrounds incline us to <strong>listen first, then diagnose</strong>.
+  </p>
+</section>
