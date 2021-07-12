@@ -11,6 +11,6 @@ layout: layouts/base.njk
       <hr>
     </div>
   </div>
-  {% set projects = search.pages("type=project '" + tag + "'") %}  
-  {% include "templates/projectsList.njk" %}
+  {% set posts = search.pages("type=project '" + tag + "'") %}  
+  {% include "templates/postsList.njk" %}
 </section>

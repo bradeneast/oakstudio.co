@@ -10,6 +10,6 @@ sort_by: order
 ---
 
 <div class="special grid bleed squeeze col-3 gap-1 pad-1">
-  {% set projects = search.pages("type=project", sort_by) %}
-  {%- include "templates/projectsList.njk" -%}
+  {% set posts = search.pages("type=project", sort_by) %}
+  {%- include "templates/postsList.njk" -%}
 </div>

@@ -1,15 +1,15 @@
 {%- for post in posts -%}
-<div class="round post" data-animate="from-bottom">
+<div data-animate="from-bottom">
   <!---->
-  <a class="flex" href="{{ post.data.url | url }}">
-    <img data-animate="clip-left" src="{{ post.data.image | url }}" alt="">
-  </a>
+  <a style="height: 100%;" class="soft-grid" href="{{ post.data.url | url }}" {% if entry.data.url == url %} aria-current="page"{% endif %}>
     <!---->
-    <div class="soft pad-1 flow">
-      <a style="text-decoration: none;" href="{{ post.data.url | url }}">
-        <h2 class="splitting">{{ post.data.title | splitting | safe }}</h2>
-      </a>
-      <div class="post__tags subtext">
+    <div class="soft-grid__image">
+      <img class="pos-abs" src="{{ post.data.image | url }}" alt="">
+    </div>
+    <!---->
+    <div>
+      <div class="soft-grid__title">{{ post.data.title }}</div>
+      <div class="subtext">
       {% for tag in post.data.tags %}
       {%- for tagPage in search.pages("type=tag") -%}
         {%- if tagPage.data.tag == tag -%}
@@ -19,6 +19,8 @@
       {% endfor %}
       </div>
     </div>
+    <!---->
+  </a>
   <!---->
 </div>
 {%- endfor -%}
