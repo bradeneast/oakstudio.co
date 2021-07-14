@@ -7,8 +7,8 @@ menu:
 ---
 
 <section class="bleed">
-  <a href="mailto:{{ site.email }}">
-    <h1 class="splitting">{{ site.email | splitting | safe }}</h1>
+  <a style="text-decoration:none" href="mailto:{{ site.email }}">
+    <h1 style="word-wrap:break-word;" class="splitting">{{ site.email | splitting | safe }}</h1>
   </a>
   <div class="subtext splitting" style="--char-delay: 1s">
     {{ "We don't spam or automate." | splitting | safe }}

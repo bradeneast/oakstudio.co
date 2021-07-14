@@ -37,10 +37,11 @@ hero_right: >-
 {# Macro imports #}
 {% from "macros.njk" import blurb, review, before_after %}
 
-{# Icons #}
+{# SVG #}
 {% set leaf %}{% include "svg/starting-over.svg" %}{% endset %}
 {% set telescope %}{% include "svg/telescope.svg" %}{% endset %}
 {% set corner %}{% include "svg/turning-a-corner.svg" %}{% endset %}
+{% set circle %}{% include "svg/circle.svg" %}{% endset %}
 {# Copy #}
 {% set rebrand %}{% include "copy/rebrand.md" %}{% endset %}
 {% set vision %}{% include "copy/vision.md" %}{% endset %}
@@ -59,12 +60,13 @@ hero_right: >-
 {{ review(
   "William Fecteau",
   "Essential BodywoRX",
-  "I would absolutely reccomend."
+  "I would absolutely reccommend!"
 ) }}
 {{ review(
   "Ed Wells",
   "East Texas Elderberries",
-  "We had a wonderful experience with the team. The outstanding quality and the attention to detail was beyond compare. I highly recommend their services."
+  "We had a wonderful experience with the team. The outstanding quality and the attention to detail was beyond compare. I highly recommend their services.",
+  circle
 ) }}
 {{ review(
   "James Snyder",
@@ -87,5 +89,5 @@ hero_right: >-
 
 <section class="center">
   <p>You probably have some questions by now.</p>
-  <a class="button" href="/contact">We Can Answer Them</a>
+  <a class="button primary" href="/contact">We Can Answer Them</a>
 </section>

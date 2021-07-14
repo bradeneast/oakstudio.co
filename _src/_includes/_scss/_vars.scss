@@ -10,7 +10,7 @@ $g7: #f0ecea;
 $g8: #ffffff;
 $translucent: rgba(0, 0, 0, 0.28);
 $primary: #e4461e;
-$secondary: #c9331f;
+$secondary: #ff1925;
 
 // Spacing
 $flow1: 1rem;
@@ -34,6 +34,7 @@ $borderStyle: solid;
 $borderRadius: 0.4rem;
 
 // Clip Paths
+$angle: 72deg;
 $clipSquare: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 $clipOffsetTop: polygon(0 0, 100% 0, 100% 0, 0 -50%);
 $clipOffsetRight: polygon(100% 0, 100% 0, 100% 100%, 150% 100%);

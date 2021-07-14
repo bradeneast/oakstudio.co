@@ -18,10 +18,6 @@
   --large-shadow: 0 0 1.8rem -0.6rem var(--shadow-color);
 }
 
-.dark {
-  display: none;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --g0: #{$g8};
@@ -71,9 +67,22 @@
   scroll-padding-top: $flow4;
 }
 
+*:focus {
+  outline: $borderWidth $borderStyle var(--g2);
+  outline-offset: $borderWidth;
+}
+
 html,
 body {
   overflow-x: hidden;
+  background: var(--g8);
+}
+
+svg,
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
@@ -83,18 +92,6 @@ body {
   &-thumb {
     background: var(--g6);
   }
-}
-
-*:focus {
-  outline: $borderWidth $borderStyle var(--g2);
-  outline-offset: $borderWidth;
-}
-
-svg,
-img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
 }
 
 @import "./animations/mod";

@@ -1,6 +1,10 @@
 .splitting {
   --char-delay: 0s;
 
+  &[style*="break-word"] .word {
+    flex-flow: row wrap;
+  }
+
   .word {
     display: inline-flex;
   }

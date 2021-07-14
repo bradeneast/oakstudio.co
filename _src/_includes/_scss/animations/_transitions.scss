@@ -1,6 +1,9 @@
 html {
   &[data-schwifty],
   &.loading {
+    body {
+      background-position: 99%;
+    }
     main {
       opacity: 0;
     }

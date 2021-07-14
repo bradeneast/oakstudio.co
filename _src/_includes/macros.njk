@@ -16,7 +16,7 @@
 {% endmacro %}
 
 {# Review Blurb #}
-{% macro review(clientName, clientCompany, review) %}
+{% macro review(clientName, clientCompany, review, bg) %}
 <div class="review">
   {% set text -%}
   #### {{ review }}
@@ -26,9 +26,7 @@
   </div>
   {% endset %}
   {% set background %}
-  <div class="pos-abs rellax" data-rellax-speed="-1" data-rellax-percentage=".6">
-  <div class="review__background"></div>
-  </div>
+  <div class="review__background">{{ bg | safe }}</div>
   {% endset %}
   {{- blurb(image, text, background) -}}
 </div>

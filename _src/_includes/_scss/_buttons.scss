@@ -20,7 +20,7 @@ input[type="submit"] {
   border-radius: $borderRadius;
   transition: $smoothTransition;
   box-shadow: none;
-  background-image: linear-gradient(72deg, var(--initial-bg) 50%, var(--hover-bg) 50%, var(--hover-bg));
+  background-image: linear-gradient(#{$angle}, var(--initial-bg) 50%, var(--hover-bg) 0);
   background-size: 250%;
   background-position-x: left;
   background-repeat: no-repeat;
@@ -33,17 +33,7 @@ input[type="submit"] {
   }
 
   &.primary {
-    --initial-bg: var(--primary);
-    --hover-bg: var(--g0);
-    --initial-color: #{$g8};
-    --hover-color: var(--g8);
-  }
-
-  &.hollow {
-    --initial-bg: transparent;
-    --hover-bg: var(--g6);
-    --initial-color: var(--g0);
-    border: $borderWidth $borderStyle var(--g6);
+    --hover-bg: var(--primary) 50%, var(--secondary);
   }
 
   &:hover,

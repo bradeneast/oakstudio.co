@@ -63,23 +63,25 @@
 }
 
 .review {
-  --background-rotation: 4deg;
-  --background-border-color: var(--g6);
+  --stroke-color: var(--g7);
   color: var(--primary);
 
   &__background {
     position: absolute;
-    pointer-events: none;
-    height: 100%;
-    padding-left: 100%;
+    display: grid;
+    place-items: center;
     top: 50%;
     left: 50%;
-    border: $borderWidth $borderStyle var(--background-border-color);
-    transform: translate(-50%, -50%) scale(0.9) rotate(var(--background-rotation));
-  }
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
 
-  &:nth-child(2n) {
-    --background-rotation: -4deg;
+    svg {
+      pointer-events: none;
+      stroke: var(--g7);
+      fill: none;
+      stroke-width: $borderWidth;
+    }
   }
 
   .blurb {
