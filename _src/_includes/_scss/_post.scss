@@ -27,6 +27,8 @@
 .post__nav {
   .left,
   .right {
+    max-width: $mobile;
+
     & > * {
       transition: $smoothTransition;
 

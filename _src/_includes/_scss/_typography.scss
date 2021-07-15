@@ -53,7 +53,7 @@ h5 {
 h1 {
   font-size: calc(11vmin + 9px);
   line-height: 0.9;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   margin-left: -0.05em;
   margin-bottom: 0.2em;
 
@@ -82,10 +82,6 @@ a {
   text-decoration-thickness: $borderWidth / 2;
   text-decoration-color: var(--primary);
 
-  &[href="undefined"] {
-    display: none;
-  }
-
   &:hover,
   &:focus {
     color: var(--g0);
@@ -98,12 +94,9 @@ p {
 }
 
 blockquote {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: $altFont;
-  border-radius: 0 $borderRadius $borderRadius 0;
-  border-left: $borderWidth * 2 $borderStyle var(--primary);
-  background: var(--g7);
-  padding: $flow2;
+  text-align: center;
 
   & > :first-child {
     margin-top: 0;
@@ -120,7 +113,7 @@ em {
 }
 
 strong {
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: $fontWeightHeavy;
 }
 
@@ -134,7 +127,7 @@ ol {
 }
 
 li + li {
-  margin-top: $flow1;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -150,4 +143,18 @@ hr {
 ::selection {
   background: var(--primary);
   color: var(--g8);
+}
+
+code {
+  font-family: "Consolas", $fallbackFonts;
+  font-weight: 400;
+  padding: 0 0.15em;
+  background: var(--g7);
+  border-radius: $borderRadius;
+}
+
+@media screen and (max-width: $mobile) {
+  body {
+    font-size: 16px;
+  }
 }
