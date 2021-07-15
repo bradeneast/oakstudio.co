@@ -10,13 +10,13 @@
     <div>
       <div class="soft-grid__title">{{ post.data.title }}</div>
       <div class="subtext">
-      {% for tag in post.data.tags %}
-      {%- for tagPage in search.pages("type=tag") -%}
-        {%- if tagPage.data.tag == tag -%}
-        {{ "," if loop.index > 1 }} <span class="tag">{{ tag }}</span>
-        {%- endif -%}
+      {%- for tagPage in search.pages("type=tag") %}
+        {%- for tag in post.data.tags -%}
+          {%- if tagPage.data.tag == tag -%}
+          {{ ", " if loop.index > 1 }}{{ tag }}
+          {%- endif -%}
+        {% endfor %}
       {%- endfor -%}
-      {% endfor %}
       </div>
     </div>
     <!---->

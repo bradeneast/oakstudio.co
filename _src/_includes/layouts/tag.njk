@@ -5,12 +5,12 @@ layout: layouts/base.njk
 <section class="bleed special grid col-3 gap-3">
   <div>
     <div class="right">
-      <div class="subtext">Projects tagged</div>
+      <div class="subtext">Posts tagged</div>
       <h1>{{ tag }}</h1>
-      <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+      <p>See <a href="/tags">all tags</a>.</p>
       <hr>
     </div>
   </div>
-  {% set posts = search.pages("type=project '" + tag + "'") %}  
+  {% set posts = search.pages("'" + tag + "'") %}  
   {% include "templates/postsList.njk" %}
 </section>

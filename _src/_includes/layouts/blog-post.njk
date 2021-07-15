@@ -12,14 +12,16 @@ layout: layouts/post.njk
     <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">
       <time datetime="{{ date | date }}">{{ date | date('HUMAN_DATE') | splitting | safe }}</time>
     </h3>
-    {%- for tag in tags -%}
-      {% for tagPage in search.pages("type=tag") %}
+    {% for tagPage in search.pages("type=tag") %}
+      {%- for tag in tags -%}
         {%- if tagPage.data.tag == tag -%}
-        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
+        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url }}" class="tag">{{ tag }}</a>
         {%- endif -%}
       {% endfor %}
     {%- endfor -%}
   </div>
 </div>
+
+<hr>
 
 {{- content | safe -}}
