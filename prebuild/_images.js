@@ -32,9 +32,14 @@ async function resizeImage(src, dest, filename) {
  */
 async function processImages(dir) {
 
+  fs.ensureFileSync(cacheFile);
+  let cacheFileContents = fs.readFileSync(cacheFile, "utf-8");
+  let cache = cacheFileContents.length
+    ? JSON.parse(cacheFileContents)
+    : { images: [] };
+
   let dirName = normalize(dir);
   let images = fs.readdirSync(dirName);
-  let cache = JSON.parse(fs.readFileSync(cacheFile, "utf-8"));
   let diff = cache.images.filter(image => !images.includes(image));
 
   // Diff cached images with images present
