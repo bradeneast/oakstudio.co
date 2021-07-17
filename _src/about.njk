@@ -20,9 +20,6 @@ description: >-
 {% set telescope %}{% include "svg/telescope.svg" %}{% endset %}
 {% set leaf %}{% include "svg/starting-over.svg" %}{% endset %}
 {% set corner %}{% include "svg/turning-a-corner.svg" %}{% endset %}
-{# Copy #}
-{% set vision %}{% include "copy/vision.md" %}{% endset %}
-{% set background %}{% include "copy/background.md" %}{% endset %}
 {% set rebrand %}{% include "copy/rebrand.md" %}{% endset %}
 {% set identity %}{% include "copy/identity.md" %}{% endset %}
 {% set bradenBio %}{% include "copy/braden_east_bio.md" %}{% endset %}
@@ -31,12 +28,11 @@ description: >-
 
 We see our work as a way to **create permanence** in a time when it seems like nothing sticks around. We think family-minded businesses are the best way to pass on trades, strengthen communities, and preserve legacies. Most importantly, we think like our clients: the ambitious self-starters, the moms and pops, the resourceful ones.
 
-<section class="center grid jc-center gap-4 col-3">
-{{ blurb(scrapbook, background) }}
-{{ blurb(telescope, vision) }}
-</section>
+{% include "copy/background.md" %}
 
-## How we operate
+{% include "copy/vision.md" %}
+
+### How we operate
 
 {% include "copy/mo.md" %}
 
