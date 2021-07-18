@@ -18,7 +18,7 @@
     display: inline-block;
     clip-path: polygon(-40% -15%, 140% -15%, 140% 120%, -40% 120%);
     animation: slide-in $smoothTransition both;
-    animation-delay: calc(var(--char-delay) + var(--char-index) * 20ms);
+    animation-delay: calc(var(--char-delay) + var(--char-index) * 15ms);
   }
 
   &.lines > * {
