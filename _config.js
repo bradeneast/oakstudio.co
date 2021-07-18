@@ -1,7 +1,7 @@
 import lume from "lume";
 import date from "lume/plugins/date.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
-import textLoader from "lume/loaders/text.ts";
+import textLoader from "lume/core/loaders/text.ts";
 import * as processors from "./_processors.js";
 import * as filters from "./_filters.js";
 import { imageDirName, siteSrc } from "./prebuild/_options.js";
