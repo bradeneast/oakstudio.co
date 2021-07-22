@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} \\ {{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
-  <meta property="og:image" content="{{ image or site.default_image }}" />
+  <meta property="og:image" content="{{ site.root }}{{ image or site.default_image }}" />
 
   <link rel="alternate" href="{{ 'feed.xml' | url }}" type="application/atom+xml" title="{{ site.title }}">
 
