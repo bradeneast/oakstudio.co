@@ -65,15 +65,15 @@ h1 {
 
 h2 {
   line-height: 1;
-  font-size: calc(4vmin + 18px);
+  font-size: calc(3vmin + 16px);
 }
 
 h3 {
-  font-size: calc(2.1vmin + 14px);
+  font-size: calc(1.8vmin + 13px);
 }
 
 h4 {
-  font-size: calc(1.5vmin + 12px);
+  font-size: calc(1.2vmin + 12px);
 }
 
 a {
@@ -93,7 +93,7 @@ a {
 p,
 ul,
 ol {
-  margin: $flow1 0;
+  margin: $flow2 0;
 }
 
 blockquote {
