@@ -12,6 +12,10 @@
     padding-bottom: 0;
   }
 
+  &__subheading {
+    max-width: 30rem;
+  }
+
   &__feature {
     overflow: hidden;
     border-radius: 0 0 0 $borderRadius;

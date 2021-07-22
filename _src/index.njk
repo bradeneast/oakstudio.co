@@ -2,17 +2,16 @@
 layout: layouts/hero.njk
 title: Home
 hero_left: >-
-  <h1 class="splitting hero__heading top-text">
+  <h1 class="hero__heading top-text">
     {% set speeds = [ 0, -1,-2,-3,-4,-5 ] %}
-    {% set words = ["Build", "something"] %}
+    {% set words = ["Build", "something", "permanent."] %}
     {% for word in words %}
-    <div class="word" style="z-index:9">
+    <div style="z-index:9; display:inline-flex;">
       {% for char in word | list %}
       <div class="char rellax" style="--char-index:{{loop.index}}" data-rellax-speed="{{ speeds | random }}">{{ char }}</div>
       {% endfor %}
     </div>
     {% endfor %}
-    <em>{{ "permanent." | splitting | safe }}</em>
   </h1>
   <div data-animate="from-left" class="hero__subheading top-text">
     <p>We've helped dozens of family-owned (and family-minded) businesses establish brands that endure.</p>
