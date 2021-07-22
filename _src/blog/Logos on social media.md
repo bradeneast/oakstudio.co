@@ -8,11 +8,9 @@ tags:
   - Logos
 ---
 
-> If you've ever set up a Facebook page for your brand, you probably know the choice paralysis of which logo file to use, or the nagging feeling that you could make it look just slightly better.
-
-***
-
 We want to start this post off with a disclaimer: Facebook, Twitter, Instagram and other platforms are always subject to change, and their design choices will always have the final say over how your content looks. While things like file size, image quality, and technical specs are not under our control, there are some ways we can influnce what our customer sees as they scroll through their feed.
+
+> If you've ever set up a Facebook page for your brand, you probably know the choice paralysis of which logo file to use, or the nagging feeling that you could make it look just slightly better.
 
 ## Contrast
 Choose a version of your logo with colors that are part of your brand. If you have multiple color options to choose from, you usually want to opt for one with greater light/dark contrast. White on black or black on white are always acceptable.
@@ -51,8 +49,6 @@ Here's what we covered:
 - Upload in a lossless file format
 
 We hope these tips help you make your brand stand out and stick around on Facebook, Instagram, Twitter, and everywhere else it happens to be!
-
----
 
 > At the end of the day, no amount of optimization will help if your current branding isn't working.
 >
