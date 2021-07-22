@@ -158,6 +158,10 @@ del {
 ul,
 ol {
   padding-left: $flow2;
+
+  li {
+    padding-left: 0.5em;
+  }
 }
 
 li + li {
