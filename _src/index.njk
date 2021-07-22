@@ -2,8 +2,8 @@
 layout: layouts/hero.njk
 title: Home
 hero_left: >-
-  <h1 style="opacity: calc(200 / var(--user-scroll))" class="hero__heading top-text">
-    {% set speeds = [ 0, -1,-2,-3,-4,-5 ] %}
+  <h1 style="opacity: calc(100 / var(--user-scroll))" class="hero__heading top-text">
+    {% set speeds = [ 0, -1, -2, -3, -4, -5 ] %}
     {% set words = ["Build", "something", "permanent."] %}
     {% for word in words %}
     <div style="z-index:9; display:inline-flex;">
@@ -28,7 +28,7 @@ hero_right: >-
   ] %}
   <div class="carousel">
     {% for image in carouselItems %}
-      <img class="carousel__item {{ 'selected' if loop.index == 1 }}" src="/img/{{ image }}" alt="">
+      <img no-resize class="carousel__item {{ 'selected' if loop.index == 1 }}" src="/img/{{ image }}" alt="">
     {% endfor %}
   </div>
 ---

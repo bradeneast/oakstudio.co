@@ -18,7 +18,7 @@
 
   &__feature {
     overflow: hidden;
-    border-radius: 0 0 0 $borderRadius;
+    border-radius: 0 0 0 $borderRadius * 2;
     height: 100vh;
 
     &::after {

@@ -9,7 +9,7 @@ menu:
 sort_by: date
 ---
 
-<div class="posts-list">
+<div class="bleed squeeze grid col-3 gap-1 pad-1">
   {% set posts = search.pages("type=post", sort_by) %}
   {%- include "templates/postsList.njk" -%}
 </div>

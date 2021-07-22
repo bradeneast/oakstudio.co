@@ -18,7 +18,7 @@ layout: layouts/base.njk
       {% if hero_right %}
         {{ hero_right | njk | safe }}
       {% else %}
-        <img class="hero__feature--image" src="{{ image }}" alt="" />
+        <img no-resize class="hero__feature--image" src="{{ image }}" alt="" />
       {% endif %}
     </div>
   </div>
