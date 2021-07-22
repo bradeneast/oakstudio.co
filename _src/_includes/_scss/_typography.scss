@@ -5,7 +5,7 @@ body {
   font-variant-ligatures: normal;
   color: var(--g3);
   font-weight: $fontWeightRegular;
-  line-height: 1.4;
+  line-height: 1.44;
 }
 
 h1,
@@ -52,7 +52,7 @@ h5 {
 
 h1 {
   font-size: calc(14vmin + 8px);
-  line-height: 0.88;
+  line-height: 0.9;
   letter-spacing: -0.06em;
   margin-left: -0.05em;
   margin-bottom: 0.2em;
@@ -101,6 +101,32 @@ blockquote {
   font-family: $altFont;
   text-align: center;
   color: var(--g1);
+  padding: $flow3 $flow1;
+  margin: $flow3 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    height: 0;
+    padding-top: 0.2em;
+    line-height: 0;
+    width: 63%;
+    left: 50%;
+    text-shadow: text-outline(var(--g8), 1px), text-outline(var(--g8), 2px), text-outline(var(--g8), 3px),
+      text-outline(var(--g8), 4px), text-outline(var(--g8), 5px);
+    transform: translateX(-50%);
+    border-top: $borderWidth $borderStyle var(--g6);
+  }
+
+  &::before {
+    top: 0;
+    content: "“";
+  }
+
+  &::after {
+    bottom: 0;
+    content: "”";
+  }
 
   & > :first-child {
     margin-top: 0;
@@ -114,6 +140,10 @@ blockquote {
 em {
   font-style: italic;
   font-family: $altFont;
+
+  strong {
+    color: var(--secondary);
+  }
 }
 
 strong {
