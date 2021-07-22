@@ -10,13 +10,7 @@ layout: layouts/post.njk
   <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
   <div>
     <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">{{ entity | splitting | safe }}</h3>
-    {%- for tag in tags -%}
-      {% for tagPage in search.pages("type=tag") %}
-        {%- if tagPage.data.tag == tag -%}
-        {{ ", " if loop.index > 1 }}<a href="{{ tagPage.data.url  }}" class="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-    {%- endfor -%}
+    {% include "templates/tagsList.njk" %}
   </div>
 </div>
 
