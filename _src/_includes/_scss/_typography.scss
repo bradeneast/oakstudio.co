@@ -195,4 +195,12 @@ code {
   body {
     font-size: 16px;
   }
+
+  h1 {
+    font-size: calc(11vmin + 9px);
+  }
+
+  blockquote {
+    font-size: 1.3rem;
+  }
 }
