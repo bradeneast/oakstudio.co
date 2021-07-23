@@ -5,10 +5,7 @@ order: 6
 entity: Small Business
 tags:
   - Identity
-description: 360 Farms is the only business that makes start-to-finish
-  elderberry products for people seeking value and quality. The goal was to
-  reinforce their brand with those wanting improved health and well-being in an
-  era of McDonald’s and WalMart.
+description: My Raggedy Herbs is a gardening and homemaking education brand for moms, grandmoms, and the herbally inclined. These folks expect regular educational content on herbs, cooking, crafts, and more. The face of My Raggedy Herbs has always been Raggedy Ann, but never had a digital representation to accompany their iconic photo. With this new logo, the brand showed that even online, on printed materials, and in the hands of their audience, Raggedy never fails to disappoint.
 logo: /img/my-raggedy-herbs-logo.svg
 colors:
   - name: Raggedy Ann Red
