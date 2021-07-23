@@ -25,6 +25,8 @@ export default (data, { url }) => {
 
   // Draft field
   const draftField = field("draft", "boolean", { required: false });
+  // Featured field
+  const featuredField = field("featured", "boolean", { required: false });
   // Markdown editor buttons - removed Heading 1 and code blocks
   const markdownButtons = ["bold", "italic", "link", "heading-two", "heading-three", "heading-four", "heading-five", "heading-six", "quote", "bulleted-list", "numbered-list"];
 
@@ -46,6 +48,7 @@ export default (data, { url }) => {
     fields: [
       field("Title"),
       draftField,
+      featuredField,
       field("Image", "image"),
       field("Order", "number"),
       field("Entity", "text", { default: "Small Business" }),
@@ -90,6 +93,7 @@ export default (data, { url }) => {
     fields: [
       field("Title"),
       draftField,
+      featuredField,
       field("Image", "image"),
       field("Date", "date"),
       field("Tags", "list", { required: false }),

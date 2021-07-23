@@ -1,7 +1,7 @@
 ---
 title: Choosing and optimizing a logo for social media profiles
 draft: false
-image: /img/social-media-phone.jpg
+image: /img/thought-catalog-YSZS_nDU8js-unsplash.jpg
 date: 2021-07-14T18:23:38.958Z
 tags:
   - Social Media

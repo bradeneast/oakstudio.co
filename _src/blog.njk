@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero.njk
 title: The Oak Studio Blog
-image: /img/pattern.svg
+image: /img/joel-muniz-XqXJJhK-c08-unsplash.jpg
 menu:
   visible: true
   order: 3
@@ -10,6 +10,6 @@ sort_by: date
 ---
 
 <div class="bleed squeeze grid col-3 gap-1 pad-1">
-  {% set posts = search.pages("type=post", sort_by) %}
+  {% set posts = search.pages("type=post", sort_by + "=desc") %}
   {%- include "templates/postsList.njk" -%}
 </div>

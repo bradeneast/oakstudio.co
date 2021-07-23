@@ -24,6 +24,8 @@ colors:
 
 The demand for elderberry products had increased in recent years, and 360 Farms' core demographic was shifting. They felt their brand was not striking a chord with customers.
 
+![The hero image of 360 farms](/img/360-farms-hero.jpg)
+
 ![We brought farming full circle.](/img/360-farms-berries.jpg)
 
 ## Customer Profiles
