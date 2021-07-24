@@ -10,15 +10,18 @@ const repo = "oakstudio.co";
 export async function updateFileContents(path, contents) {
   const file = await getFile(path);
   const content = new Buffer.from(contents, 'utf8').toString('base64');
+  const data = {
+    owner: owner,
+    repo: repo,
+    path: path,
+    content: content,
+    message: `[skip ci] Update ${path} from octokit NodeJS client`,
+  };
+
+  if (file) data.sha = file.data.sha;
+
   return client.rest.repos
-    .createOrUpdateFileContents({
-      owner,
-      repo,
-      path,
-      content,
-      sha: file.data.sha,
-      message: `[skip ci] Update ${path} from octokit NodeJS client`,
-    })
+    .createOrUpdateFileContents(data)
     .catch(console.error)
 }
 
