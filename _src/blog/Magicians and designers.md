@@ -4,6 +4,7 @@ draft: false
 image: /img/daniel-rykhev-tcVSgl7fIBk-unsplash.jpg
 date: 2021-07-23T2:23:58.958Z
 author: Braden East
+featured: true
 tags:
   - Design
   - Magic
@@ -27,4 +28,4 @@ Magicians create experiences that reserve a place in our minds, anchored by the 
 
 As designers, we get way too excited about our tools and methods. We get carried away trying to shine the spotlight on our technical abilities. This is misdirection of the worst kind. Instead of designing for the person who will experience our work, we design for our own gratification of making something "perfectly kerned", "geometrically balanced", or "just like" that other brand we like.
 
-Instead, we should strive to make our methods invisible. We should our work *feeling* right rather than *being* right. We should take pride in the experience we can create for our clients, users, friends, and family.
+Instead, we should strive to make our methods invisible. We should focus on our work *feeling* right rather than *being* right. We should take pride in the experience we can create for our clients, users, friends, and family. New subtleties will present themselves, and our work will generate a little more childlike wonder.
