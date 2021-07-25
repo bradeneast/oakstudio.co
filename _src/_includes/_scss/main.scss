@@ -18,38 +18,6 @@
   --large-shadow: 0 0 1.8rem -0.6rem var(--shadow-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --g0: #{$g8};
-    --g1: #{$g7};
-    --g2: #{$g6};
-    --g3: #{$g5};
-    --g4: #{$g4};
-    --g5: #{$g3};
-    --g6: #{$g2};
-    --g7: #{$g1};
-    --g8: #{$g0};
-    --dark: 1;
-    --shadowColor: black;
-  }
-
-  html body {
-    color: var(--g2);
-  }
-
-  .light {
-    display: none;
-  }
-
-  .dark {
-    display: block;
-  }
-
-  .gallery img {
-    filter: invert(1);
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -106,3 +74,35 @@ img {
 @import "./coarse";
 @import "./post";
 @import "./util";
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --g0: #{$g8};
+    --g1: #{$g7};
+    --g2: #{$g6};
+    --g3: #{$g5};
+    --g4: #{$g4};
+    --g5: #{$g3};
+    --g6: #{$g2};
+    --g7: #{$g1};
+    --g8: #{$g0};
+    --dark: 1;
+    --shadowColor: black;
+  }
+
+  html body {
+    color: var(--g2);
+  }
+
+  .light {
+    display: none;
+  }
+
+  .dark {
+    display: block;
+  }
+
+  .gallery img {
+    filter: invert(1);
+  }
+}

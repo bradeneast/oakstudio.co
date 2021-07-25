@@ -16,7 +16,6 @@ h5,
 h6 {
   color: var(--g0);
   line-height: 1.3;
-  font-weight: 500;
   font-weight: $fontWeightHeavy;
   letter-spacing: -0.02em;
   margin-bottom: 0;
@@ -51,6 +50,7 @@ h5 {
 }
 
 h1 {
+  font-weight: $fontWeightHeavy;
   font-size: calc(14vmin + 8px);
   line-height: 0.9;
   letter-spacing: -0.06em;
@@ -66,9 +66,13 @@ h1 {
 h2 {
   line-height: 1;
   font-size: calc(3vmin + 18px);
+  font-style: italic;
 }
 
 h3 {
+  font-weight: $fontWeightRegular;
+  line-height: 1.1;
+  font-style: italic;
   font-size: calc(1.8vmin + 14px);
 }
 

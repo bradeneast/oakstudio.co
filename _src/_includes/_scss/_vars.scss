@@ -66,15 +66,28 @@ $mobile: 48rem;
 
 @font-face {
   font-family: "Merriweather";
+  src: url("/Merriweather.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/MerriweatherItalic.woff2") format("woff2");
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Merriweather";
   src: url("/Merriweather-Bold.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: $fontWeightHeavy;
   font-display: block;
 }
 
 @font-face {
   font-family: "Merriweather";
   src: url("/Merriweather-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: $fontWeightHeavy;
   font-style: italic;
   font-display: block;
 }

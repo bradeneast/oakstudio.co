@@ -22,8 +22,13 @@
     }
   }
 
+  &__text * + * {
+    margin: 0;
+    margin-top: $flow1;
+  }
+
   &__image {
-    margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow2 auto;
+    margin: calc(var(--image-size) * -0.5 - #{$flow2}) auto $flow1 auto;
     height: var(--image-size);
     width: var(--image-size);
 
@@ -86,6 +91,10 @@
       fill: none;
       stroke-width: $borderWidth;
     }
+  }
+
+  &__client {
+    margin-top: $flow1;
   }
 
   .blurb {
