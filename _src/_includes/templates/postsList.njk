@@ -10,12 +10,9 @@
     <div>
       <div class="soft-grid__title">{{ post.data.title }}</div>
       <div class="subtext">
-      {%- for tagPage in search.pages("type=tag") %}
-        {%- for tag in post.data.tags -%}
-          {%- if tagPage.data.tag == tag -%}
-          {{ " \\ " if loop.index > 1 }}{{ tag }}
-          {%- endif -%}
-        {% endfor %}
+      {%- for tag in post.data.tags -%}
+        {%- set tagPage = search.pages("tag '" + tag + "'")[0] -%}
+        {{ " \\ " if loop.index > 1 }}{{ tag }}
       {%- endfor -%}
       </div>
     </div>
