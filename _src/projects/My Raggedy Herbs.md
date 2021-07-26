@@ -2,6 +2,7 @@
 title: My Raggedy Herbs
 image: /img/my-raggedy-herbs-mugs.jpg
 order: 6
+draft: true
 entity: Small Business
 tags:
   - Identity
