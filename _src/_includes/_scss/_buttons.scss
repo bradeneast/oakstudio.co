@@ -1,10 +1,10 @@
 button,
 .button,
 input[type="submit"] {
-  --initial-bg: var(--g0);
-  --hover-bg: var(--g7);
-  --initial-color: var(--g8);
-  --hover-color: var(--g0);
+  --initial-bg: var(--g7);
+  --hover-bg: var(--g0);
+  --initial-color: var(--g0);
+  --hover-color: var(--g8);
   font-size: 1.1rem;
   color: var(--initial-color);
   display: inline-block;
@@ -33,6 +33,9 @@ input[type="submit"] {
   }
 
   &.primary {
+    --initial-color: var(--primary);
+    --hover-color: var(--g0);
+    --initial-bg: var(--g0);
     --hover-bg: var(--primary) 50%, var(--secondary);
   }
 
