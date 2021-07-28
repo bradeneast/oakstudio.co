@@ -16,10 +16,10 @@
 {% endmacro %}
 
 {# Review Blurb #}
-{% macro review(clientName, clientCompany, review, bg) %}
+{% macro review(review, clientName, clientCompany, bg) %}
 <div class="review">
   {% set text -%}
-  #### {{ review }}
+  <h4>{{ review }}</h4>
   <div class="review__client">
     <em>{{ clientName }}</em>
     <div class="subtext">{{ clientCompany }}</div>
