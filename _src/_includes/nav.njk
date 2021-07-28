@@ -1,14 +1,19 @@
-<nav role="navigation" class="flex ai-center">
+{% set hidden = showMenu == false %}
+<nav {{ "aria-hidden=true" if hidden }} role="navigation" class="flex ai-center {{ 'invisible' if hidden }}">
+
   <a id="logo" href="/" title="Go to homepage">
     {% include "assets/logo.svg" %}
   </a>
+
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle"></label>
+
   <div class="subtext" role="menu">
-  {%- for entry in search.pages("menu.visible=true", "menu.order") %}
+  {%- for entry in search.pages("menu.visible=true", "menu.order") -%}
     <a class="subtext" role="menuitem" href="{{ entry.data.url | url }}" {% if entry.data.url==url %} aria-current="page" {% endif %}>
       {{ entry.data.menu.title or entry.data.title }}
     </a>
-  {%- endfor %}
+  {%- endfor -%}
   </div>
+
 </nav>

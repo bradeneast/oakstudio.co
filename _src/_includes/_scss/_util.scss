@@ -2,6 +2,11 @@
   display: none;
 }
 
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .large {
   font-size: $fontSizeLarge;
   letter-spacing: -0.02em;

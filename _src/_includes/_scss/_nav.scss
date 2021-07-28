@@ -5,8 +5,7 @@ nav {
   width: 100%;
   padding: $flow1 $flow2 0 $flow2;
   z-index: 99;
-  background-size: 100% 12em;
-  background-position: bottom;
+  transition: opacity $smoothTransition;
 
   #logo {
     height: 100%;
