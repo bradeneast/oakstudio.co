@@ -17,6 +17,6 @@ to = "/404"
 
 [[redirects]]
 force = true
-from = "https://somenetlifysite.netlify.app"
+from = "https://oakstudio.netlify.app"
 status = 301
-to = "https://mycustomdomain.com"
+to = "https://oakstudio.co"
