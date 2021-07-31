@@ -23,6 +23,6 @@ I was apparently not at all the first person to struggle. The pen was not round,
 
 It's one thing to design for the eye. But it takes experience and thoughtful consideration to create something beautiful *and* intuitive to use (at least for a well-defined group of people). That also raises the issue of knowing who and what you're designing for. What an amazing hack to produce better work!
 
-> Does this resonate with you? We're looking to hire someone who can think about the end user. If you're a designer or animator with a solid portfolio, we'd love to talk about working with you on upcoming projects.
+> Does this resonate with you? We're looking to hire someone who can think about the end user. If you're a designer or motion graphics animator with a solid portfolio, we'd love to talk about working with you on upcoming projects.
 >
 > [{{site.email}}](mailto:{{site.email}})
