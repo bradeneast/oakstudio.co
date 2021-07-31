@@ -19,10 +19,10 @@
 {% macro review(review, clientName, clientCompany, bg) %}
 <div class="review">
   {% set text -%}
-  <h4>{{ review }}</h4>
+  <h4 data-animate="clip-top">{{ review }}</h4>
   <div class="review__client">
-    <em>{{ clientName }}</em>
-    <div class="subtext">{{ clientCompany }}</div>
+    <em data-animate="from-bottom">{{ clientName }}</em>
+    <div class="subtext" data-animate="from-bottom">{{ clientCompany }}</div>
   </div>
   {% endset %}
   {% set background %}
