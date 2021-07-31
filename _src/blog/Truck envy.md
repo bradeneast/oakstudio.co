@@ -1,7 +1,7 @@
 ---
 title: Truck envy and the End Zone
 draft: false
-image: /img/trucks-in-a-dealership-lot.jpg
+image: /img/football-in-the-grass.jpg
 date: 2021-07-31T05:00:00.000Z
 tags:
   - Marketing
