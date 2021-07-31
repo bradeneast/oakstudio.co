@@ -8,12 +8,13 @@
   --scale: 0.4rem;
   position: absolute;
   z-index: 9;
+  top: 0;
   right: 0;
-  top: calc(var(--size) * -1);
   width: var(--size);
   height: var(--size);
   letter-spacing: calc(var(--scale) - 0.0014rem * var(--char-count));
   font-size: calc(1.2rem - var(--scale) * 0.1 * var(--char-count));
+  pointer-events: none;
   animation: spin 1000s linear infinite paused;
   animation-delay: calc(-0.5s * var(--user-scroll));
 
@@ -24,4 +25,8 @@
   text {
     fill: var(--g0);
   }
+}
+
+.post .spinner {
+  top: calc(var(--size) * -1);
 }
