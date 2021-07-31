@@ -1,5 +1,9 @@
 {%- for tag in tags -%}
-  {%- set tagPage = search.pages("tag '" + tag + "'")[0] -%}
+  {% set tagPages = search.pages("type=tag") %}
+  {% set currentTagPage = null %}
+  {% for tagPage in tagPages %}
+    {% if tagPage.data.tag == tag %}{% set currentTagPage = tagPage %}{% endif %}
+  {% endfor %}
   {{- " \\ " if loop.index > 1 -}}
-  <a href="{{ tagPage.data.url }}" class="tag">{{ tag }}</a>
+  <a href="{{ currentTagPage.data.url }}" class="tag">{{ tag }}</a>
 {%- endfor -%}
