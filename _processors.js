@@ -1,6 +1,6 @@
 import { imageDirName, resizeOptions, matchExts, outDirName, siteSrc, targetExt } from "./prebuild/_options.js";
 import * as filters from "./_filters.js";
-import * as esbuild from "https://deno.land/x/esbuild@v0.12.14/mod.js";
+import * as esbuild from "https://deno.land/x/esbuild@v0.12.17/mod.js";
 
 export function html(page) {
 
