@@ -9,6 +9,7 @@ showMenu: false
 
 {% include "copy/fit.md" %}
 
+![Diagramming and planning a project on paper](/img/project-planning-business.jpg)
 
 <section class="center">
 
@@ -40,6 +41,8 @@ We thought you might want to see some examples of our work. [Click here for thos
 ) }}
 
 </section>
+
+![A sign outside a shop window that reads "Come in, We're open!"](/img/open-sign.jpg)
 
 ## Hold up.
 
