@@ -1,5 +1,6 @@
 {
   "netlify.site_id": "oakstudio.netlify.com",
+  "liveServer.settings.root": "/_site",
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",

@@ -2,9 +2,9 @@
 layout: layouts/hero.njk
 title: Home
 hero_left: >-
-  <h1 style="opacity: calc(720 / (var(--user-scroll) + 1) - 1)" class="hero__heading top-text">
+  <h1 class="hero__heading top-text">
     {% set speeds = [ 0, -1, -2, -3, -4, -5 ] %}
-    {% set words = ["Build", "something", "permanent."] %}
+    {% set words = ["Grow", "something", "permanent."] %}
     {% for word in words %}
     <div style="z-index:9; display:inline-flex;">
       {% for char in word | list %}
@@ -14,8 +14,7 @@ hero_left: >-
     {% endfor %}
   </h1>
   <div data-animate="from-left" class="hero__subheading top-text">
-    <p>We've helped dozens of family-owned (and family-minded) businesses establish brands that endure.</p>
-    <a href="/projects" class="button primary">See Examples</a>
+    <p>Oak Studio partners with family-minded businesses to create enduring brands.</p>
   </div>
 hero_right: >-
   {% set carouselItems = [
@@ -46,7 +45,7 @@ hero_right: >-
 {% set vision %}{% include "copy/vision.md" %}{% endset %}
 {% set identity %}{% include "copy/identity.md" %}{% endset %}
 
-## Oak Studio is a branding and design agency that sees our work as a means of permanence.
+## We're a branding and design agency that sees our work as a means of permanence.
 
 [More about us](/about)
 
