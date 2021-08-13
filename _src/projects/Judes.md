@@ -5,6 +5,7 @@ logo: /img/judes-logo.svg
 entity: Coffee Shop
 description: Jude’s Health & Java House is a coffee shop and natural health store in Bartlesville, Oklahoma. The goal was to solidify the connections Jude’s was already making with Bartlesville locals and expand that same familiarity into surrounding areas.
 order: 3
+draft: true
 tags:
   - Identity
   - Concept
