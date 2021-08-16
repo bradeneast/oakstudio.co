@@ -4,6 +4,7 @@ import * as esbuild from "https://deno.land/x/esbuild@v0.12.17/mod.js";
 
 export function html(page) {
 
+  // Replace image sources
   let $$ = (selector, context = page.document) => context.querySelectorAll(selector);
   let [width, height, opts] = resizeOptions;
   let images = $$(`img[src*="/${imageDirName}/"]`);
