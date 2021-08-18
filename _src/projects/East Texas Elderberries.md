@@ -43,8 +43,6 @@ This identity needed to adapt fluidly for every application. To solve this, we d
   <img class="dark" src="/img/east-texas-elderberries-scales-white.png" alt="">
 </p>
 
-![A billboard advertising East Texas Elderberries.](/img/east-texas-elderberries-billboard.jpg)
-
 ![An example of the East Texas Elderberries favicon on a browser tab.](/img/east-texas-elderberries-web.png)
 
 ## Speaking of web browsing...
