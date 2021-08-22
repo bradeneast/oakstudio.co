@@ -18,11 +18,6 @@ main {
   }
 }
 
-article {
-  padding-top: $flow4;
-  padding-bottom: $flow4;
-}
-
 .top-text {
   width: 100%;
   max-width: 60rem;
@@ -31,10 +26,16 @@ article {
 
 main,
 article {
-  & > *:not(.bleed) {
+  & > * {
     max-width: $mobile;
     margin-left: auto;
     margin-right: auto;
+
+    &.bleed {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 
@@ -128,10 +129,16 @@ footer {
 
   main,
   article {
-    & > *:not(.bleed) {
+    & > * {
       max-width: $mobile;
       margin-left: $flow1;
       margin-right: $flow1;
+
+      &.bleed,
+      &.has-media {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
 

@@ -121,12 +121,14 @@
 
 {# Swatch #}
 {% macro swatch(name, hex, pantone) %}
-<div class="soft-grid">
-  <div class="soft-grid__image" style="background-color: {{ hex }}; opacity: 1"></div>
-  <div class="soft-grid__title">{{ name }}</div>
-  <div class="subtext">
-    <div>Pantone {{ pantone }}</div>
-    {{ hex }}
+<div class="grid">
+  <div style="padding-bottom: 100%; background-color: {{ hex }};"></div>
+  <div class="pos-abs pad-1">
+    {{ name }}
+    <div class="subtext">
+      <div>Pantone {{ pantone }}</div>
+      {{ hex }}
+    </div>
   </div>
 </div>
 {% endmacro %}

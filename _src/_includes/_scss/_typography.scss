@@ -97,7 +97,8 @@ a {
 p,
 ul,
 ol {
-  margin: $flow2 0;
+  margin-top: $flow2;
+  margin-bottom: $flow2;
 }
 
 blockquote {

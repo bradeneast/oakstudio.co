@@ -24,7 +24,8 @@ export function html(page) {
     img.setAttribute('height', height); // Set intrisic height
   })
 
-  $$('.project p > img').forEach((img, i) => {
+  $$('.post p > img').forEach((img, i) => {
+    img.parentElement.classList.add('has-media');
     let index = i;
     while (index > 1) index = index - 2;
     img.setAttribute('data-animate', `clip-${directions[index]}`);
