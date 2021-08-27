@@ -21,7 +21,11 @@ main {
 .top-text {
   width: 100%;
   max-width: 60rem;
-  padding: $flow2 0 $flow4 10vmin;
+  padding: $flow3 10vmin;
+}
+
+article {
+  padding-top: $flow4;
 }
 
 main,
@@ -30,6 +34,10 @@ article {
     max-width: $mobile;
     margin-left: auto;
     margin-right: auto;
+
+    &.has-media {
+      max-width: $mobile + 12;
+    }
 
     &.bleed {
       max-width: none;
@@ -40,12 +48,14 @@ article {
 }
 
 section {
-  margin: 0;
-  padding: $flow6 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: $flow6;
+  padding-bottom: $flow6;
 
   &.bleed {
-    padding-left: $flow2;
-    padding-right: $flow2;
+    padding-left: $flow1;
+    padding-right: $flow1;
   }
 
   &.soft {
