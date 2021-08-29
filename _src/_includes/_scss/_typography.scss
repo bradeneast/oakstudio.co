@@ -107,7 +107,8 @@ blockquote {
   text-align: center;
   color: var(--g1);
   padding: $flow3 $flow1;
-  margin: $flow3 0;
+  margin-top: $flow3;
+  margin-bottom: $flow3;
 
   &::before,
   &::after {
