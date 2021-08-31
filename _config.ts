@@ -1,6 +1,8 @@
+// @ts-nocheck
 import lume from "lume";
 import date from "lume/plugins/date.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
+import svgo from "lume/plugins/svgo.ts";
 import textLoader from "lume/core/loaders/text.ts";
 import * as processors from "./_processors.js";
 import * as filters from "./_filters.js";
@@ -25,6 +27,7 @@ site
   // Plugins
   .use(slugifyUrls())
   .use(date())
+  .use(svgo())
 
   // Helpers
   .filter('splitting', filters.splitting, { type: "tag", body: true })

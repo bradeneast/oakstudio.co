@@ -8,11 +8,10 @@ layout: layouts/post.njk
 
 <div class="bleed top-text">
   <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
-  <div>
-    <h3 class="splitting" style="margin-bottom: 0; --char-delay: 1s">
-      <time datetime="{{ date | date }}">{{ date | date('HUMAN_DATE') | splitting | safe }}</time>
-    </h3>
-    {% include "templates/tagsList.njk" %}
+  <div class="subtext">
+    <em class="splitting" style="--char-delay: 1s"><time datetime="{{ date | date }}">{{ date | date('HUMAN_DATE') | splitting | safe }}</time>
+    </em>
+    <div>{% include "templates/tagsList.njk" %}</div>
   </div>
 </div>
 

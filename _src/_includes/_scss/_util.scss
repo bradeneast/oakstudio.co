@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.color-primary {
+  color: var(--primary);
+}
+
 .large {
   font-size: $fontSizeLarge;
   letter-spacing: -0.02em;

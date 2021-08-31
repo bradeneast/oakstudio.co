@@ -4,7 +4,6 @@
   &__heading,
   &__subheading {
     z-index: 3;
-    margin-bottom: 0;
   }
 
   &__heading {
@@ -14,7 +13,8 @@
 
   &__subheading {
     padding-top: 0;
-    max-width: 30rem;
+    margin-bottom: 0;
+    max-width: 33rem;
   }
 
   &__feature {

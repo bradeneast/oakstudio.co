@@ -43,23 +43,23 @@ h5 {
   }
 }
 
+h1,
 h2,
-h3,
-h5 {
-  font-family: $altFont;
+h3 {
+  font-family: $displayFont;
 }
 
 h1 {
   font-weight: $fontWeightHeavy;
   font-size: calc(14vmin + 8px);
   line-height: 0.88;
-  letter-spacing: -0.06em;
-  margin-left: -0.04em;
+  letter-spacing: -0.07em;
+  margin-left: -0.02em;
   margin-bottom: 0.2em;
   filter: drop-shadow(0 0 1rem var(--g8));
 
   em {
-    font-family: $altFont;
+    font-family: $italicFont;
   }
 }
 
@@ -103,7 +103,7 @@ ol {
 
 blockquote {
   font-size: 1.5rem;
-  font-family: $altFont;
+  font-family: $italicFont;
   text-align: center;
   color: var(--g1);
   padding: $flow3 $flow1;
@@ -146,7 +146,7 @@ blockquote {
 
 em {
   font-style: italic;
-  font-family: $altFont;
+  font-family: $italicFont;
 
   strong {
     color: var(--secondary);

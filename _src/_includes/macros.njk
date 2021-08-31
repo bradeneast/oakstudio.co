@@ -19,9 +19,9 @@
 {% macro review(review, clientName, clientCompany, bg) %}
 <div class="review">
   {% set text -%}
-  <h4 data-animate="clip-top">{{ review }}</h4>
-  <div class="review__client">
-    <em data-animate="from-bottom">{{ clientName }}</em>
+  <h4 class="review__text" data-animate="clip-top">{{ review }}</h4>
+  <div class="review__client squeeze">
+    <h5 class="color-primary" data-animate="from-bottom">{{ clientName }}</h5>
     <div class="subtext" data-animate="from-bottom">{{ clientCompany }}</div>
   </div>
   {% endset %}
@@ -112,8 +112,8 @@
     <img src="/img/{{ photo }}" alt="{{ name }}, {{ title }}">
   </div>
   <div data-animate="from-right" class="person__info squeeze">
-    <h4 class="person__info--name">{{ name }}</h4>
-    <h5 class="person__info--position"><em>{{ title }}</em></h5>
+    <h3 class="person__info--name">{{ name }}</h3>
+    <div class="subtext person__info--position"><em>{{ title }}</em></div>
     <div class="person__info--bio">{{ bio | md | safe }}</div>
   </div>
 </div>

@@ -37,6 +37,13 @@ export function html(page) {
     h2.setAttribute('data-animate', '');
     h2.innerHTML = filters.splitting(h2.innerText);
   });
+
+  // Add svg scribble effect to buttons
+  $$('a.button').forEach(button => {
+    let content = button.innerHTML;
+    let svgAddition = '<svg><use href="#scribble"></use></svg>';
+    button.innerHTML = `<span>${content}</span>${svgAddition}`;
+  })
 }
 
 export async function js(page) {
