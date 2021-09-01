@@ -51,12 +51,16 @@ h3 {
 
 h1 {
   font-weight: $fontWeightHeavy;
-  font-size: calc(14vmin + 8px);
-  line-height: 0.88;
-  letter-spacing: -0.07em;
+  font-size: calc(15vmin + 10px);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
   margin-left: -0.02em;
   margin-bottom: 0.2em;
   filter: drop-shadow(0 0 1rem var(--g8));
+
+  * {
+    text-decoration: inherit;
+  }
 
   em {
     font-family: $italicFont;

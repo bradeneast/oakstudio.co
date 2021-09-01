@@ -14,24 +14,13 @@
   &__subheading {
     padding-top: 0;
     margin-bottom: 0;
-    max-width: 33rem;
+    max-width: 36rem;
   }
 
   &__feature {
     overflow: hidden;
     border-radius: 0 0 0 $borderRadius * 2;
     height: 100vh;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 10% 90%, transparent, var(--g8));
-      opacity: calc(0.37 * var(--dark));
-    }
 
     &--image {
       height: 100%;

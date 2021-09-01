@@ -2,19 +2,20 @@
 layout: layouts/hero.njk
 title: Home
 hero_left: >-
-  <h1 class="hero__heading top-text">
+  <h1 class="hero__heading top-text" style="text-decoration:underline;">
     {% set speeds = [ 0, -1, -2, -3, -4, -5 ] %}
-    {% set words = ["Grow", "something", "permanent."] %}
+    {% set words = ["Grow", "something"] %}
     {% for word in words %}
-    <div style="z-index:9; display:inline-flex;">
+    <div style="z-index:9; display:inline-flex; opacity:calc(1 - (var(--user-scroll) / 600))">
       {% for char in word | list %}
       <div class="char rellax" style="--char-index:{{loop.index}}" data-rellax-speed="{{ speeds | random }}">{{ char }}</div>
       {% endfor %}
     </div>
     {% endfor %}
+    permanent.
   </h1>
   <div data-animate="from-left" class="hero__subheading top-text">
-    <p>Oak Studio partners with family-minded businesses to create enduring brands.</p>
+    <p>Oak Studio partners with family-minded businesses to create <em><strong>enduring brands</strong></em>.</p>
   </div>
 hero_right: >-
   {% set carouselItems = [
@@ -22,7 +23,7 @@ hero_right: >-
     "my-raggedy-herbs-business_cards.jpg",
     "harmony-health-clothing.jpg",
     "elderberry-wine-company-menu.jpg",
-    "east-texas-elderberries-sack.jpg",
+    "east-texas-elderberries-family.jpg",
     "360-farms-tea-boxes.jpg"
   ] %}
   <div class="carousel">
