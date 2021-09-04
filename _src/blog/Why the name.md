@@ -15,7 +15,7 @@ In 1931 the [Mingo Oak](http://www.nativetreesociety.org/historic/mingo_oak.htm)
 
 Like the Mingo Oak, when we think of things that are strong, resiliant, and have widespread roots, oaks are the first trees come to mind. That's a metaphor we resonate with. We see a way to do build brands like that - nurturing the stories and ideas that help businesses stick around, put down roots, and resist the waves of trend.
 
-> We see a way to do build brands like oak trees. Nurturing the stories and ideas that help businesses stick around, put down roots, and resist the waves of trend.
+> We see a way to grow brands like oak trees. Nurturing the stories and ideas that help businesses stick around, put down roots, and resist the waves of trend.
 
 ## The Jurupa
 
