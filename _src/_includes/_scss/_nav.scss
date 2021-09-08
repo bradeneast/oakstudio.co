@@ -7,6 +7,13 @@ nav {
   z-index: 99;
   transition: opacity $smoothTransition;
 
+  &:hover,
+  &:focus-within {
+    & ~ main .hero__feature {
+      opacity: 0.63;
+    }
+  }
+
   #logo {
     height: 100%;
     width: auto;
