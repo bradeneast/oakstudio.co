@@ -4,8 +4,8 @@ import date from "lume/plugins/date.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import svgo from "lume/plugins/svgo.ts";
 import textLoader from "lume/core/loaders/text.ts";
-import * as processors from "./_processors.js";
-import * as filters from "./_filters.js";
+import * as processors from "./_processors.ts";
+import * as filters from "./_filters.ts";
 import { imageDirName, siteSrc } from "./prebuild/_options.js";
 
 const site = lume({
