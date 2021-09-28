@@ -81,6 +81,11 @@ section {
   }
 }
 
+.contact-info a {
+  color: var(--g3);
+  text-decoration-color: currentColor;
+}
+
 .fake-footer,
 footer {
   z-index: 11;

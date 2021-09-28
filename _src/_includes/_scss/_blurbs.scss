@@ -71,11 +71,6 @@
   --stroke-color: var(--g7);
   color: var(--primary);
 
-  &__text {
-    font-family: $italicFont;
-    font-style: italic;
-  }
-
   &__background {
     position: absolute;
     display: grid;
