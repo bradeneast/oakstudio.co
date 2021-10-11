@@ -50,9 +50,9 @@
 {#####################}
 
 {# Before/After Slider #}
-{% macro before_after(before, after, text) %}
+{% macro before_after(before, after, text, height) %}
 <div>
-  <div class="beforeafter">
+  <div class="beforeafter" style="height:{{ height }}">
     <div class="beforeafter__before">
       <img src="/img/{{ before }}" alt="">
     </div>

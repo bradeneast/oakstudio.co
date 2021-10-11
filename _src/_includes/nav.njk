@@ -10,7 +10,7 @@
 
   <div class="subtext" role="menu">
   {%- for entry in search.pages("menu.visible=true", "menu.order") -%}
-    <a class="subtext" role="menuitem" href="{{ entry.data.url | url }}" {% if entry.data.url==url %} aria-current="page" {% endif %}>
+    <a class="subtext {{ 'button bg' if entry.data.menu.cta }}" role="menuitem" href="{{ entry.data.url | url }}" {% if entry.data.url==url %} aria-current="page" {% endif %}>
       {{ entry.data.menu.title or entry.data.title }}
     </a>
   {%- endfor -%}

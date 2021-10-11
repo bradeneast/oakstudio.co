@@ -39,14 +39,19 @@ nav {
   [role="menu"] {
     display: flex;
     margin-left: auto;
+    align-items: center;
 
     a {
+      text-align: center;
       margin-left: $flow1;
       display: inline-block;
-      padding-left: 0.15em;
-      transform: translateX(-0.15em);
       text-decoration: none;
       color: var(--g0);
+
+      &:not(.button) {
+        padding-left: 0.15em;
+        transform: translateX(-0.15em);
+      }
 
       &:hover,
       &:focus {
@@ -56,6 +61,14 @@ nav {
       &[aria-current] {
         font-weight: $fontWeightHeavy;
         box-shadow: inset 0 #{-$borderWidth} 0 0 var(--primary);
+      }
+
+      &.button {
+        box-shadow: none;
+
+        &[aria-current] {
+          border-color: var(--primary);
+        }
       }
     }
   }

@@ -44,6 +44,13 @@ input[type="submit"] {
     text-align: center;
   }
 
+  &.bg {
+    &:hover,
+    &:focus {
+      background-color: var(--g6);
+    }
+  }
+
   &.primary {
     border-color: var(--primary);
 

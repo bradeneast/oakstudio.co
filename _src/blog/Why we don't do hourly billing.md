@@ -36,12 +36,12 @@ At first, it might seem like this list answers Susan's questions. Now she knows 
 
 But in fact, it's just given Susan *five bills* to evaluate instead of one.
 
-Now we are back at square one. Susan may have not remembered seeing any weeds at all, or maybe she only has two hedges on the entire property. She might even feel like she needs to be present and supervise during the next job, using her valuable time to make sure Jake isn't taking advantage of their contract.
+Now we are back at square one. Susan may have not remembered seeing any weeds at all, or maybe she only has two hedges on the entire property, so 2 hours seems excessive. She might even feel like she needs to be present and supervise during the next job, using her valuable time to make sure Jake isn't taking advantage of their contract.
 
 ### Sound familiar?
 If you're a business owner, this scene is probably very familiar to you.
 
-With goal-based projects (like ours) hourly billing raises time-consuming questions and has the potential to create distrust between us and the clients we serve. As you'll see, we aim to be on the same side as business owners, working as one team to help them make their vision happen and have staying power.
+With goal-based projects, hourly billing raises time-consuming questions and has the potential to create distrust between us and the clients we serve. As you'll see, we aim to be on the same side as business owners, working as one team to help them make their vision happen and have staying power.
 
 
 ## 2. Productivity

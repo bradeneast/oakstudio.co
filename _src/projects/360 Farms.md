@@ -72,6 +72,8 @@ Since refreshing their brand, 360 Farms is helping even more high-quality people
 <section>
 {{ before_after(
   "360-farms-old.png",
-  "360-farms-new.png"
+  "360-farms-new.png",
+  "",
+  "63vmin"
 ) }}
 </section>
