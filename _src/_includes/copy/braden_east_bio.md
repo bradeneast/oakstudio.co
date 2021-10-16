@@ -4,4 +4,4 @@ Before founding Oak Studio, he designed brands independently for 5 years and wor
 
 He spends time outdoors, drives a pickup, and drinks black coffee.
 
-More design from Braden [can be found here](//bradeneast.com/design)
+More design from Braden [can be found here](//bradeneast.com/design).
