@@ -4,7 +4,6 @@ input[type="submit"] {
   font-size: 1.1rem;
   color: var(--g0);
   display: inline-block;
-  align-self: start;
   justify-self: start;
   cursor: pointer;
   font-weight: $fontWeightHeavy;
@@ -45,10 +44,7 @@ input[type="submit"] {
   }
 
   &.bg {
-    &:hover,
-    &:focus {
-      background-color: var(--g6);
-    }
+    background-color: var(--g8);
   }
 
   &.primary {
