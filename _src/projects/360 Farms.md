@@ -15,8 +15,11 @@ colors:
   - name: Elder Indigo
     hex: "#1d1934"
     pantone: 5255 C
+  - name: Neutral Grey
+    hex: "#8f9ea8"
+    pantone: 7543 C
   - name: Deep Roots
-    hex: "#ddc9a3"
+    hex: "#b8a78f"
     pantone: 468 C
 ---
 
