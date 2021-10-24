@@ -1,7 +1,6 @@
 ---
 title: 360 Farms
 image: /img/360-farms-tea-boxes.jpg
-order: 2
 entity: Small Business
 tags:
   - Identity

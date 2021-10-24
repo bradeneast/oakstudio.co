@@ -1,7 +1,6 @@
 ---
 title: The Elderberry Wine Company
 image: /img/elderberry-wine-company-menu.jpg
-order: 2
 entity: Small Business
 tags:
   - Identity

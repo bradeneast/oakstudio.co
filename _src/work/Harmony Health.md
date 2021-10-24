@@ -1,7 +1,6 @@
 ---
 title: Harmony Health
 image: /img/harmony-health-clothing.jpg
-order: 4
 entity: Medical Practice
 tags:
   - Identity

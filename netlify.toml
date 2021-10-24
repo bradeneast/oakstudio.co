@@ -11,6 +11,11 @@ publish = "_site"
 targetPort = 3000
 
 [[redirects]]
+from = "/projects"
+status = 301
+to = "/work"
+
+[[redirects]]
 from = "/*"
 status = 404
 to = "/404"
