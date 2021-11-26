@@ -4,7 +4,7 @@ image: /img/renew-students-stickers.jpg
 entity: Student Ministry
 tags:
   - Identity
-description: Renew Students is the student ministry of Bartlesville First Baptist Church.
+description: Renew Students is the student ministry of Bartlesville First Baptist Church. Rebranding from "Young and Free Students", the name "Renew" stems from the renewing of mind in Romans chapter 12.
 logo: /img/renew-students-logo.svg
 colors:
   - name: Forest Green
@@ -27,11 +27,13 @@ order: 9
 <section class="grid squeeze col-3 gap-3">
 {{ profile(
   "renew-students-male.jpg", 
-  "Barret"
+  "Barret",
+  "Highly engaged by video games, Barret is adventurous, quirky, and quick-witted."
 ) }}
 {{ profile(
   "renew-students-female.jpg", 
-  "Julia"
+  "Julia",
+  "Julia has her brain turned on at all times, and loves to participate in social activities."
 ) }}
 </section>
 
