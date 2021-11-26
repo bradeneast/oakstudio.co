@@ -19,19 +19,8 @@ layout: layouts/post.njk
 
 {{ description | md | safe }}
 
-{# {% if logo %}
-<section class="bleed grid col-2 squeeze">
-  <div style="background: white; padding: 15% 25%">
-    <img src="{{ logo }}" alt="Logo of {{ title }} on white" />
-  </div>
-  <div class="pad-4" style="background: white;  padding: 15% 25%; filter: invert(1)">
-    <img aria-hidden="true" src="{{ logo }}" alt="Logo of {{ title }} on black" />
-  </div>
-</section>
-{% endif %} #}
-
 {% if colors %}
-<section class="grid gap-1 col-4 squeeze" style="padding-top: 0">
+<section class="grid gap-1 col-4 squeeze">
   {% for color in colors %}
     {{ macros.swatch(color.name, color.hex, color.pantone) }}
   {% endfor %}

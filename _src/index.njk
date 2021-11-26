@@ -1,36 +1,7 @@
 ---
-layout: layouts/hero.njk
+layout: layouts/base.njk
+templateEngine: njk,md
 title: Home
-hero_left: >-
-  <h1 class="hero__heading top-text">
-    {% set speeds = [ 0, -1, -2, -3, -4, -5 ] %}
-    {% set words = ["Grow", "something"] %}
-    {% for word in words %}
-    <div style="z-index:9; display:inline-flex; opacity:calc(1 - (var(--user-scroll) / 600))">
-      {% for char in word | list %}
-      <div class="char rellax" style="--char-index:{{loop.index}}" data-rellax-speed="{{ speeds | random }}">{{ char }}</div>
-      {% endfor %}
-    </div>
-    {% endfor %}
-    permanent.
-  </h1>
-  <div data-animate="from-left" class="hero__subheading top-text">
-    <p>Oak Studio partners with family-minded businesses to create <em><strong>enduring brands</strong></em>.</p>
-  </div>
-hero_right: >-
-  {% set carouselItems = [
-    "judes-coffee-cup.jpg",
-    "my-raggedy-herbs-business_cards.jpg",
-    "harmony-health-clothing.jpg",
-    "elderberry-wine-company-menu.jpg",
-    "east-texas-elderberries-family.jpg",
-    "360-farms-tea-boxes.jpg"
-  ] %}
-  <div class="carousel">
-    {% for image in carouselItems %}
-      <img no-resize class="carousel__item {{ 'selected' if loop.index == 1 }}" src="/img/{{ image }}" alt="">
-    {% endfor %}
-  </div>
 ---
 
 {# Macro imports #}
@@ -45,6 +16,23 @@ hero_right: >-
 {% set rebrand %}{% include "copy/rebrand.md" %}{% endset %}
 {% set vision %}{% include "copy/vision.md" %}{% endset %}
 {% set identity %}{% include "copy/identity.md" %}{% endset %}
+
+{% set carouselItems = search.pages("type=project", sort_by) | reverse %}
+
+<header class="bleed">
+  <div class="hero grid col-2 ai-stretch gap-4 squeeze">
+    <div class="grid ac-end ai-end">
+      <h1 class="hero__heading top-text">Grow something permanent.</h1>
+      <div data-animate="from-left" class="hero__subheading top-text">
+        <p>Oak Studio partners with family-minded businesses to create <em><strong>enduring brands</strong></em>.</p>
+      </div>
+    </div>
+    <div class="hero__feature">
+      {% include "templates/carousel.njk" %}
+    </div>
+  </div>
+</header>
+
 
 ## We're a branding and design agency that sees our work as a means of permanence.
 

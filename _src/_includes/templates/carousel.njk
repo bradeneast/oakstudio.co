@@ -1,0 +1,17 @@
+<div class="carousel">
+  {%- for post in carouselItems -%}
+  <div class="carousel__item {{ 'selected' if loop.index == 1 }}">
+    <img no-resize class="carousel__item--image" src={{ post.data.image }} alt="">
+    <div class="carousel__item--text">
+      <a href="{{ post.data.url }}">
+        <h2>{{ post.data.title }}</h2>
+      </a>
+      <div class="subtext" data-animate="from-bottom">
+        {%- for tag in post.data.tags -%}
+          {{ " \\ " if loop.index > 1 }}{{ tag }}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
