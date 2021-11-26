@@ -1,6 +1,6 @@
 ---
 title: My Raggedy Herbs
-image: /img/my-raggedy-herbs-mugs.jpg
+image: /img/my-raggedy-herbs-candle.jpg
 # draft: true
 entity: Small Business
 tags:
@@ -18,4 +18,4 @@ colors:
     pantone: 7554 C
 ---
 
-![The logo of My Raggedy Herbs on a seed packet.](/img/my-raggedy-herbs-seed-packet.jpg)
+![The logo of My Raggedy Herbs on a homemade mug.](/img/my-raggedy-herbs-mugs.jpg)

@@ -19,7 +19,7 @@ layout: layouts/post.njk
 
 {{ description | md | safe }}
 
-{% if logo %}
+{# {% if logo %}
 <section class="bleed grid col-2 squeeze">
   <div style="background: white; padding: 15% 25%">
     <img src="{{ logo }}" alt="Logo of {{ title }} on white" />
@@ -28,7 +28,7 @@ layout: layouts/post.njk
     <img aria-hidden="true" src="{{ logo }}" alt="Logo of {{ title }} on black" />
   </div>
 </section>
-{% endif %}
+{% endif %} #}
 
 {% if colors %}
 <section class="grid gap-1 col-4 squeeze" style="padding-top: 0">

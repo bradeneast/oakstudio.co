@@ -20,7 +20,7 @@ colors:
     pantone: 7465 C
 ---
 
-{% from 'macros.njk' import before_after %}
+{% from 'macros.njk' import before_after, image_2_column %}
 
 ## Looking the part
 
@@ -39,7 +39,12 @@ By analyzing business goals and customer demographics, we were able to arrive at
 
 Although Harmony Health did not offer music therapy services, the identity needed to include a musical element.
 
-![The Harmony Health logo on a white background.](/img/harmony-health-white-bg.png)
+{{ image_2_column(
+  "harmony-health-sweatshirt-navy.jpg",
+  "harmony-health-sweatshirt.jpg",
+  "bleed"
+) }}
+
 
 ## The launch
 

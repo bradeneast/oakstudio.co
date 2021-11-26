@@ -102,6 +102,10 @@ img {
     display: block;
   }
 
+  .post__header::after {
+    filter: invert(1);
+  }
+
   .gallery img {
     filter: invert(1);
   }
