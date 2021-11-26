@@ -82,4 +82,17 @@
   .carousel-wrapper {
     height: 24rem !important;
   }
+
+  .coarse-dot-navigation {
+    display: none;
+  }
+
+  .carousel__item--text {
+    padding: $flow2;
+    width: 100%;
+    align-content: end;
+    align-items: end;
+    text-align: right;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.63), transparent 70%);
+  }
 }

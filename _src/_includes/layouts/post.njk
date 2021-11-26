@@ -16,7 +16,7 @@ layout: layouts/base.njk
 
   {%- set previousItem = search.previousPage(url, "type=" + type, sort_by) %}
   {%- if previousItem -%}
-  <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left pad-2">
+  <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left pad-1">
     <div class="subtext">Previous</div>
     <h3>{{ previousItem.data.title }}</h3>
   </a>
@@ -24,7 +24,7 @@ layout: layouts/base.njk
 
   {%- set nextItem = search.nextPage(url, "type=" + type, sort_by) %}
   {%- if nextItem -%}
-  <a data-animate="from-right" style="text-decoration: none;" href="{{ nextItem.data.url | url }}" class="right pad-2">
+  <a data-animate="from-right" style="text-decoration: none;" href="{{ nextItem.data.url | url }}" class="right pad-1">
     <div class="subtext">Next</div>
     <h3>{{ nextItem.data.title }}</h3>
   </a>
