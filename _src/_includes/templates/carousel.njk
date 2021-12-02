@@ -1,7 +1,7 @@
 <div class="carousel">
   {%- for post in carouselItems -%}
   <div class="carousel__item {{ 'selected' if loop.index == 1 }}">
-    <img no-resize class="carousel__item--image" src={{ post.data.image }} alt="">
+    <img no-resize class="carousel__item--image" src={{ post }} alt="">
     <div class="carousel__item--text">
       <a href="{{ post.data.url }}">
         <h2>{{ post.data.title }}</h2>

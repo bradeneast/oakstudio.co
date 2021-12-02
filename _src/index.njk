@@ -18,18 +18,19 @@ title: Home
 {% set identity %}{% include "copy/identity.md" %}{% endset %}
 
 {% set carouselItems = search.pages("type=project", sort_by) | reverse %}
+{% set carouselItems = [
+  "/img/_candle-mockup-test.png",
+  "/img/_sticker-mockup-test.png",
+  "/img/_poster-mockup-test.png"
+] %}
 
-<header class="bleed">
-  <div class="hero grid col-2 ai-stretch gap-4 squeeze">
-    <div class="grid ac-end ai-end">
-      <h1 class="hero__heading top-text">Grow something permanent.</h1>
-      <div data-animate="from-left" class="hero__subheading top-text">
-        <p>Oak Studio partners with family-minded businesses to create <em><strong>enduring brands</strong></em>.</p>
-      </div>
-    </div>
-    <div class="hero__feature">
-      {% include "templates/carousel.njk" %}
-    </div>
+<header class="bleed la-wrapper">
+  <div class="la-text">
+    <h1>Grow something permanent.</h1>
+    <p>Oak Studio partners with family-minded businesses to create <em><strong>enduring brands</strong></em>.</p>
+  </div>
+  <div class="la-bg">
+    {% include "templates/carousel.njk" %}
   </div>
 </header>
 

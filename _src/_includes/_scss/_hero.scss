@@ -28,6 +28,26 @@
   }
 }
 
+.la-wrapper {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.la-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  transform: rotate(90deg);
+  overflow: hidden;
+
+  .carousel__item {
+    transform: rotate(-90deg);
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .hero {
     height: auto;

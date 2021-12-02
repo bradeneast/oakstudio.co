@@ -7,19 +7,23 @@
   display: flex;
   gap: 0;
   height: 100%;
-  transition: $smoothTransition;
+  transition: $motionTransition;
 
   .selected {
-    transform: translate3d(0, 0, 0) scale(1);
+    --s: 1;
     opacity: 1;
   }
 
   &__item {
+    --x: 0;
+    --y: 0;
+    --r: 0;
+    --s: 0.8;
     flex-shrink: 0;
     height: 100%;
     width: 100%;
-    transform: translate3d(0, 0, 0) scale(0.8);
-    transition: $smoothTransition;
+    transform: translate3d(var(--x), var(--y), 0) scale(var(--s)) rotate(var(--r));
+    transition: $smoothTransition 0.5s;
 
     img {
       width: 100%;
@@ -35,7 +39,7 @@
       left: 0;
       height: 100%;
       width: 50%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.63), transparent);
+      // background: linear-gradient(to right, rgba(0, 0, 0, 0.63), transparent);
       padding: $flow3;
 
       * {
