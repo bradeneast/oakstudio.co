@@ -10,10 +10,14 @@
     left: 0;
     overflow: hidden;
     transform: translateY(-50%);
+    transition: opacity $smoothTransition;
   }
 }
 
 .post__nav {
+  padding-left: $flow1;
+  padding-right: $flow1;
+
   .left,
   .right {
     max-width: $mobile;

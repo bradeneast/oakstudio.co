@@ -11,6 +11,7 @@ import { imageDirName, siteSrc } from "./prebuild/_options.js";
 const site = lume({
   location: new URL("https://oakstudio.co/"),
   src: siteSrc,
+  server: { page404: "/404/index.html" }
 });
 
 site

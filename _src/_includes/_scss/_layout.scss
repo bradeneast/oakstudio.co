@@ -12,6 +12,11 @@ main {
     margin-top: $flow6 * 2;
   }
 
+  & > :not(.bleed) {
+    padding-left: $flow1;
+    padding-right: $flow1;
+  }
+
   p > img,
   p > video {
     margin: $flow4 0;
@@ -137,27 +142,19 @@ footer {
     padding: 0 $flow1;
   }
 
-  main,
-  article {
-    & > * {
-      max-width: $mobile;
-      margin-left: $flow1;
-      margin-right: $flow1;
+  article > * {
+    max-width: $mobile;
+    margin-left: $flow1;
+    margin-right: $flow1;
 
-      &.bleed,
-      &.has-media {
-        margin-left: 0;
-        margin-right: 0;
-      }
+    &.bleed,
+    &.has-media {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
   section {
-    padding: $flow4 0;
-
-    &.bleed {
-      padding-left: $flow1;
-      padding-right: $flow1;
-    }
+    padding: $flow4 $flow1;
   }
 }

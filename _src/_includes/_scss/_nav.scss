@@ -6,10 +6,12 @@ nav {
   padding: $flow1 $flow2 0 $flow2;
   z-index: 99;
   transition: opacity $smoothTransition;
+  filter: drop-shadow(0 0 #{$flow2} var(--translucent-background));
 
   &:hover,
   &:focus-within {
-    & ~ main .hero__feature {
+    & ~ main .hero__feature,
+    & ~ main .post__header--image {
       opacity: 0.5;
     }
   }

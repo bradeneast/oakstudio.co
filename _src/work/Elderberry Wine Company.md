@@ -35,7 +35,7 @@ We explored several color palettes throughout the design process. Each color rep
   "elderberry-wine-company-flower.svg"
 ) }}
 
-The Elderberry Wine Company inherited the brand fonts of its parent company, [360 Farms](/projects/360-farms). Pairing [Bodoni* 11](//indestructibletype.com/) with [Montserrat Semibold](//fonts.google.com/specimen/Montserrat) offered a reliably elegant, modern way to communicate on wine labels, signage, and in digital environments.
+The Elderberry Wine Company inherited the brand fonts of its parent company, [360 Farms](/work/360-farms). Pairing [Bodoni* 11](//indestructibletype.com/) with [Montserrat Semibold](//fonts.google.com/specimen/Montserrat) offered a reliably elegant, modern way to communicate on wine labels, signage, and in digital environments.
 
 ![A stationary design for the Elderberry Wine Company](/img/elderberry-wine-company-stationary.jpg)
 

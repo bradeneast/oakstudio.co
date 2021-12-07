@@ -43,8 +43,6 @@ This identity needed to adapt fluidly for every application. To solve this, we d
   <img class="dark" src="/img/east-texas-elderberries-scales-white.png" alt="">
 </p>
 
-![An example of the East Texas Elderberries favicon on a browser tab.](/img/east-texas-elderberries-web.png)
-
 ## Speaking of web browsing...
 
 East Texas Elderberries wanted a way to reinforce their brand while interacting online. To help with that, we designed a set of icons to supplement content on their website. These icons were a great visual aid to catch and hold attention of potential customers.

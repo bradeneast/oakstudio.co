@@ -9,8 +9,8 @@ layout: layouts/post.njk
 <div class="bleed top-text">
   <h1 class="alignment-optical splitting">{{ title | splitting | safe }}</h1>
   <div class="subtext">
-    <h3 class="splitting" style="--char-delay: 1s">{{ entity | splitting | safe }}
-    </h3>
+    <em class="splitting" style="--char-delay: 1s">{{ entity | splitting | safe }}
+    </em>
     <div>{% include "templates/tagsList.njk" %}</div>
   </div>
 </div>

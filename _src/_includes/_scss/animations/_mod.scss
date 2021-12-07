@@ -14,7 +14,7 @@
   text-shadow: 1px 1px var(--g8), 1px -1px var(--g8), -1px -1px var(--g8), -1px 1px var(--g8);
   height: var(--size);
   letter-spacing: calc(var(--scale) - 0.0014rem * var(--char-count));
-  font-size: calc(1.2rem - var(--scale) * 0.1 * var(--char-count));
+  font-size: calc(1.15rem - var(--scale) * 0.1 * var(--char-count));
   pointer-events: none;
   font-weight: $fontWeightHeavy;
   animation: spin 1000s linear infinite paused;
@@ -30,5 +30,5 @@
 }
 
 .post .spinner {
-  top: calc(var(--size) * -1);
+  top: calc(var(--size) * -0.7);
 }

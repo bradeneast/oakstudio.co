@@ -11,7 +11,6 @@ title: Home
 {% set leaf %}{% include "svg/starting-over.svg" %}{% endset %}
 {% set telescope %}{% include "svg/telescope.svg" %}{% endset %}
 {% set corner %}{% include "svg/turning-a-corner.svg" %}{% endset %}
-{% set circle %}{% include "svg/circle.svg" %}{% endset %}
 {# Copy #}
 {% set rebrand %}{% include "copy/rebrand.md" %}{% endset %}
 {% set vision %}{% include "copy/vision.md" %}{% endset %}
@@ -34,31 +33,33 @@ title: Home
 </header>
 
 
-## We're a branding and design agency that sees our work as a means of permanence.
-
-[More about us](/about)
+> We're a branding and design agency that sees our work as a means of permanence.
+> 
+> [More about us](/about)
 
 <section class="center grid ji-space-around ai-start jc-center gap-4 col-3" style="margin-bottom: 0">
   {{ blurb(leaf, identity) }}
   {{ blurb(corner, rebrand) }}
 </section>
 
-<section class="primary squeeze bleed center grid ai-center jc-center ac-center col-3 gap-2">
+<section class="pad-0 ai-stretch primary soft squeeze bleed center grid ai-center jc-center ac-center col-3">
 {{ review(
   "I would absolutely reccommend!",
   "William Fecteau",
-  "Essential BodywoRX"
+  "Essential BodywoRX",
+  "/img/essential-bodyworx-review-bg.jpg"
 ) }}
 {{ review(
   "We had a wonderful experience with the team. The outstanding quality and the attention to detail was beyond compare. I highly recommend their services.",
   "Ed Wells",
   "East Texas Elderberries",
-  circle
+  "/img/east-texas-elderberries-review-bg.jpg"
 ) }}
 {{ review(
   "They did a great job interpreting our feedback and coming up with some great designs.",
   "James Snyder",
-  "Bandits RPG Gaming"
+  "Bandits RPG Gaming",
+  "/img/bandits-gaming-review-bg.jpg"
 ) }}
 </section>
 

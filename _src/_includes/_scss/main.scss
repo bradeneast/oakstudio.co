@@ -13,9 +13,10 @@
   --dark: 0;
   --primary: #{$primary};
   --secondary: #{$secondary};
-  --shadow-color: rgba(0, 0, 0, 0.2);
+  --translucent-background: rgba(255, 255, 255, 0.37);
+  --shadow-color: rgba(0, 0, 0, 0.37);
   --shadow: 0 0.6rem 1rem -0.4rem var(--shadow-color);
-  --large-shadow: 0 0 1.8rem -0.6rem var(--shadow-color);
+  --large-shadow: 0 0 1.8rem var(--shadow-color);
 }
 
 *,
@@ -88,6 +89,7 @@ img {
     --g8: #{$g0};
     --dark: 1;
     --shadowColor: black;
+    --translucent-background: rgba(0, 0, 0, 0.2);
   }
 
   html body {

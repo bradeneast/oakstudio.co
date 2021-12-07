@@ -69,28 +69,21 @@
 
 .review {
   --stroke-color: var(--g7);
-  color: var(--primary);
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  background: var(--primary);
 
   &__background {
     position: absolute;
-    display: grid;
-    place-items: center;
+    width: 101%;
+    height: 101%;
     top: 50%;
     left: 50%;
-    width: 90%;
-    height: 90%;
+    border-radius: 0;
     transform: translate(-50%, -50%);
-
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      stroke: var(--g7);
-      fill: none;
-      stroke-width: $borderWidth;
-    }
+    filter: brightness(0.4);
   }
 
   &__client {
@@ -98,10 +91,15 @@
   }
 
   .blurb {
+    color: $g8;
     border: none;
     margin-top: 0;
-    padding: $flow3 0;
+    padding: $flow4 * 2 $flow1;
     width: 100%;
+
+    * {
+      color: inherit;
+    }
 
     &__image {
       display: none;
@@ -159,9 +157,5 @@
       padding: 0;
       padding-top: $flow2;
     }
-  }
-
-  .review:not(:last-child) {
-    margin-bottom: $flow3;
   }
 }

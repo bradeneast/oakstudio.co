@@ -18,6 +18,7 @@
 {# Review Blurb #}
 {% macro review(review, clientName, clientCompany, bg) %}
 <div class="review">
+  <img src="{{ bg | url }}" alt="" class="review__background">
   {% set text -%}
   <h4 class="review__text" data-animate="clip-top">{{ review }}</h4>
   <div class="review__client squeeze">
@@ -25,10 +26,7 @@
     <div class="subtext" data-animate="from-bottom">{{ clientCompany }}</div>
   </div>
   {% endset %}
-  {% set background %}
-  <div class="review__background">{{ bg | safe }}</div>
-  {% endset %}
-  {{- blurb(image, text, background) -}}
+  {{- blurb(image, text) -}}
 </div>
 {% endmacro %}
 
