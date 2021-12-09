@@ -25,7 +25,7 @@ $fontSizeSmall: 0.8rem;
 $fontSizeLarge: 1.63rem;
 $fallbackFonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", "Roboto", sans-serif;
 $textFont: "Readex Pro", $fallbackFonts;
-$displayFont: "Readex Pro", "Merriweather", "Times", $fallbackFonts;
+$displayFont: "Bebas Neue", "Readex Pro", "Merriweather", "Times", $fallbackFonts;
 $italicFont: "Merriweather", "Times", $fallbackFonts;
 
 // Borders
@@ -67,6 +67,12 @@ $mobile: 48rem;
   src: url("/Merriweather-BoldItalic.woff2") format("woff2");
   font-weight: $fontWeightHeavy;
   font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/BebasNeue.woff2") format("woff2");
   font-display: block;
 }
 

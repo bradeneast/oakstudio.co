@@ -48,9 +48,9 @@ h3 {
 }
 
 h1 {
-  font-size: calc(13vmin + 1.5rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
+  font-size: calc(18vmin + 1.5rem);
+  line-height: 0.72;
+  letter-spacing: -0.04em;
   transform: translateX(-0.02em);
   margin-bottom: 0.1em;
   margin-top: 0.1em;
@@ -62,20 +62,20 @@ h1 {
 }
 
 h2 {
-  line-height: 1;
-  font-size: calc(5.4vmin + 1rem);
+  line-height: 0.9;
+  font-size: calc(6vmin + 1.2rem);
   letter-spacing: -0.03em;
 }
 
 h3 {
-  line-height: 1.1;
-  font-size: calc(2.6vmin + 1rem);
+  line-height: 0.9;
+  font-size: calc(3vmin + 1.2rem);
   letter-spacing: -0.02em;
 }
 
 h4 {
   font-family: $italicFont;
-  font-size: calc(1.5vmin + 1rem);
+  font-size: calc(1.5vmin + 1.2rem);
 }
 
 a {

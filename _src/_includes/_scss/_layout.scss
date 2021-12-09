@@ -103,6 +103,13 @@ footer {
   right: 0;
 }
 
+@media screen and (min-width: $mobile) {
+  section.bleed > :not(img) {
+    padding-left: $flow1;
+    padding-right: $flow1;
+  }
+}
+
 @media screen and (max-width: $mobile) {
   body {
     font-size: 14px;
