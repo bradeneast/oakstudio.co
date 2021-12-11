@@ -73,6 +73,7 @@
   display: grid;
   align-items: center;
   align-content: center;
+  background: var(--shadow-color);
 
   &__background {
     position: absolute;
