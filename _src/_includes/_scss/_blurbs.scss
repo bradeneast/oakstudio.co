@@ -70,20 +70,15 @@
 .review {
   --stroke-color: var(--g7);
   overflow: hidden;
-  display: grid;
-  align-items: center;
-  align-content: center;
-  background: var(--shadow-color);
+  padding: 0 !important;
 
   &__background {
     position: absolute;
-    width: 101%;
-    height: 101%;
-    top: 50%;
-    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     border-radius: 0;
-    transform: translate(-50%, -50%);
-    filter: brightness(0.4);
   }
 
   &__client {
@@ -93,12 +88,25 @@
   .blurb {
     color: $g8;
     border: none;
-    margin-top: 0;
-    padding: $flow4 * 2 $flow1;
+    margin: 0;
+    padding: 0;
     width: 100%;
+    height: 100%;
+    max-width: none;
+    display: grid;
 
     * {
       color: inherit;
+    }
+
+    &__text {
+      padding: $flow2;
+      padding-top: 37vmin;
+      margin: 0;
+      display: grid;
+      align-content: end;
+      align-items: end;
+      background: linear-gradient(transparent, $g0);
     }
 
     &__image {

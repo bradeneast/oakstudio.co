@@ -54,6 +54,8 @@ h1 {
   transform: translateX(-0.02em);
   margin-bottom: 0.1em;
   margin-top: 0.1em;
+  color: var(--g8);
+  text-shadow: text-outline(var(--g0));
   filter: drop-shadow(0 0 1rem var(--g8));
 
   em {
@@ -74,8 +76,10 @@ h3 {
 }
 
 h4 {
-  font-family: $italicFont;
-  font-size: calc(1.5vmin + 1.2rem);
+  font-family: $displayFont;
+  font-size: calc(1.2vmin + 1.2rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
 }
 
 a {

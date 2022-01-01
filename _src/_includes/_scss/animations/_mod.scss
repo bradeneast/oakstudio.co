@@ -11,7 +11,7 @@
   top: 0;
   right: 0;
   width: var(--size);
-  text-shadow: 1px 1px var(--g8), 1px -1px var(--g8), -1px -1px var(--g8), -1px 1px var(--g8);
+  text-shadow: text-outline(var(--g8));
   height: var(--size);
   letter-spacing: calc(var(--scale) - 0.0014rem * var(--char-count));
   font-size: calc(1.15rem - var(--scale) * 0.1 * var(--char-count));
