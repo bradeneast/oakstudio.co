@@ -1,5 +1,5 @@
 [build]
-command = "npm run prebuild && curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.ts --location=https://oakstudio.co/"
+command = "curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.ts --location=https://oakstudio.co/"
 publish = "_site"
 
 [dev]
