@@ -1,7 +1,3 @@
-[build]
-command = "curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.ts --location=https://oakstudio.co/"
-publish = "_site"
-
 [dev]
 autoLaunch = true
 command = "lume --serve"
@@ -10,18 +6,4 @@ port = 8888
 publish = "_site"
 targetPort = 3000
 
-[[redirects]]
-from = "/projects"
-status = 301
-to = "/work"
-
-[[redirects]]
-from = "/*"
-status = 404
-to = "/404"
-
-[[redirects]]
-force = true
-from = "https://oakstudio.netlify.app"
-status = 301
-to = "https://oakstudio.co"
+# Admin invitation email templates need to be declared under `Site settings > Identity > Emails` in the Netlify UI

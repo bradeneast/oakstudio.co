@@ -1,0 +1,144 @@
+---
+config_file: /admin/config.yml
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <!-- Include layout CSS overrides for mobile devices -->
+  <style>
+  @media screen and (max-width: 880px) {
+    .css-v758ki-AppMainContainer,
+    .css-2oej7z-ToolbarContainer,
+    .css-hn3jn7-EditorContainer,
+    .css-12b66la-AppHeaderContent {
+      min-width: 0 !important;
+    }
+    .css-y7r3-AppHeader {
+      height: auto !important;
+    }
+    .css-7x6ig1-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray::after,
+    .css-o6hjv6-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishButton::after,
+    .css-16pehfe-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishedToolbarButton-publishedButton::after,
+    .css-e9z4u8-AppHeaderSiteLink,
+    .css-1bqupl5-ViewControls,
+    .css-1whurdv-BackCollection,
+    .Resizer {
+      display: none !important;
+    }
+    .css-abwcjt-ToolbarSectionBackLink-toolbarSection,
+    .css-16pehfe-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishedToolbarButton-publishedButton,
+    .css-o6hjv6-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishButton,
+    .css-7x6ig1-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray {
+      padding: 0 10px !important;
+    }
+    .Pane,
+    aside,
+    main {
+      width: 100% !important;
+      display: inline-block !important;
+      position: relative !important;
+      margin-bottom: 4rem !important;
+    }
+    nav li > * {
+      font-size: 14px !important;
+      padding: 8px !important;
+    }
+    .css-16b5p1f-ToolbarSectionMain-toolbarSection {
+      padding-right: 0 !important;
+    }
+    .css-1u4rgvb-AvatarDropdownButton {
+      padding: 3px !important;
+    }
+    .css-12b66la-AppHeaderContent {
+      padding: 5px !important;
+    }
+    .css-1f3mf5k-StyledModal,
+    .css-1ztge6 {
+      padding: 10px !important;
+    }
+    main {
+      padding-left: 0 !important;
+    }
+    .css-12zz42a-AppHeaderNavList {
+      align-items: center;
+    }
+    .css-134r1tn-RowContainer {
+      flex-flow: row wrap !important;
+      margin-bottom: 1rem !important;
+    }
+    .css-stmjdx-CardGridContainer {
+      margin-top: 90px !important;
+    }
+    .css-1er4xqr-Card,
+    .css-svjxk-SearchContainer,
+    .css-stmjdx-CardGridContainer,
+    .css-stmjdx-CardGridContainer > :first-child {
+      width: 100% !important;
+    }
+    .css-svjxk-SearchContainer {
+      margin-bottom: 1rem !important;
+    }
+    .css-1f3mf5k-StyledModal {
+      height: 100% !important;
+      width: 100% !important;
+    }
+    .css-134r1tn-RowContainer > *,
+    .css-1o58c3b-ButtonsContainer > * {
+      margin-left: 5px !important;
+    }
+    .css-134r1tn-RowContainer {
+      justify-content: normal !important;
+    }
+    .css-1ixjrmh-ToolbarButton-button-default-buttonMargin-noOverflow-DeleteButton-lightRed,
+    .css-1u78kww-StyledWrapper-ToolbarDropdown-buttonMargin,
+    .css-1o58c3b-ButtonsContainer > button:first-child {
+      margin-left: 0 !important;
+    }
+    .css-179mynt-BackArrow {
+      margin-right: 3px !important;
+    }
+    .css-1i85phj-CloseButton-button {
+      right: 40px !important;
+      top: 0 !important;
+      left: auto !important;
+    }
+  }
+
+  #netlify_status_badge {
+    all: unset;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    height: auto;
+    width: auto;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .css-stmjdx-CardGridContainer > :first-child div[style*="position: absolute"] {
+      width: calc(100vw - 40px) !important;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <link href="{{ config_file | url }}" type="text/yaml" rel="cms-config-url">
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="//unpkg.com/netlify-cms@^2.10.17/dist/netlify-cms.js"></script>
+  <!-- Include Netlify Identity for authentication -->
+  <script src="//identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Add Netlify Status Badge -->
+  <script>
+    var netlifyStatusBadge = document.createElement('img');
+    netlifyStatusBadge.src = "{{ site.status_badge_url }}";
+    netlifyStatusBadge.alt = "Netlify Status";
+    netlifyStatusBadge.id = "netlify_status_badge";
+    document.body.appendChild(netlifyStatusBadge);
+  </script>
+</body>
+
+</html>
