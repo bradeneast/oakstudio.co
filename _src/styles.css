@@ -1,1 +1,8 @@
-@import "./_includes/css/reset.css";
+@import "css/reset.css";
+@import "css/layout.css";
+@import "css/typography.css";
+@import "css/post.css";
+@import "css/nav.css";
+@import "css/swatches.css";
+@import "css/util.css";
+@import "css/animations.css";

@@ -1,0 +1,77 @@
+---
+css: |
+  .big-project  {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project__image {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 0;
+  }
+
+  .project__image img {
+    margin: 0;
+    height: 80vh;
+  }
+
+  .project__info {
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 30vh;
+    height: 100vh;
+  }
+
+  .project__info--row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    max-width: 54rem;
+  }
+
+  .project__info--row > * {
+    margin-top: 0;
+  }
+
+  .project__info--row:last-of-type {
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .project__info--row:last-of-type hr {
+    order: -1;
+  }
+
+  a:hover + hr,
+  a:focus + hr {
+    background-position-x: 0;
+  }
+---
+
+<div class="project big-project">
+
+  <div class="project__info">
+    <div class="project__info--row" data-animate="from-bottom">
+      <div class="label">Completed for:</div><div class="title">{{ title }}</div>
+    </div>
+    <div class="project__info--row" data-animate="from-bottom">
+      <div class="label">About the project:</div><div>{{ description }}</div>
+    </div>
+    <div class="project__info--row" data-animate="from-bottom">
+      <a href="{{ url }}">Read the case study</a><hr>
+    </div>
+  </div>
+
+  <div class="project__image">
+    <img src="{{ images[0] }}" />
+    <img src="{{ images[1] }}" />
+  </div>
+
+  {{ comp.swatches({ colors: colors, classes: "vertical position-absolute" }) | safe }}
+
+</div>

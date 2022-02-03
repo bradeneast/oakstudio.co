@@ -1,0 +1,67 @@
+---
+layout: base.njk
+---
+
+<style>
+body {
+  --color1: #{{ colors[0] }};
+  --color2: #{{ colors[1] }};
+  --contrastingColor: {{ colors[0] | bestContrastRGB }};
+  background: var(--color1);
+  color: var(--contrastingColor);
+}
+
+h2 {
+  opacity: 1;
+  color: var(--color2);
+}
+</style>
+
+<section class="post__info" data-animate="from-back">
+  <h1>{{ title }}</h1>
+  <div class="tags label">{{ tags | join(", ") }}</div>
+</section>
+
+<div class="post__image">
+  <img src="{{ images[0] }}" width="1620" height="1920">
+</div>
+
+<div class="post__main">
+
+  <div class="post__main--content">
+    {{ content | safe }}
+  </div>
+
+  <div class="post__main--images">
+    {% for image in images %}
+      {% if loop.index > 1 %}
+      <img src="{{ image }}">
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>
+
+<div class="post__nav">
+  {%- set previousItem = search.previousPage(url, "type=" + type, sortBy) %}
+  {%- if previousItem -%}
+  <a href="{{ previousItem.data.url | url }}" data-animate="from-left">
+    <div class="label">Previous</div>
+    <div class="title">{{ previousItem.data.title }}</div>
+    <img src="{{ previousItem.data.images[0] }}">
+  </a>
+  {% else %}
+  <br>
+  {% endif %}
+
+  {%- set nextItem = search.nextPage(url, "type=" + type, sortBy) %}
+  {%- if nextItem -%}
+  <a href="{{ nextItem.data.url | url }}" data-animate="from-right">
+    <div class="label">Next</div>
+    <div class="title">{{ nextItem.data.title }}</div>
+    <img src="{{ nextItem.data.images[0] }}">
+  </a>
+  {% else %}
+  <br>
+  {% endif %}
+</div>

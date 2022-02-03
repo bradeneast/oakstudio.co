@@ -1,0 +1,15 @@
+---
+title: Home
+layout: base.njk
+---
+
+<section>
+  <div class="center" data-animate="from-front">
+    <h1>Grow something permanent.</h1>
+    <p>Oak Studio partners with family-minded businesses to create enduring brands.</p>
+  </div>
+</section>
+
+{% for case in search.pages("type=case-study") %}
+{{ comp.bigProject(case.data) | safe }}
+{% endfor %}

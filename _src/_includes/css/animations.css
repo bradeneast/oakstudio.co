@@ -1,0 +1,39 @@
+[data-offscreen] {
+  opacity: 0;
+
+  &.splitting .char {
+    animation-play-state: paused;
+  }
+
+  &[data-animate*="-right"] {
+    transform: translate3d(1em, 0, 0);
+  }
+  &[data-animate*="-left"] {
+    transform: translate3d(-1em, 0, 0);
+  }
+  &[data-animate*="-top"] {
+    transform: translate3d(0, -1em, 0);
+  }
+  &[data-animate*="-bottom"] {
+    transform: translate3d(0, 1em, 0);
+  }
+  &[data-animate*="-back"] {
+    transform: translate3d(0, 0, 0) scale(.9);
+  }
+  &[data-animate*="-front"] {
+    transform: translate3d(0, 0, 0) scale(1.08);
+  }
+}
+
+[data-animate*="from-"] {
+  transform: translate3d(0, 0, 0);
+  transition: transform $transition-long, opacity $transition-long;
+}
+
+[data-schwifty] {
+  transition-duration: 0.5s;
+
+  & [data-animate] {
+    opacity: 0;
+  }
+}

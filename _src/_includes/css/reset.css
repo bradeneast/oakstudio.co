@@ -9,7 +9,19 @@ $g6: #c5cacf;
 $g7: #eaebee;
 $g8: white;
 $shadow: 0 0 0.63em -0.12em rgba(0, 0, 50, 0.2);
-$transition: 0.3s ease;
+$transition: 0.5s cubic-bezier(.4, .7, .1, 1);
+$transition-long: 1s cubic-bezier(.4, .7, .1, 1);
+$font-size-small: 13px;
+$font-size-regular: 20px;
+$font-size-large: 28px;
+$border-width: 1px;
+$border: $border-width solid $g3;
+$mobile: 75rem;
+
+:root {
+  --color1: blue;
+  --color2: red;
+}
 
 *,
 *::before,
@@ -21,11 +33,32 @@ $transition: 0.3s ease;
   color: inherit;
   font-size: inherit;
   font-family: inherit;
+  font-weight: inherit;
   text-transform: inherit;
   letter-spacing: inherit;
   line-height: inherit;
   border: none;
   outline: none;
-  background: none;
+  background-color: none;
   box-shadow: none;
+}
+
+*:focus {
+  outline: $border-width solid $g6;
+  outline-offset: $border-width;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
+body,
+head,
+main {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
 }

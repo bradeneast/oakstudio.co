@@ -1,0 +1,9 @@
+.position-absolute {
+  position: absolute;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

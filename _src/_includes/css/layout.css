@@ -1,0 +1,18 @@
+section {
+  padding: 4rem;
+  padding-top: 30vmin;
+  min-height: 80vh;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  padding: 2rem;
+}
+
+@media screen and (max-width: $mobile) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}

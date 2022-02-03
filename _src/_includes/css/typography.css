@@ -1,0 +1,40 @@
+body {
+  font-family: "Source Serif 4", serif;
+  font-size: $font-size-regular;
+}
+
+.label,
+h2 {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  opacity: .6;
+  letter-spacing: .03em;
+}
+
+.label {
+  line-height: 1.9;
+}
+
+hr {
+  height: $border-width;
+  background-image: linear-gradient(to right, $g3 50%, transparent 0%);
+  background-size: 200%;
+  background-position-x: 200%;
+  transition: $transition;
+}
+
+.title,
+h1 {
+  margin-left: -.02em;
+  font-size: 4rem;
+  letter-spacing: -.05em;
+  line-height: 1;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+strong {
+  font-weight: 600;
+}

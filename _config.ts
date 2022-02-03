@@ -33,6 +33,9 @@ const site = lume(
   { markdown: markdownConfig }
 );
 
+// Copy assets
+site.copy("_includes/assets", "/");
+
 // Run all processors
 for (let p in processors)
   site.process([`.${p}`], processors[p]);
@@ -40,8 +43,6 @@ for (let p in processors)
 // Run all filters
 for (let f in filters)
   site.filter(f, filters[f]);
-
-site.copy("_img");
 
 site.use(date());
 site.use(postcss(postcssConfig));
