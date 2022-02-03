@@ -14,6 +14,11 @@ export async function html(page: any) {
     return result || '';
   }
 
+  if (page.data.type == "case-study")
+    $$("h2, h3, h4, h5, h6, ul, ol, p, blockquote").forEach(elem => {
+      elem.setAttribute("data-animate", "from-bottom");
+    })
+
 
   $$("img, video").forEach(elem => {
 

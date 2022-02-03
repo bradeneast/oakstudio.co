@@ -26,8 +26,9 @@ hr {
 .title,
 h1 {
   margin-left: -.02em;
-  font-size: 4rem;
+  margin-top: -.05em;
   letter-spacing: -.05em;
+  font-size: 4rem;
   line-height: 1;
 }
 
@@ -37,4 +38,9 @@ h2 {
 
 strong {
   font-weight: 600;
+}
+
+::selection {
+  background: $g1;
+  color: $g8;
 }

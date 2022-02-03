@@ -13,7 +13,6 @@ $transition: 0.5s cubic-bezier(.4, .7, .1, 1);
 $transition-long: 1s cubic-bezier(.4, .7, .1, 1);
 $font-size-small: 13px;
 $font-size-regular: 20px;
-$font-size-large: 28px;
 $border-width: 1px;
 $border: $border-width solid $g3;
 $mobile: 75rem;
