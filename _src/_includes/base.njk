@@ -43,10 +43,17 @@
 	<nav>
 		<a id="logo" href="/">{% include "assets/logo.svg" %}</a>
 	</nav>
+	
+	<section>
+		<div class="center" data-animate="from-front">
+			<div class="rellax">
+				<h1>{{ headline or title }}</h1>
+				<p>{% if tagline %}{{ tagline }}{% else %}{{ tags | join(", ") }}{% endif %}</p>
+			</div>
+		</div>
+	</section>
 
-	<main>
-  {{ content | safe }}
-	</main>
+	{{ content | safe }}
 
   <footer>&copy; {{ site.year }}</footer>
 </body>

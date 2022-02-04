@@ -1,6 +1,6 @@
 section {
   padding: 4rem;
-  padding-top: 30vmin;
+  padding-top: 30vh;
   min-height: 80vh;
 }
 
@@ -12,6 +12,11 @@ footer {
 }
 
 @media screen and (max-width: $mobile) {
+  section {
+    padding-top: 24rem;
+    min-height: 60rem;
+  }
+
   footer {
     grid-template-columns: 1fr;
   }

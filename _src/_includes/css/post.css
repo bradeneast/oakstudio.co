@@ -1,5 +1,5 @@
-.post__info {
-  text-align: center;
+body {
+  transition: background $transition;
 }
 
 .post__image {
@@ -43,6 +43,7 @@
 .post__nav {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  gap: 2rem;
   padding: 30vmin 0 0 2rem;
 
   & a img {
@@ -52,12 +53,16 @@
   }
 
   & a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    
     &:last-child {
       grid-column: 2;
     }
 
     & img {
-      max-height: 30rem;
+      height: 100%;
       filter: grayscale(1) contrast(.9);
       transition: $transition;
     }
@@ -91,6 +96,14 @@
 }
 
 @media screen and (max-width: $mobile) {
+  .post__image {
+    height: 30rem;
+
+    & img {
+      height: 100%;
+    }
+  }
+
   .post__main {
     grid-template-columns: 1fr;
   }

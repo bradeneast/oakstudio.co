@@ -8,7 +8,6 @@ images:
   - https://oakstudio.co/img/360-farms-business-card.jpg
   - https://oakstudio.co/img/360-farms-stamp.jpg
   - https://oakstudio.co/img/360-farms-hero.jpg
-entity: Small Business
 tags:
   - Identity
   - Strategy

@@ -1,14 +1,9 @@
 ---
 title: Home
 layout: base.njk
+headline: Grow something permanent.
+tagline: Oak Studio partners with family-minded businesses to create enduring brands.
 ---
-
-<section>
-  <div class="center" data-animate="from-front">
-    <h1>Grow something permanent.</h1>
-    <p>Oak Studio partners with family-minded businesses to create enduring brands.</p>
-  </div>
-</section>
 
 {% for case in search.pages("type=case-study") %}
 {{ comp.bigProject(case.data) | safe }}
