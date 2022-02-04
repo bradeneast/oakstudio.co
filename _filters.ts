@@ -1,5 +1,6 @@
 // @ts-nocheck
 import hexToRGB from "https://jspm.dev/hex-rgb";
+import ColorContrastChecker from "https://jspm.dev/color-contrast-checker";
 
 export function splitting(text: string) {
 
@@ -29,9 +30,19 @@ function average(nums) {
   return Math.round(total / nums.length);
 }
 
-export function bestContrastRGB(value: string) {
+function bwContrast(value: string) {
   let nums = hexToRGB(value, { format: "array" });
   let alpha = nums.length > 3 ? nums[3] : 1;
   let avg = average(nums.slice(0, 3));
-  return avg < 150 * alpha ? "white" : "black";
+  return avg < 150 * alpha ? "FFF" : "000";
+}
+
+/** Takes two colors and checks them against WCAG contrast standards. Will return `FFF` or `000` if `targetHex` fails the test. */
+export function bestContrast(referenceHex: string, targetHex: string) {
+  const ccc = new ColorContrastChecker();
+  const passes = ccc.isLevelAAA("#" + referenceHex, "#" + targetHex, 14);
+  if (passes)
+    return targetHex;
+  if (!passes)
+    return bwContrast(referenceHex);
 }

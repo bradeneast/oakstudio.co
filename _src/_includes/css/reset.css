@@ -1,27 +1,3 @@
-$primary: #226bff;
-$g0: #121518;
-$g1: #1a1f24;
-$g2: #383e46;
-$g3: #5a6677;
-$g4: #828b9c;
-$g5: #9faabd;
-$g6: #c5cacf;
-$g7: #eaebee;
-$g8: white;
-$shadow: 0 0 0.63em -0.12em rgba(0, 0, 50, 0.2);
-$transition: 0.5s cubic-bezier(.4, .7, .1, 1);
-$transition-long: 1s cubic-bezier(.4, .7, .1, 1);
-$font-size-small: 13px;
-$font-size-regular: 20px;
-$border-width: 1px;
-$border: $border-width solid $g3;
-$mobile: 75rem;
-
-:root {
-  --color1: blue;
-  --color2: red;
-}
-
 *,
 *::before,
 *::after {
@@ -40,6 +16,7 @@ $mobile: 75rem;
   outline: none;
   background-color: none;
   box-shadow: none;
+  scrollbar-width: thin;
 }
 
 *:focus {
@@ -51,6 +28,10 @@ $mobile: 75rem;
   margin-top: 1rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 body,
 head {
   margin-top: 0;
@@ -60,4 +41,12 @@ head {
 img {
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: $mobile) {
+  :root {
+    --font-size-small: $font-size-small-mobile;
+    --font-size-regular: $font-size-regular-mobile;
+    --nav-height: $nav-height-mobile;
+  }
 }

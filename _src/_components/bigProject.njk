@@ -1,5 +1,7 @@
 <div class="project big-project">
 
+  {{ comp.swatches({ colors: colors, classes: "vertical position-absolute" }) | safe }}
+
   <div class="project__info">
     <div class="project__info--row" data-animate="from-bottom">
       <div class="label">Completed for:</div><div class="title">{{ title }}</div>
@@ -16,7 +18,5 @@
     <img src="{{ images[0] }}" />
     <img src="{{ images[1] }}" />
   </div>
-
-  {{ comp.swatches({ colors: colors, classes: "vertical position-absolute" }) | safe }}
 
 </div>

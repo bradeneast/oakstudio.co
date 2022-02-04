@@ -1,3 +1,28 @@
+nav,
+footer {
+  padding: 1rem 2rem;
+}
+
+nav {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: var(--nav-height);
+
+  & a::after {
+    display: none;
+  }
+}
+
+#logo svg,
+#logo {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
 section {
   padding: 4rem;
   padding-top: 30vh;
@@ -7,17 +32,21 @@ section {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
-  padding: 2rem;
 }
 
 @media screen and (max-width: $mobile) {
-  section {
-    padding-top: 24rem;
-    min-height: 60rem;
+  nav {
+    background: $g8;
+    box-shadow: $shadow;
+    padding: .5rem 1rem;
   }
 
-  footer {
-    grid-template-columns: 1fr;
+  #logo {
+    color: var(--contrastingColor);
+  }
+
+  section {
+    padding: 13rem 1rem;
+    min-height: 0;
   }
 }

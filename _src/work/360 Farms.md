@@ -1,5 +1,10 @@
 ---
 title: 360 Farms
+description: 360 Farms is the only business that makes start-to-finish
+  elderberry products for people seeking value and quality. The goal was to
+  reinforce their brand with those wanting improved health and well-being in an
+  era of McDonald’s and WalMart.
+order: 2
 images:
   - https://oakstudio.co/img/360-farms-tea-boxes.jpg
   - https://oakstudio.co/img/360-farms-new.png
@@ -11,11 +16,6 @@ images:
 tags:
   - Identity
   - Strategy
-description: 360 Farms is the only business that makes start-to-finish
-  elderberry products for people seeking value and quality. The goal was to
-  reinforce their brand with those wanting improved health and well-being in an
-  era of McDonald’s and WalMart.
-logo: /img/360-farms-logo.svg
 colors:
   - 1d1934
   - 8f9ea8

@@ -37,26 +37,6 @@
 
 body {
   font-family: "Source Serif 4 Text", serif;
-  font-size: $font-size-regular;
-}
-
-.label,
-h2 {
-  font-size: $font-size-small;
-  text-transform: uppercase;
-  opacity: .6;
-  padding-top: 0.5em;
-  line-height: 1;
-  letter-spacing: .04em;
-  margin-bottom: 1rem;
-}
-
-hr {
-  height: $border-width;
-  background-image: linear-gradient(to right, $g3 50%, transparent 0%);
-  background-size: 200%;
-  background-position-x: 200%;
-  transition: $transition;
 }
 
 .title,
@@ -64,9 +44,19 @@ h1 {
   font-family: "Source Serif 4 Display", serif;
   font-size: 4.4rem;
   margin-left: -.02em;
-  margin-top: -.05em;
   letter-spacing: -.05em;
   line-height: 1;
+}
+
+.label,
+h2 {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  opacity: .6;
+  padding-top: 0.5em;
+  line-height: 1;
+  letter-spacing: .04em;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -82,9 +72,40 @@ strong {
   color: $g8;
 }
 
+a::after,
+hr {
+  --color: $g3;
+  width: 100%;
+  height: $border-width;
+  background-image: linear-gradient(to right, var(--color) 50%, transparent 0%);
+  background-size: 200%;
+  background-position-x: 200%;
+  transition: $transition;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+a::after {
+  --color: var(--accent2);
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% + .01em);
+}
+
+a:hover::after,
+a:focus::after,
+a:hover + hr,
+a:focus + hr {
+  background-position-x: 0;
+}
+
 @media screen and (max-width: $mobile) {
   h1,
   .title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }

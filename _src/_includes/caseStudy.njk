@@ -4,16 +4,16 @@ layout: base.njk
 
 <style>
 body {
-  --color1: #{{ colors[0] }};
-  --color2: #{{ colors[1] }};
-  --contrastingColor: {{ colors[0] | bestContrastRGB }};
-  background: var(--color1);
+  --accent1: #{{ colors[0] }};
+  --accent2: #{{ colors[1] }};
+  --contrastingColor: #{{ colors[0] | bestContrast(colors[1]) }};
+  background: var(--accent1);
   color: var(--contrastingColor);
 }
 
 h2 {
   opacity: 1;
-  color: var(--color2);
+  color: var(--accent2);
 }
 </style>
 
@@ -30,7 +30,7 @@ h2 {
   <div class="post__main--images">
     {% for image in images %}
       {% if loop.index > 1 %}
-      <img src="{{ image }}">
+      <img src="{{ image }}" width="1280" height="1280">
       {% endif %}
     {% endfor %}
   </div>

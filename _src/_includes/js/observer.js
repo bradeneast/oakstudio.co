@@ -10,7 +10,7 @@ let setOffscreen = entry => {
 let observer = new IntersectionObserver(entries => {
   entries.forEach(setOffscreen);
 },
-  { rootMargin: "-100px" }
+  { rootMargin: "-150px 0px" }
 );
 
 export default observer;

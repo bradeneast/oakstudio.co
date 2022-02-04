@@ -5,6 +5,11 @@ body {
 .post__image {
   margin: 0;
   display: flex;
+  max-height: 100vh;
+
+  & img {
+    max-height: 100vh;
+  }
 }
 
 .post__main {
@@ -19,14 +24,23 @@ body {
 }
 
 .post__main--content {
-  z-index: 9;
+
+  & img {
+    float: left;
+    max-width: 8rem;
+    margin: 0 1rem 1rem 0;
+  }
+
+  & .has-media {
+    clear: both;
+  }
 
   & > * {
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
-    max-width: 42rem;
+    max-width: $paragraph-width;
   }
 }
 
@@ -36,6 +50,8 @@ body {
   margin-top: 0;
 
   & img {
+    width: 100%;
+    height: auto;
     margin-top: 0;
   }
 }
@@ -44,6 +60,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 2rem;
+  overflow-x: hidden;
   padding: 30vmin 0 0 2rem;
 
   & a img {
@@ -56,6 +73,10 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+
+    &::after {
+      display: none;
+    }
     
     &:last-child {
       grid-column: 2;
@@ -63,7 +84,7 @@ body {
 
     & img {
       height: 100%;
-      filter: grayscale(1) contrast(.9);
+      filter: grayscale(1) contrast(.8);
       transition: $transition;
     }
 
@@ -80,18 +101,18 @@ body {
 
 .callout {
   border-left: $border;
-  border-left-color: var(--color2);
+  border-left-color: var(--accent2);
   color: var(--contrastingColor);
   font-style: italic;
-  padding: 8rem;
-  padding-top: 7.5rem;
-  max-width: 54rem;
+  padding: 2rem;
+  padding-top: 1.8rem;
+  max-width: calc($paragraph-width + 4rem);
   font-size: 2rem;
 
   & > * {
     margin-left: auto;
     margin-right: auto;
-    max-width: 42rem;
+    max-width: $paragraph-width;
   }
 }
 
@@ -115,17 +136,59 @@ body {
 
   .post__main--content {
     padding-bottom: 28vmin;
+
+    & img {
+      float: none;
+      margin: 0;
+    }
+
+    & .has-media {
+      margin-top: 4rem;
+    }
+  }
+
+  .post__nav {
+    margin-top: 4rem;
+    padding: 0;
+    grid-template-columns: 1fr;
+
+    & a:first-child {
+      padding-right: 2rem;
+
+      & > * {
+        padding-left: 2rem;
+      }
+
+      & img {
+        height: 10rem;
+        padding-left: 0;
+      }
+    }
+
+    & a:last-child {
+      padding-left: 2rem;
+      grid-column: auto;
+      order: -1;
+
+      & > * {
+        padding-right: 1rem;
+      }
+      
+      & img {
+        min-height: 20rem;
+        padding-right: 0;
+      }
+    }
   }
 
   .callout {
-    font-size: 1.8rem;
-    padding-left: 0;
-    padding-right: 0;
+    font-size: 1.5rem;
+    padding: 1.8rem 0 2rem 0;
     margin-left: auto;
     margin-right: auto;
 
     & > * {
-      max-width: 42rem;
+      max-width: $paragraph-width;
       padding-left: 2rem;
       padding-right: 2rem;
     }
