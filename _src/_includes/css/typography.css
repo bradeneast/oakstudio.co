@@ -1,5 +1,42 @@
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-Regular.woff2") format("woff2-variations");
+  font-display: block;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-Italic.woff2") format("woff2-variations");
+  font-style: italic;
+  font-display: block;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-Semibold.woff2") format("woff2-variations");
+  font-display: block;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-SemiboldItalic.woff2") format("woff2-variations");
+  font-style: italic;
+  font-display: block;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Display";
+  src: url("/SourceSerif4_48pt-Regular.woff2") format("woff2-variations");
+  font-display: block;
+  font-weight: 400;
+}
+
 body {
-  font-family: "Source Serif 4", serif;
+  font-family: "Source Serif 4 Text", serif;
   font-size: $font-size-regular;
 }
 
@@ -8,11 +45,10 @@ h2 {
   font-size: $font-size-small;
   text-transform: uppercase;
   opacity: .6;
-  letter-spacing: .03em;
-}
-
-.label {
-  line-height: 1.9;
+  padding-top: 0.5em;
+  line-height: 1;
+  letter-spacing: .04em;
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -25,10 +61,11 @@ hr {
 
 .title,
 h1 {
+  font-family: "Source Serif 4 Display", serif;
+  font-size: 4.4rem;
   margin-left: -.02em;
   margin-top: -.05em;
   letter-spacing: -.05em;
-  font-size: 4rem;
   line-height: 1;
 }
 
@@ -43,4 +80,11 @@ strong {
 ::selection {
   background: $g1;
   color: $g8;
+}
+
+@media screen and (max-width: $mobile) {
+  h1,
+  .title {
+    font-size: 3rem;
+  }
 }
