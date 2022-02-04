@@ -145,6 +145,11 @@ body {
     & .has-media {
       margin-top: 4rem;
     }
+
+    & > * {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 
   .post__nav {
