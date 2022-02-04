@@ -32,13 +32,21 @@ section {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  & > * {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: $mobile) {
-  nav {
-    background: $g8;
-    box-shadow: $shadow;
+  nav,
+  footer {
     padding: .5rem 1rem;
+  }
+
+  nav {
+    background: var(--accent1);
+    box-shadow: $shadow;
   }
 
   #logo {

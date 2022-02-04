@@ -117,12 +117,12 @@ body {
 }
 
 @media screen and (max-width: $mobile) {
-  .post__image {
-    height: 30rem;
-
-    & img {
-      height: 100%;
-    }
+  .post__image,
+  .post__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
   }
 
   .post__main {
