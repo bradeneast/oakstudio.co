@@ -133,6 +133,11 @@ body {
   .post__main--content {
     padding-bottom: 28vmin;
 
+    & h2,
+    & .label {
+      opacity: 1;
+    }
+
     & img {
       float: none;
       margin: 0;
