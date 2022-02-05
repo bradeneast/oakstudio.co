@@ -1,3 +1,4 @@
+/* Colors */
 $g0: #121518;
 $g1: #1a1f24;
 $g2: #383e46;
@@ -7,20 +8,33 @@ $g5: #9faabd;
 $g6: #c5cacf;
 $g7: #eaebee;
 $g8: white;
-
 $accent1: $g8;
 $accent2: #97b2c4;
 $contrasting-color: $accent2;
 
-$shadow: 0 0 0.63em -0.12em rgba(0, 0, 50, 0.2);
+/* Effects */
 $transition: 0.5s cubic-bezier(.4, .7, .1, 1);
 $transition-long: 1s cubic-bezier(.4, .7, .1, 1);
+$transition-extra-long: 2.4s cubic-bezier(.6, 0, 0, 1);
+$shadow: 0 0 0.63em -0.12em rgba(0, 0, 50, 0.2);
 $border-width: 1px;
 $border: $border-width solid $g3;
 
+/* Clip Paths */
+$angle: 72deg;
+$clipSquare: polygon(-5% -5%, 105% -5%, 105% 105%, -5% 105%);
+$clipOffsetTop: polygon(0 0, 100% 0, 100% 0, 0 0);
+$clipOffsetRight: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+$clipOffsetBottom: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+$clipOffsetLeft: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+/* Dimensions */
 $mobile: 75rem;
 $paragraph-width: 37rem;
+$nav-height-desktop: 4rem;
+$nav-height-mobile: 2.6rem;
 
+/* Fonts */
 $font-family-serif: "Source Serif 4 Text", serif;
 $font-family-serif-display: "Source Serif 4 Display", serif;
 $font-family-sans: "Redcollar", sans-serif;
@@ -29,46 +43,34 @@ $font-size-large-desktop: 80px;
 $font-size-regular-desktop: 20px;
 $font-size-small-desktop: 13px;
 $font-size-large-mobile: calc(1.8rem + 4vw);
-$font-size-regular-mobile: 17px;
+$font-size-regular-mobile: 16px;
 $font-size-small-mobile: 12px;
 
-$nav-height-desktop: 4rem;
-$nav-height-mobile: 2.6rem;
-
-:root {
-  --font-size-small: $font-size-small-desktop;
-  --font-size-regular: $font-size-regular-desktop;
-  --nav-height: $nav-height-desktop;
-  --accent1: $accent1;
-  --accent2: $accent2;
-  font-size: var(--font-size-regular);
-}
-
 @font-face {
   font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4_18pt-Regular.woff2") format("woff2");
+  src: url("/SourceSerif4-Light.woff2") format("woff2");
   font-display: block;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4_18pt-Italic.woff2") format("woff2");
+  src: url("/SourceSerif4-LightItalic.woff2") format("woff2");
   font-style: italic;
   font-display: swap;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4_18pt-Semibold.woff2") format("woff2");
+  src: url("/SourceSerif4-Semibold.woff2") format("woff2");
   font-display: swap;
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4_18pt-SemiboldItalic.woff2") format("woff2");
+  src: url("/SourceSerif4-SemiboldItalic.woff2") format("woff2");
   font-style: italic;
   font-display: swap;
   font-weight: 600;
@@ -76,14 +78,23 @@ $nav-height-mobile: 2.6rem;
 
 @font-face {
   font-family: "Source Serif 4 Display";
-  src: url("/SourceSerif4_48pt-Regular.woff2") format("woff2");
+  src: url("/SourceSerif4_48pt-Light.woff2") format("woff2");
   font-display: block;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Redcollar";
   src: url("/Redcollar.woff2") format("woff2");
   font-display: block;
-  font-weight: 400;
+}
+
+/* Custom Property Declarations */
+:root {
+  --font-size-small: $font-size-small-desktop;
+  --font-size-regular: $font-size-regular-desktop;
+  --nav-height: $nav-height-desktop;
+  --accent1: $accent1;
+  --accent2: $accent2;
+  font-size: var(--font-size-regular);
 }
