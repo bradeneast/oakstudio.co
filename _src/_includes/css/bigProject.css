@@ -12,10 +12,14 @@
   }
 }
 
-.project__image {
-  display: flex;
-  flex-flow: column nowrap;
+.project__images {
   margin-top: 0;
+  overflow: hidden;
+  
+  & .project__images--container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 
   & img {
     margin: 0;
@@ -24,7 +28,7 @@
 }
 
 .project__info {
-  top: 2rem;
+  top: 4rem;
   position: sticky;
   align-self: start;
   padding: 4rem;
@@ -97,7 +101,7 @@
     }
   }
 
-  .project__image img {
+  .project__images img {
     height: auto;
     width: 100%;
   }
