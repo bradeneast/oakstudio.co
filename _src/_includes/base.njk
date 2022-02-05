@@ -45,8 +45,8 @@
 	<section>
 		<div class="center" data-animate="from-front">
 			<div class="rellax">
-				<h1>{{ headline or title }}</h1>
-				<p>{% if tagline %}{{ tagline }}{% else %}{{ tags | join(", ") }}{% endif %}</p>
+				<h1>{% if headline %}{{ headline | md(true) | safe }}{% else %}{{ title }}{% endif %}</h1>
+				<p>{% if tagline %}{{ tagline | md(true) | safe }}{% else %}{{ tags | join(", ") }}{% endif %}</p>
 			</div>
 		</div>
 	</section>

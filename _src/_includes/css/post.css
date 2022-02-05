@@ -102,18 +102,14 @@ body {
 .callout {
   border-left: $border;
   border-left-color: var(--accent2);
-  color: var(--contrastingColor);
   font-style: italic;
-  padding: 2rem;
-  padding-top: 1.8rem;
-  max-width: calc($paragraph-width + 4rem);
-  font-size: 2rem;
+  padding-top: .9rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+}
 
-  & > * {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $paragraph-width;
-  }
+@media screen and (min-width: $mobile) {
+
 }
 
 @media screen and (max-width: $mobile) {
@@ -161,10 +157,12 @@ body {
       padding-right: 2rem;
 
       & > * {
+        margin-top: 0;
         padding-left: 2rem;
       }
 
       & img {
+        margin-top: 1rem;
         height: 10rem;
         padding-left: 0;
       }
@@ -187,15 +185,9 @@ body {
   }
 
   .callout {
-    font-size: 1.5rem;
-    padding: 1.8rem 0 2rem 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    & > * {
-      max-width: $paragraph-width;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
+    font-size: 1.4rem;
+    padding-left: 4rem;
+    border: none;
+    box-shadow: -20rem 0 0 var(--accent2), inset 1rem 0 0 var(--accent2);
   }
 }

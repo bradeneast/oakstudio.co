@@ -21,12 +21,16 @@ $border: $border-width solid $g3;
 $mobile: 75rem;
 $paragraph-width: 37rem;
 
-$font-size-large-desktop: 88px;
+$font-family-serif: "Source Serif 4 Text", serif;
+$font-family-serif-display: "Source Serif 4 Display", serif;
+$font-family-sans: "Redcollar", sans-serif;
+
+$font-size-large-desktop: 80px;
 $font-size-regular-desktop: 20px;
 $font-size-small-desktop: 13px;
 $font-size-large-mobile: calc(1.8rem + 4vw);
-$font-size-regular-mobile: 18px;
-$font-size-small-mobile: 13px;
+$font-size-regular-mobile: 17px;
+$font-size-small-mobile: 12px;
 
 $nav-height-desktop: 4rem;
 $nav-height-mobile: 2.6rem;
@@ -38,4 +42,48 @@ $nav-height-mobile: 2.6rem;
   --accent1: $accent1;
   --accent2: $accent2;
   font-size: var(--font-size-regular);
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-Regular.woff2") format("woff2");
+  font-display: block;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-Semibold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Text";
+  src: url("/SourceSerif4_18pt-SemiboldItalic.woff2") format("woff2");
+  font-style: italic;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source Serif 4 Display";
+  src: url("/SourceSerif4_48pt-Regular.woff2") format("woff2");
+  font-display: block;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Redcollar";
+  src: url("/Redcollar.woff2") format("woff2");
+  font-display: block;
+  font-weight: 400;
 }

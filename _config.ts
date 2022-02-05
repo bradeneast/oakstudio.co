@@ -5,6 +5,7 @@ import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import postcss from "lume/plugins/postcss.ts";
 import postcssFor from "https://jspm.dev/postcss-for";
+import postcssNesting from "https://jspm.dev/postcss-nesting";
 import postcssVars from "https://jspm.dev/postcss-simple-vars";
 import anchor from "https://jspm.dev/markdown-it-anchor";
 import toc from "https://jspm.dev/markdown-it-table-of-contents";
@@ -21,9 +22,9 @@ const markdownConfig = {
 const postcssConfig = {
   plugins: [
     postcssFor,
-    postcssVars
-  ],
-  keepDefaultPlugins: true
+    postcssVars,
+    postcssNesting({ noIsPseudoSelector: true })
+  ]
 }
 
 
