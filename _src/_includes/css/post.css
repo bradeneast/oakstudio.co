@@ -24,6 +24,7 @@ body {
 }
 
 .post__main--content {
+  overflow-x: hidden;
 
   & img {
     float: left;
