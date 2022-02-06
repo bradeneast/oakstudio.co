@@ -84,7 +84,7 @@
   .project__info {
     margin-top: 0;
     position: relative;
-    padding: 6rem 2rem;
+    padding: 6rem 1rem;
     height: auto;
 
     & .label {
