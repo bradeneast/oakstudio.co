@@ -40,25 +40,25 @@ $font-family-serif-display: "Source Serif 4 Display", serif;
 $font-family-sans: "Redcollar", sans-serif;
 
 $font-size-large-desktop: 80px;
-$font-size-regular-desktop: 20px;
-$font-size-small-desktop: 13px;
+$font-size-regular-desktop: 17px;
+$font-size-small-desktop: 11px;
 $font-size-large-mobile: calc(1.8rem + 4vw);
 $font-size-regular-mobile: 16px;
 $font-size-small-mobile: 12px;
 
 @font-face {
   font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4-Light.woff2") format("woff2");
+  src: url("/SourceSerif4-Regular.woff2") format("woff2");
   font-display: block;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4-LightItalic.woff2") format("woff2");
+  src: url("/SourceSerif4-Italic.woff2") format("woff2");
   font-style: italic;
   font-display: swap;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @font-face {
@@ -78,7 +78,7 @@ $font-size-small-mobile: 12px;
 
 @font-face {
   font-family: "Source Serif 4 Display";
-  src: url("/SourceSerif4_48pt-Light.woff2") format("woff2");
+  src: url("/SourceSerif4_48pt-Regular.woff2") format("woff2");
   font-display: block;
   font-weight: 300;
 }
