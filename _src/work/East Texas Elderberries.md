@@ -3,7 +3,7 @@ title: East Texas Elderberries
 description: East Texas Elderberries is the elderberry farm that produces organically grown products for crafty moms and resourceful businesses who want to buy local and keep their families and customers healthy.
 order: 1
 images:
-  - https://oakstudio.co/img/east-texas-elderberries-boxes.jpg
+  - /_/ete-grid.jpg
   - /_/ete-family.jpg
   - https://oakstudio.co/img/east-texas-elderberries-sack.jpg
   - https://oakstudio.co/img/east-texas-elderberries-scales-red.png

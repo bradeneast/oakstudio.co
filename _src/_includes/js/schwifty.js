@@ -17,6 +17,7 @@ export default class Schwifty {
     transitioningAttribute,
     preserveScroll = false,
     preserveAttributes = false,
+    preserveUrl = false
   } = {}) {
 
 
@@ -101,7 +102,7 @@ export default class Schwifty {
       // Get matching preloaded item
       let preloaded = cache.get(href);
       if (!preloaded) { location = href; return }
-      history.replaceState(null, null, href);
+      if (!preserveUrl) history.replaceState(null, null, href);
 
       // Prep stylesheets
       $$(`${linkRelStylesheet}:not(.${preloadedClass})`)
