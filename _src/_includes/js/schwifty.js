@@ -9,6 +9,7 @@ export default class Schwifty {
    * @param {string} [options.transitioningAttribute = 'data-schwifty'] - attribute updated on the `documentElement` during a page transition
    * @param {boolean} [options.preserveScroll = false] - preserve scroll position on page load
    * @param {(boolean|Object)} [options.preserveAttributes = false] - preserve attributes on top-level DOM elements (`documentElement`, `head`, and `body`)
+   * @param {(boolean|Object)} [options.preserveUrl = false] - preserves the current url and does not call `history.pushState()`
    */
   constructor({
     onload = null,

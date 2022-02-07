@@ -21,6 +21,7 @@ nav {
   height: 100%;
   width: auto;
   display: block;
+  transition: $transition;
 }
 
 section {
