@@ -8,17 +8,17 @@ $g5: #9faabd;
 $g6: #c5cacf;
 $g7: #eaebee;
 $g8: white;
-$accent1: $g8;
+$accent1: $g5;
 $accent2: #97b2c4;
 $contrasting-color: $accent2;
 
 /* Effects */
-$transition: 0.5s cubic-bezier(.4, .7, .1, 1);
+$transition: 0.6s cubic-bezier(.4, .7, .1, 1);
 $transition-long: 1s cubic-bezier(.4, .7, .1, 1);
 $transition-extra-long: 2.4s cubic-bezier(.6, 0, 0, 1);
 $shadow: 0 0 0.63em -0.12em rgba(0, 0, 50, 0.2);
 $border-width: 1px;
-$border: $border-width solid $g3;
+$border: $border-width solid var(--g3);
 
 /* Clip Paths */
 $angle: 72deg;
@@ -35,57 +35,33 @@ $nav-height-desktop: 4rem;
 $nav-height-mobile: 2.6rem;
 
 /* Fonts */
-$font-family-serif: "Source Serif 4 Text", serif;
-$font-family-serif-display: "Source Serif 4 Display", serif;
-$font-family-sans: "Redcollar", sans-serif;
+$font-family-body: "Piazzolla", serif;
+$font-family-display: "Piazzolla", serif;
+$font-family-alt: "Space Grotesk", sans-serif;
 
 $font-size-large-desktop: 80px;
-$font-size-regular-desktop: 17px;
+$font-size-regular-desktop: 18px;
 $font-size-small-desktop: 11px;
-$font-size-large-mobile: calc(1.8rem + 4vw);
-$font-size-regular-mobile: 16px;
-$font-size-small-mobile: 12px;
+$font-size-large-mobile: calc(1.7rem + 4vw);
+$font-size-regular-mobile: 18px;
+$font-size-small-mobile: 11px;
 
 @font-face {
-  font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4-Regular.woff2") format("woff2");
+  font-family: "Piazzolla";
+  src: url("/Piazzolla[opsz,wght].woff2") format("woff2-variations");
   font-display: block;
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4-Italic.woff2") format("woff2");
+  font-family: "Piazzolla";
+  src: url("/Piazzolla-Italic[opsz,wght].woff2") format("woff2-variations");
   font-style: italic;
   font-display: swap;
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4-Semibold.woff2") format("woff2");
-  font-display: swap;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Source Serif 4 Text";
-  src: url("/SourceSerif4-SemiboldItalic.woff2") format("woff2");
-  font-style: italic;
-  font-display: swap;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Source Serif 4 Display";
-  src: url("/SourceSerif4_48pt-Regular.woff2") format("woff2");
-  font-display: block;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Redcollar";
-  src: url("/Redcollar.woff2") format("woff2");
+  font-family: "Space Grotesk";
+  src: url("/SpaceGrotesk[wght].woff2") format("woff2-variations");
   font-display: block;
 }
 
@@ -94,7 +70,30 @@ $font-size-small-mobile: 12px;
   --font-size-small: $font-size-small-desktop;
   --font-size-regular: $font-size-regular-desktop;
   --nav-height: $nav-height-desktop;
+  --g0: $g0;
+  --g1: $g1;
+  --g2: $g2;
+  --g3: $g3;
+  --g4: $g4;
+  --g5: $g5;
+  --g6: $g6;
+  --g7: $g7;
+  --g8: $g8;
   --accent1: $accent1;
   --accent2: $accent2;
   font-size: var(--font-size-regular);
 }
+
+/* @media (prefers-color-scheme:dark) {
+  :root {
+    --g0: $g8;
+    --g1: $g7;
+    --g2: $g6;
+    --g3: $g5;
+    --g4: $g4;
+    --g5: $g3;
+    --g6: $g2;
+    --g7: $g1;
+    --g8: $g0;
+  }
+} */

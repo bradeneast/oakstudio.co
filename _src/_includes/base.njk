@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en" data-schwifty="out">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,8 +48,14 @@
 	<section>
 		<div class="center" data-animate="from-front">
 			<div class="rellax">
-				<h1>{% if headline %}{{ headline | md(true) | safe }}{% else %}{{ title }}{% endif %}</h1>
-				<p>{% if tagline %}{{ tagline | md(true) | safe }}{% else %}{{ tags | join(", ") }}{% endif %}</p>
+				<h1 class="splitting">
+				{% if headline %}
+					{{ headline | md(true) | safe }}
+				{% else %}
+					{{ title | splitting | safe }}
+				{% endif %}
+				</h1>
+				<p data-animate="from-bottom">{% if tagline %}{{ tagline | md(true) | safe }}{% else %}{{ tags | join(", ") }}{% endif %}</p>
 			</div>
 		</div>
 	</section>
@@ -55,8 +64,8 @@
 
 	<section>
 		<div class="center" data-animate="from-front">
-			<a href="mailto:hello@oakstudio.co">
-				<h1>hello@oakstudio.co</h1>
+			<a href="mailto:{{ site.email }}">
+				<h1>{{ site.email }}</h1>
 			</a>
 		</div>
 	</section>
@@ -66,3 +75,5 @@
 		<a class="right" href="https://twitter.com/@{{ site.twitter }}">We're on Twitter</a>
 	</footer>
 </body>
+
+</html>

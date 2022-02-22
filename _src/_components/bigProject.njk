@@ -4,10 +4,10 @@
 
   <div class="project__info">
     <div class="project__info--row" data-animate="from-bottom">
-      <div class="label">Completed for:</div><div class="title splitting">{{ title | splitting | safe }}</div>
+      <div class="label">Completed in {{ year }}</div><div class="title splitting">{{ title | splitting | safe }}</div>
     </div>
     <div class="project__info--row" data-animate="from-bottom">
-      <div class="label">About the project:</div><div>{{ description }}</div>
+      <div class="label">{{ tags | join(", ") }}</div><div>{{ description }}</div>
     </div>
     <div class="project__info--row" data-animate="from-bottom">
       <a href="{{ url }}">Read the case study</a><hr>

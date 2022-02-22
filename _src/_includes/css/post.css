@@ -1,7 +1,3 @@
-body {
-  transition: background $transition;
-}
-
 .post__image {
   margin: 0;
   display: flex;
@@ -103,6 +99,7 @@ body {
 .callout {
   border-left: $border;
   border-left-color: var(--accent2);
+  font-family: $font-family-display;
   font-style: italic;
   padding-top: .9rem;
   padding-bottom: 1rem;

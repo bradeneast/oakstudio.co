@@ -20,7 +20,7 @@
 }
 
 *:focus {
-  outline: $border-width solid $g6;
+  outline: $border-width solid var(--g6);
   outline-offset: $border-width;
 }
 
@@ -30,6 +30,12 @@
 
 ::-webkit-scrollbar {
   width: 10px;
+}
+
+html {
+  background: var(--g8);
+  color: var(--g0);
+  transition: background $transition;
 }
 
 body,

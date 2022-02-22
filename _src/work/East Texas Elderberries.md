@@ -1,5 +1,6 @@
 ---
 title: East Texas Elderberries
+year: 2021
 description: East Texas Elderberries is the elderberry farm that produces organically grown products for crafty moms and resourceful businesses who want to buy local and keep their families and customers healthy.
 order: 1
 images:

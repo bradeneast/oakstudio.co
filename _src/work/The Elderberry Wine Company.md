@@ -1,5 +1,6 @@
 ---
 title: The Elderberry Wine Company
+year: 2020
 description: The Elderberry Wine Company is a winery owned and operated by 360 Farms, who makes specialty wines for health-conscious moms and those who prefer natural alternatives to pharmaceutical products.
 order: 3
 images:

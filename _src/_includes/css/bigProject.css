@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  & a::after {
+    display: none;
+  }
+
   & .title {
     margin-top: -.09em;
   }
@@ -28,7 +32,7 @@
 }
 
 .project__info {
-  top: 4rem;
+  top: 6rem;
   position: sticky;
   align-self: start;
   padding: 4rem;
@@ -59,14 +63,14 @@
     all: unset;
     content: "↗";
     font-size: 1.2em;
-    transform: translateY(-.1em);
+    transform: translateY(-2px);
     margin-left: 0.2em;
   }
 }
 
 @media screen and (max-width: $mobile) {
   .big-project {
-    grid-template-columns: 1fr;
+    display: block;
 
     & .swatches.vertical {
       position: sticky;
@@ -82,9 +86,9 @@
   }
 
   .project__info {
-    margin-top: 0;
     position: relative;
-    padding: 6rem 1rem;
+    margin-top: 0;
+    padding: 4rem 1rem;
     height: auto;
 
     & .label {
@@ -93,16 +97,24 @@
   }
 
   .project__info--row {
-    margin-top: 2rem;
+    max-width: $paragraph-width;
+    margin: 2rem auto 0 auto;
+    gap: 1rem;
     grid-template-columns: 1fr;
 
     &:last-of-type {
+      margin-top: 8rem;
+      max-width: none;
       display: flex;
     }
   }
 
-  .project__images img {
-    height: auto;
-    width: 100%;
+  .project__images {
+    margin-top: 1rem;
+
+    & img {
+      height: auto;
+      width: 100%;
+    }
   }
 }

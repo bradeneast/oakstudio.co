@@ -1,37 +1,36 @@
-
-
 body {
-  font-family: $font-family-serif;
+  line-height: 1.35;
+  font-family: $font-family-body;
+  text-rendering: geometricPrecision;
+  font-smooth: subpixel-antialiased;
 }
 
 .title,
 h1 {
-  font-family: $font-family-serif-display;
+  font-weight: 300;
+  font-family: $font-family-display;
   font-size: $font-size-large-desktop;
-  margin-left: -.02em;
+  margin-left: -.03em;
   letter-spacing: -.05em;
   line-height: .96;
 
   & em {
     display: inline-block;
-    font-family: $font-family-sans;
-    font-size: .7em;
     font-weight: 900;
-    letter-spacing: -.04em;
-    text-transform: uppercase;
-    font-style: normal;
+    letter-spacing: -.01em;
+    font-style: italic;
   }
 }
 
 .label,
 h2 {
-  font-family: $font-family-sans;
+  font-family: $font-family-alt;
   font-size: var(--font-size-small);
   text-transform: uppercase;
-  opacity: .5;
   padding-top: 0.5em;
   line-height: 1;
-  letter-spacing: .04em;
+  font-weight: 400;
+  letter-spacing: .1em;
   margin-bottom: 1rem;
 }
 
@@ -44,13 +43,13 @@ strong {
 }
 
 ::selection {
-  background: $g1;
-  color: $g8;
+  background: var(--g1);
+  color: var(--g8);
 }
 
 a::after,
 hr {
-  --color: $g3;
+  --color: var(--g3);
   width: 100%;
   height: $border-width;
   background-image: linear-gradient(to right, var(--color) 50%, transparent 0%);
@@ -62,6 +61,7 @@ hr {
 a {
   text-decoration: none;
   display: inline-flex;
+  margin-top: 0;
 }
 
 a::after {
@@ -69,7 +69,7 @@ a::after {
   content: "";
   display: block;
   position: absolute;
-  top: calc(100% + .01em);
+  top: 95%
 }
 
 a:hover::after,

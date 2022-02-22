@@ -3,10 +3,21 @@ layout: base.njk
 ---
 
 <style>
-body {
-  --accent1: #{{ colors[0] }};
-  --accent2: #{{ colors[1] }};
-  --contrastingColor: #{{ colors[0] | bestContrast(colors[1]) }};
+:root {
+  --accent1: #{{ colors[1] }};
+  --accent2: #{{ colors[0] }};
+  --contrastingColor: #{{ colors[1] | bestContrast(colors[0]) }};
+}
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    --accent1: #{{ colors[0] }};
+    --accent2: #{{ colors[1] }};
+    --contrastingColor: #{{ colors[0] | bestContrast(colors[1]) }};
+  }
+}
+
+html {
   background: var(--accent1);
   color: var(--contrastingColor);
 }
@@ -18,7 +29,7 @@ h2 {
 </style>
 
 <div class="post__image">
-  <img src="{{ images[0] }}" width="1620" height="1920">
+  <img src="{{ images[0] }}" width="1620" height="1920" data-animate="from-front">
 </div>
 
 <div class="post__main">

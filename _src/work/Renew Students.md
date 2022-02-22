@@ -1,5 +1,6 @@
 ---
 title: Renew Students
+year: 2021
 description: Renew Students is the student ministry of Bartlesville First Baptist Church. Rebranding from "Young and Free Students", the name "Renew" stems from the renewing of mind in Romans chapter 12.
 order: 9
 images:

@@ -1,3 +1,7 @@
+body {
+  display: grid;
+}
+
 nav,
 footer {
   padding: 1rem 2rem;
