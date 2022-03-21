@@ -1,0 +1,19 @@
+---
+layout: base.layout.njk
+---
+
+<div class="post__main">
+
+  <div class="post__main--content">
+    {{ content | safe }}
+  </div>
+
+  <div class="post__main--images">
+    {% for image in images %}
+      {% if loop.index > 1 %}
+      <img src="{{ image }}" width="1280" height="1280">
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

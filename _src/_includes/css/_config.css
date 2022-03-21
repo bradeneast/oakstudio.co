@@ -84,7 +84,7 @@ $font-size-small-mobile: 11px;
   font-size: var(--font-size-regular);
 }
 
-/* @media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme:dark) {
   :root {
     --g0: $g8;
     --g1: $g7;
@@ -96,4 +96,4 @@ $font-size-small-mobile: 11px;
     --g7: $g1;
     --g8: $g0;
   }
-} */
+}

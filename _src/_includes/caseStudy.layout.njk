@@ -1,23 +1,15 @@
 ---
-layout: base.njk
+layout: base.layout.njk
 ---
 
 <style>
-:root {
-  --accent1: #{{ colors[1] }};
-  --accent2: #{{ colors[0] }};
-  --contrastingColor: #{{ colors[1] | bestContrast(colors[0]) }};
+body {
+  --accent1: #{{ colors[0] }};
+  --accent2: #{{ colors[1] }};
+  --contrastingColor: #{{ colors[0] | bestContrast(colors[0]) }};
 }
 
-@media (prefers-color-scheme:dark) {
-  :root {
-    --accent1: #{{ colors[0] }};
-    --accent2: #{{ colors[1] }};
-    --contrastingColor: #{{ colors[0] | bestContrast(colors[1]) }};
-  }
-}
-
-html {
+body {
   background: var(--accent1);
   color: var(--contrastingColor);
 }

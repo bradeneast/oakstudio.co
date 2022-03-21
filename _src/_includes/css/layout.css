@@ -7,6 +7,14 @@ footer {
   padding: 1rem 2rem;
 }
 
+.home-hero {
+  background-image: url("/_/tree.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 85%;
+  background-position-y: 10%;
+}
+
 nav {
   position: fixed;
   z-index: 99;

@@ -7,10 +7,11 @@ body {
 
 .title,
 h1 {
-  font-weight: 300;
+  font-weight: 200;
   font-family: $font-family-display;
   font-size: $font-size-large-desktop;
   margin-left: -.03em;
+  transform: translateY(-.06em);
   letter-spacing: -.05em;
   line-height: .96;
 
@@ -39,7 +40,7 @@ h2 {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 ::selection {
