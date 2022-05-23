@@ -2,10 +2,11 @@
 title: Home
 layout: base.layout.njk
 heroClass: home-hero
-headline: Grow something *permanent.*
+headline: >-
+  <div style="font-size: 2em">Grow something permanent</div>
 tagline: Oak Studio partners with family-minded businesses to create enduring brands.
 ---
 
 {% for case in search.pages("type=case-study", "order") %}
-{{ comp.bigProject(case.data) | safe }}
+  {{ comp.bigProject(case.data) | safe }}
 {% endfor %}

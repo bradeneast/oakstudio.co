@@ -7,13 +7,13 @@ body {
 
 .title,
 h1 {
-  font-weight: 200;
+  font-weight: 900;
   font-family: $font-family-display;
   font-size: $font-size-large-desktop;
   margin-left: -.03em;
   transform: translateY(-.06em);
-  letter-spacing: -.05em;
-  line-height: .96;
+  letter-spacing: -.01em;
+  line-height: .9;
 
   & em {
     display: inline-block;

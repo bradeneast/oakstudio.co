@@ -35,11 +35,11 @@ $nav-height-desktop: 4rem;
 $nav-height-mobile: 2.6rem;
 
 /* Fonts */
-$font-family-body: "Piazzolla", serif;
-$font-family-display: "Piazzolla", serif;
+$font-family-body: "Cabinet Grotesk", sans-serif;
+$font-family-display: "Woodward", sans-serif;
 $font-family-alt: "Space Grotesk", sans-serif;
 
-$font-size-large-desktop: 80px;
+$font-size-large-desktop: 100px;
 $font-size-regular-desktop: 18px;
 $font-size-small-desktop: 11px;
 $font-size-large-mobile: calc(1.7rem + 4vw);

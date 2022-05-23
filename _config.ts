@@ -35,8 +35,8 @@ const site = lume(
 );
 
 // Copy assets
-site.copy("_includes/assets", "/");
-site.copy("_img", "/_");
+site.copy("assets", "/");
+site.copy("_img", "_");
 
 // Run all processors
 for (let p in processors)
