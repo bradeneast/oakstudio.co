@@ -24,7 +24,7 @@
   outline-offset: $border-width;
 }
 
-* + * {
+*+* {
   margin-top: 1rem;
 }
 
@@ -51,8 +51,8 @@ img {
 
 @media screen and (max-width: $mobile) {
   :root {
-    --font-size-small: $font-size-small-mobile;
-    --font-size-regular: $font-size-regular-mobile;
-    --nav-height: $nav-height-mobile;
+    --font-size-small: #{$font-size-small-mobile};
+    --font-size-regular: #{$font-size-regular-mobile};
+    --nav-height: #{$nav-height-mobile};
   }
 }

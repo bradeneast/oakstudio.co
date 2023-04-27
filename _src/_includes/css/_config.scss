@@ -1,15 +1,15 @@
 /* Colors */
 $g0: #121518;
-$g1: #1a1f24;
-$g2: #383e46;
-$g3: #5a6677;
-$g4: #828b9c;
-$g5: #9faabd;
-$g6: #c5cacf;
-$g7: #eaebee;
-$g8: white;
+$g1: #1d2125;
+$g2: #36393e;
+$g3: #736e63;
+$g4: #8b919c;
+$g5: #bcb7aa;
+$g6: #cfccc5;
+$g7: #eeedea;
+$g8: rgb(255, 245, 230);
 $accent1: $g5;
-$accent2: #97b2c4;
+$accent2: #4aa7a0;
 $contrasting-color: $accent2;
 
 /* Effects */
@@ -35,13 +35,13 @@ $nav-height-desktop: 4rem;
 $nav-height-mobile: 2.6rem;
 
 /* Fonts */
-$font-family-body: "Cabinet Grotesk", sans-serif;
-$font-family-display: "Woodward", sans-serif;
-$font-family-alt: "Space Grotesk", sans-serif;
+$font-family-body: "Inter", sans-serif;
+$font-family-display: "Boska", sans-serif;
+$font-family-alt: "Pencerio Hairline", sans-serif;
 
-$font-size-large-desktop: 100px;
-$font-size-regular-desktop: 18px;
-$font-size-small-desktop: 11px;
+$font-size-large-desktop: 96px;
+$font-size-regular-desktop: 19px;
+$font-size-small-desktop: 12px;
 $font-size-large-mobile: calc(1.7rem + 4vw);
 $font-size-regular-mobile: 18px;
 $font-size-small-mobile: 11px;
@@ -67,33 +67,34 @@ $font-size-small-mobile: 11px;
 
 /* Custom Property Declarations */
 :root {
-  --font-size-small: $font-size-small-desktop;
-  --font-size-regular: $font-size-regular-desktop;
-  --nav-height: $nav-height-desktop;
-  --g0: $g0;
-  --g1: $g1;
-  --g2: $g2;
-  --g3: $g3;
-  --g4: $g4;
-  --g5: $g5;
-  --g6: $g6;
-  --g7: $g7;
-  --g8: $g8;
-  --accent1: $accent1;
-  --accent2: $accent2;
+  --font-size-small: #{$font-size-small-desktop};
+  --font-size-regular: #{$font-size-regular-desktop};
+  --font-size-large: #{$font-size-large-desktop};
+  --nav-height: #{$nav-height-desktop};
+  --g0: #{$g0};
+  --g1: #{$g1};
+  --g2: #{$g2};
+  --g3: #{$g3};
+  --g4: #{$g4};
+  --g5: #{$g5};
+  --g6: #{$g6};
+  --g7: #{$g7};
+  --g8: #{$g8};
+  --accent1: #{$accent1};
+  --accent2: #{$accent2};
   font-size: var(--font-size-regular);
 }
 
 @media (prefers-color-scheme:dark) {
   :root {
-    --g0: $g8;
-    --g1: $g7;
-    --g2: $g6;
-    --g3: $g5;
-    --g4: $g4;
-    --g5: $g3;
-    --g6: $g2;
-    --g7: $g1;
-    --g8: $g0;
+    --g0: #{$g8};
+    --g1: #{$g7};
+    --g2: #{$g6};
+    --g3: #{$g5};
+    --g4: #{$g4};
+    --g5: #{$g3};
+    --g6: #{$g2};
+    --g7: #{$g1};
+    --g8: #{$g0};
   }
 }

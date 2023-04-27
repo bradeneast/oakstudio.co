@@ -42,23 +42,8 @@
 <body>
 
 	<nav>
-		<a id="logo" href="/"><img src="/_/logo.svg" alt="Logo of Oak Studio"></a>
+		<a id="logo" href="/">{% include "_components/logo.njk" %}</a>
 	</nav>
-	
-	<section class={{ heroClass }}>
-		<div class="center" data-animate="from-front">
-			<div class="rellax">
-				<h1 class="splitting">
-				{% if headline %}
-					{{ headline | md(true) | safe }}
-				{% else %}
-					{{ title | splitting | safe }}
-				{% endif %}
-				</h1>
-				<p data-animate="from-bottom">{% if tagline %}{{ tagline | md(true) | safe }}{% else %}{{ tags | join(", ") }}{% endif %}</p>
-			</div>
-		</div>
-	</section>
 
 	{{ content | safe }}
 

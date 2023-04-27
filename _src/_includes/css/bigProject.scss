@@ -1,14 +1,10 @@
-.big-project  {
+.big-project {
   margin-top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   & a::after {
     display: none;
-  }
-
-  & .title {
-    margin-top: .2em;
   }
 
   & a {
@@ -19,7 +15,7 @@
 .project__images {
   margin-top: 0;
   overflow: hidden;
-  
+
   & .project__images--container {
     display: flex;
     flex-flow: column nowrap;
@@ -46,7 +42,7 @@
   gap: 2rem;
   max-width: calc($paragraph-width + 8rem);
 
-  & > * {
+  &>* {
     margin-top: 0;
   }
 

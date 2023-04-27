@@ -10,35 +10,52 @@
 
 .post__main {
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  & h2,
-  & .callout {
-    margin-top: 30vmin;
-  }
 }
 
 .post__main--content {
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   & img {
-    float: left;
-    max-width: 8rem;
-    margin: 0 1rem 1rem 0;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.post__body {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 2rem;
+  max-width: $paragraph-width;
+
+  .has-media {
+    max-width: 6rem;
+    margin-top: 3rem;
+
+    &+p {
+      margin-top: 0;
+    }
   }
 
-  & .has-media {
-    clear: both;
+  &> :first-child {
+    margin-top: 0;
   }
+}
 
-  & > * {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: $paragraph-width;
-  }
+.callout {
+  font-size: 1.6rem;
+  border-left: $border;
+  border-left-color: var(--accent2);
+  font-family: $font-family-display;
+  font-style: italic;
+  margin-top: 2rem;
+  padding-top: .9rem;
+  padding-bottom: 1rem;
+  margin-left: -2rem;
+  padding-left: 2rem;
 }
 
 .post__main--images {
@@ -74,7 +91,7 @@
     &::after {
       display: none;
     }
-    
+
     &:last-child {
       grid-column: 2;
     }
@@ -96,21 +113,10 @@
   }
 }
 
-.callout {
-  border-left: $border;
-  border-left-color: var(--accent2);
-  font-family: $font-family-display;
-  font-style: italic;
-  padding-top: .9rem;
-  padding-bottom: 1rem;
-  font-size: 1.6rem;
-}
-
-@media screen and (min-width: $mobile) {
-
-}
+@media screen and (min-width: $mobile) {}
 
 @media screen and (max-width: $mobile) {
+
   .post__image,
   .post__image img {
     display: block;
@@ -145,7 +151,7 @@
       margin-top: 4rem;
     }
 
-    & > * {
+    &>* {
       padding-left: 1rem;
       padding-right: 1rem;
     }
@@ -159,7 +165,7 @@
     & a:first-child {
       padding-right: 2rem;
 
-      & > * {
+      &>* {
         margin-top: 0;
         padding-left: 2rem;
       }
@@ -176,10 +182,10 @@
       grid-column: auto;
       order: -1;
 
-      & > * {
+      &>* {
         padding-right: 1rem;
       }
-      
+
       & img {
         min-height: 20rem;
         padding-right: 0;

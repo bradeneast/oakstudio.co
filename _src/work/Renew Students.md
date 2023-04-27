@@ -19,19 +19,25 @@ colors:
 
 ## The Context
 
-Renew Students is the student ministry of Bartlesville First Baptist Church. Rebranding from "Young and Free Students", the name "Renew" stems from the renewing of mind in Romans chapter 12.
+Renew Students is the student ministry of Bartlesville First Baptist Church.
+Rebranding from "Young and Free Students", the name "Renew" stems from the
+renewing of mind in Romans chapter 12.
 
 ## Profiles
 
 ![A young man who is part of the core Renew Students demographic.](https://oakstudio.co/img/renew-students-male.jpg)
 
-*Barret*  
+Barret {.script-font}
+
 Highly engaged by video games, Barret is adventurous, quirky, and quick-witted.
+{.margin-0}
 
 ![A young woman who is part of the core Renew Students demographic.](https://oakstudio.co/img/renew-students-female.jpg)
 
-*Julia*  
-Her brain turned on at all times, Julia loves to participate in social activities.
+_Julia_ {.script-font}
 
-> We worked with Renew Students to design an identity that was durable, iconic, and ups the energy wherever it goes.
-{.callout}
+Her brain turned on at all times, Julia loves to participate in social
+activities.{.margin-0}
+
+> We worked with Renew Students to design an identity that was durable, iconic,
+> and ups the energy wherever it goes. {.callout}

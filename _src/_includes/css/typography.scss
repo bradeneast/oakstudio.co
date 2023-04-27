@@ -1,8 +1,10 @@
 body {
-  line-height: 1.35;
+  line-height: 1.45;
   font-family: $font-family-body;
+  font-weight: 350;
   text-rendering: geometricPrecision;
   font-smooth: subpixel-antialiased;
+  letter-spacing: .02em;
 }
 
 .title,
@@ -12,7 +14,7 @@ h1 {
   font-size: $font-size-large-desktop;
   margin-left: -.03em;
   transform: translateY(-.06em);
-  letter-spacing: -.01em;
+  letter-spacing: -.03em;
   line-height: .9;
 
   & em {
@@ -21,11 +23,25 @@ h1 {
     letter-spacing: -.01em;
     font-style: italic;
   }
+
+  & .script-font {
+    font-size: .7em;
+  }
+}
+
+.script-font {
+  letter-spacing: 0;
+  font-family: $font-family-alt;
+  text-transform: lowercase;
+  padding-right: .2em;
+
+  .char {
+    overflow: visible;
+  }
 }
 
 .label,
 h2 {
-  font-family: $font-family-alt;
   font-size: var(--font-size-small);
   text-transform: uppercase;
   padding-top: 0.5em;
@@ -36,7 +52,7 @@ h2 {
 }
 
 h2 {
-  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 strong {
@@ -75,12 +91,13 @@ a::after {
 
 a:hover::after,
 a:focus::after,
-a:hover + hr,
-a:focus + hr {
+a:hover+hr,
+a:focus+hr {
   background-position-x: 0;
 }
 
 @media screen and (max-width: $mobile) {
+
   h1,
   .title {
     font-size: $font-size-large-mobile;

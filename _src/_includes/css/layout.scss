@@ -2,17 +2,37 @@ body {
   display: grid;
 }
 
+.home-hero {
+  display: grid;
+
+  &__about {
+    max-width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+
+  &__meta {
+    width: 100%;
+    display: grid;
+    margin-top: 10rem;
+    justify-self: end;
+
+    &--definition {
+      justify-self: end;
+      opacity: .5;
+      font-size: var(--font-size-small);
+    }
+
+    & * {
+      margin-top: 0;
+    }
+  }
+}
+
 nav,
 footer {
   padding: 1rem 2rem;
-}
-
-.home-hero {
-  background-image: url("/_/tree.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 85%;
-  background-position-y: 10%;
 }
 
 nav {
@@ -28,12 +48,17 @@ nav {
   }
 }
 
-#logo svg,
 #logo {
   height: 100%;
   width: auto;
   display: block;
   transition: $transition;
+
+  &>svg {
+    width: auto;
+    height: 100%;
+    fill: var(--g0);
+  }
 }
 
 section {
@@ -46,12 +71,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  & > * {
+  &>* {
     margin: 0;
   }
 }
 
 @media screen and (max-width: $mobile) {
+
   nav,
   footer {
     padding: .5rem 1rem;

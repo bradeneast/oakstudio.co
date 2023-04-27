@@ -6,6 +6,14 @@ export async function html(page: any) {
   /**Helper to select many elements on the page */
   let $$ = (selector: string, context = page.document) => context.querySelectorAll(selector);
 
+
+  // Add a class for unique styling to stop words in headings
+  const stopWords = ["the", "if", "of", "a", "in"];
+  $$("h1 .word, .title .word").forEach(elem => {
+    if (stopWords.includes(elem.innerText.toLowerCase()))
+      elem.classList.add("script-font");
+  })
+
   /**Tries to extract a human-readable filename from urls */
   function altFromSrc(src: string) {
     let decoded = decodeURIComponent(src) || '';

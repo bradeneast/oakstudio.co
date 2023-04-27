@@ -20,6 +20,15 @@ h2 {
 }
 </style>
 
+<section class={{ heroClass }}>
+  <div class="center" data-animate="from-front">
+    <div class="rellax">
+      <h1 class="splitting">{{ title | splitting | safe }}</h1>
+      <p class="script-font" data-animate="from-bottom">{{ tags | join(", ") }}</p>
+    </div>
+  </div>
+</section>
+
 <div class="post__image">
   <img src="{{ images[0] }}" width="1620" height="1920" data-animate="from-front">
 </div>
@@ -27,12 +36,15 @@ h2 {
 <div class="post__main">
 
   <div class="post__main--content">
+    <div class="post__body">
     {{ content | safe }}
+    </div>
+    <img src="{{ images[1] }}" width="1280" height="1280" data-animate="from-bottom">
   </div>
 
   <div class="post__main--images">
     {% for image in images %}
-      {% if loop.index > 1 %}
+      {% if loop.index > 2 %}
       <img src="{{ image }}" width="1280" height="1280">
       {% endif %}
     {% endfor %}
