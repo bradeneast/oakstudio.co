@@ -20,18 +20,21 @@ h2 {
 }
 </style>
 
-<section class={{ heroClass }}>
-  <div class="center" data-animate="from-front">
+<section class="post__hero" data-animate="clip-bottom">
+
+  <div class="post__hero--background" data-animate="from-front">
+    <img src="{{ images[0] }}">
+    <div class="post__hero--background-darkening"></div>
+  </div>
+
+  <div class="center" data-animate="from-bottom">
     <div class="rellax">
       <h1 class="splitting">{{ title | splitting | safe }}</h1>
       <p class="script-font" data-animate="from-bottom">{{ tags | join(", ") }}</p>
     </div>
   </div>
-</section>
 
-<div class="post__image">
-  <img src="{{ images[0] }}" width="1620" height="1920" data-animate="from-front">
-</div>
+</section>
 
 <div class="post__main">
 
@@ -39,7 +42,7 @@ h2 {
     <div class="post__body">
     {{ content | safe }}
     </div>
-    <img src="{{ images[1] }}" width="1280" height="1280" data-animate="from-bottom">
+    <img src="{{ images[1] }}" width="1280" height="1280" data-animate="clip-right from-front">
   </div>
 
   <div class="post__main--images">

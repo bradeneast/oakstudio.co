@@ -1,4 +1,5 @@
 ---
+draft: true
 title: The Elderberry Wine Company
 year: 2020
 description: The Elderberry Wine Company is a winery owned and operated by 360 Farms, who makes specialty wines for health-conscious moms and those who prefer natural alternatives to pharmaceutical products.
@@ -21,16 +22,19 @@ colors:
   - F4AE62
 ---
 
-## Colorful language
+We explored several color palettes throughout the design process. Each color
+represents a specific member of The Elderberry Wine Company's selection. The
+final palette highlights a unique quality of each specialty blend.
 
-We explored several color palettes throughout the design process. Each color represents a specific member of The Elderberry Wine Company's selection. The final palette highlights a unique quality of each specialty blend.
+The Elderberry Wine Company inherited the brand fonts of its parent company, 360
+Farms. Pairing [Bodoni* 11](//indestructibletype.com/) with
+[Montserrat Semibold](//fonts.google.com/specimen/Montserrat) offered a reliably
+elegant, modern way to communicate on wine labels, signage, and in digital
+environments.
 
-The Elderberry Wine Company inherited the brand fonts of its parent company, 360 Farms. Pairing [Bodoni* 11](//indestructibletype.com/) with [Montserrat Semibold](//fonts.google.com/specimen/Montserrat) offered a reliably elegant, modern way to communicate on wine labels, signage, and in digital environments.
+The design element below the wordmark offered creative applications in patterns
+and on packaging. The illustrative icon ties the mark together and uniquely
+distinguishes The Elderberry Wine Company from competition.
 
-## Packaging
-
-The design element below the wordmark offered creative applications in patterns and on packaging. The illustrative icon ties the mark together and uniquely distinguishes The Elderberry Wine Company from competition.
-
-## Outcome
-
-The familiar colors, distinct seal, and bold design helped make the debut of The Elderberry Wine Company a huge success.
+The familiar colors, distinct seal, and bold design helped make the debut of The
+Elderberry Wine Company a huge success.

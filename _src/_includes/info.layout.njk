@@ -2,18 +2,12 @@
 layout: base.layout.njk
 ---
 
-<div class="post__main">
-
-  <div class="post__main--content">
-    {{ content | safe }}
+<section>
+  <div class="post__main">
+    <div class="post__main--content">
+      <div class="post__body">
+      {{ content | safe }}
+      </div>
+    </div>
   </div>
-
-  <div class="post__main--images">
-    {% for image in images %}
-      {% if loop.index > 1 %}
-      <img src="{{ image }}" width="1280" height="1280">
-      {% endif %}
-    {% endfor %}
-  </div>
-
-</div>
+</section>
