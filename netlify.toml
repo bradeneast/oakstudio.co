@@ -1,10 +1,7 @@
 # Admin invitation email templates need to be declared under `Site settings > Identity > Emails` in the Netlify UI
 
 [build]
-command = """
-    curl -fsSL https://deno.land/x/install/install.sh | sh && \
-    /opt/buildhome/.deno/bin/deno task build --location=https://deno-blog.netlify.app/ \
-  """
+command = "curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno task build --location=https://deno-blog.netlify.app/"
 publish = "_site"
 
 [dev]
