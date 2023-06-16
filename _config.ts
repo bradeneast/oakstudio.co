@@ -4,25 +4,12 @@ import slugify_urls from "lume/plugins/slugify_urls.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import sass from "lume/plugins/sass.ts";
-import anchor from "https://jspm.dev/markdown-it-anchor";
-import toc from "https://jspm.dev/markdown-it-table-of-contents";
 import * as processors from "./_processors.ts";
 import * as filters from "./_filters.ts";
 
-const markdownConfig = {
-  plugins: [
-    anchor,
-    [toc, { includeLevel: [2] }]
-  ],
-  keepDefaultPlugins: true
-};
-
 
 // CREATE SITE
-const site = lume(
-  { src: "_src" },
-  { markdown: markdownConfig }
-);
+const site = lume({ src: "_src" });
 
 // Copy assets
 site.copy("assets", "/");
